@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 54 files · ~66,546 words
+- 66 files · ~69,718 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 748 nodes · 694 edges · 54 communities (45 shown, 9 thin omitted)
+- 837 nodes · 774 edges · 64 communities (52 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ce0be1e8`
+- Built from commit: `4ecbba05`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -67,18 +67,26 @@
 - [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Community 51|Community 51]]
 - [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
-2. `Security and Hardening` - 16 edges
-3. `Git Workflow and Versioning` - 15 edges
-4. `Product Requirements Document (PRD)` - 15 edges
-5. `Test-Driven Development` - 14 edges
-6. `Browser Testing with DevTools` - 13 edges
-7. `CI/CD and Automation` - 13 edges
-8. `Frontend UI Engineering` - 13 edges
-9. `Tech Stack PRD Template` - 13 edges
-10. `Debugging and Error Recovery` - 12 edges
+2. `compilerOptions` - 18 edges
+3. `Security and Hardening` - 16 edges
+4. `compilerOptions` - 15 edges
+5. `Git Workflow and Versioning` - 15 edges
+6. `Product Requirements Document (PRD)` - 15 edges
+7. `Test-Driven Development` - 14 edges
+8. `Browser Testing with DevTools` - 13 edges
+9. `CI/CD and Automation` - 13 edges
+10. `Frontend UI Engineering` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -86,7 +94,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (54 total, 9 thin omitted)
+## Communities (64 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -260,16 +268,36 @@ Nodes (11): 1. Guardrails & Complexity Limits, 2. TDD Validation for the MVP, 3.
 Cohesion: 0.33
 Nodes (5): Connecting from Frontend (JavaScript / TypeScript), Directory Structure, Key Advantages for Hackathons, PocketBase Backend Scaffolding, Quick Start (Zero Setup Time)
 
+### Community 54 - "Community 54"
+Cohesion: 0.07
+Nodes (26): dependencies, clsx, lucide-react, pocketbase, react, react-dom, tailwind-merge, tailwindcss (+18 more)
+
+### Community 55 - "Community 55"
+Cohesion: 0.10
+Nodes (19): compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib, module, moduleDetection (+11 more)
+
+### Community 56 - "Community 56"
+Cohesion: 0.12
+Nodes (16): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib, module, moduleDetection, noEmit, noFallthroughCasesInSwitch (+8 more)
+
+### Community 57 - "Community 57"
+Cohesion: 0.33
+Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $schema
+
+### Community 59 - "Community 59"
+Cohesion: 0.50
+Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScript + Vite
+
 ## Knowledge Gaps
-- **573 isolated node(s):** `idea-refine.sh script`, `Project Rules`, `graphify`, `Overview`, `When to Use` (+568 more)
+- **640 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+635 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `idea-refine.sh script`, `Project Rules`, `graphify` to the rest of the system?**
-  _573 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
+  _640 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
