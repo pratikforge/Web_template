@@ -1,13 +1,18 @@
 # Graph Report - Web_template  (2026-08-26)
 
 ## Corpus Check
-- 47 files · ~62,214 words
+- 51 files · ~65,679 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 701 nodes · 654 edges · 47 communities (40 shown, 7 thin omitted)
+- 738 nodes · 687 edges · 51 communities (43 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `0b36a077`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
@@ -56,6 +61,10 @@
 - [[_COMMUNITY_Community 43|Community 43]]
 - [[_COMMUNITY_Community 44|Community 44]]
 - [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
@@ -75,7 +84,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (47 total, 7 thin omitted)
+## Communities (51 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -233,16 +242,28 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.13
 Nodes (14): 1. Clone & Set Up Remote, 2. Install Pre-Commit Hooks, 3. Generate Codebase Knowledge Graph, 🧠 Agent & Knowledge Graph Integration, 🛡️ Development Workflow & Guardrails, 🚀 Getting Started, Git Commit Conventions, ✨ Key Features (+6 more)
 
+### Community 47 - "Community 47"
+Cohesion: 0.17
+Nodes (11): 1. Guardrails for Kimi WebBridge & Agent Execution, 2. Validation & Quality Checklist (TDD for Research), Competitor Teardown & Leverage Extraction — Agent Execution Spec, Milestone 1 — Idea Intake & Knowledge Graph Search, Milestone 2 — Best Player / Incumbent Identification, Milestone 3 — Incumbent Teardown via Kimi WebBridge, Milestone 4 — Negative Review & Pain-Point Mining, Milestone 5 — Complaint-to-Leverage Translation (The "Anti-Incumbent Wedge") (+3 more)
+
+### Community 48 - "Community 48"
+Cohesion: 0.20
+Nodes (9): Hackathon Idea-Generation Pipeline — Agent Execution Spec, Milestone 1 — Intake & Setup, Milestone 2 — Spawn Sub-Agents & Source Research, Milestone 3 — Aggregation & Deduplication, Milestone 4 — Filtering, Milestone 5 — Scoring, Milestone 6 — Ranking & Final Output, Objective (+1 more)
+
+### Community 50 - "Community 50"
+Cohesion: 0.17
+Nodes (11): 1. Guardrails & Complexity Limits, 2. TDD Validation for the MVP, 3. Self-Check Checklist, Hackathon MVP Scoping & Triaging — Agent Execution Spec, Milestone 1 — Scope Ingestion & Time-Budget Mapping, Milestone 2 — The "Golden Demo Path" Razor, Milestone 3 — 3-Tier Feature Triaging (P0, P1, P2 Cut & Mock), Milestone 4 — Demo-Proofing & Offline Fallback Strategy (+3 more)
+
 ## Knowledge Gaps
-- **540 isolated node(s):** `idea-refine.sh script`, `Project Rules`, `graphify`, `Overview`, `When to Use` (+535 more)
+- **567 isolated node(s):** `idea-refine.sh script`, `Project Rules`, `graphify`, `Overview`, `When to Use` (+562 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `idea-refine.sh script`, `Project Rules`, `graphify` to the rest of the system?**
-  _540 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _567 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

@@ -112,3 +112,6 @@ These guidelines are working if: fewer unnecessary changes in diffs, fewer rewri
 
 19. Kimi WebBridge React Textarea Injection
     When filling highly controlled React components (like the main code editor) via Kimi WebBridge, the native fill command may fail with an Uncaught exception. If this happens, ALWAYS use the evaluate action with the nativeInputValueSetter and dispatch an input event to securely set the value, rather than failing or asking for help.
+
+20. `write_to_file` ArtifactMetadata Target Scope
+    When creating or writing files in the workspace using `write_to_file`, NEVER include the `ArtifactMetadata` parameter. `ArtifactMetadata` is strictly reserved for artifact markdown files located inside the agent's brain directory (`<appDataDir>\brain\<conversation-id>`). Supplying it for normal project files causes an immediate `invalid_args` permission/path error.
