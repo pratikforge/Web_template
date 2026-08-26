@@ -62,3 +62,7 @@ desktop.ini
 
 # Graphify AST cache (keep graph.json, graph.html, GRAPH_REPORT.md, manifest.json)
 graphify-out/cache/
+
+# PocketBase local database and runtime state
+**/pb_data/
+**/pb_public/

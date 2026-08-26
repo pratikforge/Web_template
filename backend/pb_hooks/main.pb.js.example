@@ -1,0 +1,25 @@
+/// <reference path="../pb_data/types.d.ts" />
+
+/**
+ * PocketBase JS Hooks Example
+ * 
+ * PocketBase embeds a JavaScript engine (Goja).
+ * Drop any .js file into this pb_hooks directory to create custom routes,
+ * database event hooks, or background cron jobs without recompiling Go.
+ *
+ * Docs: https://pocketbase.io/docs/js-overview/
+ */
+
+// Example 1: Custom Healthcheck / Hackathon endpoint
+routerAdd("GET", "/api/hackathon/health", (e) => {
+    return e.json(200, {
+        status: "ok",
+        uptime: new Date().toISOString(),
+        message: "Hackathon backend is live and ready!"
+    });
+});
+
+// Example 2: Hook triggered after any record is created in a 'demo' collection
+// onRecordAfterCreateRequest((e) => {
+//     console.log("Record created:", e.record.id);
+// }, "demo");
