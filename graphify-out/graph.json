@@ -6802,6 +6802,126 @@
       "norm_label": "12. research log"
     },
     {
+      "label": "competitor_teardown_and_differentiation_spec.md",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec",
+      "community": 47,
+      "norm_label": "competitor_teardown_and_differentiation_spec.md"
+    },
+    {
+      "label": "Competitor Teardown & Leverage Extraction \u2014 Agent Execution Spec",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "community": 47,
+      "norm_label": "competitor teardown & leverage extraction \u2014 agent execution spec"
+    },
+    {
+      "label": "Objective",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_objective",
+      "community": 47,
+      "norm_label": "objective"
+    },
+    {
+      "label": "Milestone 1 \u2014 Idea Intake & Knowledge Graph Search",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_milestone_1_idea_intake_knowledge_graph_search",
+      "community": 47,
+      "norm_label": "milestone 1 \u2014 idea intake & knowledge graph search"
+    },
+    {
+      "label": "Milestone 2 \u2014 Best Player / Incumbent Identification",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_milestone_2_best_player_incumbent_identification",
+      "community": 47,
+      "norm_label": "milestone 2 \u2014 best player / incumbent identification"
+    },
+    {
+      "label": "Milestone 3 \u2014 Incumbent Teardown via Kimi WebBridge",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_milestone_3_incumbent_teardown_via_kimi_webbridge",
+      "community": 47,
+      "norm_label": "milestone 3 \u2014 incumbent teardown via kimi webbridge"
+    },
+    {
+      "label": "Milestone 4 \u2014 Negative Review & Pain-Point Mining",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_milestone_4_negative_review_pain_point_mining",
+      "community": 47,
+      "norm_label": "milestone 4 \u2014 negative review & pain-point mining"
+    },
+    {
+      "label": "Milestone 5 \u2014 Complaint-to-Leverage Translation (The \"Anti-Incumbent Wedge\")",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_milestone_5_complaint_to_leverage_translation_the_anti_incumbent_wedge",
+      "community": 47,
+      "norm_label": "milestone 5 \u2014 complaint-to-leverage translation (the \"anti-incumbent wedge\")"
+    },
+    {
+      "label": "Milestone 6 \u2014 Final Hackathon Product Blueprint & Differentiation Pitch",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L183",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_milestone_6_final_hackathon_product_blueprint_differentiation_pitch",
+      "community": 47,
+      "norm_label": "milestone 6 \u2014 final hackathon product blueprint & differentiation pitch"
+    },
+    {
+      "label": "Security, Guardrails & TDD Validation",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_security_guardrails_tdd_validation",
+      "community": 47,
+      "norm_label": "security, guardrails & tdd validation"
+    },
+    {
+      "label": "1. Guardrails for Kimi WebBridge & Agent Execution",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L232",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_1_guardrails_for_kimi_webbridge_agent_execution",
+      "community": 47,
+      "norm_label": "1. guardrails for kimi webbridge & agent execution"
+    },
+    {
+      "label": "2. Validation & Quality Checklist (TDD for Research)",
+      "file_type": "document",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "spec_competitor_teardown_and_differentiation_spec_2_validation_quality_checklist_tdd_for_research",
+      "community": 47,
+      "norm_label": "2. validation & quality checklist (tdd for research)"
+    },
+    {
       "label": "doc_req.md",
       "file_type": "document",
       "source_file": "spec/doc_req.md",
@@ -6810,6 +6930,226 @@
       "id": "spec_doc_req",
       "community": 45,
       "norm_label": "doc_req.md"
+    },
+    {
+      "label": "hackathon_idea_pipeline_milestones.md",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones",
+      "community": 48,
+      "norm_label": "hackathon_idea_pipeline_milestones.md"
+    },
+    {
+      "label": "Hackathon Idea-Generation Pipeline \u2014 Agent Execution Spec",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "community": 48,
+      "norm_label": "hackathon idea-generation pipeline \u2014 agent execution spec"
+    },
+    {
+      "label": "Objective",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_objective",
+      "community": 48,
+      "norm_label": "objective"
+    },
+    {
+      "label": "Milestone 1 \u2014 Intake & Setup",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_milestone_1_intake_setup",
+      "community": 48,
+      "norm_label": "milestone 1 \u2014 intake & setup"
+    },
+    {
+      "label": "Milestone 2 \u2014 Spawn Sub-Agents & Source Research",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_milestone_2_spawn_sub_agents_source_research",
+      "community": 48,
+      "norm_label": "milestone 2 \u2014 spawn sub-agents & source research"
+    },
+    {
+      "label": "Milestone 3 \u2014 Aggregation & Deduplication",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_milestone_3_aggregation_deduplication",
+      "community": 48,
+      "norm_label": "milestone 3 \u2014 aggregation & deduplication"
+    },
+    {
+      "label": "Milestone 4 \u2014 Filtering",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_milestone_4_filtering",
+      "community": 48,
+      "norm_label": "milestone 4 \u2014 filtering"
+    },
+    {
+      "label": "Milestone 5 \u2014 Scoring",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_milestone_5_scoring",
+      "community": 48,
+      "norm_label": "milestone 5 \u2014 scoring"
+    },
+    {
+      "label": "Milestone 6 \u2014 Ranking & Final Output",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_milestone_6_ranking_final_output",
+      "community": 48,
+      "norm_label": "milestone 6 \u2014 ranking & final output"
+    },
+    {
+      "label": "Self-Check Before Returning Results",
+      "file_type": "document",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "spec_hackathon_idea_pipeline_milestones_self_check_before_returning_results",
+      "community": 48,
+      "norm_label": "self-check before returning results"
+    },
+    {
+      "label": "hackathon_mvp_scoping_and_triaging_spec.md",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec",
+      "community": 50,
+      "norm_label": "hackathon_mvp_scoping_and_triaging_spec.md"
+    },
+    {
+      "label": "Hackathon MVP Scoping & Triaging \u2014 Agent Execution Spec",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "community": 50,
+      "norm_label": "hackathon mvp scoping & triaging \u2014 agent execution spec"
+    },
+    {
+      "label": "Objective",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_objective",
+      "community": 50,
+      "norm_label": "objective"
+    },
+    {
+      "label": "Milestone 1 \u2014 Scope Ingestion & Time-Budget Mapping",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_1_scope_ingestion_time_budget_mapping",
+      "community": 50,
+      "norm_label": "milestone 1 \u2014 scope ingestion & time-budget mapping"
+    },
+    {
+      "label": "Milestone 2 \u2014 The \"Golden Demo Path\" Razor",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_2_the_golden_demo_path_razor",
+      "community": 50,
+      "norm_label": "milestone 2 \u2014 the \"golden demo path\" razor"
+    },
+    {
+      "label": "Milestone 3 \u2014 3-Tier Feature Triaging (P0, P1, P2 Cut & Mock)",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_3_3_tier_feature_triaging_p0_p1_p2_cut_mock",
+      "community": 50,
+      "norm_label": "milestone 3 \u2014 3-tier feature triaging (p0, p1, p2 cut & mock)"
+    },
+    {
+      "label": "Milestone 4 \u2014 Demo-Proofing & Offline Fallback Strategy",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_4_demo_proofing_offline_fallback_strategy",
+      "community": 50,
+      "norm_label": "milestone 4 \u2014 demo-proofing & offline fallback strategy"
+    },
+    {
+      "label": "Milestone 5 \u2014 MVP Execution Blueprint & Knowledge Graph Sync",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_5_mvp_execution_blueprint_knowledge_graph_sync",
+      "community": 50,
+      "norm_label": "milestone 5 \u2014 mvp execution blueprint & knowledge graph sync"
+    },
+    {
+      "label": "Security, Guardrails & TDD Validation",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
+      "community": 50,
+      "norm_label": "security, guardrails & tdd validation"
+    },
+    {
+      "label": "1. Guardrails & Complexity Limits",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_1_guardrails_complexity_limits",
+      "community": 50,
+      "norm_label": "1. guardrails & complexity limits"
+    },
+    {
+      "label": "2. TDD Validation for the MVP",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_2_tdd_validation_for_the_mvp",
+      "community": 50,
+      "norm_label": "2. tdd validation for the mvp"
+    },
+    {
+      "label": "3. Self-Check Checklist",
+      "file_type": "document",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "spec_hackathon_mvp_scoping_and_triaging_spec_3_self_check_checklist",
+      "community": 50,
+      "norm_label": "3. self-check checklist"
     },
     {
       "label": "template_testing.md",
@@ -7020,6 +7360,36 @@
       "id": "spec_template_testing_checklist_verifying_completeness",
       "community": 17,
       "norm_label": "checklist: verifying completeness"
+    },
+    {
+      "label": "error_log.md",
+      "file_type": "document",
+      "source_file": "telemetry/error_log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "telemetry_error_log",
+      "community": 49,
+      "norm_label": "error_log.md"
+    },
+    {
+      "label": "Telemetry Error Log",
+      "file_type": "document",
+      "source_file": "telemetry/error_log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "telemetry_error_log_telemetry_error_log",
+      "community": 49,
+      "norm_label": "telemetry error log"
+    },
+    {
+      "label": "Error 1: `write_to_file` ArtifactMetadata Target Path Mismatch",
+      "file_type": "document",
+      "source_file": "telemetry/error_log.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "telemetry_error_log_error_1_write_to_file_artifactmetadata_target_path_mismatch",
+      "community": 49,
+      "norm_label": "error 1: `write_to_file` artifactmetadata target path mismatch"
     }
   ],
   "links": [
@@ -12869,9 +13239,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_web_template",
-      "confidence_score": 1.0
+      "target": "readme_web_template"
     },
     {
       "relation": "contains",
@@ -12879,9 +13249,9 @@
       "source_file": "README.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_agent_knowledge_graph_integration",
-      "confidence_score": 1.0
+      "target": "readme_agent_knowledge_graph_integration"
     },
     {
       "relation": "contains",
@@ -12889,9 +13259,9 @@
       "source_file": "README.md",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_development_workflow_guardrails",
-      "confidence_score": 1.0
+      "target": "readme_development_workflow_guardrails"
     },
     {
       "relation": "contains",
@@ -12899,9 +13269,9 @@
       "source_file": "README.md",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_getting_started",
-      "confidence_score": 1.0
+      "target": "readme_getting_started"
     },
     {
       "relation": "contains",
@@ -12909,9 +13279,9 @@
       "source_file": "README.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_key_features",
-      "confidence_score": 1.0
+      "target": "readme_key_features"
     },
     {
       "relation": "contains",
@@ -12919,9 +13289,9 @@
       "source_file": "README.md",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_license",
-      "confidence_score": 1.0
+      "target": "readme_license"
     },
     {
       "relation": "contains",
@@ -12929,9 +13299,9 @@
       "source_file": "README.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_overview_philosophy",
-      "confidence_score": 1.0
+      "target": "readme_overview_philosophy"
     },
     {
       "relation": "contains",
@@ -12939,9 +13309,9 @@
       "source_file": "README.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_repository_structure",
-      "confidence_score": 1.0
+      "target": "readme_repository_structure"
     },
     {
       "relation": "contains",
@@ -12949,9 +13319,9 @@
       "source_file": "README.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_table_of_contents",
-      "confidence_score": 1.0
+      "target": "readme_table_of_contents"
     },
     {
       "relation": "contains",
@@ -12959,9 +13329,9 @@
       "source_file": "README.md",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_web_template",
-      "target": "readme_testing_security_standards",
-      "confidence_score": 1.0
+      "target": "readme_testing_security_standards"
     },
     {
       "relation": "contains",
@@ -12969,9 +13339,9 @@
       "source_file": "README.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_getting_started",
-      "target": "readme_1_clone_set_up_remote",
-      "confidence_score": 1.0
+      "target": "readme_1_clone_set_up_remote"
     },
     {
       "relation": "contains",
@@ -12979,9 +13349,9 @@
       "source_file": "README.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_getting_started",
-      "target": "readme_2_install_pre_commit_hooks",
-      "confidence_score": 1.0
+      "target": "readme_2_install_pre_commit_hooks"
     },
     {
       "relation": "contains",
@@ -12989,9 +13359,9 @@
       "source_file": "README.md",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_getting_started",
-      "target": "readme_3_generate_codebase_knowledge_graph",
-      "confidence_score": 1.0
+      "target": "readme_3_generate_codebase_knowledge_graph"
     },
     {
       "relation": "contains",
@@ -12999,9 +13369,9 @@
       "source_file": "README.md",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_development_workflow_guardrails",
-      "target": "readme_git_commit_conventions",
-      "confidence_score": 1.0
+      "target": "readme_git_commit_conventions"
     },
     {
       "relation": "contains",
@@ -13366,6 +13736,316 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_milestone_1_idea_intake_knowledge_graph_search"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_milestone_2_best_player_incumbent_identification"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_milestone_3_incumbent_teardown_via_kimi_webbridge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_milestone_4_negative_review_pain_point_mining"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_milestone_5_complaint_to_leverage_translation_the_anti_incumbent_wedge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L181",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_milestone_6_final_hackathon_product_blueprint_differentiation_pitch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_objective"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_competitor_teardown_leverage_extraction_agent_execution_spec",
+      "target": "spec_competitor_teardown_and_differentiation_spec_security_guardrails_tdd_validation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_security_guardrails_tdd_validation",
+      "target": "spec_competitor_teardown_and_differentiation_spec_1_guardrails_for_kimi_webbridge_agent_execution"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_competitor_teardown_and_differentiation_spec_security_guardrails_tdd_validation",
+      "target": "spec_competitor_teardown_and_differentiation_spec_2_validation_quality_checklist_tdd_for_research"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones",
+      "target": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_milestone_1_intake_setup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_milestone_2_spawn_sub_agents_source_research"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_milestone_3_aggregation_deduplication"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_milestone_4_filtering"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_milestone_5_scoring"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_milestone_6_ranking_final_output"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_objective"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_idea_pipeline_milestones.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spec_hackathon_idea_pipeline_milestones_hackathon_idea_generation_pipeline_agent_execution_spec",
+      "target": "spec_hackathon_idea_pipeline_milestones_self_check_before_returning_results"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_1_scope_ingestion_time_budget_mapping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_2_the_golden_demo_path_razor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_3_3_tier_feature_triaging_p0_p1_p2_cut_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_4_demo_proofing_offline_fallback_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_5_mvp_execution_blueprint_knowledge_graph_sync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_objective",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_1_guardrails_complexity_limits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_2_tdd_validation_for_the_mvp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_3_self_check_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/template_testing.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -13562,7 +14242,28 @@
       "confidence_score": 1.0,
       "source": "spec_template_testing_testing_type_4_qa_testing",
       "target": "spec_template_testing_objective_229"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "telemetry/error_log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "telemetry_error_log",
+      "target": "telemetry_error_log_telemetry_error_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "telemetry/error_log.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "telemetry_error_log_telemetry_error_log",
+      "target": "telemetry_error_log_error_1_write_to_file_artifactmetadata_target_path_mismatch"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "0b36a077621417f67497d5f6ed9b4d2a31e423f7"
 }

@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   ".agents/AGENTS.md": {
-    "mtime": 1787685425.1764696,
-    "ast_hash": "dd979ad584e3d149f3ba45773357bdcc",
+    "mtime": 1787767176.1071882,
+    "ast_hash": "483c6625bc4412be8c16def0120045e2",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -242,6 +242,26 @@
   "README.md": {
     "mtime": 1787685780.493898,
     "ast_hash": "c0e29dc6ed5e237fa98f4596603f662a",
+    "semantic_hash": ""
+  },
+  "spec/competitor_teardown_and_differentiation_spec.md": {
+    "mtime": 1787767499.011119,
+    "ast_hash": "08e5b80d6e6f4acd18246f0a874967e4",
+    "semantic_hash": ""
+  },
+  "spec/hackathon_idea_pipeline_milestones.md": {
+    "mtime": 1787766426.99816,
+    "ast_hash": "3b6db91872f5baec587d58b7420556ae",
+    "semantic_hash": ""
+  },
+  "telemetry/error_log.md": {
+    "mtime": 1787767169.9761121,
+    "ast_hash": "7cdafa29b51a8c6563dea91415ebe8b2",
+    "semantic_hash": ""
+  },
+  "spec/hackathon_mvp_scoping_and_triaging_spec.md": {
+    "mtime": 1787767785.4787292,
+    "ast_hash": "daea4c27e53354da9be31ee7d5ce4add",
     "semantic_hash": ""
   }
 }
