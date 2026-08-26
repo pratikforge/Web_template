@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 66 files · ~69,718 words
+- 67 files · ~70,789 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 837 nodes · 774 edges · 64 communities (52 shown, 12 thin omitted)
+- 849 nodes · 785 edges · 65 communities (53 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4ecbba05`
+- Built from commit: `562ea9ba`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -75,6 +75,7 @@
 - [[_COMMUNITY_Community 59|Community 59]]
 - [[_COMMUNITY_Community 60|Community 60]]
 - [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 64|Community 64]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
@@ -94,7 +95,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (64 total, 12 thin omitted)
+## Communities (65 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -288,8 +289,12 @@ Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $
 Cohesion: 0.50
 Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScript + Vite
 
+### Community 64 - "Community 64"
+Cohesion: 0.17
+Nodes (11): 1. Guardrails, 2. TDD & Security Verification, Division of Responsibilities, Milestone 1 — Intake, Graphify Query & Color Hex Lock, Milestone 2 — Visual Generation & Prompt Pack Tailoring, Milestone 3 — Automated Frame Extraction & WebP Optimization, Milestone 4 — React ScrollCanvas Engine Implementation, Milestone 5 — Synchronized Narrative Text Overlays (+3 more)
+
 ## Knowledge Gaps
-- **640 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+635 more)
+- **649 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+644 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -297,7 +302,7 @@ Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScrip
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _640 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _649 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

@@ -280,93 +280,98 @@
     "semantic_hash": ""
   },
   "frontend/.oxlintrc.json": {
-    "mtime": 1787770284.9507322,
-    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "1f0703525c59e961c2b7f20e78aa1cd4",
     "semantic_hash": ""
   },
   "frontend/package.json": {
-    "mtime": 1787770384.2251222,
-    "ast_hash": "3417bd9544c9d76a1cd24b6eae8fff36",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "8b032060f1c8bcd2c9f99dccea4d7813",
     "semantic_hash": ""
   },
   "frontend/src/App.tsx": {
-    "mtime": 1787770377.944817,
-    "ast_hash": "235725341fc8d67afed2d2277858ce1f",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "fb50a85461a255057c155733522cf1d9",
     "semantic_hash": ""
   },
   "frontend/src/lib/pocketbase.ts": {
-    "mtime": 1787770362.0980647,
-    "ast_hash": "18f2acfec9193669f77cfeca6ccee0e5",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "4e2b3f4d1f33507d2a1ca77d6200d59d",
     "semantic_hash": ""
   },
   "frontend/src/lib/utils.ts": {
-    "mtime": 1787770365.638844,
-    "ast_hash": "a40ab276f43a0e0a273926a9fa5055cc",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "a04f8d04422001647c72c8675f5c2359",
     "semantic_hash": ""
   },
   "frontend/src/main.tsx": {
-    "mtime": 1787770285.6120882,
-    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "mtime": 1787770454.2806842,
+    "ast_hash": "df3369963799e47ef5a77cdca932abf0",
     "semantic_hash": ""
   },
   "frontend/src/types/index.ts": {
-    "mtime": 1787770368.1815095,
-    "ast_hash": "d7559dd5ca5ac1dad6cf27f17b8c0e2f",
+    "mtime": 1787770454.2828372,
+    "ast_hash": "123d8c67040912516556762e8517f3fb",
     "semantic_hash": ""
   },
   "frontend/tsconfig.app.json": {
-    "mtime": 1787770285.0113218,
-    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "mtime": 1787770454.2834306,
+    "ast_hash": "e4f83bdfdf660f5e5364945e14291d70",
     "semantic_hash": ""
   },
   "frontend/tsconfig.json": {
-    "mtime": 1787770285.041341,
-    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "mtime": 1787770454.284169,
+    "ast_hash": "852c3a5df14a4b43ac28e9554ebedf4a",
     "semantic_hash": ""
   },
   "frontend/tsconfig.node.json": {
-    "mtime": 1787770285.071416,
-    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "mtime": 1787770454.2847273,
+    "ast_hash": "74cde0261ad0a13045ca0a05ab1542ae",
     "semantic_hash": ""
   },
   "frontend/vite.config.ts": {
-    "mtime": 1787770355.1756485,
-    "ast_hash": "d281d66c4390899f561fa3db9b8e9eac",
+    "mtime": 1787770454.2852514,
+    "ast_hash": "2438e22076957bfbb3dc33f52d41a169",
     "semantic_hash": ""
   },
   "frontend/README.md": {
-    "mtime": 1787770285.1177323,
-    "ast_hash": "10495bfcc6c568eca4dab6dd5df795d3",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "3a8e2f41658852c43fdce93a22bc2f90",
     "semantic_hash": ""
   },
   "frontend/index.html": {
-    "mtime": 1787770286.1554227,
-    "ast_hash": "aa695ea7b8e27502ee1400164e5dfded",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "5a11eb9b6ccac5e9be307fd16653bcf3",
     "semantic_hash": ""
   },
   "frontend/public/favicon.svg": {
-    "mtime": 1787770285.227384,
+    "mtime": 1787770454.2717237,
     "ast_hash": "7e840862161341271697daa99a40d76b",
     "semantic_hash": ""
   },
   "frontend/public/icons.svg": {
-    "mtime": 1787770285.2860675,
-    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "21c7473c592c67dc87223d49892c8f0a",
     "semantic_hash": ""
   },
   "frontend/src/assets/hero.png": {
-    "mtime": 1787770285.1548185,
+    "mtime": 1787770454.2717237,
     "ast_hash": "aead493361b27e7510691c5d7072dfc1",
     "semantic_hash": ""
   },
   "frontend/src/assets/react.svg": {
-    "mtime": 1787770285.3524451,
+    "mtime": 1787770454.2717237,
     "ast_hash": "f0402b67b6ce880f65666bb49e841696",
     "semantic_hash": ""
   },
   "frontend/src/assets/vite.svg": {
-    "mtime": 1787770285.4334683,
-    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "mtime": 1787770454.2717237,
+    "ast_hash": "6d5180a782d64c8cf51ba01c2a2184d8",
+    "semantic_hash": ""
+  },
+  "spec/scroll_trigger_3d_canvas_spec.md": {
+    "mtime": 1787771278.803571,
+    "ast_hash": "a0a6cc175f6299442e8518a818c56c41",
     "semantic_hash": ""
   }
 }
