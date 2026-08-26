@@ -6412,6 +6412,106 @@
       "norm_label": "\ud83d\udce6 license"
     },
     {
+      "label": "CHANGELOG.md",
+      "file_type": "document",
+      "source_file": "backend/CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_changelog",
+      "community": 52,
+      "norm_label": "changelog.md"
+    },
+    {
+      "label": "v0.40.1",
+      "file_type": "document",
+      "source_file": "backend/CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_changelog_v0_40_1",
+      "community": 52,
+      "norm_label": "v0.40.1"
+    },
+    {
+      "label": "v0.40.0",
+      "file_type": "document",
+      "source_file": "backend/CHANGELOG.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "backend_changelog_v0_40_0",
+      "community": 52,
+      "norm_label": "v0.40.0"
+    },
+    {
+      "label": "LICENSE.md",
+      "file_type": "document",
+      "source_file": "backend/LICENSE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_license",
+      "community": 53,
+      "norm_label": "license.md"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "backend/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_readme",
+      "community": 51,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "PocketBase Backend Scaffolding",
+      "file_type": "document",
+      "source_file": "backend/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_readme_pocketbase_backend_scaffolding",
+      "community": 51,
+      "norm_label": "pocketbase backend scaffolding"
+    },
+    {
+      "label": "Quick Start (Zero Setup Time)",
+      "file_type": "document",
+      "source_file": "backend/README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "backend_readme_quick_start_zero_setup_time",
+      "community": 51,
+      "norm_label": "quick start (zero setup time)"
+    },
+    {
+      "label": "Directory Structure",
+      "file_type": "document",
+      "source_file": "backend/README.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "backend_readme_directory_structure",
+      "community": 51,
+      "norm_label": "directory structure"
+    },
+    {
+      "label": "Connecting from Frontend (JavaScript / TypeScript)",
+      "file_type": "document",
+      "source_file": "backend/README.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "backend_readme_connecting_from_frontend_javascript_typescript",
+      "community": 51,
+      "norm_label": "connecting from frontend (javascript / typescript)"
+    },
+    {
+      "label": "Key Advantages for Hackathons",
+      "file_type": "document",
+      "source_file": "backend/README.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "backend_readme_key_advantages_for_hackathons",
+      "community": 51,
+      "norm_label": "key advantages for hackathons"
+    },
+    {
       "label": "discovery-agent-spec.md",
       "file_type": "document",
       "source_file": "discovery-agent-spec.md",
@@ -13376,6 +13476,76 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "backend/CHANGELOG.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_changelog",
+      "target": "backend_changelog_v0_40_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/CHANGELOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "backend_changelog",
+      "target": "backend_changelog_v0_40_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "backend_readme",
+      "target": "backend_readme_pocketbase_backend_scaffolding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "backend_readme_pocketbase_backend_scaffolding",
+      "target": "backend_readme_connecting_from_frontend_javascript_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "backend_readme_pocketbase_backend_scaffolding",
+      "target": "backend_readme_directory_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "backend_readme_pocketbase_backend_scaffolding",
+      "target": "backend_readme_key_advantages_for_hackathons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_readme_pocketbase_backend_scaffolding",
+      "target": "backend_readme_quick_start_zero_setup_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "discovery-agent-spec.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -13939,9 +14109,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec"
     },
     {
       "relation": "contains",
@@ -13949,9 +14119,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_1_scope_ingestion_time_budget_mapping",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_1_scope_ingestion_time_budget_mapping"
     },
     {
       "relation": "contains",
@@ -13959,9 +14129,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_2_the_golden_demo_path_razor",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_2_the_golden_demo_path_razor"
     },
     {
       "relation": "contains",
@@ -13969,9 +14139,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_3_3_tier_feature_triaging_p0_p1_p2_cut_mock",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_3_3_tier_feature_triaging_p0_p1_p2_cut_mock"
     },
     {
       "relation": "contains",
@@ -13979,9 +14149,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_4_demo_proofing_offline_fallback_strategy",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_4_demo_proofing_offline_fallback_strategy"
     },
     {
       "relation": "contains",
@@ -13989,9 +14159,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_5_mvp_execution_blueprint_knowledge_graph_sync",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_milestone_5_mvp_execution_blueprint_knowledge_graph_sync"
     },
     {
       "relation": "contains",
@@ -13999,9 +14169,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_objective",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_objective"
     },
     {
       "relation": "contains",
@@ -14009,9 +14179,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_hackathon_mvp_scoping_triaging_agent_execution_spec",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation"
     },
     {
       "relation": "contains",
@@ -14019,9 +14189,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_1_guardrails_complexity_limits",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_1_guardrails_complexity_limits"
     },
     {
       "relation": "contains",
@@ -14029,9 +14199,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_2_tdd_validation_for_the_mvp",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_2_tdd_validation_for_the_mvp"
     },
     {
       "relation": "contains",
@@ -14039,9 +14209,9 @@
       "source_file": "spec/hackathon_mvp_scoping_and_triaging_spec.md",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_hackathon_mvp_scoping_and_triaging_spec_security_guardrails_tdd_validation",
-      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_3_self_check_checklist",
-      "confidence_score": 1.0
+      "target": "spec_hackathon_mvp_scoping_and_triaging_spec_3_self_check_checklist"
     },
     {
       "relation": "contains",
@@ -14265,5 +14435,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0b36a077621417f67497d5f6ed9b4d2a31e423f7"
+  "built_at_commit": "ce0be1e899a9824c5369f4a070c54750f0cde6f4"
 }
