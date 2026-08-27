@@ -2422,6 +2422,46 @@
       "norm_label": "closecartdrawer()"
     },
     {
+      "label": "showDemoToast()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L770",
+      "_origin": "ast",
+      "id": "main_showdemotoast",
+      "community": 82,
+      "norm_label": "showdemotoast()"
+    },
+    {
+      "label": "startDemo()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L788",
+      "_origin": "ast",
+      "id": "main_startdemo",
+      "community": 82,
+      "norm_label": "startdemo()"
+    },
+    {
+      "label": "setStage()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L822",
+      "_origin": "ast",
+      "id": "main_setstage",
+      "community": 82,
+      "norm_label": "setstage()"
+    },
+    {
+      "label": "reset()",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L860",
+      "_origin": "ast",
+      "id": "main_reset",
+      "community": 82,
+      "norm_label": "reset()"
+    },
+    {
       "label": "vercel.json",
       "file_type": "code",
       "source_file": "vercel.json",
@@ -16642,6 +16682,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "main.js",
+      "source_location": "L860",
+      "weight": 1.0,
+      "source": "main",
+      "target": "main_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
       "source_location": "L124",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -16657,6 +16707,36 @@
       "confidence_score": 1.0,
       "source": "main",
       "target": "main_setdays"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L822",
+      "weight": 1.0,
+      "source": "main",
+      "target": "main_setstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L770",
+      "weight": 1.0,
+      "source": "main",
+      "target": "main_showdemotoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L788",
+      "weight": 1.0,
+      "source": "main",
+      "target": "main_startdemo",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16739,11 +16819,44 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "main.js",
+      "source_location": "L807",
+      "weight": 1.0,
+      "source": "main_startdemo",
+      "target": "main_save",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
       "source_location": "L308",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_logout",
       "target": "main_removeitem"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L861",
+      "weight": 1.0,
+      "source": "main_reset",
+      "target": "main_clear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L840",
+      "weight": 1.0,
+      "source": "main_setstage",
+      "target": "main_gettotals",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -16783,11 +16896,44 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "main.js",
+      "source_location": "L808",
+      "weight": 1.0,
+      "source": "main_startdemo",
+      "target": "main_syncui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
       "source_location": "L302",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_login",
       "target": "main_closemodal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L800",
+      "weight": 1.0,
+      "source": "main_startdemo",
+      "target": "main_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L862",
+      "weight": 1.0,
+      "source": "main_reset",
+      "target": "main_logout",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -16801,14 +16947,146 @@
       "target": "main_rendercatalog"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L869",
+      "weight": 1.0,
+      "source": "main_reset",
+      "target": "main_rendercatalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L809",
+      "weight": 1.0,
+      "source": "main_startdemo",
+      "target": "main_rendercatalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L847",
+      "weight": 1.0,
+      "source": "main_setstage",
+      "target": "main_openmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L864",
+      "weight": 1.0,
+      "source": "main_reset",
+      "target": "main_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L834",
+      "weight": 1.0,
+      "source": "main_setstage",
+      "target": "main_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L836",
+      "weight": 1.0,
+      "source": "main_setstage",
+      "target": "main_opencartdrawer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L863",
+      "weight": 1.0,
+      "source": "main_reset",
+      "target": "main_closecartdrawer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L838",
+      "weight": 1.0,
+      "source": "main_setstage",
+      "target": "main_closecartdrawer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L870",
+      "weight": 1.0,
+      "source": "main_reset",
+      "target": "main_showdemotoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L856",
+      "weight": 1.0,
+      "source": "main_setstage",
+      "target": "main_showdemotoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L819",
+      "weight": 1.0,
+      "source": "main_startdemo",
+      "target": "main_showdemotoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.js",
+      "source_location": "L818",
+      "weight": 1.0,
+      "source": "main_startdemo",
+      "target": "main_setstage",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vercel.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_buildcommand",
-      "confidence_score": 1.0
+      "target": "vercel_buildcommand"
     },
     {
       "relation": "contains",
@@ -16816,9 +17094,9 @@
       "source_file": "vercel.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_cleanurls",
-      "confidence_score": 1.0
+      "target": "vercel_cleanurls"
     },
     {
       "relation": "contains",
@@ -16826,9 +17104,9 @@
       "source_file": "vercel.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_outputdirectory",
-      "confidence_score": 1.0
+      "target": "vercel_outputdirectory"
     },
     {
       "relation": "contains",
@@ -16836,9 +17114,9 @@
       "source_file": "vercel.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_schema",
-      "confidence_score": 1.0
+      "target": "vercel_schema"
     },
     {
       "relation": "contains",
@@ -25722,5 +26000,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4bdc6178f003afd964fc7eec19f2d5aa5ecd88ee"
+  "built_at_commit": "a6edbf364ad761c2a46b137e90a74b3d2245f608"
 }

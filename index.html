@@ -71,6 +71,12 @@
 
       <!-- Header Actions -->
       <div class="header-actions">
+        <!-- 1-Click Interactive Demo Mode Button -->
+        <button type="button" class="demo-mode-badge" id="quick-demo-btn" title="Click to instantly launch Demo Account with pre-filled gear and walkthrough">
+          <span class="demo-pulse"></span>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>⚡ Demo Mode</span>
+        </button>
 
         <!-- Dynamic Auth Element -->
         <div class="auth-action-wrap" id="auth-action-wrap">
@@ -132,6 +138,7 @@
     <a href="#testimonials">Campus Stories</a>
     <a href="#borrow">List Idle Gear</a>
     <div class="drawer-divider"></div>
+    <button type="button" class="btn-primary w-full mb-2" id="mobile-demo-btn">⚡ Launch Demo Mode</button>
     <button type="button" class="ghost-link w-full text-left" id="mobile-login-btn">Student Login</button>
     <button type="button" class="btn-primary w-full" id="mobile-cart-btn">View Cart (<span class="mobile-cart-count">0</span>)</button>
   </div>
@@ -619,6 +626,18 @@
     </div>
     <div class="modal-body">
       <p class="modal-subtext">Choose a verified student profile to test instant borrowing and lending on CampusCircular:</p>
+
+      <!-- Featured 1-Click Golden Demo Account -->
+      <div class="demo-highlight-box" id="demo-highlight-box">
+        <div class="demo-highlight-text">
+          <span class="demo-tag"><i class="fa-solid fa-bolt"></i> OFFICIAL DEMO ACCOUNT</span>
+          <strong>Alex Sharma (Cine Club Lead)</strong>
+          <span class="demo-sub">Hostel 3 • Verified ₹15,000 Collateral Wallet • Golden Fest Reel Kit</span>
+        </div>
+        <button type="button" class="btn-primary btn-small" id="auth-load-demo-btn">
+          Launch Full Demo &rarr;
+        </button>
+      </div>
       
       <div class="student-profiles-list">
         <!-- Profile 1 -->
@@ -810,10 +829,106 @@
           </div>
         </div>
 
-        <button type="button" class="btn-primary w-full mt-3" id="finish-booking-btn">Done &amp; Return to Home</button>
+        <button type="button" class="btn-secondary w-full mt-2" id="voucher-open-diff-btn" style="border: 1.5px dashed var(--color-fuchsia-signal); color: var(--color-aubergine); font-weight: 700;">
+          <i class="fa-solid fa-camera-rotate text-fuchsia"></i> Inspect AI Handover Photo Diff &rarr;
+        </button>
+        <button type="button" class="btn-primary w-full mt-2" id="finish-booking-btn">Done &amp; Return to Home</button>
       </div>
     </div>
   </div>
+
+  <!-- 3. CONDITION DIFF MODAL (Interactive AI Photo Inspection) -->
+  <div class="modal-overlay" id="condition-diff-overlay" hidden></div>
+  <div class="app-modal condition-diff-modal-card" id="condition-diff-modal" hidden>
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <span class="announcement-badge" style="background:#e0f2fe;color:#0284c7;">INSPECTION SCAN</span>
+        <h3>AI Handover Photo Inspection</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" id="close-condition-diff-modal" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="diff-header-bar">
+        <div class="diff-gear-title">
+          <strong>Sony Alpha A7 III Cinema Kit</strong>
+          <span style="display:block;font-size:12px;color:var(--color-heather);">Borrower: Alex Sharma • Lender: Rahul Sharma (Hostel 3)</span>
+        </div>
+        <span class="diff-match-chip"><i class="fa-solid fa-circle-check"></i> 99.8% Match</span>
+      </div>
+
+      <div class="diff-comparison-grid">
+        <div class="diff-photo-card">
+          <div class="diff-photo-badge pickup">PICKUP SCAN • Day 1 (6:15 PM)</div>
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80" alt="Pickup condition photo" class="diff-photo-img" />
+          <div class="diff-photo-meta">
+            <span><strong>Sensor &amp; Optics:</strong> Verified 100% pristine</span>
+            <span class="text-green font-bold">✓ Signed off at Hostel 3 handover</span>
+          </div>
+        </div>
+
+        <div class="diff-photo-card">
+          <div class="diff-photo-badge return">RETURN SCAN • Day 2 (5:45 PM)</div>
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80" alt="Return condition photo" class="diff-photo-img" />
+          <div class="diff-photo-meta">
+            <span><strong>Surface Analysis:</strong> Zero scratches or impacts</span>
+            <span class="text-green font-bold">✓ Verified by Mobile AI Vision</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="diff-verdict-box">
+        <div class="verdict-summary">
+          <strong>Autonomous Escrow Verdict: Pristine Condition</strong>
+          <p>Zero damage deductions. 100% of ₹3,000 security deposit approved for instant UPI release.</p>
+        </div>
+        <button type="button" class="btn-primary" id="release-escrow-action-btn">
+          <i class="fa-solid fa-money-bill-transfer"></i> Trigger Instant UPI Refund
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. FLOATING DEMO WALKTHROUGH DOCK (Interactive Stage Guide) -->
+  <aside class="demo-tour-dock" id="demo-tour-dock" hidden aria-label="Interactive Demo Walkthrough Dock">
+    <div class="demo-dock-header">
+      <div class="demo-dock-header-title">
+        <span class="demo-pulse"></span>
+        <span>⚡ LIVE DEMO CONTROLLER</span>
+      </div>
+      <div class="demo-dock-actions">
+        <button type="button" class="demo-dock-btn" id="demo-dock-minimize-btn" title="Toggle Minimize">_</button>
+        <button type="button" class="demo-dock-btn" id="demo-dock-reset-btn" title="Reset Demo">Reset</button>
+      </div>
+    </div>
+    <div class="demo-dock-body" id="demo-dock-body">
+      <div class="demo-user-banner">
+        <span class="user-avatar" style="width:28px;height:28px;font-size:11px;">AS</span>
+        <div style="font-size:11.5px;line-height:1.3;">
+          <strong style="color:var(--color-aubergine);">Alex Sharma (Demo Account)</strong><br />
+          <span style="color:var(--color-heather);">Hostel 3 • Cine Club Lead • ₹15,000 Escrow</span>
+        </div>
+      </div>
+
+      <div class="demo-steps-list">
+        <button type="button" class="demo-step-btn active-step" data-step="1" id="step-1-btn">
+          <span><strong>1. Discovery &amp; Cart</strong> (Fest Reel Kit)</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button type="button" class="demo-step-btn" data-step="2" id="step-2-btn">
+          <span><strong>2. Escrow Lock &amp; PIN</strong> (UPI Security)</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button type="button" class="demo-step-btn" data-step="3" id="step-3-btn">
+          <span><strong>3. AI Photo Diff Inspection</strong> (Handover)</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button type="button" class="demo-step-btn" data-step="4" id="step-4-btn">
+          <span><strong>4. Return &amp; UPI Refund</strong> (Settlement)</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
 
   <script src="main.js"></script>
 </body>
