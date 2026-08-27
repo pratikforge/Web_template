@@ -7792,6 +7792,126 @@
       "norm_label": "12. research log"
     },
     {
+      "label": "adversarial_audit_report.md",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report",
+      "community": 72,
+      "norm_label": "adversarial_audit_report.md"
+    },
+    {
+      "label": "WEBFUSION 2.0 \u2014 Lead Competition Judge & Senior Product Audit",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "community": 72,
+      "norm_label": "webfusion 2.0 \u2014 lead competition judge & senior product audit"
+    },
+    {
+      "label": "Project: CAMPUS CIRCULAR \u2014 From Ownership to Access",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_project_campus_circular_from_ownership_to_access",
+      "community": 72,
+      "norm_label": "project: campus circular \u2014 from ownership to access"
+    },
+    {
+      "label": "Executive Audit Summary & Scorecard",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_executive_audit_summary_scorecard",
+      "community": 72,
+      "norm_label": "executive audit summary & scorecard"
+    },
+    {
+      "label": "Objective 1: Comprehensive 13-Functionality Cross-Examination",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_objective_1_comprehensive_13_functionality_cross_examination",
+      "community": 72,
+      "norm_label": "objective 1: comprehensive 13-functionality cross-examination"
+    },
+    {
+      "label": "Objective 2: Scrutiny of AI Need-Based Discovery",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L264",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_objective_2_scrutiny_of_ai_need_based_discovery",
+      "community": 72,
+      "norm_label": "objective 2: scrutiny of ai need-based discovery"
+    },
+    {
+      "label": "Adversarial Critique of Current Implementation:",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_adversarial_critique_of_current_implementation",
+      "community": 72,
+      "norm_label": "adversarial critique of current implementation:"
+    },
+    {
+      "label": "Objective 3: Scrutiny of the Borrowing Lifecycle",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L330",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_objective_3_scrutiny_of_the_borrowing_lifecycle",
+      "community": 72,
+      "norm_label": "objective 3: scrutiny of the borrowing lifecycle"
+    },
+    {
+      "label": "Objective 4: Scrutiny of Financial & Settlement Flow",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L385",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_objective_4_scrutiny_of_financial_settlement_flow",
+      "community": 72,
+      "norm_label": "objective 4: scrutiny of financial & settlement flow"
+    },
+    {
+      "label": "Objective 5: Top 5 Critical Gaps & Actionable Fixes",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L428",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_objective_5_top_5_critical_gaps_actionable_fixes",
+      "community": 72,
+      "norm_label": "objective 5: top 5 critical gaps & actionable fixes"
+    },
+    {
+      "label": "The Winning 3-Minute Presentation Script for Judges",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L512",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_the_winning_3_minute_presentation_script_for_judges",
+      "community": 72,
+      "norm_label": "the winning 3-minute presentation script for judges"
+    },
+    {
+      "label": "Final Auditor Directive",
+      "file_type": "document",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L561",
+      "_origin": "ast",
+      "id": "spec_adversarial_audit_report_final_auditor_directive",
+      "community": 72,
+      "norm_label": "final auditor directive"
+    },
+    {
       "label": "competitor_leverage_report.md",
       "file_type": "document",
       "source_file": "spec/competitor_leverage_report.md",
@@ -8482,6 +8602,166 @@
       "norm_label": "ai usage"
     },
     {
+      "label": "product_prd_campus_circular.md",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular",
+      "community": 70,
+      "norm_label": "product_prd_campus_circular.md"
+    },
+    {
+      "label": "Product Requirements Document (PRD) \u2014 CampusCircular",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "community": 70,
+      "norm_label": "product requirements document (prd) \u2014 campuscircular"
+    },
+    {
+      "label": "1. Title & Summary",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_1_title_summary",
+      "community": 70,
+      "norm_label": "1. title & summary"
+    },
+    {
+      "label": "2. Problem Statement",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_2_problem_statement",
+      "community": 70,
+      "norm_label": "2. problem statement"
+    },
+    {
+      "label": "3. Goals & Success Metrics",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_3_goals_success_metrics",
+      "community": 70,
+      "norm_label": "3. goals & success metrics"
+    },
+    {
+      "label": "4. Target Users",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_4_target_users",
+      "community": 70,
+      "norm_label": "4. target users"
+    },
+    {
+      "label": "5. Non-Goals / Out of Scope",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_5_non_goals_out_of_scope",
+      "community": 70,
+      "norm_label": "5. non-goals / out of scope"
+    },
+    {
+      "label": "6. User Stories / Use Cases",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_6_user_stories_use_cases",
+      "community": 70,
+      "norm_label": "6. user stories / use cases"
+    },
+    {
+      "label": "7. Features & Functional Requirements",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_7_features_functional_requirements",
+      "community": 70,
+      "norm_label": "7. features & functional requirements"
+    },
+    {
+      "label": "8. User Flow",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_8_user_flow",
+      "community": 70,
+      "norm_label": "8. user flow"
+    },
+    {
+      "label": "9. Edge Cases & Error States",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_9_edge_cases_error_states",
+      "community": 70,
+      "norm_label": "9. edge cases & error states"
+    },
+    {
+      "label": "10. Assumptions & Constraints",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_10_assumptions_constraints",
+      "community": 70,
+      "norm_label": "10. assumptions & constraints"
+    },
+    {
+      "label": "11. Dependencies",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_11_dependencies",
+      "community": 70,
+      "norm_label": "11. dependencies"
+    },
+    {
+      "label": "12. Risks & Open Questions",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_12_risks_open_questions",
+      "community": 70,
+      "norm_label": "12. risks & open questions"
+    },
+    {
+      "label": "13. Timeline / Milestones",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_13_timeline_milestones",
+      "community": 70,
+      "norm_label": "13. timeline / milestones"
+    },
+    {
+      "label": "14. Appendix",
+      "file_type": "document",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "spec_product_prd_campus_circular_14_appendix",
+      "community": 70,
+      "norm_label": "14. appendix"
+    },
+    {
       "label": "scroll_trigger_3d_canvas_spec.md",
       "file_type": "document",
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
@@ -8600,6 +8880,406 @@
       "id": "spec_scroll_trigger_3d_canvas_spec_2_tdd_security_verification",
       "community": 64,
       "norm_label": "2. tdd & security verification"
+    },
+    {
+      "label": "security_and_state_reliability_audit.md",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit",
+      "community": 69,
+      "norm_label": "security_and_state_reliability_audit.md"
+    },
+    {
+      "label": "CampusCircular \u2014 Adversarial Security, State Reliability & Math Integrity Audit",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "community": 69,
+      "norm_label": "campuscircular \u2014 adversarial security, state reliability & math integrity audit"
+    },
+    {
+      "label": "1. Executive Summary & Auditor Threat Model",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_1_executive_summary_auditor_threat_model",
+      "community": 69,
+      "norm_label": "1. executive summary & auditor threat model"
+    },
+    {
+      "label": "2. LocalStorage & State Safety Audit (Objective 1)",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
+      "community": 69,
+      "norm_label": "2. localstorage & state safety audit (objective 1)"
+    },
+    {
+      "label": "2.1 Adversarial Failure Modes Analysis",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_2_1_adversarial_failure_modes_analysis",
+      "community": 69,
+      "norm_label": "2.1 adversarial failure modes analysis"
+    },
+    {
+      "label": "2.2 Defensive Architecture: Safe Storage Engine",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_2_2_defensive_architecture_safe_storage_engine",
+      "community": 69,
+      "norm_label": "2.2 defensive architecture: safe storage engine"
+    },
+    {
+      "label": "2.3 Bulletproof 'Reset Demo State' Mechanism",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_2_3_bulletproof_reset_demo_state_mechanism",
+      "community": 69,
+      "norm_label": "2.3 bulletproof 'reset demo state' mechanism"
+    },
+    {
+      "label": "3. Financial Math Invariant Audit (Objective 2)",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
+      "community": 69,
+      "norm_label": "3. financial math invariant audit (objective 2)"
+    },
+    {
+      "label": "3.1 Problem Statement Section 12 Specification",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_3_1_problem_statement_section_12_specification",
+      "community": 69,
+      "norm_label": "3.1 problem statement section 12 specification"
+    },
+    {
+      "label": "3.2 Vulnerability Vector: Type Coercion & Floating-Point Drift",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_3_2_vulnerability_vector_type_coercion_floating_point_drift",
+      "community": 69,
+      "norm_label": "3.2 vulnerability vector: type coercion & floating-point drift"
+    },
+    {
+      "label": "3.3 Guardrail Architecture: Integer-Based Paise Currency Engine",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_3_3_guardrail_architecture_integer_based_paise_currency_engine",
+      "community": 69,
+      "norm_label": "3.3 guardrail architecture: integer-based paise currency engine"
+    },
+    {
+      "label": "4. Input Sanitization & Security Audit (STRIDE & OWASP Top 10) (Objective 3)",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L312",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3",
+      "community": 69,
+      "norm_label": "4. input sanitization & security audit (stride & owasp top 10) (objective 3)"
+    },
+    {
+      "label": "4.1 Threat Matrix: CampusCircular Attack Surfaces",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L314",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_4_1_threat_matrix_campuscircular_attack_surfaces",
+      "community": 69,
+      "norm_label": "4.1 threat matrix: campuscircular attack surfaces"
+    },
+    {
+      "label": "4.2 Anti-Pollution & Anti-XSS Sanitizer Implementation",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L351",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_4_2_anti_pollution_anti_xss_sanitizer_implementation",
+      "community": 69,
+      "norm_label": "4.2 anti-pollution & anti-xss sanitizer implementation"
+    },
+    {
+      "label": "5. Late Fee & Timer Logic Audit (Objective 4)",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L415",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
+      "community": 69,
+      "norm_label": "5. late fee & timer logic audit (objective 4)"
+    },
+    {
+      "label": "5.1 The Pitfalls of Interval-Based Timers",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L417",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_5_1_the_pitfalls_of_interval_based_timers",
+      "community": 69,
+      "norm_label": "5.1 the pitfalls of interval-based timers"
+    },
+    {
+      "label": "5.2 Deterministic Epoch-Anchored Architecture",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L425",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_5_2_deterministic_epoch_anchored_architecture",
+      "community": 69,
+      "norm_label": "5.2 deterministic epoch-anchored architecture"
+    },
+    {
+      "label": "5.3 Hackathon Demo Feature: \"Judge Time-Warp Controller\"",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L443",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_5_3_hackathon_demo_feature_judge_time_warp_controller",
+      "community": 69,
+      "norm_label": "5.3 hackathon demo feature: \"judge time-warp controller\""
+    },
+    {
+      "label": "6. 10-Stage Lifecycle State Machine Integrity",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L522",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_6_10_stage_lifecycle_state_machine_integrity",
+      "community": 69,
+      "norm_label": "6. 10-stage lifecycle state machine integrity"
+    },
+    {
+      "label": "7. 5 Critical Security & Reliability Recommendations",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L586",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
+      "community": 69,
+      "norm_label": "7. 5 critical security & reliability recommendations"
+    },
+    {
+      "label": "Recommendation 1: Strict Invariant Enforcement with Runtime Validation",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L588",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_recommendation_1_strict_invariant_enforcement_with_runtime_validation",
+      "community": 69,
+      "norm_label": "recommendation 1: strict invariant enforcement with runtime validation"
+    },
+    {
+      "label": "Recommendation 2: Zero-Crash Resilient LocalStorage Wrapper with Schema Versioning",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L592",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_recommendation_2_zero_crash_resilient_localstorage_wrapper_with_schema_versioning",
+      "community": 69,
+      "norm_label": "recommendation 2: zero-crash resilient localstorage wrapper with schema versioning"
+    },
+    {
+      "label": "Recommendation 3: Defensive Input Sanitization & Prototype Pollution Barrier",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L596",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_recommendation_3_defensive_input_sanitization_prototype_pollution_barrier",
+      "community": 69,
+      "norm_label": "recommendation 3: defensive input sanitization & prototype pollution barrier"
+    },
+    {
+      "label": "Recommendation 4: Deterministic Epoch-Based Timers with \"Judge Time-Traveler\"",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L600",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_recommendation_4_deterministic_epoch_based_timers_with_judge_time_traveler",
+      "community": 69,
+      "norm_label": "recommendation 4: deterministic epoch-based timers with \"judge time-traveler\""
+    },
+    {
+      "label": "Recommendation 5: Finite State Machine Guard for Borrowing Lifecycle",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L604",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_recommendation_5_finite_state_machine_guard_for_borrowing_lifecycle",
+      "community": 69,
+      "norm_label": "recommendation 5: finite state machine guard for borrowing lifecycle"
+    },
+    {
+      "label": "8. Verification & TDD Test Plan",
+      "file_type": "document",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L610",
+      "_origin": "ast",
+      "id": "spec_security_and_state_reliability_audit_8_verification_tdd_test_plan",
+      "community": 69,
+      "norm_label": "8. verification & tdd test plan"
+    },
+    {
+      "label": "tech_stack_prd_campus_circular.md",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular",
+      "community": 71,
+      "norm_label": "tech_stack_prd_campus_circular.md"
+    },
+    {
+      "label": "Tech Stack PRD \u2014 CampusCircular",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "community": 71,
+      "norm_label": "tech stack prd \u2014 campuscircular"
+    },
+    {
+      "label": "1. Overview",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_1_overview",
+      "community": 71,
+      "norm_label": "1. overview"
+    },
+    {
+      "label": "2. Selection Criteria",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_2_selection_criteria",
+      "community": 71,
+      "norm_label": "2. selection criteria"
+    },
+    {
+      "label": "3. Research Checklist",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_3_research_checklist",
+      "community": 71,
+      "norm_label": "3. research checklist"
+    },
+    {
+      "label": "4. Language & Runtime",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_4_language_runtime",
+      "community": 71,
+      "norm_label": "4. language & runtime"
+    },
+    {
+      "label": "5. Package / Dependency Manager",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_5_package_dependency_manager",
+      "community": 71,
+      "norm_label": "5. package / dependency manager"
+    },
+    {
+      "label": "6. Core Dependencies & Libraries",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_6_core_dependencies_libraries",
+      "community": 71,
+      "norm_label": "6. core dependencies & libraries"
+    },
+    {
+      "label": "7. Dev Tooling",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_7_dev_tooling",
+      "community": 71,
+      "norm_label": "7. dev tooling"
+    },
+    {
+      "label": "8. Infra & Runtime Environment",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_8_infra_runtime_environment",
+      "community": 71,
+      "norm_label": "8. infra & runtime environment"
+    },
+    {
+      "label": "9. Version Pinning & Update Policy",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_9_version_pinning_update_policy",
+      "community": 71,
+      "norm_label": "9. version pinning & update policy"
+    },
+    {
+      "label": "10. Alternatives Rejected (Decision Log)",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_10_alternatives_rejected_decision_log",
+      "community": 71,
+      "norm_label": "10. alternatives rejected (decision log)"
+    },
+    {
+      "label": "11. Open Questions / Risks",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_11_open_questions_risks",
+      "community": 71,
+      "norm_label": "11. open questions / risks"
+    },
+    {
+      "label": "12. Research Log",
+      "file_type": "document",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "spec_tech_stack_prd_campus_circular_12_research_log",
+      "community": 71,
+      "norm_label": "12. research log"
     },
     {
       "label": "template_testing.md",
@@ -16219,12 +16899,122 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report",
+      "target": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_executive_audit_summary_scorecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L561",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_final_auditor_directive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_objective_1_comprehensive_13_functionality_cross_examination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_objective_2_scrutiny_of_ai_need_based_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L330",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_objective_3_scrutiny_of_the_borrowing_lifecycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L385",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_objective_4_scrutiny_of_financial_settlement_flow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L428",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_objective_5_top_5_critical_gaps_actionable_fixes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_project_campus_circular_from_ownership_to_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L512",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
+      "target": "spec_adversarial_audit_report_the_winning_3_minute_presentation_script_for_judges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/adversarial_audit_report.md",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "spec_adversarial_audit_report_objective_2_scrutiny_of_ai_need_based_discovery",
+      "target": "spec_adversarial_audit_report_adversarial_critique_of_current_implementation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/competitor_leverage_report.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_competitor_leverage_report",
-      "target": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
-      "confidence_score": 1.0
+      "target": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular"
     },
     {
       "relation": "contains",
@@ -16232,9 +17022,9 @@
       "source_file": "spec/competitor_leverage_report.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
-      "target": "spec_competitor_leverage_report_1_incumbent_teardown_fat_llama",
-      "confidence_score": 1.0
+      "target": "spec_competitor_leverage_report_1_incumbent_teardown_fat_llama"
     },
     {
       "relation": "contains",
@@ -16242,9 +17032,9 @@
       "source_file": "spec/competitor_leverage_report.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
-      "target": "spec_competitor_leverage_report_2_mined_negatives_user_pain_points_g2_trustpilot_reddit",
-      "confidence_score": 1.0
+      "target": "spec_competitor_leverage_report_2_mined_negatives_user_pain_points_g2_trustpilot_reddit"
     },
     {
       "relation": "contains",
@@ -16252,9 +17042,9 @@
       "source_file": "spec/competitor_leverage_report.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
-      "target": "spec_competitor_leverage_report_3_product_leverage_matrix_inverting_flaws_into_killer_features",
-      "confidence_score": 1.0
+      "target": "spec_competitor_leverage_report_3_product_leverage_matrix_inverting_flaws_into_killer_features"
     },
     {
       "relation": "contains",
@@ -16262,9 +17052,9 @@
       "source_file": "spec/competitor_leverage_report.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
-      "target": "spec_competitor_leverage_report_4_total_scope_definition_parity_leverage",
-      "confidence_score": 1.0
+      "target": "spec_competitor_leverage_report_4_total_scope_definition_parity_leverage"
     },
     {
       "relation": "contains",
@@ -16582,9 +17372,9 @@
       "source_file": "spec/mvp_execution_blueprint.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_mvp_execution_blueprint",
-      "target": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
-      "confidence_score": 1.0
+      "target": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture"
     },
     {
       "relation": "contains",
@@ -16592,9 +17382,9 @@
       "source_file": "spec/mvp_execution_blueprint.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
-      "target": "spec_mvp_execution_blueprint_1_the_2_minute_golden_demo_path_for_judges",
-      "confidence_score": 1.0
+      "target": "spec_mvp_execution_blueprint_1_the_2_minute_golden_demo_path_for_judges"
     },
     {
       "relation": "contains",
@@ -16602,9 +17392,9 @@
       "source_file": "spec/mvp_execution_blueprint.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
-      "target": "spec_mvp_execution_blueprint_2_feature_triaging_matrix_p0_p1_p2",
-      "confidence_score": 1.0
+      "target": "spec_mvp_execution_blueprint_2_feature_triaging_matrix_p0_p1_p2"
     },
     {
       "relation": "contains",
@@ -16612,9 +17402,9 @@
       "source_file": "spec/mvp_execution_blueprint.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
-      "target": "spec_mvp_execution_blueprint_3_the_10_stage_lifecycle_state_machine",
-      "confidence_score": 1.0
+      "target": "spec_mvp_execution_blueprint_3_the_10_stage_lifecycle_state_machine"
     },
     {
       "relation": "contains",
@@ -16622,9 +17412,9 @@
       "source_file": "spec/mvp_execution_blueprint.md",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
-      "target": "spec_mvp_execution_blueprint_4_frontend_component_hierarchy_frontend_src",
-      "confidence_score": 1.0
+      "target": "spec_mvp_execution_blueprint_4_frontend_component_hierarchy_frontend_src"
     },
     {
       "relation": "contains",
@@ -16632,9 +17422,9 @@
       "source_file": "spec/mvp_execution_blueprint.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
-      "target": "spec_mvp_execution_blueprint_5_security_tdd_guardrails",
-      "confidence_score": 1.0
+      "target": "spec_mvp_execution_blueprint_5_security_tdd_guardrails"
     },
     {
       "relation": "contains",
@@ -16839,6 +17629,156 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular",
+      "target": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_10_assumptions_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_11_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_12_risks_open_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_13_timeline_milestones",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_14_appendix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_1_title_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_2_problem_statement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_3_goals_success_metrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_4_target_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_5_non_goals_out_of_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_6_user_stories_use_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_7_features_functional_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_8_user_flow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/product_prd_campus_circular.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
+      "target": "spec_product_prd_campus_circular_9_edge_cases_error_states",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -16945,6 +17885,386 @@
       "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_security_guardrails_tdd_validation",
       "target": "spec_scroll_trigger_3d_canvas_spec_2_tdd_security_verification"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit",
+      "target": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_1_executive_summary_auditor_threat_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L312",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L415",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L522",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_6_10_stage_lifecycle_state_machine_integrity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L586",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L610",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
+      "target": "spec_security_and_state_reliability_audit_8_verification_tdd_test_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
+      "target": "spec_security_and_state_reliability_audit_2_1_adversarial_failure_modes_analysis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
+      "target": "spec_security_and_state_reliability_audit_2_2_defensive_architecture_safe_storage_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
+      "target": "spec_security_and_state_reliability_audit_2_3_bulletproof_reset_demo_state_mechanism",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
+      "target": "spec_security_and_state_reliability_audit_3_1_problem_statement_section_12_specification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
+      "target": "spec_security_and_state_reliability_audit_3_2_vulnerability_vector_type_coercion_floating_point_drift",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
+      "target": "spec_security_and_state_reliability_audit_3_3_guardrail_architecture_integer_based_paise_currency_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L314",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3",
+      "target": "spec_security_and_state_reliability_audit_4_1_threat_matrix_campuscircular_attack_surfaces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L351",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3",
+      "target": "spec_security_and_state_reliability_audit_4_2_anti_pollution_anti_xss_sanitizer_implementation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L417",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
+      "target": "spec_security_and_state_reliability_audit_5_1_the_pitfalls_of_interval_based_timers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
+      "target": "spec_security_and_state_reliability_audit_5_2_deterministic_epoch_anchored_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L443",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
+      "target": "spec_security_and_state_reliability_audit_5_3_hackathon_demo_feature_judge_time_warp_controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L588",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
+      "target": "spec_security_and_state_reliability_audit_recommendation_1_strict_invariant_enforcement_with_runtime_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L592",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
+      "target": "spec_security_and_state_reliability_audit_recommendation_2_zero_crash_resilient_localstorage_wrapper_with_schema_versioning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L596",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
+      "target": "spec_security_and_state_reliability_audit_recommendation_3_defensive_input_sanitization_prototype_pollution_barrier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L600",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
+      "target": "spec_security_and_state_reliability_audit_recommendation_4_deterministic_epoch_based_timers_with_judge_time_traveler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/security_and_state_reliability_audit.md",
+      "source_location": "L604",
+      "weight": 1.0,
+      "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
+      "target": "spec_security_and_state_reliability_audit_recommendation_5_finite_state_machine_guard_for_borrowing_lifecycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular",
+      "target": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_10_alternatives_rejected_decision_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_11_open_questions_risks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_12_research_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_1_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_2_selection_criteria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_3_research_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_4_language_runtime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_5_package_dependency_manager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_6_core_dependencies_libraries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_7_dev_tooling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_8_infra_runtime_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tech_stack_prd_campus_circular.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
+      "target": "spec_tech_stack_prd_campus_circular_9_version_pinning_update_policy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -17318,5 +18638,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "aeca57b2f1c8f99143bedb482c4fa5af6cf14396"
+  "built_at_commit": "40c8656ca6b5f0ceb12054dbce5ab73d0c4ffb5a"
 }

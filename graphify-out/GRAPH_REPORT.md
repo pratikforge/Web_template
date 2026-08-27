@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 71 files · ~74,971 words
+- 75 files · ~84,273 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 899 nodes · 831 edges · 69 communities (57 shown, 12 thin omitted)
+- 967 nodes · 895 edges · 73 communities (61 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `aeca57b2`
+- Built from commit: `40c8656c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -80,6 +80,10 @@
 - [[_COMMUNITY_Community 66|Community 66]]
 - [[_COMMUNITY_Community 67|Community 67]]
 - [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
@@ -89,9 +93,9 @@
 5. `Git Workflow and Versioning` - 15 edges
 6. `Product Requirements Document (PRD)` - 15 edges
 7. `Key Functionalities` - 15 edges
-8. `Test-Driven Development` - 14 edges
-9. `Browser Testing with DevTools` - 13 edges
-10. `CI/CD and Automation` - 13 edges
+8. `Product Requirements Document (PRD) — CampusCircular` - 15 edges
+9. `Test-Driven Development` - 14 edges
+10. `Browser Testing with DevTools` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -99,7 +103,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (69 total, 12 thin omitted)
+## Communities (73 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -313,8 +317,24 @@ Nodes (6): 1. The 2-Minute "Golden Demo Path" for Judges, 2. Feature Triaging Ma
 Cohesion: 0.33
 Nodes (5): 1. Incumbent Teardown (Fat Llama), 2. Mined Negatives & User Pain Points (G2, Trustpilot, Reddit), 3. Product Leverage Matrix (Inverting Flaws into Killer Features), 4. Total Scope Definition (Parity + Leverage), Competitor Teardown & Leverage Report: Fat Llama vs. CampusCircular
 
+### Community 69 - "Community 69"
+Cohesion: 0.08
+Nodes (25): 1. Executive Summary & Auditor Threat Model, 2.1 Adversarial Failure Modes Analysis, 2.2 Defensive Architecture: Safe Storage Engine, 2.3 Bulletproof 'Reset Demo State' Mechanism, 2. LocalStorage & State Safety Audit (Objective 1), 3.1 Problem Statement Section 12 Specification, 3.2 Vulnerability Vector: Type Coercion & Floating-Point Drift, 3.3 Guardrail Architecture: Integer-Based Paise Currency Engine (+17 more)
+
+### Community 70 - "Community 70"
+Cohesion: 0.12
+Nodes (15): 10. Assumptions & Constraints, 11. Dependencies, 12. Risks & Open Questions, 13. Timeline / Milestones, 14. Appendix, 1. Title & Summary, 2. Problem Statement, 3. Goals & Success Metrics (+7 more)
+
+### Community 71 - "Community 71"
+Cohesion: 0.14
+Nodes (13): 10. Alternatives Rejected (Decision Log), 11. Open Questions / Risks, 12. Research Log, 1. Overview, 2. Selection Criteria, 3. Research Checklist, 4. Language & Runtime, 5. Package / Dependency Manager (+5 more)
+
+### Community 72 - "Community 72"
+Cohesion: 0.17
+Nodes (11): Adversarial Critique of Current Implementation:, Executive Audit Summary & Scorecard, Final Auditor Directive, Objective 1: Comprehensive 13-Functionality Cross-Examination, Objective 2: Scrutiny of AI Need-Based Discovery, Objective 3: Scrutiny of the Borrowing Lifecycle, Objective 4: Scrutiny of Financial & Settlement Flow, Objective 5: Top 5 Critical Gaps & Actionable Fixes (+3 more)
+
 ## Knowledge Gaps
-- **689 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+684 more)
+- **743 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+738 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -322,7 +342,7 @@ Nodes (5): 1. Incumbent Teardown (Fat Llama), 2. Mined Negatives & User Pain Poi
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _689 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _743 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
