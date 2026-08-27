@@ -29,7 +29,10 @@ export const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024; // 5 MB
 const ALLOWED_MIME_TYPES = new Set([
   'image/png',
   'image/jpeg',
-  'image/jpg'
+  'image/jpg',
+  'image/pjpeg',
+  'image/x-png',
+  'image/jfif'
 ]);
 
 const ALLOWED_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg']);
@@ -110,12 +113,23 @@ export const createProductListing = (
     }
   }
 
-  const cleanTitle = sanitizeInput(input.title, 120) || 'Untitled Campus Item';
+  let cleanTitle = sanitizeInput(input.title, 120);
   const cleanDescription = sanitizeInput(input.description, 2000) || 'Student-shared campus equipment.';
+
+  // If user only typed product description, auto-infer title from the description
+  if (!cleanTitle) {
+    const firstLine = cleanDescription.split(/[.\n]/)[0].trim();
+    if (firstLine.length > 0) {
+      cleanTitle = firstLine.length > 60 ? `${firstLine.substring(0, 57)}...` : firstLine;
+    } else {
+      cleanTitle = 'Student Campus Equipment';
+    }
+  }
+
   const isDonation = Boolean(input.isDonation);
 
-  const rawHourly = typeof input.hourlyRate === 'number' ? input.hourlyRate : parseInt(input.hourlyRate, 10);
-  const rawDeposit = typeof input.deposit === 'number' ? input.deposit : parseInt(input.deposit, 10);
+  const rawHourly = typeof input.hourlyRate === 'number' ? input.hourlyRate : parseInt(String(input.hourlyRate), 10);
+  const rawDeposit = typeof input.deposit === 'number' ? input.deposit : parseInt(String(input.deposit), 10);
 
   const hourlyRateRupees = isDonation ? 0 : Math.max(0, isNaN(rawHourly) ? 0 : rawHourly);
   const depositRupees = isDonation ? 0 : Math.max(0, isNaN(rawDeposit) ? 0 : rawDeposit);

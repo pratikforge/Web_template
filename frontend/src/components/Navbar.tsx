@@ -66,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenListModal, onOpenBeaconDra
       <input
         type="file"
         ref={fileInputRef}
-        accept="image/png, image/jpeg, image/jpg, .png, .jpg, .jpeg"
+        accept=".png,.jpg,.jpeg,image/png,image/jpeg"
         onChange={handleFileSelected}
         className="hidden"
         data-testid="navbar-image-picker"
@@ -176,14 +176,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenListModal, onOpenBeaconDra
             <span className="hidden sm:inline">Wanted Beacon</span>
           </button>
 
-          {/* List / Donate Item Trigger (Directly opens Native File Manager) */}
+          {/* List New Product Trigger (Directly opens Native Windows File Manager) */}
           <button
             onClick={handleShareButtonClick}
+            data-testid="navbar-list-product-btn"
             className="flex items-center gap-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 px-3 py-1.5 text-xs font-semibold text-white shadow-sm shadow-indigo-600/20 transition-colors cursor-pointer"
             title="List new product by selecting a picture (PNG, JPG, JPEG)"
           >
             <PlusCircle className="h-3.5 w-3.5" />
-            <span>Share / Donate</span>
+            <span>List New Product</span>
           </button>
 
           {/* Cart Drawer Button with Count */}

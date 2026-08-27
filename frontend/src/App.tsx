@@ -92,7 +92,10 @@ const MainApp: React.FC = () => {
         ) : (
           <main className="space-y-6 pb-12">
             {/* 1. Hero AI Need Bundler (PS Section 4) */}
-            <HeroAIBundler resources={resources} />
+            <HeroAIBundler
+              resources={resources}
+              onOpenListModal={handleOpenListModal}
+            />
 
             {/* 2. Interactive 10-Stage Borrowing Lifecycle (PS Section 8, 9 & 10) */}
             <div id="lifecycle-engine">

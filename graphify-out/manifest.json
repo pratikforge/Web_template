@@ -290,8 +290,8 @@
     "semantic_hash": ""
   },
   "frontend/src/App.tsx": {
-    "mtime": 1787816458.4407084,
-    "ast_hash": "e53f565c9113d91330800e8f6bb66582",
+    "mtime": 1787817848.5901284,
+    "ast_hash": "076f096ceb82f9599f7301a02df25210",
     "semantic_hash": ""
   },
   "frontend/src/lib/pocketbase.ts": {
@@ -435,8 +435,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/HeroAIBundler.tsx": {
-    "mtime": 1787815487.5727935,
-    "ast_hash": "0b732722f4dc50d68e2fa13a5c2a8df8",
+    "mtime": 1787817873.4760282,
+    "ast_hash": "2a57aa268962e1d7e3f9943fa0506821",
     "semantic_hash": ""
   },
   "frontend/src/components/ImpactSection.tsx": {
@@ -450,13 +450,13 @@
     "semantic_hash": ""
   },
   "frontend/src/components/ListResourceModal.tsx": {
-    "mtime": 1787815664.96788,
-    "ast_hash": "e04252a0e3a751725c4707e46ecad26b",
+    "mtime": 1787817810.2344706,
+    "ast_hash": "76cd3d3e12c11d040b3956421a798694",
     "semantic_hash": ""
   },
   "frontend/src/components/Navbar.tsx": {
-    "mtime": 1787815780.7503436,
-    "ast_hash": "616d3ac02a780011d3a5a0c9cbede2d2",
+    "mtime": 1787817821.7314937,
+    "ast_hash": "7e04f14ba15f3807f9d504faec128302",
     "semantic_hash": ""
   },
   "frontend/src/components/ResourceCard.tsx": {
@@ -465,8 +465,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/ResourceCatalog.tsx": {
-    "mtime": 1787816453.3049138,
-    "ast_hash": "ea1765d621ec7be8cb273bfcac0da360",
+    "mtime": 1787817830.871698,
+    "ast_hash": "dbe4391f148e3f1da411df0cb7a099fc",
     "semantic_hash": ""
   },
   "frontend/src/components/ResourceModal.tsx": {
@@ -615,13 +615,13 @@
     "semantic_hash": ""
   },
   "frontend/src/lib/fileValidation.ts": {
-    "mtime": 1787815608.791548,
-    "ast_hash": "593b624046c7478db287bcb20c80c312",
+    "mtime": 1787817797.7240171,
+    "ast_hash": "568874a03f36bdf2c9430dc20b0145d6",
     "semantic_hash": ""
   },
   "frontend/src/tests/product_listing_pipeline.test.ts": {
-    "mtime": 1787815628.7664642,
-    "ast_hash": "6039598be9fbb7b0c33aa7a20d1a8c90",
+    "mtime": 1787817776.5804338,
+    "ast_hash": "d5af1e17b0d820345b849cc436bfe2ac",
     "semantic_hash": ""
   },
   "frontend/src/lib/profileValidation.ts": {

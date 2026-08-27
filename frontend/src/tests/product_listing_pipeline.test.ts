@@ -59,6 +59,16 @@ describe('Native File Picker Product Listing Pipeline', () => {
       expect(result.error).toBeUndefined();
     });
 
+    it('accepts Windows file selection when MIME type is empty but extension is valid .jpg', () => {
+      const winJpg = {
+        name: 'camera_shot.jpg',
+        type: '',
+        size: 1024 * 600
+      };
+      const result = validateImageFile(winJpg);
+      expect(result.isValid).toBe(true);
+    });
+
     it('rejects GIF image files', () => {
       const gifFile = {
         name: 'animated_gear.gif',
@@ -181,6 +191,24 @@ describe('Native File Picker Product Listing Pipeline', () => {
       expect(resource.accessoriesIncluded).toEqual(['Battery', '64GB SD Card', 'Carry Bag']);
       expect(resource.isAvailable).toBe(true);
       expect(resource.isDonation).toBe(false);
+    });
+
+    it('auto-infers title from product description if title is left empty', () => {
+      const input: ProductListingInput = {
+        title: '',
+        category: 'Lab & Academic',
+        description: 'Casio fx-991ES Plus scientific calculator for university engineering exams.',
+        hourlyRate: '15',
+        deposit: '100',
+        condition: 'Excellent',
+        isDonation: false,
+        accessories: 'Cover',
+        imageUrl: 'data:image/png;base64,...'
+      };
+
+      const resource = createProductListing(input, mockUser);
+      expect(resource.title).toBeTruthy();
+      expect(resource.title).toContain('Casio fx-991ES Plus');
     });
 
     it('enforces ₹0 fee and ₹0 deposit when Free/Donation is enabled', () => {

@@ -111,7 +111,7 @@ export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
       <input
         type="file"
         ref={catalogFileInputRef}
-        accept="image/png, image/jpeg, image/jpg, .png, .jpg, .jpeg"
+        accept=".png,.jpg,.jpeg,image/png,image/jpeg"
         onChange={handleCatalogFileChange}
         className="hidden"
         data-testid="catalog-image-picker"
@@ -150,11 +150,12 @@ export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
           {onOpenListModal && (
             <button
               onClick={handleCatalogListClick}
+              data-testid="catalog-list-product-btn"
               className="flex items-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 px-3.5 py-2 text-xs font-semibold text-white shadow-sm shadow-indigo-600/20 transition-colors whitespace-nowrap cursor-pointer shrink-0"
               title="List new product by selecting a picture (PNG, JPG, JPEG)"
             >
               <PlusCircle className="h-3.5 w-3.5" />
-              <span>List Gear</span>
+              <span>List New Product</span>
             </button>
           )}
         </div>

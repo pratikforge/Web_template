@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
-import { Sparkles, ArrowRight, Video, Calculator, Film, Cpu, HelpCircle, Bot } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { Sparkles, ArrowRight, Video, Calculator, Film, Cpu, HelpCircle, Bot, PlusCircle } from 'lucide-react';
 import type { CampusResource } from '../types/campus';
 import { sanitizeInput } from '../lib/security';
 import { runAgentPipeline, type AgentPipelineResult } from '../lib/agentPipeline';
 import { AgentReasoningHUD } from './AgentReasoningHUD';
+import { validateImageFile, fileToDataUrl } from '../lib/fileValidation';
 
 interface HeroAIBundlerProps {
   resources: CampusResource[];
+  onOpenListModal?: (initialImageUrl?: string, initialFileName?: string) => void;
 }
 
-export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
+export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenListModal }) => {
   const [prompt, setPrompt] = useState<string>('');
   const [aiError, setAiError] = useState<string | null>(null);
   const [pipelineResult, setPipelineResult] = useState<AgentPipelineResult | null>(null);
+  const heroFileInputRef = useRef<HTMLInputElement>(null);
 
   const handleBundleMatch = (rawInput: string) => {
     setAiError(null);
@@ -32,8 +35,51 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
     handleBundleMatch(prompt);
   };
 
+  const handleHeroListClick = () => {
+    if (heroFileInputRef.current) {
+      heroFileInputRef.current.value = '';
+      heroFileInputRef.current.click();
+    } else if (onOpenListModal) {
+      onOpenListModal();
+    }
+  };
+
+  const handleHeroFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !onOpenListModal) return;
+
+    const validation = validateImageFile({
+      name: file.name,
+      type: file.type,
+      size: file.size
+    });
+
+    if (!validation.isValid) {
+      alert(validation.error || 'Please select a valid PNG, JPG, or JPEG picture.');
+      onOpenListModal();
+      return;
+    }
+
+    try {
+      const dataUrl = await fileToDataUrl(file);
+      onOpenListModal(dataUrl, file.name);
+    } catch {
+      onOpenListModal();
+    }
+  };
+
   return (
     <section className="relative overflow-hidden border-b border-slate-800/80 bg-gradient-to-b from-slate-900/60 to-slate-950/80 py-12 px-4 sm:px-6 lg:px-8 space-y-8">
+      {/* Hidden File Picker for Hero Quick List */}
+      <input
+        type="file"
+        ref={heroFileInputRef}
+        accept=".png,.jpg,.jpeg,image/png,image/jpeg"
+        onChange={handleHeroFileChange}
+        className="hidden"
+        data-testid="hero-image-picker"
+      />
+
       {/* Subtle Glow Backdrop */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-72 w-[600px] rounded-full bg-indigo-600/10 blur-3xl pointer-events-none" />
 
@@ -118,32 +164,48 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
             }}
             className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
           >
-            <Film className="h-3.5 w-3.5 text-violet-400" />
-            <span>Movie Night Kit</span>
+            <Film className="h-3.5 w-3.5 text-rose-400" />
+            <span>Dorm Movie Night</span>
           </button>
 
           <button
             onClick={() => {
-              const text = 'Hardware circuit prototyping with Arduino';
+              const text = 'Robotics project with Arduino and sensors';
               setPrompt(text);
               handleBundleMatch(text);
             }}
             className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
           >
             <Cpu className="h-3.5 w-3.5 text-emerald-400" />
-            <span>Robotics Maker Kit</span>
+            <span>Robotics & IoT Kit</span>
           </button>
         </div>
+
+        {/* Dedicated "List New Product" Hero CTA Banner */}
+        {onOpenListModal && (
+          <div className="pt-2 flex items-center justify-center">
+            <button
+              onClick={handleHeroListClick}
+              data-testid="hero-list-product-btn"
+              className="inline-flex items-center gap-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-indigo-500/50 px-4 py-2 text-xs font-semibold text-slate-200 hover:text-white transition-all cursor-pointer shadow-sm group"
+            >
+              <PlusCircle className="h-4 w-4 text-indigo-400 group-hover:text-indigo-300" />
+              <span>Have idle gear in your hostel? <strong className="text-indigo-400 underline underline-offset-2">List New Product with a Photo</strong></span>
+            </button>
+          </div>
+        )}
       </div>
 
-      {/* Live Multi-Agent Reasoning HUD */}
+      {/* Multi-Agent Reasoning HUD & Visual Pipeline State */}
       {pipelineResult && (
-        <AgentReasoningHUD
-          pipelineResult={pipelineResult}
-          resources={resources}
-          onUpdateResult={setPipelineResult}
-          onClose={() => setPipelineResult(null)}
-        />
+        <div className="mx-auto max-w-5xl pt-4 animate-in fade-in slide-in-from-bottom-4 duration-300">
+          <AgentReasoningHUD
+            pipelineResult={pipelineResult}
+            resources={resources}
+            onUpdateResult={setPipelineResult}
+            onClose={() => setPipelineResult(null)}
+          />
+        </div>
       )}
     </section>
   );

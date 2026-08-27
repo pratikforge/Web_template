@@ -405,7 +405,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L158",
+      "source_location": "L161",
       "_origin": "ast",
       "id": "src_app_app",
       "community": 78,
@@ -508,7 +508,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_communitybeacondrawer",
-      "community": 87,
+      "community": 79,
       "norm_label": "communitybeacondrawer.tsx"
     },
     {
@@ -518,7 +518,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_communitybeacondrawer_communitybeacondrawerprops",
-      "community": 87,
+      "community": 79,
       "norm_label": "communitybeacondrawerprops"
     },
     {
@@ -528,7 +528,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "components_communitybeacondrawer_communitybeacondrawer",
-      "community": 87,
+      "community": 79,
       "norm_label": "communitybeacondrawer()"
     },
     {
@@ -545,7 +545,7 @@
       "label": "HeroAIBundlerProps",
       "file_type": "code",
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "components_heroaibundler_heroaibundlerprops",
       "community": 58,
@@ -555,7 +555,7 @@
       "label": "HeroAIBundler()",
       "file_type": "code",
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "components_heroaibundler_heroaibundler",
       "community": 58,
@@ -568,7 +568,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_impactsection",
-      "community": 87,
+      "community": 79,
       "norm_label": "impactsection.tsx"
     },
     {
@@ -578,7 +578,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "components_impactsection_impactsection",
-      "community": 87,
+      "community": 79,
       "norm_label": "impactsection()"
     },
     {
@@ -588,7 +588,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_lifecycletracker",
-      "community": 77,
+      "community": 78,
       "norm_label": "lifecycletracker.tsx"
     },
     {
@@ -598,7 +598,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "components_lifecycletracker_stages_order",
-      "community": 77,
+      "community": 78,
       "norm_label": "stages_order"
     },
     {
@@ -628,7 +628,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_listresourcemodal_listresourcemodalprops",
-      "community": 75,
+      "community": 58,
       "norm_label": "listresourcemodalprops"
     },
     {
@@ -788,7 +788,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_settlementmodal_settlementmodalprops",
-      "community": 77,
+      "community": 80,
       "norm_label": "settlementmodalprops"
     },
     {
@@ -838,7 +838,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_visualdiffslider",
-      "community": 77,
+      "community": 78,
       "norm_label": "visualdiffslider.tsx"
     },
     {
@@ -848,7 +848,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_visualdiffslider_visualdiffsliderprops",
-      "community": 77,
+      "community": 78,
       "norm_label": "visualdiffsliderprops"
     },
     {
@@ -858,7 +858,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "components_visualdiffslider_visualdiffslider",
-      "community": 77,
+      "community": 78,
       "norm_label": "visualdiffslider()"
     },
     {
@@ -928,7 +928,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "context_loanenginecontext",
-      "community": 77,
+      "community": 78,
       "norm_label": "loanenginecontext.tsx"
     },
     {
@@ -938,7 +938,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "context_loanenginecontext_loanenginecontexttype",
-      "community": 77,
+      "community": 78,
       "norm_label": "loanenginecontexttype"
     },
     {
@@ -948,7 +948,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "context_loanenginecontext_default_seed_order",
-      "community": 77,
+      "community": 78,
       "norm_label": "default_seed_order"
     },
     {
@@ -958,7 +958,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "context_loanenginecontext_loanenginecontext",
-      "community": 77,
+      "community": 78,
       "norm_label": "loanenginecontext"
     },
     {
@@ -1038,7 +1038,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_mockcampusdata",
-      "community": 87,
+      "community": 79,
       "norm_label": "mockcampusdata.ts"
     },
     {
@@ -1048,7 +1048,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_mockcampusdata_mock_users",
-      "community": 87,
+      "community": 79,
       "norm_label": "mock_users"
     },
     {
@@ -1068,7 +1068,7 @@
       "source_location": "L308",
       "_origin": "ast",
       "id": "data_mockcampusdata_mock_beacon_requests",
-      "community": 87,
+      "community": 79,
       "norm_label": "mock_beacon_requests"
     },
     {
@@ -1078,7 +1078,7 @@
       "source_location": "L344",
       "_origin": "ast",
       "id": "data_mockcampusdata_mock_impact_stats",
-      "community": 87,
+      "community": 79,
       "norm_label": "mock_impact_stats"
     },
     {
@@ -1395,7 +1395,7 @@
       "label": "ALLOWED_EXTENSIONS",
       "file_type": "code",
       "source_file": "frontend/src/lib/fileValidation.ts",
-      "source_location": "L35",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "lib_filevalidation_allowed_extensions",
       "community": 75,
@@ -1405,7 +1405,7 @@
       "label": "validateImageFile()",
       "file_type": "code",
       "source_file": "frontend/src/lib/fileValidation.ts",
-      "source_location": "L41",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "lib_filevalidation_validateimagefile",
       "community": 75,
@@ -1415,7 +1415,7 @@
       "label": "fileToDataUrl()",
       "file_type": "code",
       "source_file": "frontend/src/lib/fileValidation.ts",
-      "source_location": "L82",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "lib_filevalidation_filetodataurl",
       "community": 75,
@@ -1425,7 +1425,7 @@
       "label": "createProductListing()",
       "file_type": "code",
       "source_file": "frontend/src/lib/fileValidation.ts",
-      "source_location": "L102",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "lib_filevalidation_createproductlisting",
       "community": 75,
@@ -1508,7 +1508,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_lifecyclestatemachine",
-      "community": 77,
+      "community": 78,
       "norm_label": "lifecyclestatemachine.ts"
     },
     {
@@ -1518,7 +1518,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "lib_lifecyclestatemachine_lifecyclestage",
-      "community": 77,
+      "community": 78,
       "norm_label": "lifecyclestage"
     },
     {
@@ -1538,7 +1538,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "lib_lifecyclestatemachine_stagedefinition",
-      "community": 77,
+      "community": 78,
       "norm_label": "stagedefinition"
     },
     {
@@ -1548,7 +1548,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "lib_lifecyclestatemachine_lifecycle_stages",
-      "community": 77,
+      "community": 78,
       "norm_label": "lifecycle_stages"
     },
     {
@@ -1558,7 +1558,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "lib_lifecyclestatemachine_cantransition",
-      "community": 77,
+      "community": 78,
       "norm_label": "cantransition()"
     },
     {
@@ -1568,7 +1568,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "lib_lifecyclestatemachine_getnextstage",
-      "community": 77,
+      "community": 78,
       "norm_label": "getnextstage()"
     },
     {
@@ -1968,7 +1968,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_lifecycle_rbac_test",
-      "community": 77,
+      "community": 78,
       "norm_label": "lifecycle_rbac.test.ts"
     },
     {
@@ -2008,7 +2008,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_campus",
-      "community": 58,
+      "community": 79,
       "norm_label": "campus.ts"
     },
     {
@@ -2048,7 +2048,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "types_campus_subloanitem",
-      "community": 77,
+      "community": 80,
       "norm_label": "subloanitem"
     },
     {
@@ -2058,7 +2058,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "types_campus_masterloanorder",
-      "community": 77,
+      "community": 78,
       "norm_label": "masterloanorder"
     },
     {
@@ -2068,7 +2068,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "types_campus_communitybeaconrequest",
-      "community": 87,
+      "community": 79,
       "norm_label": "communitybeaconrequest"
     },
     {
@@ -2078,7 +2078,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "types_campus_campusimpactstats",
-      "community": 87,
+      "community": 79,
       "norm_label": "campusimpactstats"
     },
     {
@@ -13796,6 +13796,39 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_heroaibundler",
+      "target": "lib_filevalidation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/HeroAIBundler.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_heroaibundler",
+      "target": "lib_filevalidation_filetodataurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/HeroAIBundler.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_heroaibundler",
+      "target": "lib_filevalidation_validateimagefile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/HeroAIBundler.tsx",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17930,9 +17963,9 @@
       "source_file": "main.js",
       "source_location": "L890",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_populateprofileform",
-      "confidence_score": 1.0
+      "target": "main_populateprofileform"
     },
     {
       "relation": "contains",
@@ -18030,9 +18063,9 @@
       "source_file": "main.js",
       "source_location": "L329",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_updateprofile",
-      "confidence_score": 1.0
+      "target": "main_updateprofile"
     },
     {
       "relation": "calls",
@@ -18195,9 +18228,9 @@
       "source_file": "main.js",
       "source_location": "L340",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_updateprofile",
-      "target": "main_syncui",
-      "confidence_score": 1.0
+      "target": "main_syncui"
     },
     {
       "relation": "calls",
@@ -18239,9 +18272,9 @@
       "source_file": "main.js",
       "source_location": "L341",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_updateprofile",
-      "target": "main_closemodal",
-      "confidence_score": 1.0
+      "target": "main_closemodal"
     },
     {
       "relation": "calls",
@@ -18250,9 +18283,9 @@
       "source_file": "main.js",
       "source_location": "L342",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_updateprofile",
-      "target": "main_showdemotoast",
-      "confidence_score": 1.0
+      "target": "main_showdemotoast"
     },
     {
       "relation": "calls",
@@ -27319,5 +27352,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "34df56f8c87758e7b22eaacfc27d548c769ba98b"
+  "built_at_commit": "31d1195ee2455c48d0fb0b60720ba8f4f7bc8c1a"
 }
