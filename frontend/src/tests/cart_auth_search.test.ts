@@ -214,7 +214,7 @@ describe('CampusCircular Auth, AI Search, Cart Drawer & STRIDE Security Tests', 
     });
 
     it('hides hero annotations on smaller desktop and mobile viewports to prevent collisions', () => {
-      expect(cssContent).toContain('@media (max-width: 1200px)');
+      expect(cssContent).toContain('@media (max-width: 1280px)');
       expect(cssContent).toContain('.hero-annotation');
     });
   });

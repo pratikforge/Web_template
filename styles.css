@@ -726,36 +726,47 @@ body {
   box-shadow: var(--shadow-subtle);
 }
 
-/* Permanent Marker Hand-Drawn Annotations */
+/* Permanent Marker Hand-Drawn Annotations (Structured & Framed) */
 .hero-annotation {
   position: absolute;
   font-family: var(--font-permanent-marker);
-  font-size: 15px;
-  display: flex;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   pointer-events: none;
-  z-index: 10;
+  z-index: 5;
   white-space: nowrap;
+  padding: 5px 14px;
+  border-radius: var(--radius-pills);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 14px rgba(36, 0, 41, 0.06);
+  border: 1.5px dashed;
+  transition: transform 0.25s ease;
 }
 
 .annotation-right {
-  top: 18px;
-  right: -10px;
+  top: -12px;
+  right: 18px;
   color: var(--color-fuchsia-signal);
+  border-color: rgba(223, 55, 167, 0.4);
   transform: rotate(3deg);
 }
 
 .annotation-left {
-  top: 240px;
-  left: -24px;
+  top: 275px;
+  left: 20px;
   color: var(--color-aubergine);
+  border-color: rgba(36, 0, 41, 0.3);
   transform: rotate(-3deg);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .hero-annotation {
-    display: none;
+    display: none !important;
   }
 }
 
