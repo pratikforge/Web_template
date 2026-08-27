@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 108 files · ~103,909 words
+- 109 files · ~110,241 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1124 nodes · 1261 edges · 83 communities (71 shown, 12 thin omitted)
+- 1173 nodes · 1309 edges · 84 communities (72 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b2223213`
+- Built from commit: `548139ea`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -93,6 +93,7 @@
 - [[_COMMUNITY_Community 79|Community 79]]
 - [[_COMMUNITY_Community 80|Community 80]]
 - [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 83|Community 83]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CampusResource` - 21 edges
@@ -102,9 +103,9 @@
 5. `useSession()` - 15 edges
 6. `compilerOptions` - 15 edges
 7. `Git Workflow and Versioning` - 15 edges
-8. `Product Requirements Document (PRD)` - 15 edges
-9. `Key Functionalities` - 15 edges
-10. `Product Requirements Document (PRD) — CampusCircular` - 15 edges
+8. `Components` - 15 edges
+9. `Product Requirements Document (PRD)` - 15 edges
+10. `Key Functionalities` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `ListResourceModalProps` --references--> `CampusResource`  [EXTRACTED]
@@ -121,7 +122,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (83 total, 12 thin omitted)
+## Communities (84 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -387,8 +388,12 @@ Nodes (11): BundleCartDrawer(), BundleCartDrawerProps, SettlementModal(), Settle
 Cohesion: 0.18
 Nodes (10): 1. Executive Summary & Architectural Heritage, 2. Graphify Knowledge Base Search & Update Phases (Rule #5), 3. Structural Specification (YAML Format - Rule #7), 4. Guardrails During Execution (Rule #8), 5. Test-Driven Development (TDD) Plan & STRIDE Security Suite (Rule #8), 6. Verification and Integration Workflow (Rule #18), Automated Test Suite: `frontend/src/tests/agent_pipeline.test.ts`, CampusCircular Agentic Search & Discovery Workflow Plan (+2 more)
 
+### Community 83 - "Community 83"
+Cohesion: 0.04
+Nodes (48): Agent Prompt Guide, -apple-system — -apple-system — detected in extracted data but not described by AI · `--font-apple-system`, Border Radius, Chakra Petch — Chakra Petch — detected in extracted data but not described by AI · `--font-chakra-petch`, Components, CSS Custom Properties, Dark CTA Section, Do (+40 more)
+
 ## Knowledge Gaps
-- **786 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+781 more)
+- **828 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+823 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -400,7 +405,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `CampusResource` connect `Community 58` to `Community 76`, `Community 77`, `Community 79`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _786 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _828 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
