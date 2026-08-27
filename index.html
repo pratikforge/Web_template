@@ -53,28 +53,28 @@
         <div class="nav-item has-dropdown">
           <button type="button" class="nav-link">Gear Catalog <i class="fa-solid fa-chevron-down nav-arrow"></i></button>
           <div class="dropdown-menu">
-            <a href="#catalog" class="dropdown-link">
+            <a href="#results-section" class="dropdown-link">
               <i class="fa-solid fa-camera dropdown-icon"></i>
               <div><strong>Media &amp; Event Kit</strong><span>Sony mirrorless, wireless lav mics, gimbals &amp; lights</span></div>
             </a>
-            <a href="#catalog" class="dropdown-link">
+            <a href="#results-section" class="dropdown-link">
               <i class="fa-solid fa-microchip dropdown-icon"></i>
               <div><strong>Lab &amp; Engineering</strong><span>Oscilloscopes, Raspberry Pi 5s, solders &amp; Arduino toolkits</span></div>
             </a>
-            <a href="#catalog" class="dropdown-link">
+            <a href="#results-section" class="dropdown-link">
               <i class="fa-solid fa-calculator dropdown-icon"></i>
               <div><strong>Calculators &amp; Tech</strong><span>Casio fx-991EX ClassWiz, drawing pads &amp; portable monitors</span></div>
             </a>
-            <a href="#catalog" class="dropdown-link">
+            <a href="#results-section" class="dropdown-link">
               <i class="fa-solid fa-bicycle dropdown-icon"></i>
               <div><strong>Sports &amp; Mobility</strong><span>Geared campus cycles, trekking tents &amp; badminton gear</span></div>
             </a>
           </div>
         </div>
-        <a href="#bundles" class="nav-link">Smart Bundles</a>
+        <a href="#results-section" class="nav-link">Smart Bundles</a>
         <a href="#how-it-works" class="nav-link">How Escrow Works</a>
-        <a href="#beacons" class="nav-link">Community Beacons</a>
-        <a href="#leaderboard" class="nav-link">Leaderboard</a>
+        <a href="#testimonials" class="nav-link">Campus Stories</a>
+        <a href="#borrow" class="nav-link">List Idle Gear</a>
       </nav>
 
       <!-- Header Actions -->
@@ -83,7 +83,37 @@
           <i class="fa-solid fa-graduation-cap"></i>
           <span>IIT Bombay ▾</span>
         </div>
-        <a href="#login" class="ghost-link">Student Login</a>
+
+        <!-- Dynamic Auth Element -->
+        <div class="auth-action-wrap" id="auth-action-wrap">
+          <button type="button" class="ghost-link auth-login-btn" id="auth-login-btn">
+            <i class="fa-regular fa-user"></i> Student Login
+          </button>
+          <div class="user-profile-badge" id="user-profile-badge" hidden>
+            <span class="user-avatar" id="user-avatar">RS</span>
+            <span class="user-name" id="user-name">Rahul S.</span>
+            <i class="fa-solid fa-chevron-down profile-arrow"></i>
+            <div class="profile-dropdown" id="profile-dropdown" hidden>
+              <div class="profile-dropdown-header">
+                <strong id="dropdown-full-name">Rahul Sharma</strong>
+                <span id="dropdown-hostel">Hostel 3 • 3rd Year CSE</span>
+                <span id="dropdown-rating">⭐ 4.9 Verified Borrower</span>
+              </div>
+              <div class="profile-dropdown-divider"></div>
+              <button type="button" class="logout-btn" id="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i> Log out
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Cart Button with Counter Badge -->
+        <button type="button" class="nav-cart-btn" id="nav-cart-btn" aria-label="Open Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count-badge" id="cart-count">0</span>
+        </button>
+
         <a href="#borrow" class="btn-primary">Borrow / Lend Gear</a>
         <button class="mobile-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -92,7 +122,7 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu (Strictly hidden on desktop, prominent close button) -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-overlay" hidden></div>
   <div class="mobile-drawer" id="mobile-drawer" hidden>
     <div class="drawer-header">
@@ -108,14 +138,14 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-    <a href="#catalog">Gear Catalog (Media, Lab, Tech)</a>
-    <a href="#bundles">Smart AI Bundles</a>
+    <a href="#results-section">Gear Catalog (Media, Lab, Tech)</a>
+    <a href="#results-section">Smart AI Bundles</a>
     <a href="#how-it-works">How Escrow Works</a>
-    <a href="#beacons">Community Beacons</a>
-    <a href="#leaderboard">Campus Leaderboard</a>
+    <a href="#testimonials">Campus Stories</a>
+    <a href="#borrow">List Idle Gear</a>
     <div class="drawer-divider"></div>
-    <a href="#login" class="ghost-link">Student Login</a>
-    <a href="#borrow" class="btn-primary w-full">Borrow or Lend Gear</a>
+    <button type="button" class="ghost-link w-full text-left" id="mobile-login-btn">Student Login</button>
+    <button type="button" class="btn-primary w-full" id="mobile-cart-btn">View Cart (<span class="mobile-cart-count">0</span>)</button>
   </div>
 
   <main>
@@ -135,13 +165,34 @@
           From Sony Alpha camera kits for club fest reels to fx-991EX calculators and robotics toolkits. Borrow directly from hostel peers with zero platform cut and 100% escrow protection.
         </p>
 
-        <!-- Dual CTA Row -->
-        <div class="hero-cta-row">
-          <a href="#catalog" class="btn-primary btn-large">Explore Campus Gear</a>
-          <a href="#how-it-works" class="btn-ghost btn-large">How Escrow Works &rarr;</a>
+        <!-- NATURAL LANGUAGE AI SEARCH BOX (Replaces static dual buttons) -->
+        <div class="hero-ai-search-box">
+          <div class="search-input-wrapper">
+            <i class="fa-solid fa-wand-magic-sparkles ai-search-icon"></i>
+            <input
+              type="text"
+              id="hero-ai-input"
+              class="hero-ai-input"
+              placeholder="What do you need? e.g. 'I need to make a reel for my club fest tomorrow' or 'Casio fx-991EX'..."
+              autocomplete="off"
+            />
+            <button type="button" id="hero-ai-submit" class="btn-primary search-submit-btn">
+              <span>Find Gear</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Prompt Suggestion Chips -->
+          <div class="search-suggestion-chips">
+            <span class="suggestion-label"><i class="fa-regular fa-lightbulb"></i> Try asking:</span>
+            <button type="button" class="prompt-chip" data-query="I need to make a reel for my club fest tomorrow">🎬 Club fest reel kit</button>
+            <button type="button" class="prompt-chip" data-query="Casio fx-991EX ClassWiz calculator for end-sem exam">📐 End-sem calculator</button>
+            <button type="button" class="prompt-chip" data-query="Robotics competition Arduino and oscilloscope toolkit">🤖 Robotics lab toolkit</button>
+            <button type="button" class="prompt-chip" data-query="Geared bicycle for campus commute this week">🚲 Campus commute cycle</button>
+          </div>
         </div>
 
-        <!-- Hand-Drawn Permanent Marker Annotations over Hero -->
+        <!-- Hand-Drawn Permanent Marker Annotations over Hero (Positioned cleanly) -->
         <div class="hero-annotation annotation-right" aria-hidden="true">
           <span class="marker-text">0% PLATFORM CUT ON STUDENT-TO-STUDENT GEAR</span>
           <svg class="hand-arrow arrow-down" width="48" height="38" viewBox="0 0 48 38" fill="none">
@@ -248,18 +299,42 @@
       </div>
     </section>
 
+    <!-- DYNAMIC RESULTS & RECOMMENDATIONS SECTION -->
+    <section class="results-section" id="results-section">
+      <div class="section-container">
+        <!-- AI Reasoning HUD -->
+        <div class="ai-reasoning-hud" id="ai-reasoning-hud">
+          <div class="reasoning-header">
+            <span class="reasoning-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Need Deconstructed</span>
+            <span class="savings-tag"><i class="fa-solid fa-piggy-bank"></i> Save ₹22,600 vs commercial rental</span>
+            <span class="proximity-tag"><i class="fa-solid fa-location-dot"></i> Clustered within 250m</span>
+          </div>
+          <h2 class="reasoning-title" id="reasoning-title">Recommended Campus Gear &amp; Smart Bundles</h2>
+          <p class="reasoning-desc" id="reasoning-desc">
+            Showing available gear matching your search across campus hostels with verified peer escrow. Click <strong>Add to Cart</strong> to bundle items and book pickup.
+          </p>
+        </div>
+
+        <!-- Dynamic Product Catalog Grid -->
+        <div class="catalog-grid" id="catalog-grid">
+          <!-- Populated by main.js with rich product cards and Add to Cart buttons -->
+        </div>
+      </div>
+    </section>
+
     <!-- USE CASES / CATEGORY PILL ROW -->
     <section class="use-cases-section" id="catalog">
       <div class="section-container">
         <p class="section-eyebrow text-center">CIRCULATING ACROSS 8 HOSTELS &amp; 42 STUDENT CLUBS</p>
         <div class="category-pills">
-          <span class="pill-chip active">MEDIA &amp; REELS</span>
-          <span class="pill-chip">EXAM TECH &amp; CALCULATORS</span>
-          <span class="pill-chip">LAB &amp; ROBOTICS GEAR</span>
-          <span class="pill-chip">CULTURAL FEST LIGHTS</span>
-          <span class="pill-chip">CAMPUS CYCLES</span>
-          <span class="pill-chip">SPORTS &amp; OUTDOORS</span>
-          <span class="pill-chip">PROJECT DRONES</span>
+          <button type="button" class="pill-chip active" data-category="ALL">ALL GEAR</button>
+          <button type="button" class="pill-chip" data-category="MEDIA">MEDIA &amp; REELS</button>
+          <button type="button" class="pill-chip" data-category="TECH">EXAM TECH &amp; CALCULATORS</button>
+          <button type="button" class="pill-chip" data-category="LAB">LAB &amp; ROBOTICS GEAR</button>
+          <button type="button" class="pill-chip" data-category="EVENT">CULTURAL FEST LIGHTS</button>
+          <button type="button" class="pill-chip" data-category="MOBILITY">CAMPUS CYCLES</button>
+          <button type="button" class="pill-chip" data-category="SPORTS">SPORTS &amp; OUTDOORS</button>
+          <button type="button" class="pill-chip" data-category="LAB">PROJECT DRONES</button>
         </div>
       </div>
     </section>
@@ -277,7 +352,7 @@
 
         <div class="features-grid">
           <!-- Feature 1: AI Need-Based Discovery & Smart Bundler -->
-          <div class="feature-card" id="bundles">
+          <div class="feature-card">
             <div class="feature-icon-box">
               <i class="fa-solid fa-wand-magic-sparkles"></i>
             </div>
@@ -443,8 +518,8 @@
             Lend safely with verified college ID checks, photo-condition proof, and automated UPI escrow deposits. Protect your equipment and help your campus peers.
           </p>
           <div class="dark-cta-actions">
-            <a href="#list" class="btn-primary btn-large">List Your Gear in 60 Seconds</a>
-            <a href="#catalog" class="btn-ghost-light btn-large">Browse Campus Inventory</a>
+            <button type="button" class="btn-primary btn-large" id="list-gear-cta-btn">List Your Gear in 60 Seconds</button>
+            <a href="#results-section" class="btn-ghost-light btn-large">Browse Campus Inventory</a>
           </div>
           <p class="dark-cta-guarantee">
             <i class="fa-solid fa-shield-heart"></i> 100% Security Deposit Guarantee. Zero Platform Take Rate on Peer Borrowing.
@@ -497,24 +572,24 @@
       <div class="footer-col">
         <h5>Gear Categories</h5>
         <ul>
-          <li><a href="#catalog">Media &amp; Cinema Cameras</a></li>
-          <li><a href="#catalog">Lab &amp; Engineering Kits</a></li>
-          <li><a href="#catalog">Scientific Calculators</a></li>
-          <li><a href="#catalog">Event Sound &amp; Stage Lights</a></li>
-          <li><a href="#catalog">Campus Cycles &amp; Mobility</a></li>
-          <li><a href="#catalog">Drones &amp; Robotics Tools</a></li>
+          <li><a href="#results-section">Media &amp; Cinema Cameras</a></li>
+          <li><a href="#results-section">Lab &amp; Engineering Kits</a></li>
+          <li><a href="#results-section">Scientific Calculators</a></li>
+          <li><a href="#results-section">Event Sound &amp; Stage Lights</a></li>
+          <li><a href="#results-section">Campus Cycles &amp; Mobility</a></li>
+          <li><a href="#results-section">Drones &amp; Robotics Tools</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h5>Campus Hubs</h5>
         <ul>
-          <li><a href="#catalog">Hostels 1-4 Cluster</a></li>
-          <li><a href="#catalog">Hostels 5-8 Cluster</a></li>
-          <li><a href="#catalog">Hostels 9-12 Cluster</a></li>
-          <li><a href="#catalog">PG &amp; Research Towers</a></li>
-          <li><a href="#catalog">Student Activity Center (SAC)</a></li>
-          <li><a href="#catalog">Central Library Hub</a></li>
+          <li><a href="#results-section">Hostels 1-4 Cluster</a></li>
+          <li><a href="#results-section">Hostels 5-8 Cluster</a></li>
+          <li><a href="#results-section">Hostels 9-12 Cluster</a></li>
+          <li><a href="#results-section">PG &amp; Research Towers</a></li>
+          <li><a href="#results-section">Student Activity Center (SAC)</a></li>
+          <li><a href="#results-section">Central Library Hub</a></li>
         </ul>
       </div>
 
@@ -542,6 +617,218 @@
       </div>
     </div>
   </footer>
+
+  <!-- =========================================================================
+       MODALS & SLIDE-OVER DRAWERS
+       ========================================================================= -->
+
+  <!-- 1. AUTH MODAL (Dummy Campus Auth & Quick Profile Switcher) -->
+  <div class="modal-overlay" id="auth-overlay" hidden></div>
+  <div class="app-modal auth-modal" id="auth-modal" hidden>
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <span class="announcement-badge">CAMPUS SSO</span>
+        <h3>Student Portal Login</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" id="close-auth-modal" aria-label="Close login modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-subtext">Choose a verified student profile to test instant borrowing and lending on CampusCircular:</p>
+      
+      <div class="student-profiles-list">
+        <!-- Profile 1 -->
+        <button type="button" class="profile-select-card" data-profile='{"id":"user_rahul","name":"Rahul Sharma","hostel":"Hostel 3","roll":"22B0142","email":"rahul.s@iitb.ac.in","rating":4.9,"avatar":"RS"}'>
+          <div class="profile-avatar">RS</div>
+          <div class="profile-meta">
+            <strong>Rahul Sharma <span class="badge-tag">Borrower / Lender</span></strong>
+            <span>Hostel 3 • 3rd Year CSE • Roll 22B0142</span>
+            <span class="rating-text">⭐ 4.9 (34 Successful Handovers)</span>
+          </div>
+          <i class="fa-solid fa-arrow-right profile-pick-icon"></i>
+        </button>
+
+        <!-- Profile 2 -->
+        <button type="button" class="profile-select-card" data-profile='{"id":"user_ananya","name":"Ananya Sen","hostel":"Hostel 12","roll":"23B0891","email":"ananya.sen@iitb.ac.in","rating":5.0,"avatar":"AS"}'>
+          <div class="profile-avatar">AS</div>
+          <div class="profile-meta">
+            <strong>Ananya Sen <span class="badge-tag">Power Lender</span></strong>
+            <span>Hostel 12 • 2nd Year Electrical • Roll 23B0891</span>
+            <span class="rating-text">⭐ 5.0 (42 Calculator/Kit Handovers)</span>
+          </div>
+          <i class="fa-solid fa-arrow-right profile-pick-icon"></i>
+        </button>
+
+        <!-- Profile 3 -->
+        <button type="button" class="profile-select-card" data-profile='{"id":"user_pooja","name":"Pooja Verma","hostel":"Hostel 11","roll":"21B0034","email":"pooja.v@iitb.ac.in","rating":4.8,"avatar":"PV"}'>
+          <div class="profile-avatar">PV</div>
+          <div class="profile-meta">
+            <strong>Pooja Verma <span class="badge-tag">Club Convenor</span></strong>
+            <span>Hostel 11 • 4th Year Mech • Roll 21B0034</span>
+            <span class="rating-text">⭐ 4.8 (18 Fest Gear Handovers)</span>
+          </div>
+          <i class="fa-solid fa-arrow-right profile-pick-icon"></i>
+        </button>
+      </div>
+
+      <div class="modal-divider"><span>OR SIGN IN WITH COLLEGE ID</span></div>
+
+      <form id="custom-auth-form" class="custom-auth-form">
+        <div class="input-field-group">
+          <label for="student-email-input">Institute Email Address</label>
+          <div class="field-with-icon">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="student-email-input" placeholder="e.g. rollno@iitb.ac.in" required />
+          </div>
+        </div>
+        <button type="submit" class="btn-primary w-full">Sign in with Campus SSO</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. AMAZON-STYLE SLIDE-OVER CART DRAWER -->
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" hidden>
+    <div class="cart-drawer-header">
+      <div class="cart-header-title">
+        <i class="fa-solid fa-cart-shopping cart-title-icon"></i>
+        <h3>Your Gear Cart</h3>
+        <span class="cart-pill-count" id="drawer-cart-count">0 items</span>
+      </div>
+      <button type="button" class="drawer-close-btn" id="close-cart-btn" aria-label="Close cart drawer">&times;</button>
+    </div>
+
+    <div class="cart-drawer-body">
+      <!-- Empty State -->
+      <div class="cart-empty-state" id="cart-empty-state">
+        <div class="empty-icon-wrap">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <h4>Your cart is empty</h4>
+        <p>Search in natural language above or explore recommended campus gear to bundle items for pickup.</p>
+        <button type="button" class="btn-primary btn-small" id="explore-gear-from-empty">Explore Campus Gear</button>
+      </div>
+
+      <!-- Item List -->
+      <div class="cart-items-container" id="cart-items-container">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+
+    <!-- Sticky Escrow Math Summary & Checkout Footer -->
+    <div class="cart-drawer-footer" id="cart-drawer-footer" hidden>
+      <div class="pickup-route-hud">
+        <i class="fa-solid fa-route"></i>
+        <span id="cart-route-text">Hostel 3 &rarr; Hostel 4 Common Room (180m pickup)</span>
+      </div>
+
+      <div class="escrow-price-breakdown">
+        <div class="price-line">
+          <span>Borrowing Fee:</span>
+          <strong id="cart-borrow-subtotal">₹0</strong>
+        </div>
+        <div class="price-line">
+          <span>Campus Platform Take:</span>
+          <span class="text-green font-bold">₹0 (Free for Students)</span>
+        </div>
+        <div class="price-line">
+          <span>Refundable Security Deposit:</span>
+          <strong id="cart-deposit-subtotal">₹0</strong>
+        </div>
+        <div class="price-divider"></div>
+        <div class="price-line total-line">
+          <span>Total Escrow Amount:</span>
+          <span class="total-escrow-amount" id="cart-total-escrow">₹0</span>
+        </div>
+      </div>
+
+      <p class="escrow-guarantee-note">
+        <i class="fa-solid fa-shield-halved"></i> 100% of the deposit is refunded to your UPI immediately upon verified return diff.
+      </p>
+
+      <button type="button" class="btn-primary btn-large w-full checkout-action-btn" id="proceed-checkout-btn">
+        <span>Proceed to Escrow Checkout</span>
+        <i class="fa-solid fa-lock"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- 3. CHECKOUT & ESCROW CONFIRMATION MODAL -->
+  <div class="modal-overlay" id="checkout-overlay" hidden></div>
+  <div class="app-modal checkout-modal" id="checkout-modal" hidden>
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <span class="announcement-badge">INSTANT ESCROW LOCK</span>
+        <h3>Confirm Campus Handover</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" id="close-checkout-modal" aria-label="Close checkout">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="checkout-step-content" id="checkout-form-step">
+        <div class="checkout-escrow-badge">
+          <i class="fa-solid fa-shield-check"></i>
+          <div>
+            <strong>Automated UPI Escrow Guarantee</strong>
+            <span>Funds safely held until physical hostel handover is confirmed by both peers.</span>
+          </div>
+        </div>
+
+        <div class="input-field-group mb-3">
+          <label for="handover-time-slot">Select Handover Time Window</label>
+          <select id="handover-time-slot" class="select-field">
+            <option value="today_evening">Today 6:00 PM – 8:00 PM (Hostel Common Room)</option>
+            <option value="today_night">Tonight 9:00 PM – 10:30 PM (Hostel Quad)</option>
+            <option value="tomorrow_morning">Tomorrow Morning 8:00 AM – 9:30 AM (SAC Entrance)</option>
+          </select>
+        </div>
+
+        <div class="input-field-group mb-4">
+          <label for="borrower-upi-id">Your Refund UPI ID (for instant deposit credit)</label>
+          <input type="text" id="borrower-upi-id" class="input-field" placeholder="e.g. rahul@okaxis" value="student@okhdfcbank" />
+        </div>
+
+        <div class="checkout-summary-pill">
+          <span>Total Escrow to Lock:</span>
+          <strong class="checkout-pill-total" id="checkout-modal-total">₹0</strong>
+        </div>
+
+        <button type="button" class="btn-primary btn-large w-full" id="confirm-escrow-pay-btn">
+          <i class="fa-solid fa-lock"></i> Lock Escrow &amp; Confirm Handover
+        </button>
+      </div>
+
+      <!-- Voucher Success Step -->
+      <div class="checkout-voucher-step" id="checkout-voucher-step" hidden>
+        <div class="voucher-success-header">
+          <div class="success-icon-badge"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>Escrow Locked Successfully!</h3>
+          <p>Your booking is confirmed with peer lenders. Meet at the hostel common room during your scheduled window.</p>
+        </div>
+
+        <div class="handover-pin-card">
+          <span class="pin-title">HOSTEL HANDOVER VERIFICATION PIN</span>
+          <div class="pin-code-display" id="voucher-pin-code">7492</div>
+          <span class="pin-instruction">Show this PIN to the lender at hostel handover to unlock gear inspection.</span>
+        </div>
+
+        <div class="voucher-details-box">
+          <div class="voucher-line">
+            <span>Booking Ref:</span>
+            <strong id="voucher-booking-ref">CC-2026-8941</strong>
+          </div>
+          <div class="voucher-line">
+            <span>Escrow Locked:</span>
+            <strong id="voucher-escrow-locked">₹0</strong>
+          </div>
+          <div class="voucher-line">
+            <span>Return Guarantee:</span>
+            <span class="text-green font-bold">100% Refund upon return diff</span>
+          </div>
+        </div>
+
+        <button type="button" class="btn-primary w-full mt-3" id="finish-booking-btn">Done &amp; Return to Home</button>
+      </div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
