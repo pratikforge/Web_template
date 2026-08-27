@@ -213,6 +213,10 @@ describe('CampusCircular Auth, AI Search, Cart Drawer & STRIDE Security Tests', 
       expect(cssContent).toContain('.cart-overlay');
     });
 
+    it('ensures the checkout button displays the word "Checkout" only', () => {
+      expect(htmlContent).toContain('id="proceed-checkout-btn">Checkout</button>');
+    });
+
     it('hides hero annotations on smaller desktop and mobile viewports to prevent collisions', () => {
       expect(cssContent).toContain('@media (max-width: 1280px)');
       expect(cssContent).toContain('.hero-annotation');
@@ -235,15 +239,21 @@ describe('CampusCircular Auth, AI Search, Cart Drawer & STRIDE Security Tests', 
       expect(htmlContent).toContain('id="auth-password-input"');
       expect(htmlContent).toContain('value="alex.sharma@campus.edu"');
       expect(htmlContent).toContain('value="CampusPass@2026"');
-      expect(htmlContent).toContain('id="quick-fill-demo-btn"');
       expect(htmlContent).toContain('id="toggle-password-btn"');
     });
 
-    it('provides social login options for Google and Facebook', () => {
+    it('provides Replit-style social and SSO options for Google, GitHub, X, Apple, and SSO', () => {
       expect(htmlContent).toContain('id="google-login-btn"');
-      expect(htmlContent).toContain('id="facebook-login-btn"');
+      expect(htmlContent).toContain('id="github-login-btn"');
+      expect(htmlContent).toContain('id="x-login-btn"');
+      expect(htmlContent).toContain('id="apple-login-btn"');
+      expect(htmlContent).toContain('id="sso-login-btn"');
+      expect(htmlContent).toContain('id="toggle-email-flow-btn"');
       expect(jsContent).toContain('google-login-btn');
-      expect(jsContent).toContain('facebook-login-btn');
+      expect(jsContent).toContain('github-login-btn');
+      expect(jsContent).toContain('x-login-btn');
+      expect(jsContent).toContain('apple-login-btn');
+      expect(jsContent).toContain('sso-login-btn');
     });
 
     it('contains the interactive 4-stage demo tour dock', () => {

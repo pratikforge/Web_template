@@ -653,8 +653,43 @@
       });
     });
 
-    // Email & Password Form submit
+    // Replit Flow: Toggle between Provider Stack and Email Form
+    const toggleEmailFlowBtn = document.getElementById('toggle-email-flow-btn');
+    const replitBackBtn = document.getElementById('replit-back-to-providers-btn');
+    const replitProviderStack = document.getElementById('replit-provider-stack');
     const emailAuthForm = document.getElementById('email-auth-form');
+
+    if (toggleEmailFlowBtn && replitProviderStack && emailAuthForm) {
+      toggleEmailFlowBtn.addEventListener('click', () => {
+        replitProviderStack.hidden = true;
+        emailAuthForm.hidden = false;
+      });
+    }
+
+    if (replitBackBtn && replitProviderStack && emailAuthForm) {
+      replitBackBtn.addEventListener('click', () => {
+        emailAuthForm.hidden = true;
+        replitProviderStack.hidden = false;
+      });
+    }
+
+    // Switch Login / Sign up title toggle
+    const replitSwitchLink = document.getElementById('replit-switch-login-link');
+    const authModalTitle = document.getElementById('auth-modal-title');
+    if (replitSwitchLink && authModalTitle) {
+      replitSwitchLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (authModalTitle.textContent.includes('Create')) {
+          authModalTitle.textContent = 'Log in to CampusCircular';
+          replitSwitchLink.textContent = 'Create an account';
+        } else {
+          authModalTitle.textContent = 'Create a CampusCircular account';
+          replitSwitchLink.textContent = 'Log in';
+        }
+      });
+    }
+
+    // Email & Password Form submit
     if (emailAuthForm) {
       emailAuthForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -691,7 +726,7 @@
       });
     }
 
-    // Google Social Login
+    // 1. Google Social Login
     const googleLoginBtn = document.getElementById('google-login-btn');
     if (googleLoginBtn) {
       googleLoginBtn.addEventListener('click', () => {
@@ -705,37 +740,79 @@
           avatar: 'AS',
           provider: 'google'
         });
-        showDemoToast('✓ Authenticated via Google Student SSO (Alex Sharma)');
+        showDemoToast('✓ Authenticated via Google (Alex Sharma)');
       });
     }
 
-    // Facebook Social Login
-    const facebookLoginBtn = document.getElementById('facebook-login-btn');
-    if (facebookLoginBtn) {
-      facebookLoginBtn.addEventListener('click', () => {
+    // 2. GitHub Login
+    const githubLoginBtn = document.getElementById('github-login-btn');
+    if (githubLoginBtn) {
+      githubLoginBtn.addEventListener('click', () => {
         AuthManager.login({
-          id: 'user_facebook_alex',
+          id: 'user_github_alex',
           name: 'Alex Sharma',
           hostel: 'Hostel 3',
           roll: '22B0891',
-          email: 'alex.sharma@fb.campus.edu',
+          email: 'alex.sharma@github.campus.edu',
           rating: 5.0,
           avatar: 'AS',
-          provider: 'facebook'
+          provider: 'github'
         });
-        showDemoToast('✓ Authenticated via Facebook Campus SSO (Alex Sharma)');
+        showDemoToast('✓ Authenticated via GitHub (Alex Sharma)');
       });
     }
 
-    // Refill Demo Credentials
-    const quickFillDemoBtn = document.getElementById('quick-fill-demo-btn');
-    if (quickFillDemoBtn) {
-      quickFillDemoBtn.addEventListener('click', () => {
-        const emailInput = document.getElementById('auth-email-input');
-        const passInput = document.getElementById('auth-password-input');
-        if (emailInput) emailInput.value = 'alex.sharma@campus.edu';
-        if (passInput) passInput.value = 'CampusPass@2026';
-        showDemoToast('Demo credentials refilled: alex.sharma@campus.edu');
+    // 3. X Login
+    const xLoginBtn = document.getElementById('x-login-btn');
+    if (xLoginBtn) {
+      xLoginBtn.addEventListener('click', () => {
+        AuthManager.login({
+          id: 'user_x_alex',
+          name: 'Alex Sharma',
+          hostel: 'Hostel 3',
+          roll: '22B0891',
+          email: 'alex.sharma@x.campus.edu',
+          rating: 5.0,
+          avatar: 'AS',
+          provider: 'x'
+        });
+        showDemoToast('✓ Authenticated via X (Alex Sharma)');
+      });
+    }
+
+    // 4. Apple Login
+    const appleLoginBtn = document.getElementById('apple-login-btn');
+    if (appleLoginBtn) {
+      appleLoginBtn.addEventListener('click', () => {
+        AuthManager.login({
+          id: 'user_apple_alex',
+          name: 'Alex Sharma',
+          hostel: 'Hostel 3',
+          roll: '22B0891',
+          email: 'alex.sharma@apple.campus.edu',
+          rating: 5.0,
+          avatar: 'AS',
+          provider: 'apple'
+        });
+        showDemoToast('✓ Authenticated via Apple (Alex Sharma)');
+      });
+    }
+
+    // 5. Single Sign-On (SSO) Login
+    const ssoLoginBtn = document.getElementById('sso-login-btn');
+    if (ssoLoginBtn) {
+      ssoLoginBtn.addEventListener('click', () => {
+        AuthManager.login({
+          id: 'user_demo_alex',
+          name: 'Alex Sharma',
+          hostel: 'Hostel 3',
+          roll: '22B0891',
+          email: 'alex.sharma@campus.edu',
+          rating: 5.0,
+          avatar: 'AS',
+          provider: 'campus-sso'
+        });
+        showDemoToast('✓ Authenticated via Campus SSO (Alex Sharma)');
       });
     }
 
