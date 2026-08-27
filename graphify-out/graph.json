@@ -2435,7 +2435,7 @@
       "label": "startDemo()",
       "file_type": "code",
       "source_file": "main.js",
-      "source_location": "L869",
+      "source_location": "L946",
       "_origin": "ast",
       "id": "main_startdemo",
       "community": 82,
@@ -2445,7 +2445,7 @@
       "label": "setStage()",
       "file_type": "code",
       "source_file": "main.js",
-      "source_location": "L903",
+      "source_location": "L980",
       "_origin": "ast",
       "id": "main_setstage",
       "community": 82,
@@ -2455,7 +2455,7 @@
       "label": "reset()",
       "file_type": "code",
       "source_file": "main.js",
-      "source_location": "L941",
+      "source_location": "L1018",
       "_origin": "ast",
       "id": "main_reset",
       "community": 82,
@@ -26000,5 +26000,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6d432b5c87292bb78739614e129dfd83c453fd3f"
+  "built_at_commit": "656ceb2ef4cd4145d00b075ef7a9cbf0cd72827d"
 }
