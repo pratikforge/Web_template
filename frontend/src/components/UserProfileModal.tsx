@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   X,
   User,
@@ -49,8 +49,9 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({ isOpen, onCl
   const [showSuccessToast, setShowSuccessToast] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
-  // Sync form state whenever modal opens or currentUser changes
-  useEffect(() => {
+  const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
+  if (isOpen !== prevIsOpen) {
+    setPrevIsOpen(isOpen);
     if (isOpen) {
       setFormData({
         name: currentUser.name,
@@ -64,7 +65,7 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({ isOpen, onCl
       setErrors({});
       setIsEditing(false);
     }
-  }, [isOpen, currentUser]);
+  }
 
   if (!isOpen) return null;
 

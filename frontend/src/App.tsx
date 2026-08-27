@@ -104,6 +104,7 @@ const MainApp: React.FC = () => {
               resources={resources}
               onSelectResource={setSelectedResource}
               onOpenBeaconDrawer={() => setIsBeaconDrawerOpen(true)}
+              onOpenListModal={handleOpenListModal}
             />
 
             {/* 4. Campus Circular Impact & Sustainability Dashboard (PS Section 13) */}

@@ -290,8 +290,8 @@
     "semantic_hash": ""
   },
   "frontend/src/App.tsx": {
-    "mtime": 1787815794.2904606,
-    "ast_hash": "b547d16f26578aa4762c8745f1482170",
+    "mtime": 1787816458.4407084,
+    "ast_hash": "e53f565c9113d91330800e8f6bb66582",
     "semantic_hash": ""
   },
   "frontend/src/lib/pocketbase.ts": {
@@ -465,8 +465,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/ResourceCatalog.tsx": {
-    "mtime": 1787803281.2640674,
-    "ast_hash": "c42588d180e565f3d61e20797f6152a3",
+    "mtime": 1787816453.3049138,
+    "ast_hash": "ea1765d621ec7be8cb273bfcac0da360",
     "semantic_hash": ""
   },
   "frontend/src/components/ResourceModal.tsx": {
@@ -625,13 +625,13 @@
     "semantic_hash": ""
   },
   "frontend/src/lib/profileValidation.ts": {
-    "mtime": 1787815707.4449015,
-    "ast_hash": "8a7975273095f1118b2450887d7b3979",
+    "mtime": 1787816484.054035,
+    "ast_hash": "56c9028d6331d54f5f802acb2e975e48",
     "semantic_hash": ""
   },
   "frontend/src/components/UserProfileModal.tsx": {
-    "mtime": 1787815759.730227,
-    "ast_hash": "4a444fce4d0626dd16ea024ec6a0f885",
+    "mtime": 1787816496.6588402,
+    "ast_hash": "1bf080123bf8b8f973cd21477bba55eb",
     "semantic_hash": ""
   },
   "frontend/src/tests/user_profile_management.test.ts": {

@@ -1,12 +1,14 @@
-import React, { useState, useMemo } from 'react';
-import { Search, Filter, Radio, RotateCcw, SearchX } from 'lucide-react';
+import React, { useState, useMemo, useRef } from 'react';
+import { Search, Filter, Radio, RotateCcw, SearchX, PlusCircle } from 'lucide-react';
 import type { CampusResource, ResourceCategory } from '../types/campus';
 import { ResourceCard } from './ResourceCard';
+import { validateImageFile, fileToDataUrl } from '../lib/fileValidation';
 
 interface ResourceCatalogProps {
   resources: CampusResource[];
   onSelectResource: (resource: CampusResource) => void;
   onOpenBeaconDrawer: () => void;
+  onOpenListModal?: (initialImageUrl?: string, initialFileName?: string) => void;
 }
 
 const CATEGORIES: ResourceCategory[] = [
@@ -21,12 +23,47 @@ const CATEGORIES: ResourceCategory[] = [
 export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
   resources,
   onSelectResource,
-  onOpenBeaconDrawer
+  onOpenBeaconDrawer,
+  onOpenListModal
 }) => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<ResourceCategory>('All');
   const [selectedHostel, setSelectedHostel] = useState<string>('All Hostels');
   const [sortBy, setSortBy] = useState<'nearest' | 'price_low' | 'rating'>('nearest');
+  const catalogFileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleCatalogListClick = () => {
+    if (catalogFileInputRef.current) {
+      catalogFileInputRef.current.value = '';
+      catalogFileInputRef.current.click();
+    } else if (onOpenListModal) {
+      onOpenListModal();
+    }
+  };
+
+  const handleCatalogFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !onOpenListModal) return;
+
+    const validation = validateImageFile({
+      name: file.name,
+      type: file.type,
+      size: file.size
+    });
+
+    if (!validation.isValid) {
+      alert(validation.error || 'Please select a valid PNG, JPG, or JPEG picture.');
+      onOpenListModal();
+      return;
+    }
+
+    try {
+      const dataUrl = await fileToDataUrl(file);
+      onOpenListModal(dataUrl, file.name);
+    } catch {
+      onOpenListModal();
+    }
+  };
 
   // Multi-criteria filtering engine (PS Section 3)
   const filteredResources = useMemo(() => {
@@ -70,6 +107,16 @@ export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-6">
+      {/* Hidden Native File Picker for Catalog quick listing */}
+      <input
+        type="file"
+        ref={catalogFileInputRef}
+        accept="image/png, image/jpeg, image/jpg, .png, .jpg, .jpeg"
+        onChange={handleCatalogFileChange}
+        className="hidden"
+        data-testid="catalog-image-picker"
+      />
+
       {/* Section Header & Subtitle */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -79,22 +126,35 @@ export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
           </p>
         </div>
 
-        {/* Search Input */}
-        <div className="relative w-full md:w-80">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={e => setSearchQuery(e.target.value)}
-            placeholder="Search equipment, labs, tools..."
-            className="w-full rounded-xl border border-slate-800 bg-slate-900/90 pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
-          />
-          {searchQuery && (
+        {/* Action Cluster: Search Input + List Button */}
+        <div className="flex items-center gap-2.5 w-full md:w-auto">
+          <div className="relative flex-1 md:w-72">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              placeholder="Search equipment, labs, tools..."
+              className="w-full rounded-xl border border-slate-800 bg-slate-900/90 pl-9 pr-8 py-2 text-xs text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-white"
+              >
+                Clear
+              </button>
+            )}
+          </div>
+
+          {onOpenListModal && (
             <button
-              onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-white"
+              onClick={handleCatalogListClick}
+              className="flex items-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 px-3.5 py-2 text-xs font-semibold text-white shadow-sm shadow-indigo-600/20 transition-colors whitespace-nowrap cursor-pointer shrink-0"
+              title="List new product by selecting a picture (PNG, JPG, JPEG)"
             >
-              Clear
+              <PlusCircle className="h-3.5 w-3.5" />
+              <span>List Gear</span>
             </button>
           )}
         </div>
@@ -108,7 +168,7 @@ export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`rounded-lg px-3 py-1.5 text-xs font-semibold whitespace-nowrap transition-all ${
+              className={`rounded-lg px-3 py-1.5 text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
                 selectedCategory === cat
                   ? 'bg-indigo-600 text-white shadow-sm shadow-indigo-600/20'
                   : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white'
@@ -140,7 +200,7 @@ export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
             <span className="text-slate-500">Sort:</span>
             <select
               value={sortBy}
-              onChange={e => setSortBy(e.target.value as any)}
+              onChange={e => setSortBy(e.target.value as 'nearest' | 'price_low' | 'rating')}
               className="bg-transparent text-xs text-slate-200 focus:outline-none cursor-pointer"
             >
               <option value="nearest">Walking Distance</option>
@@ -181,14 +241,14 @@ export const ResourceCatalog: React.FC<ResourceCatalogProps> = ({
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-2">
             <button
               onClick={handleResetFilters}
-              className="w-full sm:w-auto px-4 py-2 rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 flex items-center justify-center gap-2 transition-colors"
+              className="w-full sm:w-auto px-4 py-2 rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 flex items-center justify-center gap-2 transition-colors cursor-pointer"
             >
               <RotateCcw className="h-3.5 w-3.5" />
               Reset Filters
             </button>
             <button
               onClick={onOpenBeaconDrawer}
-              className="w-full sm:w-auto px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/25 transition-colors"
+              className="w-full sm:w-auto px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/25 transition-colors cursor-pointer"
             >
               <Radio className="h-3.5 w-3.5 text-indigo-200 animate-pulse" />
               Broadcast Wanted Beacon

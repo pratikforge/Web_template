@@ -405,7 +405,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L157",
+      "source_location": "L158",
       "_origin": "ast",
       "id": "src_app_app",
       "community": 78,
@@ -715,7 +715,7 @@
       "label": "ResourceCatalogProps",
       "file_type": "code",
       "source_file": "frontend/src/components/ResourceCatalog.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "components_resourcecatalog_resourcecatalogprops",
       "community": 58,
@@ -725,7 +725,7 @@
       "label": "CATEGORIES",
       "file_type": "code",
       "source_file": "frontend/src/components/ResourceCatalog.tsx",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "components_resourcecatalog_categories",
       "community": 58,
@@ -735,7 +735,7 @@
       "label": "ResourceCatalog()",
       "file_type": "code",
       "source_file": "frontend/src/components/ResourceCatalog.tsx",
-      "source_location": "L21",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "components_resourcecatalog_resourcecatalog",
       "community": 58,
@@ -1685,7 +1685,7 @@
       "label": "isSafeAvatarUrl()",
       "file_type": "code",
       "source_file": "frontend/src/lib/profileValidation.ts",
-      "source_location": "L70",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "lib_profilevalidation_issafeavatarurl",
       "community": 79,
@@ -1695,7 +1695,7 @@
       "label": "validateAndSanitizeProfile()",
       "file_type": "code",
       "source_file": "frontend/src/lib/profileValidation.ts",
-      "source_location": "L101",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "lib_profilevalidation_validateandsanitizeprofile",
       "community": 79,
@@ -12910,9 +12910,9 @@
       "source_file": "frontend/src/App.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_userprofilemodal",
-      "confidence_score": 1.0
+      "target": "components_userprofilemodal"
     },
     {
       "relation": "imports",
@@ -12921,9 +12921,9 @@
       "source_file": "frontend/src/App.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_userprofilemodal_userprofilemodal",
-      "confidence_score": 1.0
+      "target": "components_userprofilemodal_userprofilemodal"
     },
     {
       "relation": "imports_from",
@@ -14490,6 +14490,39 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/ResourceCatalog.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_resourcecatalog",
+      "target": "lib_filevalidation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ResourceCatalog.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_resourcecatalog",
+      "target": "lib_filevalidation_filetodataurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ResourceCatalog.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_resourcecatalog",
+      "target": "lib_filevalidation_validateimagefile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ResourceCatalog.tsx",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14729,9 +14762,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "components_userprofilemodal_userprofilemodal",
-      "confidence_score": 1.0
+      "target": "components_userprofilemodal_userprofilemodal"
     },
     {
       "relation": "contains",
@@ -14739,9 +14772,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "components_userprofilemodal_userprofilemodalprops",
-      "confidence_score": 1.0
+      "target": "components_userprofilemodal_userprofilemodalprops"
     },
     {
       "relation": "imports_from",
@@ -14750,9 +14783,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "context_sessioncontext",
-      "confidence_score": 1.0
+      "target": "context_sessioncontext"
     },
     {
       "relation": "imports",
@@ -14761,9 +14794,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "context_sessioncontext_usesession",
-      "confidence_score": 1.0
+      "target": "context_sessioncontext_usesession"
     },
     {
       "relation": "imports_from",
@@ -14772,9 +14805,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "lib_finance",
-      "confidence_score": 1.0
+      "target": "lib_finance"
     },
     {
       "relation": "imports",
@@ -14783,9 +14816,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "lib_finance_paisetorupees",
-      "confidence_score": 1.0
+      "target": "lib_finance_paisetorupees"
     },
     {
       "relation": "imports_from",
@@ -14794,9 +14827,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "lib_profilevalidation",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation"
     },
     {
       "relation": "imports",
@@ -14805,9 +14838,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "lib_profilevalidation_allowed_departments",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_allowed_departments"
     },
     {
       "relation": "imports",
@@ -14816,9 +14849,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "lib_profilevalidation_allowed_hostels",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_allowed_hostels"
     },
     {
       "relation": "imports",
@@ -14827,9 +14860,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "lib_profilevalidation_allowed_years",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_allowed_years"
     },
     {
       "relation": "imports",
@@ -14838,9 +14871,9 @@
       "source_file": "frontend/src/components/UserProfileModal.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_userprofilemodal",
-      "target": "lib_profilevalidation_preset_avatars",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_preset_avatars"
     },
     {
       "relation": "calls",
@@ -15317,9 +15350,9 @@
       "source_file": "frontend/src/context/SessionContext.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_sessioncontext",
-      "target": "lib_profilevalidation",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation"
     },
     {
       "relation": "imports",
@@ -15328,9 +15361,9 @@
       "source_file": "frontend/src/context/SessionContext.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_sessioncontext",
-      "target": "lib_profilevalidation_validateandsanitizeprofile",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_validateandsanitizeprofile"
     },
     {
       "relation": "imports_from",
@@ -15522,9 +15555,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "data_mockcampusdata",
-      "confidence_score": 1.0
+      "target": "data_mockcampusdata"
     },
     {
       "relation": "imports",
@@ -15533,9 +15566,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "data_mockcampusdata_mock_users",
-      "confidence_score": 1.0
+      "target": "data_mockcampusdata_mock_users"
     },
     {
       "relation": "imports",
@@ -16798,9 +16831,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation"
     },
     {
       "relation": "references",
@@ -16820,9 +16853,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation_allowed_departments",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_allowed_departments"
     },
     {
       "relation": "imports",
@@ -16831,9 +16864,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation_allowed_years",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_allowed_years"
     },
     {
       "relation": "imports",
@@ -16842,9 +16875,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation_allowed_hostels",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_allowed_hostels"
     },
     {
       "relation": "imports",
@@ -16853,9 +16886,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation_preset_avatars",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_preset_avatars"
     },
     {
       "relation": "calls",
@@ -16875,9 +16908,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation_sanitizeprofilestring",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_sanitizeprofilestring"
     },
     {
       "relation": "calls",
@@ -16897,9 +16930,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation_issafeavatarurl",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_issafeavatarurl"
     },
     {
       "relation": "imports",
@@ -16908,9 +16941,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_profilevalidation_validateandsanitizeprofile",
-      "confidence_score": 1.0
+      "target": "lib_profilevalidation_validateandsanitizeprofile"
     },
     {
       "relation": "contains",
@@ -16950,9 +16983,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_safestorage",
-      "confidence_score": 1.0
+      "target": "lib_safestorage"
     },
     {
       "relation": "method",
@@ -17129,9 +17162,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "lib_safestorage_safestorage",
-      "confidence_score": 1.0
+      "target": "lib_safestorage_safestorage"
     },
     {
       "relation": "contains",
@@ -17266,9 +17299,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "types_campus",
-      "confidence_score": 1.0
+      "target": "types_campus"
     },
     {
       "relation": "imports",
@@ -17277,9 +17310,9 @@
       "source_file": "frontend/src/tests/user_profile_management.test.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_user_profile_management_test",
-      "target": "types_campus_campususer",
-      "confidence_score": 1.0
+      "target": "types_campus_campususer"
     },
     {
       "relation": "contains",
@@ -27213,5 +27246,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a22db3aeb191fcebef971bc165576377b75aecd6"
+  "built_at_commit": "ef33cf0d2c3a33b304882039d5511b4b51172ca8"
 }

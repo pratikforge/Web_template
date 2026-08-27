@@ -60,6 +60,7 @@ export function sanitizeProfileString(input: unknown): string {
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '') // Strip <script>...</script>
     .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')   // Strip <style>...</style>
     .replace(/<[^>]*>?/gm, '')                                          // Strip remaining HTML tags
+    // eslint-disable-next-line no-control-regex
     .replace(/[\u0000-\u001F\u007F-\u009F]/g, '')                       // Strip control chars
     .trim();
 }
