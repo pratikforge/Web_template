@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 109 files · ~110,241 words
+- 110 files · ~111,245 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1173 nodes · 1309 edges · 84 communities (72 shown, 12 thin omitted)
+- 1175 nodes · 1310 edges · 85 communities (72 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `548139ea`
+- Built from commit: `c984b545`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -94,6 +94,7 @@
 - [[_COMMUNITY_Community 80|Community 80]]
 - [[_COMMUNITY_Community 81|Community 81]]
 - [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CampusResource` - 21 edges
@@ -122,7 +123,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (84 total, 12 thin omitted)
+## Communities (85 total, 13 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -393,9 +394,9 @@ Cohesion: 0.04
 Nodes (48): Agent Prompt Guide, -apple-system — -apple-system — detected in extracted data but not described by AI · `--font-apple-system`, Border Radius, Chakra Petch — Chakra Petch — detected in extracted data but not described by AI · `--font-chakra-petch`, Components, CSS Custom Properties, Dark CTA Section, Do (+40 more)
 
 ## Knowledge Gaps
-- **828 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+823 more)
+- **829 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+824 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -405,7 +406,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `CampusResource` connect `Community 58` to `Community 76`, `Community 77`, `Community 79`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _828 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _829 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

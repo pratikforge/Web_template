@@ -24,6 +24,23 @@
   });
 
   /* ==========================================================================
+     Handover Diff Quick Preview Interaction
+     ========================================================================== */
+  const diffBtn = document.querySelector('.gate-preview .btn-primary');
+  if (diffBtn) {
+    diffBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const originalText = diffBtn.textContent;
+      diffBtn.textContent = '✓ AI Diff Verified: 0 Scratches';
+      diffBtn.style.backgroundColor = 'var(--color-forest)';
+      setTimeout(() => {
+        diffBtn.textContent = originalText;
+        diffBtn.style.backgroundColor = '';
+      }, 3000);
+    });
+  }
+
+  /* ==========================================================================
      Mobile Drawer Navigation
      ========================================================================== */
   const toggleBtn = document.querySelector('.mobile-toggle');

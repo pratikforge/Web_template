@@ -315,8 +315,8 @@
     "semantic_hash": ""
   },
   "frontend/tsconfig.app.json": {
-    "mtime": 1787770454.2834306,
-    "ast_hash": "e4f83bdfdf660f5e5364945e14291d70",
+    "mtime": 1787806468.3597808,
+    "ast_hash": "4fafb59816e8a167755a44fc4036b299",
     "semantic_hash": ""
   },
   "frontend/tsconfig.json": {
@@ -575,13 +575,13 @@
     "semantic_hash": ""
   },
   "main.js": {
-    "mtime": 1787806129.2409487,
-    "ast_hash": "4fbae0faf1ce9297eb70bc08c879f0e2",
+    "mtime": 1787806376.6774302,
+    "ast_hash": "ddaa46ce1a6b0cb628cf84938288d0c3",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1787806095.629994,
-    "ast_hash": "c5979133b6f503baacd7267ec13752d2",
+    "mtime": 1787806343.8576622,
+    "ast_hash": "b93fd9428982dc989ace544b7d00e077",
     "semantic_hash": ""
   },
   "assets/logo.webp": {
@@ -592,6 +592,11 @@
   "frontend/design/DESIGN.md": {
     "mtime": 1787805774.5816631,
     "ast_hash": "ec593d2a7f2bc009915ded04ad529365",
+    "semantic_hash": ""
+  },
+  "frontend/src/tests/campus_circular_landing.test.ts": {
+    "mtime": 1787806448.147959,
+    "ast_hash": "6d2506dcd9829e6ff48d480e9e6ec8fd",
     "semantic_hash": ""
   }
 }
