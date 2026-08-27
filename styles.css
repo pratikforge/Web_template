@@ -2409,6 +2409,139 @@ body {
   color: var(--color-heather);
 }
 
+/* Social Login Buttons */
+.social-login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .social-login-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid var(--color-plum-tinted);
+  border-radius: var(--radius-inputs);
+  font-family: var(--font-inter-var);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-aubergine);
+  cursor: pointer;
+  transition: all 0.16s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(36, 0, 41, 0.04);
+}
+
+.social-btn:hover {
+  background: #fdfbfd;
+  border-color: var(--color-fuchsia-signal);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(223, 55, 167, 0.12);
+}
+
+.facebook-btn .fb-color {
+  color: #1877F2;
+  font-size: 16px;
+}
+
+/* Demo Credentials Banner */
+.demo-credentials-banner {
+  background: #fdf2f9;
+  border: 1.5px dashed var(--color-fuchsia-signal);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.demo-credentials-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.demo-pill-badge {
+  font-family: var(--font-jetbrains-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-fuchsia-signal);
+}
+
+.demo-cred-row {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--color-aubergine);
+}
+
+.demo-cred-row code {
+  background: rgba(223, 55, 167, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 11px;
+  color: var(--color-aubergine);
+  font-weight: 600;
+}
+
+.quick-fill-btn {
+  background: #ffffff;
+  border: 1px solid var(--color-fuchsia-signal);
+  color: var(--color-fuchsia-signal);
+  font-family: var(--font-jetbrains-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.16s ease;
+  flex-shrink: 0;
+}
+
+.quick-fill-btn:hover {
+  background: var(--color-fuchsia-signal);
+  color: #ffffff;
+}
+
+/* Field label row with show/hide password */
+.field-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-pass-text-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-fuchsia-signal);
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.15s ease;
+}
+
+.toggle-pass-text-btn:hover {
+  text-decoration: underline;
+}
+
 .field-with-icon {
   display: flex;
   align-items: center;
