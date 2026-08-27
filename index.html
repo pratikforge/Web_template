@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intelligence Designed To Evolve</title>
+  <title>Outseta — All-in-One Membership, Payments & CRM Engine</title>
 
-  <!-- Google Fonts: Inter (400, 500, 600) -->
+  <!-- Google Fonts: Inter, Inter Tight (Kaio substitute), JetBrains Mono, Permanent Marker -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- BubbledotICG-FinePos via OnlineWebFonts CDN -->
-  <link href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Permanent+Marker&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- Font Awesome 6.5.2 from cdnjs -->
   <link
@@ -22,111 +22,519 @@
     referrerpolicy="no-referrer"
   />
 
-  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Full-viewport cover video behind all UI -->
-  <div class="bg" aria-hidden="true">
-    <video class="bg-video" autoplay muted loop playsinline>
-      <source
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
-        type="video/mp4"
-      />
-    </video>
-  </div>
 
-  <div class="page">
-    <!-- 1. Header (desktop + mobile burger) -->
-    <header class="header">
-      <a class="logo" href="#" aria-label="Home">
-        <img src="assets/logo.webp" alt="" width="52" height="52" />
+  <!-- Top Announcement Sub-bar -->
+  <aside class="announcement-bar">
+    <div class="announcement-inner">
+      <span class="announcement-badge">NEW</span>
+      <span>Migrating from MemberSpace, Teachable or MemberPress? Import in 1-click</span>
+      <a href="#migration" class="announcement-link">Explore migration guide &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Logo: Concentric Circle Mark + Wordmark -->
+      <a href="#" class="brand-logo" aria-label="Outseta Home">
+        <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" stroke="#240029" stroke-width="2.5" />
+          <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" />
+          <circle cx="16" cy="16" r="4" fill="#240029" />
+        </svg>
+        <span class="brand-name">Outseta</span>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#" class="active">Home</a>
-        <a href="#">Product</a>
-        <a href="#">Case Studies</a>
-        <a href="#">Contact</a>
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <div class="nav-item has-dropdown">
+          <button type="button" class="nav-link">Product <i class="fa-solid fa-chevron-down nav-arrow"></i></button>
+          <div class="dropdown-menu">
+            <a href="#billing" class="dropdown-link">
+              <i class="fa-solid fa-credit-card dropdown-icon"></i>
+              <div><strong>Billing & Payments</strong><span>Stripe checkout, paywalls & subscriptions</span></div>
+            </a>
+            <a href="#auth" class="dropdown-link">
+              <i class="fa-solid fa-lock dropdown-icon"></i>
+              <div><strong>Authentication</strong><span>SSO, passwordless login & protected content</span></div>
+            </a>
+            <a href="#crm" class="dropdown-link">
+              <i class="fa-solid fa-users dropdown-icon"></i>
+              <div><strong>Member CRM</strong><span>Unified customer database & activity tracking</span></div>
+            </a>
+            <a href="#email" class="dropdown-link">
+              <i class="fa-solid fa-envelope dropdown-icon"></i>
+              <div><strong>Email Marketing</strong><span>Automated sequences & member broadcasts</span></div>
+            </a>
+          </div>
+        </div>
+        <a href="#use-cases" class="nav-link">Use Cases</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Customers</a>
       </nav>
 
-      <a href="#" class="signin">Sign in</a>
-
-      <button class="burger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-
-    <!-- 2. Hero (center) -->
-    <main class="hero">
-      <!-- Trust row -->
-      <div class="trust anim" style="--d: 0.05s">
-        <div class="avatar a1">
-          <span class="inner"><i class="fa-brands fa-microsoft"></i></span>
-        </div>
-        <div class="avatar a2">
-          <span class="inner"><i class="fa-brands fa-amazon"></i></span>
-        </div>
-        <div class="avatar a3">
-          <span class="inner"><i class="fa-brands fa-google"></i></span>
-        </div>
-        <div class="trust-pill">Trusted by 2000+ Enterprises</div>
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="github-badge" aria-label="GitHub Repository">
+          <i class="fa-brands fa-github"></i>
+          <span>★ 4.8k</span>
+        </a>
+        <a href="#login" class="ghost-link">Log in</a>
+        <a href="#signup" class="btn-primary">Sign up free</a>
+        <button class="mobile-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </div>
+  </header>
 
-      <!-- Headline -->
-      <h1 class="headline anim">
-        <span>Intelligence</span>
-        <span>Designed To Evolve</span>
-      </h1>
-
-      <!-- Subhead -->
-      <p class="subhead anim" style="--d: 0.28s">
-        Build applications that reason, adapt and collaborate using a modular
-        AI platform designed for production.
-      </p>
-
-      <!-- CTA -->
-      <div class="cta-row anim" style="--d: 0.4s">
-        <a class="cta" href="#">Get Started</a>
-      </div>
-    </main>
-
-    <!-- 3. Stats footer (exact 4 metrics) -->
-    <footer class="stats">
-      <div class="stat anim" style="--d: 0.5s">
-        <span class="stat-icon" aria-hidden="true">&lt;</span>
-        <span class="stat-value" data-target="120" data-decimals="0" data-suffix="ms">0ms</span>
-        <span class="stat-label">Inference Time</span>
-      </div>
-      <div class="stat anim" style="--d: 0.58s">
-        <span class="stat-icon" aria-hidden="true">%</span>
-        <span class="stat-value" data-target="99.99" data-decimals="2" data-suffix="%">0.00%</span>
-        <span class="stat-label">Platform Uptime</span>
-      </div>
-      <div class="stat anim" style="--d: 0.66s">
-        <span class="stat-icon" aria-hidden="true">*</span>
-        <span class="stat-value" data-target="24" data-decimals="0" data-suffix="/7">0/7</span>
-        <span class="stat-label">Autonomous Runtime</span>
-      </div>
-      <div class="stat anim" style="--d: 0.74s">
-        <span class="stat-icon" aria-hidden="true">#</span>
-        <span class="stat-value" data-target="2.4" data-decimals="1" data-suffix="M">0.0M</span>
-        <span class="stat-label">Context Windows</span>
-      </div>
-    </footer>
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-overlay" hidden></div>
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <a href="#billing">Billing & Payments</a>
+    <a href="#auth">Authentication & SSO</a>
+    <a href="#crm">Member CRM</a>
+    <a href="#use-cases">Use Cases</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#pricing">Pricing</a>
+    <div class="drawer-divider"></div>
+    <a href="#login" class="ghost-link">Log in</a>
+    <a href="#signup" class="btn-primary w-full">Start 7-day free trial</a>
   </div>
 
-  <!-- Mobile Overlay & Menu Sheet -->
-  <div class="overlay" hidden></div>
-  <div class="menu" id="mobile-menu" hidden>
-    <a href="#" class="active">Home</a>
-    <a href="#">Product</a>
-    <a href="#">Case Studies</a>
-    <a href="#">Contact</a>
-    <a href="#" class="menu-signin">Sign in</a>
-  </div>
+  <main>
+    <!-- HERO SECTION: Full-Bleed Sunset Gradient Sky -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <!-- Section Eyebrow (JetBrains Mono, wide tracking) -->
+        <p class="section-eyebrow">ALL-IN-ONE MEMBERSHIP &amp; PRODUCT ENGINE</p>
+
+        <!-- Giant Display Headline (Kaio 80px style) -->
+        <h1 class="hero-headline">
+          Monetize and grow your product in one place.
+        </h1>
+
+        <!-- Subhead (Inter Var 20px) -->
+        <p class="hero-subhead">
+          Payments, authentication, CRM, and email marketing unified into one modular engine for modern founders, creators, and SaaS platforms.
+        </p>
+
+        <!-- Dual CTA Row -->
+        <div class="hero-cta-row">
+          <a href="#signup" class="btn-primary btn-large">Start 7-day free trial</a>
+          <a href="#demo" class="btn-ghost btn-large">Is Outseta for me? &rarr;</a>
+        </div>
+
+        <!-- Hand-Drawn Permanent Marker Annotations over Hero -->
+        <div class="hero-annotation annotation-right" aria-hidden="true">
+          <span class="marker-text">HOOK IN THE FIRST 90 MINUTES</span>
+          <svg class="hand-arrow arrow-down" width="48" height="38" viewBox="0 0 48 38" fill="none">
+            <path d="M6 6C16 12 32 20 38 30M38 30L26 29M38 30L36 18" stroke="#df37a7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="hero-annotation annotation-left" aria-hidden="true">
+          <svg class="hand-arrow arrow-up" width="44" height="34" viewBox="0 0 44 34" fill="none">
+            <path d="M4 28C14 20 28 14 36 6M36 6L25 5M36 6L37 18" stroke="#240029" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="marker-text">SEE WHAT OUR CUSTOMERS ARE BUILDING</span>
+        </div>
+
+        <!-- 3-Column Showcase Card Row (Offset into Gradient) -->
+        <div class="hero-showcase-grid">
+          <!-- Card 1: Billing & Revenue -->
+          <article class="showcase-card">
+            <div class="card-header-bar">
+              <span class="card-chip">SUBSCRIPTIONS</span>
+              <span class="status-badge">
+                <i class="fa-solid fa-check"></i> Stripe Verified
+              </span>
+            </div>
+            <div class="card-metric-block">
+              <span class="metric-label">Monthly Recurring Revenue</span>
+              <div class="metric-value-row">
+                <span class="metric-number">$42,850</span>
+                <span class="metric-growth">+18.4%</span>
+              </div>
+            </div>
+            <div class="mini-chart">
+              <div class="chart-bar" style="height: 38%"></div>
+              <div class="chart-bar" style="height: 52%"></div>
+              <div class="chart-bar" style="height: 46%"></div>
+              <div class="chart-bar" style="height: 68%"></div>
+              <div class="chart-bar" style="height: 84%"></div>
+              <div class="chart-bar active" style="height: 100%"></div>
+            </div>
+            <div class="card-footer-info">
+              <span>Active Members: <strong>1,420</strong></span>
+              <span class="text-fuchsia">0% Platform Fee</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Member CRM Live Feed -->
+          <article class="showcase-card highlighted">
+            <div class="card-header-bar">
+              <span class="card-chip">MEMBER CRM</span>
+              <span class="live-dot"><span class="dot-pulse"></span> Live SSE Sync</span>
+            </div>
+            <div class="feed-list">
+              <div class="feed-item">
+                <div class="member-avatar">SJ</div>
+                <div class="feed-detail">
+                  <strong>Sarah Jenkins</strong>
+                  <span>Upgraded to Annual Pro ($290)</span>
+                </div>
+                <span class="feed-time">2m ago</span>
+              </div>
+              <div class="feed-item">
+                <div class="member-avatar">AC</div>
+                <div class="feed-detail">
+                  <strong>Alex Chen</strong>
+                  <span>Completed onboarding module</span>
+                </div>
+                <span class="feed-time">14m ago</span>
+              </div>
+              <div class="feed-item">
+                <div class="member-avatar">ML</div>
+                <div class="feed-detail">
+                  <strong>Maya Lin</strong>
+                  <span>Joined Private Founder Circle</span>
+                </div>
+                <span class="feed-time">41m ago</span>
+              </div>
+            </div>
+            <div class="card-footer-info">
+              <span>Total Tracked Lifetime Value: <strong>$184,200</strong></span>
+            </div>
+          </article>
+
+          <!-- Card 3: Protected Content Gate -->
+          <article class="showcase-card">
+            <div class="card-header-bar">
+              <span class="card-chip">AUTH &amp; ACCESS</span>
+              <span class="status-badge">
+                <i class="fa-solid fa-lock"></i> Gate Active
+              </span>
+            </div>
+            <div class="gate-preview">
+              <div class="gate-icon-wrap">
+                <i class="fa-solid fa-shield-halved gate-shield"></i>
+              </div>
+              <h4>Members-Only Architecture Hub</h4>
+              <p class="gate-desc">Requires active Founder tier membership or above.</p>
+              <button class="btn-primary btn-small w-full">Unlock Instant Access</button>
+            </div>
+            <div class="card-footer-info">
+              <span>Embed Mode: <strong>Zero-Code Widget</strong></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES PILL CATEGORY ROW -->
+    <section class="use-cases-section" id="use-cases">
+      <div class="section-container">
+        <p class="section-eyebrow text-center">TRUSTED BY 2,000+ MODERN HUBS &amp; COMMUNITIES</p>
+        <div class="category-pills">
+          <span class="pill-chip active">NETWORKS</span>
+          <span class="pill-chip">COMMUNITIES</span>
+          <span class="pill-chip">ASSOCIATIONS</span>
+          <span class="pill-chip">COURSES &amp; COHORTS</span>
+          <span class="pill-chip">CLUBS</span>
+          <span class="pill-chip">SAAS APPS</span>
+          <span class="pill-chip">NEWSLETTERS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE CAPABILITIES GRID -->
+    <section class="features-section" id="billing">
+      <div class="section-container">
+        <div class="section-header-block">
+          <p class="section-eyebrow">CORE CAPABILITIES</p>
+          <h2 class="section-headline">Everything you need. Zero Frankenstein plugins.</h2>
+          <p class="section-subtext">
+            Stop stitching together 6 different plugins that break with every browser update. Outseta delivers the full stack in one cohesive architecture.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </div>
+            <span class="status-badge"><i class="fa-solid fa-check"></i> Stripe Direct Sync</span>
+            <h3 class="feature-title">Subscription &amp; Paywall Engine</h3>
+            <p class="feature-desc">
+              Create recurring plans, one-time fees, setup costs, and free trials in seconds. Embed our sleek checkout modal directly on your site without redirecting users.
+            </p>
+            <ul class="feature-bullet-list">
+              <li><i class="fa-solid fa-circle-check"></i> Prorated upgrades &amp; automated downgrade logic</li>
+              <li><i class="fa-solid fa-circle-check"></i> Multi-currency &amp; global tax calculation ready</li>
+              <li><i class="fa-solid fa-circle-check"></i> 0% platform fee beyond standard Stripe charges</li>
+            </ul>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card" id="auth">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="status-badge"><i class="fa-solid fa-check"></i> Passwordless Magic</span>
+            <h3 class="feature-title">Authentication &amp; Access Control</h3>
+            <p class="feature-desc">
+              Protect full web pages, specific DOM components, or digital downloads with one line of JavaScript. Delight members with passwordless magic links or standard email auth.
+            </p>
+            <ul class="feature-bullet-list">
+              <li><i class="fa-solid fa-circle-check"></i> Single Sign-On across multiple subdomains &amp; apps</li>
+              <li><i class="fa-solid fa-circle-check"></i> Tier-based and member-status gating rules</li>
+              <li><i class="fa-solid fa-circle-check"></i> Works on Webflow, WordPress, Ghost, or custom HTML</li>
+            </ul>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card" id="crm">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+            <span class="status-badge"><i class="fa-solid fa-check"></i> 360° Profile</span>
+            <h3 class="feature-title">Full-Stack Member CRM &amp; Email</h3>
+            <p class="feature-desc">
+              See the complete lifecycle of every member: when they signed up, what invoices they paid, what emails they opened, and which pages they visited.
+            </p>
+            <ul class="feature-bullet-list">
+              <li><i class="fa-solid fa-circle-check"></i> Automated onboarding drip sequences based on tier</li>
+              <li><i class="fa-solid fa-circle-check"></i> Segmentation filters for targeted marketing blasts</li>
+              <li><i class="fa-solid fa-circle-check"></i> Built-in support ticketing &amp; live chat widget</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-STEP PROCESS EXPLAINER -->
+    <section class="steps-section" id="how-it-works">
+      <div class="section-container">
+        <div class="section-header-block">
+          <p class="section-eyebrow">HOW IT WORKS</p>
+          <h2 class="section-headline">Live in three simple steps.</h2>
+          <p class="section-subtext">No developer required. You can launch your entire monetization layer in under an hour.</p>
+        </div>
+
+        <div class="steps-row">
+          <div class="step-card">
+            <div class="step-badge">1</div>
+            <h4>Create your plan</h4>
+            <p>Define pricing tiers, trial durations, and protected content groups inside the Outseta dashboard.</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-card">
+            <div class="step-badge">2</div>
+            <h4>Add embed script</h4>
+            <p>Paste a single lightweight JavaScript snippet into the header of your website or web application.</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-card">
+            <div class="step-badge">3</div>
+            <h4>Copy links to buttons</h4>
+            <p>Link your CTA buttons to Outseta trigger links (e.g. <code>#o-login</code>, <code>#o-register</code>). Done!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS QUOTE WALL (3-Up Grid) -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-container">
+        <div class="section-header-block">
+          <p class="section-eyebrow">CUSTOMER STORIES</p>
+          <h2 class="section-headline">Trusted by founders running $10M+ businesses.</h2>
+          <p class="section-subtext">See why operators and developers choose Outseta over brittle multi-tool stacks.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Quote 1 -->
+          <blockquote class="testimonial-card">
+            <div class="testimonial-author-row">
+              <div class="author-avatar">JV</div>
+              <div class="author-meta">
+                <cite class="author-name">Jessica Vance</cite>
+                <span class="author-role">Founder, CreatorStudio</span>
+              </div>
+            </div>
+            <p class="quote-body">
+              &ldquo;We replaced 5 separate subscriptions—MemberPress, ActiveCampaign, HubSpot, and Stripe billing—with Outseta in an afternoon. Our software bills were cut by 70% and member support tickets dropped by more than half.&rdquo;
+            </p>
+          </blockquote>
+
+          <!-- Quote 2 -->
+          <blockquote class="testimonial-card">
+            <div class="testimonial-author-row">
+              <div class="author-avatar">DK</div>
+              <div class="author-meta">
+                <cite class="author-name">David K.</cite>
+                <span class="author-role">Head of Growth, DevCircle</span>
+              </div>
+            </div>
+            <p class="quote-body">
+              &ldquo;The seamless authentication and instant webhook synchronization allowed us to scale from 200 to 18,000 members without hiring a single backend engineer. It feels like a platform built by engineers for operators.&rdquo;
+            </p>
+          </blockquote>
+
+          <!-- Quote 3 -->
+          <blockquote class="testimonial-card">
+            <div class="testimonial-author-row">
+              <div class="author-avatar">ML</div>
+              <div class="author-meta">
+                <cite class="author-name">Maya Lin</cite>
+                <span class="author-role">Operator, DesignLeaders Guild</span>
+              </div>
+            </div>
+            <p class="quote-body">
+              &ldquo;The unified member CRM is pure gold. Being able to see payment history, forum engagement, and course completion in one profile without syncing CSVs is something no other tool on the market gives you.&rdquo;
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEGRATIONS ROW -->
+    <section class="integrations-section">
+      <div class="section-container">
+        <p class="section-eyebrow text-center">CONNECTIVITY &amp; EXTENSIBILITY</p>
+        <h3 class="integrations-title">Plays seamlessly with your existing tech stack</h3>
+
+        <div class="integration-icons-row">
+          <div class="integration-tile" title="Stripe"><i class="fa-brands fa-stripe"></i></div>
+          <div class="integration-tile" title="WordPress"><i class="fa-brands fa-wordpress"></i></div>
+          <div class="integration-tile" title="Slack"><i class="fa-brands fa-slack"></i></div>
+          <div class="integration-tile" title="GitHub"><i class="fa-brands fa-github"></i></div>
+          <div class="integration-tile" title="Discord"><i class="fa-brands fa-discord"></i></div>
+          <div class="integration-tile" title="Google Workspace"><i class="fa-brands fa-google"></i></div>
+          <div class="integration-tile" title="Amazon Web Services"><i class="fa-brands fa-aws"></i></div>
+        </div>
+
+        <div class="text-center mt-6">
+          <a href="#integrations" class="integration-link">View all 50+ integrations &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED DARK CTA SECTION (Aubergine #240029) -->
+    <section class="dark-cta-section" id="signup">
+      <div class="dark-cta-container">
+        <div class="dark-cta-content">
+          <p class="section-eyebrow text-plum">READY TO BUILD</p>
+          <h2 class="dark-cta-headline">Launch your entire membership &amp; revenue stack today.</h2>
+          <p class="dark-cta-subtext">
+            Get started with our 7-day free trial. No credit card required. Migrate your existing members with our dedicated white-glove migration team.
+          </p>
+          <div class="dark-cta-actions">
+            <a href="#signup" class="btn-primary btn-large">Start free 7-day trial</a>
+            <a href="#demo" class="btn-ghost-light btn-large">Schedule 1-on-1 demo</a>
+          </div>
+          <p class="dark-cta-guarantee">
+            <i class="fa-solid fa-shield-heart"></i> Cancel anytime with 1 click. Zero platform lock-in.
+          </p>
+        </div>
+
+        <div class="dark-cta-preview-card">
+          <div class="preview-card-inner">
+            <div class="preview-header">
+              <span class="preview-title">Platform Quickstart</span>
+              <span class="status-badge"><i class="fa-solid fa-bolt"></i> Ready</span>
+            </div>
+            <div class="preview-code-block">
+              <code>&lt;script src="https://cdn.outseta.com/i/outseta.min.js"&gt;&lt;/script&gt;</code>
+            </div>
+            <div class="preview-checklist">
+              <label><input type="checkbox" checked disabled /> Stripe connect established</label>
+              <label><input type="checkbox" checked disabled /> Single sign-on module configured</label>
+              <label><input type="checkbox" checked disabled /> Member welcome broadcast queued</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <a href="#" class="brand-logo mb-3">
+          <svg class="brand-mark" width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14" stroke="#240029" stroke-width="2.5" />
+            <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" />
+            <circle cx="16" cy="16" r="4" fill="#240029" />
+          </svg>
+          <span class="brand-name">Outseta</span>
+        </a>
+        <p class="footer-tagline">
+          The all-in-one membership, payments, CRM, and email platform built for independent products and communities.
+        </p>
+        <div class="footer-social-row">
+          <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="#billing">Billing &amp; Payments</a></li>
+          <li><a href="#auth">Authentication &amp; SSO</a></li>
+          <li><a href="#crm">Member CRM</a></li>
+          <li><a href="#email">Email Marketing</a></li>
+          <li><a href="#help-desk">Help Desk &amp; Chat</a></li>
+          <li><a href="#pricing">Pricing Plans</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Use Cases</h5>
+        <ul>
+          <li><a href="#use-cases">Founder Communities</a></li>
+          <li><a href="#use-cases">Online Courses &amp; Cohorts</a></li>
+          <li><a href="#use-cases">Associations &amp; Nonprofits</a></li>
+          <li><a href="#use-cases">B2B SaaS Applications</a></li>
+          <li><a href="#use-cases">Paid Newsletters</a></li>
+          <li><a href="#use-cases">Digital Product Stores</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#docs">Developer Documentation</a></li>
+          <li><a href="#api">API Reference</a></li>
+          <li><a href="#migration">Member Migration Guide</a></li>
+          <li><a href="#blog">Founder Playbook Blog</a></li>
+          <li><a href="#status">System Status (99.99%)</a></li>
+          <li><a href="#support">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-inner">
+        <span>&copy; 2026 Outseta, Inc. All rights reserved.</span>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#security">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="main.js"></script>
 </body>

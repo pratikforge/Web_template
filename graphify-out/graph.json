@@ -8812,6 +8812,496 @@
       "norm_label": "expanding the oxlint configuration"
     },
     {
+      "label": "DESIGN.md",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "design_design",
+      "community": 83,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Outseta \u2014 Style Reference",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "design_design_outseta_style_reference",
+      "community": 83,
+      "norm_label": "outseta \u2014 style reference"
+    },
+    {
+      "label": "Tokens \u2014 Colors",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "design_design_tokens_colors",
+      "community": 83,
+      "norm_label": "tokens \u2014 colors"
+    },
+    {
+      "label": "Tokens \u2014 Typography",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "design_design_tokens_typography",
+      "community": 83,
+      "norm_label": "tokens \u2014 typography"
+    },
+    {
+      "label": "Inter Var \u2014 Workhorse UI and body font \u2014 the single axis variable cuts tracking at every size (-0.02em at 10px through -0.004em at 36px), so body text and headings share one family with no jarring weight jumps. \u00b7 `--font-inter-var`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "design_design_inter_var_workhorse_ui_and_body_font_the_single_axis_variable_cuts_tracking_at_every_size_0_02em_at_10px_through_0_004em_at_36px_so_body_text_and_headings_share_one_family_with_no_jarring_weight_jumps_font_inter_var",
+      "community": 83,
+      "norm_label": "inter var \u2014 workhorse ui and body font \u2014 the single axis variable cuts tracking at every size (-0.02em at 10px through -0.004em at 36px), so body text and headings share one family with no jarring weight jumps. \u00b7 `--font-inter-var`"
+    },
+    {
+      "label": "Kaio \u2014 Display headlines \u2014 bold, ultra-condensed sans with strong character, used at 56-80px for hero statements. The choice of a single bold weight with tight tracking is anti-convention; most SaaS sites pair weight 300 whispers with 700 shouts. Kaio commits fully to one volume. \u00b7 `--font-kaio`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "design_design_kaio_display_headlines_bold_ultra_condensed_sans_with_strong_character_used_at_56_80px_for_hero_statements_the_choice_of_a_single_bold_weight_with_tight_tracking_is_anti_convention_most_saas_sites_pair_weight_300_whispers_with_700_shouts_kaio_commits_fully_to_one_volume_font_kaio",
+      "community": 83,
+      "norm_label": "kaio \u2014 display headlines \u2014 bold, ultra-condensed sans with strong character, used at 56-80px for hero statements. the choice of a single bold weight with tight tracking is anti-convention; most saas sites pair weight 300 whispers with 700 shouts. kaio commits fully to one volume. \u00b7 `--font-kaio`"
+    },
+    {
+      "label": "JetBrains Mono \u2014 Section eyebrows and technical labels (e.g. 'STRIPE VERIFIED PARTNER', 'ALL-IN-ONE MEMBERSHIP STACK') \u2014 the wide tracking (0.04-0.10em) turns mono into a humanist label voice, not code. \u00b7 `--font-jetbrains-mono`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "design_design_jetbrains_mono_section_eyebrows_and_technical_labels_e_g_stripe_verified_partner_all_in_one_membership_stack_the_wide_tracking_0_04_0_10em_turns_mono_into_a_humanist_label_voice_not_code_font_jetbrains_mono",
+      "community": 83,
+      "norm_label": "jetbrains mono \u2014 section eyebrows and technical labels (e.g. 'stripe verified partner', 'all-in-one membership stack') \u2014 the wide tracking (0.04-0.10em) turns mono into a humanist label voice, not code. \u00b7 `--font-jetbrains-mono`"
+    },
+    {
+      "label": "Permanent Marker \u2014 Handwritten annotations layered over the hero gradient ('SEE WHAT OUR CUSTOMERS ARE BUILDING', 'HOOK IN THE FIRST 90 MINUTES') \u2014 these are not body text, they are a personality layer; use sparingly to mark sections, not to carry meaning. \u00b7 `--font-permanent-marker`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "design_design_permanent_marker_handwritten_annotations_layered_over_the_hero_gradient_see_what_our_customers_are_building_hook_in_the_first_90_minutes_these_are_not_body_text_they_are_a_personality_layer_use_sparingly_to_mark_sections_not_to_carry_meaning_font_permanent_marker",
+      "community": 83,
+      "norm_label": "permanent marker \u2014 handwritten annotations layered over the hero gradient ('see what our customers are building', 'hook in the first 90 minutes') \u2014 these are not body text, they are a personality layer; use sparingly to mark sections, not to carry meaning. \u00b7 `--font-permanent-marker`"
+    },
+    {
+      "label": "Phosphor \u2014 Icon system \u2014 single weight, single color (Aubergine #240029), 1px-equivalent stroke, used inline with body copy and as standalone glyphs. \u00b7 `--font-phosphor`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "design_design_phosphor_icon_system_single_weight_single_color_aubergine_240029_1px_equivalent_stroke_used_inline_with_body_copy_and_as_standalone_glyphs_font_phosphor",
+      "community": 83,
+      "norm_label": "phosphor \u2014 icon system \u2014 single weight, single color (aubergine #240029), 1px-equivalent stroke, used inline with body copy and as standalone glyphs. \u00b7 `--font-phosphor`"
+    },
+    {
+      "label": "Font Awesome 6 Brands \u2014 Third-party brand glyphs (integration logos, social icons) \u2014 kept distinct from Phosphor so the system can mix its own line icons with customer brand marks without visual collision. \u00b7 `--font-font-awesome-6-brands`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "design_design_font_awesome_6_brands_third_party_brand_glyphs_integration_logos_social_icons_kept_distinct_from_phosphor_so_the_system_can_mix_its_own_line_icons_with_customer_brand_marks_without_visual_collision_font_font_awesome_6_brands",
+      "community": 83,
+      "norm_label": "font awesome 6 brands \u2014 third-party brand glyphs (integration logos, social icons) \u2014 kept distinct from phosphor so the system can mix its own line icons with customer brand marks without visual collision. \u00b7 `--font-font-awesome-6-brands`"
+    },
+    {
+      "label": "Phosphor-Bold \u2014 Phosphor-Bold \u2014 detected in extracted data but not described by AI \u00b7 `--font-phosphor-bold`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "design_design_phosphor_bold_phosphor_bold_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_bold",
+      "community": 83,
+      "norm_label": "phosphor-bold \u2014 phosphor-bold \u2014 detected in extracted data but not described by ai \u00b7 `--font-phosphor-bold`"
+    },
+    {
+      "label": "Phosphor-Fill \u2014 Phosphor-Fill \u2014 detected in extracted data but not described by AI \u00b7 `--font-phosphor-fill`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "design_design_phosphor_fill_phosphor_fill_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_fill",
+      "community": 83,
+      "norm_label": "phosphor-fill \u2014 phosphor-fill \u2014 detected in extracted data but not described by ai \u00b7 `--font-phosphor-fill`"
+    },
+    {
+      "label": "-apple-system \u2014 -apple-system \u2014 detected in extracted data but not described by AI \u00b7 `--font-apple-system`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "design_design_apple_system_apple_system_detected_in_extracted_data_but_not_described_by_ai_font_apple_system",
+      "community": 83,
+      "norm_label": "-apple-system \u2014 -apple-system \u2014 detected in extracted data but not described by ai \u00b7 `--font-apple-system`"
+    },
+    {
+      "label": "Family \u2014 Family \u2014 detected in extracted data but not described by AI \u00b7 `--font-family`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "design_design_family_family_detected_in_extracted_data_but_not_described_by_ai_font_family",
+      "community": 83,
+      "norm_label": "family \u2014 family \u2014 detected in extracted data but not described by ai \u00b7 `--font-family`"
+    },
+    {
+      "label": "Fraunces \u2014 Fraunces \u2014 detected in extracted data but not described by AI \u00b7 `--font-fraunces`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "design_design_fraunces_fraunces_detected_in_extracted_data_but_not_described_by_ai_font_fraunces",
+      "community": 83,
+      "norm_label": "fraunces \u2014 fraunces \u2014 detected in extracted data but not described by ai \u00b7 `--font-fraunces`"
+    },
+    {
+      "label": "Chakra Petch \u2014 Chakra Petch \u2014 detected in extracted data but not described by AI \u00b7 `--font-chakra-petch`",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "design_design_chakra_petch_chakra_petch_detected_in_extracted_data_but_not_described_by_ai_font_chakra_petch",
+      "community": 83,
+      "norm_label": "chakra petch \u2014 chakra petch \u2014 detected in extracted data but not described by ai \u00b7 `--font-chakra-petch`"
+    },
+    {
+      "label": "Type Scale",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "design_design_type_scale",
+      "community": 83,
+      "norm_label": "type scale"
+    },
+    {
+      "label": "Tokens \u2014 Spacing & Shapes",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "design_design_tokens_spacing_shapes",
+      "community": 83,
+      "norm_label": "tokens \u2014 spacing & shapes"
+    },
+    {
+      "label": "Spacing Scale",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "design_design_spacing_scale",
+      "community": 83,
+      "norm_label": "spacing scale"
+    },
+    {
+      "label": "Border Radius",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "design_design_border_radius",
+      "community": 83,
+      "norm_label": "border radius"
+    },
+    {
+      "label": "Shadows",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L172",
+      "_origin": "ast",
+      "id": "design_design_shadows",
+      "community": 83,
+      "norm_label": "shadows"
+    },
+    {
+      "label": "Layout",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L189",
+      "_origin": "ast",
+      "id": "design_design_layout",
+      "community": 83,
+      "norm_label": "layout"
+    },
+    {
+      "label": "Components",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "design_design_components",
+      "community": 83,
+      "norm_label": "components"
+    },
+    {
+      "label": "Primary Filled Button",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L198",
+      "_origin": "ast",
+      "id": "design_design_primary_filled_button",
+      "community": 83,
+      "norm_label": "primary filled button"
+    },
+    {
+      "label": "Ghost Outlined Button",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "design_design_ghost_outlined_button",
+      "community": 83,
+      "norm_label": "ghost outlined button"
+    },
+    {
+      "label": "Pill Tag / Category",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L208",
+      "_origin": "ast",
+      "id": "design_design_pill_tag_category",
+      "community": 83,
+      "norm_label": "pill tag / category"
+    },
+    {
+      "label": "Success Badge",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L213",
+      "_origin": "ast",
+      "id": "design_design_success_badge",
+      "community": 83,
+      "norm_label": "success badge"
+    },
+    {
+      "label": "Testimonial Card",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L218",
+      "_origin": "ast",
+      "id": "design_design_testimonial_card",
+      "community": 83,
+      "norm_label": "testimonial card"
+    },
+    {
+      "label": "Showcase / Logo Card",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L223",
+      "_origin": "ast",
+      "id": "design_design_showcase_logo_card",
+      "community": 83,
+      "norm_label": "showcase / logo card"
+    },
+    {
+      "label": "Numbered Step",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L228",
+      "_origin": "ast",
+      "id": "design_design_numbered_step",
+      "community": 83,
+      "norm_label": "numbered step"
+    },
+    {
+      "label": "Hero Section",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L233",
+      "_origin": "ast",
+      "id": "design_design_hero_section",
+      "community": 83,
+      "norm_label": "hero section"
+    },
+    {
+      "label": "Dark CTA Section",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "design_design_dark_cta_section",
+      "community": 83,
+      "norm_label": "dark cta section"
+    },
+    {
+      "label": "Navigation Bar",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L243",
+      "_origin": "ast",
+      "id": "design_design_navigation_bar",
+      "community": 83,
+      "norm_label": "navigation bar"
+    },
+    {
+      "label": "Eyebrow Label",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L248",
+      "_origin": "ast",
+      "id": "design_design_eyebrow_label",
+      "community": 83,
+      "norm_label": "eyebrow label"
+    },
+    {
+      "label": "Hand-Drawn Annotation",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "design_design_hand_drawn_annotation",
+      "community": 83,
+      "norm_label": "hand-drawn annotation"
+    },
+    {
+      "label": "Input Field",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L258",
+      "_origin": "ast",
+      "id": "design_design_input_field",
+      "community": 83,
+      "norm_label": "input field"
+    },
+    {
+      "label": "Integration Icon Tile",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L263",
+      "_origin": "ast",
+      "id": "design_design_integration_icon_tile",
+      "community": 83,
+      "norm_label": "integration icon tile"
+    },
+    {
+      "label": "Do's and Don'ts",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L268",
+      "_origin": "ast",
+      "id": "design_design_do_s_and_don_ts",
+      "community": 83,
+      "norm_label": "do's and don'ts"
+    },
+    {
+      "label": "Do",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "design_design_do",
+      "community": 83,
+      "norm_label": "do"
+    },
+    {
+      "label": "Don't",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L279",
+      "_origin": "ast",
+      "id": "design_design_don_t",
+      "community": 83,
+      "norm_label": "don't"
+    },
+    {
+      "label": "Surfaces",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L288",
+      "_origin": "ast",
+      "id": "design_design_surfaces",
+      "community": 83,
+      "norm_label": "surfaces"
+    },
+    {
+      "label": "Elevation",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L297",
+      "_origin": "ast",
+      "id": "design_design_elevation",
+      "community": 83,
+      "norm_label": "elevation"
+    },
+    {
+      "label": "Imagery",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L305",
+      "_origin": "ast",
+      "id": "design_design_imagery",
+      "community": 83,
+      "norm_label": "imagery"
+    },
+    {
+      "label": "Layout",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L309",
+      "_origin": "ast",
+      "id": "design_design_layout_309",
+      "community": 83,
+      "norm_label": "layout"
+    },
+    {
+      "label": "Agent Prompt Guide",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L313",
+      "_origin": "ast",
+      "id": "design_design_agent_prompt_guide",
+      "community": 83,
+      "norm_label": "agent prompt guide"
+    },
+    {
+      "label": "Similar Brands",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "design_design_similar_brands",
+      "community": 83,
+      "norm_label": "similar brands"
+    },
+    {
+      "label": "Quick Start",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L341",
+      "_origin": "ast",
+      "id": "design_design_quick_start",
+      "community": 83,
+      "norm_label": "quick start"
+    },
+    {
+      "label": "CSS Custom Properties",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L343",
+      "_origin": "ast",
+      "id": "design_design_css_custom_properties",
+      "community": 83,
+      "norm_label": "css custom properties"
+    },
+    {
+      "label": "Tailwind v4",
+      "file_type": "document",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L474",
+      "_origin": "ast",
+      "id": "design_design_tailwind_v4",
+      "community": 83,
+      "norm_label": "tailwind v4"
+    },
+    {
       "label": "PRD_Template.md",
       "file_type": "document",
       "source_file": "spec/PRD_Template.md",
@@ -21861,6 +22351,486 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "design_design",
+      "target": "design_design_outseta_style_reference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L313",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_agent_prompt_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_do_s_and_don_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L297",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_elevation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L305",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_imagery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L309",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_layout_309",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L341",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_quick_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_similar_brands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L288",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_surfaces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_tokens_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_tokens_spacing_shapes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "design_design_outseta_style_reference",
+      "target": "design_design_tokens_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_apple_system_apple_system_detected_in_extracted_data_but_not_described_by_ai_font_apple_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_chakra_petch_chakra_petch_detected_in_extracted_data_but_not_described_by_ai_font_chakra_petch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_family_family_detected_in_extracted_data_but_not_described_by_ai_font_family",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_font_awesome_6_brands_third_party_brand_glyphs_integration_logos_social_icons_kept_distinct_from_phosphor_so_the_system_can_mix_its_own_line_icons_with_customer_brand_marks_without_visual_collision_font_font_awesome_6_brands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_fraunces_fraunces_detected_in_extracted_data_but_not_described_by_ai_font_fraunces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_inter_var_workhorse_ui_and_body_font_the_single_axis_variable_cuts_tracking_at_every_size_0_02em_at_10px_through_0_004em_at_36px_so_body_text_and_headings_share_one_family_with_no_jarring_weight_jumps_font_inter_var",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_jetbrains_mono_section_eyebrows_and_technical_labels_e_g_stripe_verified_partner_all_in_one_membership_stack_the_wide_tracking_0_04_0_10em_turns_mono_into_a_humanist_label_voice_not_code_font_jetbrains_mono",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_kaio_display_headlines_bold_ultra_condensed_sans_with_strong_character_used_at_56_80px_for_hero_statements_the_choice_of_a_single_bold_weight_with_tight_tracking_is_anti_convention_most_saas_sites_pair_weight_300_whispers_with_700_shouts_kaio_commits_fully_to_one_volume_font_kaio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_permanent_marker_handwritten_annotations_layered_over_the_hero_gradient_see_what_our_customers_are_building_hook_in_the_first_90_minutes_these_are_not_body_text_they_are_a_personality_layer_use_sparingly_to_mark_sections_not_to_carry_meaning_font_permanent_marker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_phosphor_bold_phosphor_bold_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_bold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_phosphor_fill_phosphor_fill_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_fill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_phosphor_icon_system_single_weight_single_color_aubergine_240029_1px_equivalent_stroke_used_inline_with_body_copy_and_as_standalone_glyphs_font_phosphor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "design_design_tokens_typography",
+      "target": "design_design_type_scale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "design_design_tokens_spacing_shapes",
+      "target": "design_design_border_radius",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "design_design_tokens_spacing_shapes",
+      "target": "design_design_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "design_design_tokens_spacing_shapes",
+      "target": "design_design_shadows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "design_design_tokens_spacing_shapes",
+      "target": "design_design_spacing_scale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_dark_cta_section",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L248",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_eyebrow_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_ghost_outlined_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_hand_drawn_annotation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_hero_section",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L258",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_input_field",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_integration_icon_tile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_navigation_bar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_numbered_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_pill_tag_category",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_primary_filled_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_showcase_logo_card",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_success_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "design_design_components",
+      "target": "design_design_testimonial_card",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "design_design_do_s_and_don_ts",
+      "target": "design_design_do",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L279",
+      "weight": 1.0,
+      "source": "design_design_do_s_and_don_ts",
+      "target": "design_design_don_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L343",
+      "weight": 1.0,
+      "source": "design_design_quick_start",
+      "target": "design_design_css_custom_properties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/design/DESIGN.md",
+      "source_location": "L474",
+      "weight": 1.0,
+      "source": "design_design_quick_start",
+      "target": "design_design_tailwind_v4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/PRD_Template.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -24110,5 +25080,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b22232130899805cc6f45125a39e5cea61743267"
+  "built_at_commit": "548139ea5c7efa72bd567790b254a3a8f591e653"
 }
