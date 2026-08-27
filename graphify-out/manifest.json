@@ -370,8 +370,18 @@
     "semantic_hash": ""
   },
   "spec/scroll_trigger_3d_canvas_spec.md": {
-    "mtime": 1787771278.803571,
-    "ast_hash": "a0a6cc175f6299442e8518a818c56c41",
+    "mtime": 1787771334.2926717,
+    "ast_hash": "b53d4354d69b5c10f09491f61dc16487",
+    "semantic_hash": ""
+  },
+  "spec/problem_statement.md": {
+    "mtime": 1787801074.919924,
+    "ast_hash": "baa1a757cb14be87bc71a8e9f4148ead",
+    "semantic_hash": ""
+  },
+  "spec/top_10_campus_circular_ideas.md": {
+    "mtime": 1787801234.5955184,
+    "ast_hash": "aabdfd25f07ac086d6f4bda3a642b23b",
     "semantic_hash": ""
   }
 }
