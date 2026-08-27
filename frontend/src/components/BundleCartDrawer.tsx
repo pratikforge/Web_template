@@ -203,7 +203,7 @@ export const BundleCartDrawer: React.FC<BundleCartDrawerProps> = ({ onOrderCreat
                 </span>
               </div>
               <div className="flex justify-between text-sm font-bold text-white pt-2 border-t border-slate-800">
-                <span>Total Escrow Amount:</span>
+                <span>Total Amount:</span>
                 <span className="text-indigo-400 font-black">₹{paiseToRupees(totalPaise)}</span>
               </div>
             </div>

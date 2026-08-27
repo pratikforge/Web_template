@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import type { CampusUser, UserRole } from '../types/campus';
 import { MOCK_USERS } from '../data/mockCampusData';
 import { safeStorage } from '../lib/safeStorage';
+import { validateAndSanitizeProfile } from '../lib/profileValidation';
 
 interface SessionContextType {
   currentUser: CampusUser;
@@ -10,6 +11,7 @@ interface SessionContextType {
   switchRole: (role: UserRole) => void;
   setPlatformFeePercentage: (fee: number) => void;
   adjustWalletBalance: (deltaPaise: number) => void;
+  updateCurrentUser: (updates: Partial<CampusUser>) => { success: boolean; errors?: Record<string, string> };
   resetAllDemoData: () => void;
 }
 
@@ -55,6 +57,37 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
     });
   };
 
+  const updateCurrentUser = (updates: Partial<CampusUser>): { success: boolean; errors?: Record<string, string> } => {
+    const validation = validateAndSanitizeProfile(updates, currentUser);
+    if (!validation.isValid) {
+      return { success: false, errors: validation.errors };
+    }
+
+    setUserMap(prev => {
+      const current = prev[activeRole] || MOCK_USERS[activeRole];
+      const updatedUser: CampusUser = {
+        ...current,
+        ...validation.sanitizedData,
+        id: current.id,
+        role: current.role,
+        trustScore: current.trustScore,
+        isVerified: current.isVerified,
+        walletBalancePaise: current.walletBalancePaise,
+        successfulExchanges: current.successfulExchanges,
+        lateReturns: current.lateReturns,
+        disputes: current.disputes
+      };
+      const updated = {
+        ...prev,
+        [activeRole]: updatedUser
+      };
+      safeStorage.setItem('users_map', updated);
+      return updated;
+    });
+
+    return { success: true };
+  };
+
   const resetAllDemoData = () => {
     safeStorage.resetDemoState();
     setActiveRole('borrower');
@@ -81,6 +114,7 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
         switchRole,
         setPlatformFeePercentage,
         adjustWalletBalance,
+        updateCurrentUser,
         resetAllDemoData
       }}
     >

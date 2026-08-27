@@ -265,6 +265,25 @@ export const MOCK_RESOURCES: CampusResource[] = [
     totalBorrowsCount: 31
   },
   {
+    id: 'res_marlin_cycle',
+    title: 'Trek Marlin 7 21-Speed Mountain Bike / Cycle',
+    category: 'Sports & Dorm',
+    description: 'Lightweight aluminum frame, 21-speed Shimano gears, dual mechanical disc brakes, and front suspension for campus cycle and bicycle commuting.',
+    hourlyRateRupees: 20,
+    depositRupees: 150,
+    ownerId: 'user_arjun',
+    ownerName: 'Arjun Menon',
+    ownerDepartment: 'Mechanical (4th Year)',
+    ownerHostel: 'Hostel 1',
+    distanceMinutes: 2,
+    condition: 'Excellent',
+    isAvailable: true,
+    imageUrl: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=80',
+    accessoriesIncluded: ['Combination Cable Lock', 'LED Headlight', 'Frame Mini Pump'],
+    borrowingTerms: ['Lock to designated campus bike racks only', 'Return with clean chain'],
+    totalBorrowsCount: 27
+  },
+  {
     id: 'res_math_book_donation',
     title: 'Higher Engineering Mathematics (B.S. Grewal 44th Ed.)',
     category: 'Free / Donate',

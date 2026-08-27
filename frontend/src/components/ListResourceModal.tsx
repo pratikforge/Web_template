@@ -1,21 +1,34 @@
-import React, { useState } from 'react';
-import { X, Plus, Gift, Sparkles, CheckCircle2 } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { X, Plus, Gift, Sparkles, CheckCircle2, Image as ImageIcon, RefreshCw, AlertCircle } from 'lucide-react';
 import type { CampusResource, ResourceCategory } from '../types/campus';
 import { useSession } from '../context/SessionContext';
-import { sanitizeInput } from '../lib/security';
+import {
+  validateImageFile,
+  fileToDataUrl,
+  createProductListing
+} from '../lib/fileValidation';
 
 interface ListResourceModalProps {
   isOpen: boolean;
   onClose: () => void;
   onResourceAdded: (newResource: CampusResource) => void;
+  initialImageUrl?: string;
+  initialFileName?: string;
 }
 
 export const ListResourceModal: React.FC<ListResourceModalProps> = ({
   isOpen,
   onClose,
-  onResourceAdded
+  onResourceAdded,
+  initialImageUrl = '',
+  initialFileName = ''
 }) => {
   const { currentUser } = useSession();
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const [imageUrl, setImageUrl] = useState<string>(initialImageUrl);
+  const [imageFileName, setImageFileName] = useState<string>(initialFileName);
+  const [fileError, setFileError] = useState<string | null>(null);
 
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState<ResourceCategory>('Electronics');
@@ -28,6 +41,36 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
   const [isSuccess, setIsSuccess] = useState(false);
 
   if (!isOpen) return null;
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const validation = validateImageFile({
+      name: file.name,
+      type: file.type,
+      size: file.size
+    });
+
+    if (!validation.isValid) {
+      setFileError(validation.error || 'Invalid image file.');
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      return;
+    }
+
+    setFileError(null);
+    try {
+      const dataUrl = await fileToDataUrl(file);
+      setImageUrl(dataUrl);
+      setImageFileName(file.name);
+    } catch {
+      setFileError('Failed to read selected image. Please try again.');
+    }
+  };
+
+  const triggerNativeFilePicker = () => {
+    fileInputRef.current?.click();
+  };
 
   // 1-Click Campus Listing Templates for quick judge testing
   const applyTemplate = (templateName: string) => {
@@ -57,38 +100,22 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const cleanTitle = sanitizeInput(title);
-    const cleanDesc = sanitizeInput(description);
-    if (!cleanTitle) return;
+    if (!title.trim()) return;
 
-    const newResource: CampusResource = {
-      id: `res_user_${Date.now()}`,
-      title: cleanTitle,
-      category: isDonation ? 'Free / Donate' : category,
-      description: cleanDesc || 'Student-shared campus resource.',
-      hourlyRateRupees: isDonation ? 0 : Math.max(0, parseInt(hourlyRate) || 0),
-      depositRupees: isDonation ? 0 : Math.max(0, parseInt(deposit) || 0),
-      ownerId: currentUser.id,
-      ownerName: currentUser.name,
-      ownerDepartment: currentUser.department,
-      ownerHostel: currentUser.hostel,
-      distanceMinutes: 2,
-      condition,
-      isAvailable: true,
-      imageUrl:
-        category === 'Lab & Academic'
-          ? 'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=800&q=80'
-          : category === 'Media & Events'
-          ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80'
-          : 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80',
-      accessoriesIncluded: accessories
-        .split(',')
-        .map(a => a.trim())
-        .filter(Boolean),
-      borrowingTerms: ['Return in clean condition', 'Report any faults immediately'],
-      totalBorrowsCount: 0,
-      isDonation
-    };
+    const newResource = createProductListing(
+      {
+        title,
+        category,
+        description,
+        hourlyRate,
+        deposit,
+        condition,
+        isDonation,
+        accessories,
+        imageUrl
+      },
+      currentUser
+    );
 
     onResourceAdded(newResource);
     setIsSuccess(true);
@@ -98,18 +125,39 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
     }, 1200);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    // Enter key submits form when not using Shift+Enter in a textarea
+    if (e.key === 'Enter' && !e.shiftKey && (e.target as HTMLElement).tagName !== 'TEXTAREA') {
+      e.preventDefault();
+      handleSubmit(e as unknown as React.FormEvent);
+    } else if (e.key === 'Enter' && e.ctrlKey && (e.target as HTMLElement).tagName === 'TEXTAREA') {
+      e.preventDefault();
+      handleSubmit(e as unknown as React.FormEvent);
+    }
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm animate-in fade-in">
       <div className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-2xl flex flex-col max-h-[90vh]">
+        {/* Hidden Native File Input (restricted to PNG, JPG, JPEG) */}
+        <input
+          type="file"
+          ref={fileInputRef}
+          accept="image/png, image/jpeg, image/jpg, .png, .jpg, .jpeg"
+          onChange={handleFileChange}
+          className="hidden"
+          data-testid="native-image-input"
+        />
+
         {/* Header */}
         <div className="flex items-center justify-between p-5 border-b border-slate-800">
           <div>
-            <h3 className="font-bold text-white text-base">List Equipment for Campus Sharing</h3>
-            <p className="text-xs text-slate-400">Put idle equipment to work or donate to peers</p>
+            <h3 className="font-bold text-white text-base">Fill Product Details</h3>
+            <p className="text-xs text-slate-400">List idle equipment or donate to campus peers</p>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white"
+            className="p-1.5 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-colors"
           >
             <X className="h-5 w-5" />
           </button>
@@ -124,7 +172,78 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="overflow-y-auto p-5 space-y-4 text-xs">
+          <form
+            onSubmit={handleSubmit}
+            onKeyDown={handleKeyDown}
+            className="overflow-y-auto p-5 space-y-4 text-xs"
+          >
+            {/* Error Banner */}
+            {fileError && (
+              <div className="flex items-center gap-2 p-3 rounded-xl bg-rose-950/40 border border-rose-800/60 text-rose-300">
+                <AlertCircle className="h-4 w-4 shrink-0 text-rose-400" />
+                <span className="text-xs font-medium">{fileError}</span>
+              </div>
+            )}
+
+            {/* Product Image Preview Section */}
+            <div className="space-y-1.5">
+              <label className="text-slate-300 font-semibold flex items-center justify-between">
+                <span>Product Picture (PNG, JPG, JPEG)</span>
+                {imageUrl && (
+                  <button
+                    type="button"
+                    onClick={triggerNativeFilePicker}
+                    className="text-[11px] text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-medium transition-colors cursor-pointer"
+                  >
+                    <RefreshCw className="h-3 w-3" />
+                    Change Image
+                  </button>
+                )}
+              </label>
+
+              {imageUrl ? (
+                <div className="relative group rounded-xl overflow-hidden border border-slate-800 bg-slate-950 flex items-center gap-3 p-2.5">
+                  <img
+                    src={imageUrl}
+                    alt="Product preview"
+                    className="h-16 w-20 object-cover rounded-lg border border-slate-800 shrink-0 bg-slate-900"
+                  />
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs font-semibold text-white truncate">
+                      {imageFileName || 'Selected Picture'}
+                    </p>
+                    <p className="text-[10px] text-emerald-400 flex items-center gap-1 mt-0.5">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                      Image loaded & ready to publish
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={triggerNativeFilePicker}
+                    className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-medium transition-colors shrink-0 cursor-pointer"
+                  >
+                    Choose Another
+                  </button>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={triggerNativeFilePicker}
+                  className="w-full py-4 border-2 border-dashed border-slate-700 hover:border-indigo-500 rounded-xl bg-slate-950/60 hover:bg-slate-900/60 transition-all flex flex-col items-center justify-center gap-1.5 group cursor-pointer"
+                >
+                  <div className="p-2 rounded-full bg-slate-800 group-hover:bg-indigo-600/20 text-slate-400 group-hover:text-indigo-400 transition-colors">
+                    <ImageIcon className="h-5 w-5" />
+                  </div>
+                  <span className="text-xs font-semibold text-slate-200 group-hover:text-white">
+                    Choose Picture from Computer
+                  </span>
+                  <span className="text-[10px] text-slate-400">
+                    Supports .png, .jpg, .jpeg (Max 5MB)
+                  </span>
+                </button>
+              )}
+            </div>
+
             {/* Quick Templates */}
             <div className="space-y-1.5">
               <span className="text-[11px] font-semibold text-slate-400 flex items-center gap-1">
@@ -135,21 +254,21 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
                 <button
                   type="button"
                   onClick={() => applyTemplate('calculator')}
-                  className="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px]"
+                  className="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] transition-colors cursor-pointer"
                 >
                   Scientific Calculator
                 </button>
                 <button
                   type="button"
                   onClick={() => applyTemplate('lab_coat')}
-                  className="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px]"
+                  className="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] transition-colors cursor-pointer"
                 >
                   Lab Coat
                 </button>
                 <button
                   type="button"
                   onClick={() => applyTemplate('camera')}
-                  className="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px]"
+                  className="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] transition-colors cursor-pointer"
                 >
                   DSLR Camera
                 </button>
@@ -179,6 +298,7 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
               <input
                 type="text"
                 required
+                autoFocus
                 value={title}
                 onChange={e => setTitle(e.target.value)}
                 placeholder="e.g. Casio fx-991EX Calculator"
@@ -193,7 +313,7 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
                 <select
                   value={category}
                   onChange={e => setCategory(e.target.value as ResourceCategory)}
-                  className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-white focus:border-indigo-500 focus:outline-none"
+                  className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-white focus:border-indigo-500 focus:outline-none cursor-pointer"
                 >
                   <option value="Electronics">Electronics</option>
                   <option value="Lab & Academic">Lab & Academic</option>
@@ -206,8 +326,8 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
                 <label className="text-slate-300 font-semibold">Condition</label>
                 <select
                   value={condition}
-                  onChange={e => setCondition(e.target.value as any)}
-                  className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-white focus:border-indigo-500 focus:outline-none"
+                  onChange={e => setCondition(e.target.value as 'Brand New' | 'Excellent' | 'Good' | 'Fair')}
+                  className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-white focus:border-indigo-500 focus:outline-none cursor-pointer"
                 >
                   <option value="Brand New">Brand New</option>
                   <option value="Excellent">Excellent</option>
@@ -258,7 +378,10 @@ export const ListResourceModal: React.FC<ListResourceModalProps> = ({
 
             {/* Description */}
             <div className="space-y-1">
-              <label className="text-slate-300 font-semibold">Description</label>
+              <label className="text-slate-300 font-semibold flex items-center justify-between">
+                <span>Product Description</span>
+                <span className="text-[10px] text-slate-500">Press Enter or Ctrl+Enter to submit</span>
+              </label>
               <textarea
                 rows={2}
                 value={description}

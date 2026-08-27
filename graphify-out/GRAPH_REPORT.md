@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 112 files · ~116,700 words
+- 118 files · ~123,407 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1204 nodes · 1367 edges · 87 communities (74 shown, 13 thin omitted)
+- 1233 nodes · 1453 edges · 86 communities (73 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `656ceb2e`
+- Built from commit: `a22db3ae`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -88,7 +88,6 @@
 - [[_COMMUNITY_Community 74|Community 74]]
 - [[_COMMUNITY_Community 75|Community 75]]
 - [[_COMMUNITY_Community 76|Community 76]]
-- [[_COMMUNITY_Community 77|Community 77]]
 - [[_COMMUNITY_Community 78|Community 78]]
 - [[_COMMUNITY_Community 79|Community 79]]
 - [[_COMMUNITY_Community 80|Community 80]]
@@ -99,11 +98,11 @@
 - [[_COMMUNITY_Community 86|Community 86]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `CampusResource` - 21 edges
+1. `CampusResource` - 22 edges
 2. `Code Review and Quality` - 19 edges
 3. `compilerOptions` - 18 edges
-4. `Security and Hardening` - 16 edges
-5. `useSession()` - 15 edges
+4. `useSession()` - 17 edges
+5. `Security and Hardening` - 16 edges
 6. `compilerOptions` - 15 edges
 7. `Git Workflow and Versioning` - 15 edges
 8. `Components` - 15 edges
@@ -111,8 +110,6 @@
 10. `Key Functionalities` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `ListResourceModalProps` --references--> `CampusResource`  [EXTRACTED]
-  frontend/src/components/ListResourceModal.tsx → frontend/src/types/campus.ts
 - `RouteStop` --references--> `CampusResource`  [EXTRACTED]
   frontend/src/lib/agentPipeline.ts → frontend/src/types/campus.ts
 - `AdminDashboard()` --calls--> `paiseToRupees()`  [EXTRACTED]
@@ -121,11 +118,13 @@
   frontend/src/components/BundleCartDrawer.tsx → frontend/src/context/CartContext.tsx
 - `BundleCartDrawer()` --calls--> `useSession()`  [EXTRACTED]
   frontend/src/components/BundleCartDrawer.tsx → frontend/src/context/SessionContext.tsx
+- `HeroAIBundlerProps` --references--> `CampusResource`  [EXTRACTED]
+  frontend/src/components/HeroAIBundler.tsx → frontend/src/types/campus.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (87 total, 13 thin omitted)
+## Communities (86 total, 13 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -317,7 +316,7 @@ Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $
 
 ### Community 58 - "Community 58"
 Cohesion: 0.18
-Nodes (18): AgentReasoningHUD(), AgentReasoningHUDProps, HeroAIBundler(), HeroAIBundlerProps, ResourceCard(), ResourceCardProps, CATEGORIES, ResourceCatalog() (+10 more)
+Nodes (18): AgentReasoningHUD(), AgentReasoningHUDProps, HeroAIBundler(), HeroAIBundlerProps, ListResourceModalProps, ResourceCard(), ResourceCardProps, CATEGORIES (+10 more)
 
 ### Community 59 - "Community 59"
 Cohesion: 0.50
@@ -364,24 +363,20 @@ Cohesion: 0.14
 Nodes (13): 1. Graphify Search Phase (Rule #5 & #12), 2. Architecture & Feature Breakdown in YAML (Rule #7), 3. Strict Guardrails During Execution (Rule #8), 4. Test-Driven Development (TDD) Test Suites (Rule #8), 5. Cyber Attack Test Scripts (STRIDE & OWASP Top 10) (Rule #8), 6. Self-Critique of the Idea & Execution Plan (Adversarial Stress Test), 7. Pre-Commit Hooks & Automation (Rules #10, #11 & #13), 8. Graphify Update Phase (Rule #5) (+5 more)
 
 ### Community 75 - "Community 75"
-Cohesion: 0.40
-Nodes (3): BundleSuggestion, parseNeedPrompt(), PRESET_BUNDLES
+Cohesion: 0.20
+Nodes (13): NavbarProps, ALLOWED_EXTENSIONS, ALLOWED_MIME_TYPES, createProductListing(), fileToDataUrl(), ImageFileMeta, ProductListingInput, validateImageFile() (+5 more)
 
 ### Community 76 - "Community 76"
-Cohesion: 0.16
-Nodes (18): deconstructIntent(), IntentDomain, IntentUrgency, MissingGap, OptimizedRoute, optimizeRoute(), ParsedIntent, PreflightCheck (+10 more)
-
-### Community 77 - "Community 77"
-Cohesion: 0.19
-Nodes (13): AdminDashboard(), AdminDashboardProps, LifecycleTracker(), ListResourceModal(), ListResourceModalProps, Navbar(), NavbarProps, CartProvider() (+5 more)
+Cohesion: 0.11
+Nodes (23): MOCK_RESOURCES, CAMPUS_KEYWORD_TAXONOMY, deconstructIntent(), IntentDomain, IntentUrgency, KeywordSchema, MissingGap, OptimizedRoute (+15 more)
 
 ### Community 78 - "Community 78"
-Cohesion: 0.15
-Nodes (14): STAGES_ORDER, VisualDiffSlider(), VisualDiffSliderProps, DEFAULT_SEED_ORDER, LoanEngineContext, LoanEngineContextType, LoanEngineProvider(), canTransition() (+6 more)
+Cohesion: 0.11
+Nodes (25): AdminDashboard(), AdminDashboardProps, LifecycleTracker(), STAGES_ORDER, ListResourceModal(), Navbar(), UserProfileModal(), VisualDiffSlider() (+17 more)
 
 ### Community 79 - "Community 79"
-Cohesion: 0.19
-Nodes (14): CommunityBeaconDrawer(), CommunityBeaconDrawerProps, ImpactSection(), SessionContext, SessionContextType, SessionProvider(), MOCK_BEACON_REQUESTS, MOCK_IMPACT_STATS (+6 more)
+Cohesion: 0.13
+Nodes (24): CommunityBeaconDrawer(), CommunityBeaconDrawerProps, ImpactSection(), UserProfileModalProps, SessionContext, SessionContextType, SessionProvider(), MOCK_BEACON_REQUESTS (+16 more)
 
 ### Community 80 - "Community 80"
 Cohesion: 0.28
@@ -404,19 +399,19 @@ Cohesion: 0.40
 Nodes (4): buildCommand, cleanUrls, outputDirectory, $schema
 
 ## Knowledge Gaps
-- **833 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+828 more)
+- **843 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+838 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `SafeStorageAdapter` connect `Community 74` to `Community 78`?**
+- **Why does `SafeStorageAdapter` connect `Community 74` to `Community 79`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `CampusResource` connect `Community 58` to `Community 76`, `Community 77`, `Community 79`?**
+- **Why does `CampusResource` connect `Community 58` to `Community 75`, `Community 76`, `Community 78`, `Community 79`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _833 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _843 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

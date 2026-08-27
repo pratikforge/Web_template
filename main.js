@@ -463,11 +463,13 @@
         hudDesc.textContent = `Found exam-authorized ClassWiz calculators and accessories available for immediate pickup in Hostel 12.`;
       } else {
         hudTitle.textContent = `Search Results for "${query}" (${matched.length} items found)`;
-        hudDesc.textContent = `Showing campus items verified by peer escrow matching your request.`;
+        hudDesc.textContent = matched.length > 0
+          ? `Showing campus items verified by peer escrow matching your request.`
+          : `No matching campus gear found for your request. Try searching for specific equipment or categories.`;
       }
     }
 
-    renderCatalog(matched.length > 0 ? matched : INVENTORY);
+    renderCatalog(matched);
 
     // Scroll smoothly to results
     const resultsSection = document.getElementById('results-section');

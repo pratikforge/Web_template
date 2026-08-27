@@ -290,8 +290,8 @@
     "semantic_hash": ""
   },
   "frontend/src/App.tsx": {
-    "mtime": 1787803281.2557292,
-    "ast_hash": "43f9be8649d21bf85ec65668c3224111",
+    "mtime": 1787815794.2904606,
+    "ast_hash": "b547d16f26578aa4762c8745f1482170",
     "semantic_hash": ""
   },
   "frontend/src/lib/pocketbase.ts": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/BundleCartDrawer.tsx": {
-    "mtime": 1787803281.2571032,
-    "ast_hash": "8bba4f44543c1ee8ed95930653cc3ab5",
+    "mtime": 1787815573.7047803,
+    "ast_hash": "8ca65caeaf4cec4716d8362b093a4fd8",
     "semantic_hash": ""
   },
   "frontend/src/components/CommunityBeaconDrawer.tsx": {
@@ -435,7 +435,7 @@
     "semantic_hash": ""
   },
   "frontend/src/components/HeroAIBundler.tsx": {
-    "mtime": 1787803932.9732013,
+    "mtime": 1787815487.5727935,
     "ast_hash": "0b732722f4dc50d68e2fa13a5c2a8df8",
     "semantic_hash": ""
   },
@@ -450,13 +450,13 @@
     "semantic_hash": ""
   },
   "frontend/src/components/ListResourceModal.tsx": {
-    "mtime": 1787803281.2619522,
-    "ast_hash": "06e37e3c0358432ca50e340c094bac1f",
+    "mtime": 1787815664.96788,
+    "ast_hash": "e04252a0e3a751725c4707e46ecad26b",
     "semantic_hash": ""
   },
   "frontend/src/components/Navbar.tsx": {
-    "mtime": 1787803281.262488,
-    "ast_hash": "56c6c8d78771ad1cf5b76ae9ee27a122",
+    "mtime": 1787815780.7503436,
+    "ast_hash": "616d3ac02a780011d3a5a0c9cbede2d2",
     "semantic_hash": ""
   },
   "frontend/src/components/ResourceCard.tsx": {
@@ -495,17 +495,17 @@
     "semantic_hash": ""
   },
   "frontend/src/context/SessionContext.tsx": {
-    "mtime": 1787803281.268803,
-    "ast_hash": "7e1451a8a1dd8ca0a1acbe66ee57e809",
+    "mtime": 1787815744.192248,
+    "ast_hash": "748e2270e3a67ffbfa28e4a4b87aa314",
     "semantic_hash": ""
   },
   "frontend/src/data/mockCampusData.ts": {
-    "mtime": 1787803281.269804,
-    "ast_hash": "feae86385b5b873c5ac40af6af221936",
+    "mtime": 1787815572.636535,
+    "ast_hash": "ef10dbc6f5378c93654cb1c28d6439b0",
     "semantic_hash": ""
   },
   "frontend/src/lib/aiBundler.ts": {
-    "mtime": 1787803281.2708025,
+    "mtime": 1787815487.5744183,
     "ast_hash": "837c69999877eaf2b59b36bf17b0b982",
     "semantic_hash": ""
   },
@@ -555,13 +555,13 @@
     "semantic_hash": ""
   },
   "frontend/src/components/AgentReasoningHUD.tsx": {
-    "mtime": 1787803932.9721467,
+    "mtime": 1787815487.571819,
     "ast_hash": "cc998b61fd33325c8cfdd4ad8f9075d3",
     "semantic_hash": ""
   },
   "frontend/src/lib/agentPipeline.ts": {
-    "mtime": 1787803932.973728,
-    "ast_hash": "5cac135e1b42641e22e5fe46c9d37d0f",
+    "mtime": 1787815521.8040895,
+    "ast_hash": "0f272ba4806e0e13a28afca18a27d013",
     "semantic_hash": ""
   },
   "frontend/src/tests/agent_pipeline.test.ts": {
@@ -575,13 +575,13 @@
     "semantic_hash": ""
   },
   "main.js": {
-    "mtime": 1787814794.6921902,
-    "ast_hash": "c830af61f79d2015a07c6df38aac9269",
+    "mtime": 1787815600.3968413,
+    "ast_hash": "d384a298084c8dabed9b4d7cfaaee1e4",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1787815086.195581,
-    "ast_hash": "5778ce9bb43cfdab1edd2f14ae97bf98",
+    "mtime": 1787815569.61794,
+    "ast_hash": "3ad4a3d99d4a5d1ddb65efc702d15e3e",
     "semantic_hash": ""
   },
   "assets/logo.webp": {
@@ -600,13 +600,43 @@
     "semantic_hash": ""
   },
   "frontend/src/tests/cart_auth_search.test.ts": {
-    "mtime": 1787815116.3411162,
+    "mtime": 1787815181.530576,
     "ast_hash": "bd206a083f6dee64a3ec6cb2e70e9e4c",
     "semantic_hash": ""
   },
   "vercel.json": {
     "mtime": 1787808118.4238336,
     "ast_hash": "af96056668358a8beea3408534759851",
+    "semantic_hash": ""
+  },
+  "frontend/src/tests/keyword_search_stride.test.ts": {
+    "mtime": 1787815552.3885899,
+    "ast_hash": "5a6d0d43efedcbabccc0ca485835e030",
+    "semantic_hash": ""
+  },
+  "frontend/src/lib/fileValidation.ts": {
+    "mtime": 1787815608.791548,
+    "ast_hash": "593b624046c7478db287bcb20c80c312",
+    "semantic_hash": ""
+  },
+  "frontend/src/tests/product_listing_pipeline.test.ts": {
+    "mtime": 1787815628.7664642,
+    "ast_hash": "6039598be9fbb7b0c33aa7a20d1a8c90",
+    "semantic_hash": ""
+  },
+  "frontend/src/lib/profileValidation.ts": {
+    "mtime": 1787815707.4449015,
+    "ast_hash": "8a7975273095f1118b2450887d7b3979",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/UserProfileModal.tsx": {
+    "mtime": 1787815759.730227,
+    "ast_hash": "4a444fce4d0626dd16ea024ec6a0f885",
+    "semantic_hash": ""
+  },
+  "frontend/src/tests/user_profile_management.test.ts": {
+    "mtime": 1787815696.0924459,
+    "ast_hash": "54bdd9a9b9919271cfff2440e3b38b89",
     "semantic_hash": ""
   }
 }

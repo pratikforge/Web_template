@@ -12,6 +12,7 @@ import { ListResourceModal } from './components/ListResourceModal';
 import { CommunityBeaconDrawer } from './components/CommunityBeaconDrawer';
 import { AdminDashboard } from './components/AdminDashboard';
 import { ImpactSection } from './components/ImpactSection';
+import { UserProfileModal } from './components/UserProfileModal';
 import type { CampusResource } from './types/campus';
 import { MOCK_RESOURCES } from './data/mockCampusData';
 import { safeStorage } from './lib/safeStorage';
@@ -26,7 +27,10 @@ const MainApp: React.FC = () => {
 
   const [selectedResource, setSelectedResource] = useState<CampusResource | null>(null);
   const [isListModalOpen, setIsListModalOpen] = useState(false);
+  const [listModalImage, setListModalImage] = useState<string>('');
+  const [listModalFileName, setListModalFileName] = useState<string>('');
   const [isBeaconDrawerOpen, setIsBeaconDrawerOpen] = useState(false);
+  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
 
   useEffect(() => {
     safeStorage.setItem('catalog_resources', resources);
@@ -37,11 +41,25 @@ const MainApp: React.FC = () => {
       setResources(MOCK_RESOURCES);
       setSelectedResource(null);
       setIsListModalOpen(false);
+      setListModalImage('');
+      setListModalFileName('');
       setIsBeaconDrawerOpen(false);
     };
     window.addEventListener('campus_state_reset', handleReset);
     return () => window.removeEventListener('campus_state_reset', handleReset);
   }, []);
+
+  const handleOpenListModal = (imageUrl?: string, fileName?: string) => {
+    setListModalImage(imageUrl || '');
+    setListModalFileName(fileName || '');
+    setIsListModalOpen(true);
+  };
+
+  const handleCloseListModal = () => {
+    setIsListModalOpen(false);
+    setListModalImage('');
+    setListModalFileName('');
+  };
 
   const handleResourceAdded = (newRes: CampusResource) => {
     setResources(prev => [newRes, ...prev]);
@@ -61,8 +79,9 @@ const MainApp: React.FC = () => {
       <div>
         {/* Navigation Bar */}
         <Navbar
-          onOpenListModal={() => setIsListModalOpen(true)}
+          onOpenListModal={handleOpenListModal}
           onOpenBeaconDrawer={() => setIsBeaconDrawerOpen(true)}
+          onOpenProfileModal={() => setIsProfileModalOpen(true)}
         />
 
         {/* View Switcher: Admin View vs Borrower/Lender View */}
@@ -94,6 +113,11 @@ const MainApp: React.FC = () => {
       </div>
 
       {/* Global Modals & Drawers */}
+      <UserProfileModal
+        isOpen={isProfileModalOpen}
+        onClose={() => setIsProfileModalOpen(false)}
+      />
+
       <ResourceModal
         resource={selectedResource}
         onClose={() => setSelectedResource(null)}
@@ -101,11 +125,16 @@ const MainApp: React.FC = () => {
 
       <BundleCartDrawer onOrderCreated={handleOrderCreated} />
 
-      <ListResourceModal
-        isOpen={isListModalOpen}
-        onClose={() => setIsListModalOpen(false)}
-        onResourceAdded={handleResourceAdded}
-      />
+      {isListModalOpen && (
+        <ListResourceModal
+          key={`${listModalImage}-${listModalFileName}-${isListModalOpen}`}
+          isOpen={isListModalOpen}
+          onClose={handleCloseListModal}
+          onResourceAdded={handleResourceAdded}
+          initialImageUrl={listModalImage}
+          initialFileName={listModalFileName}
+        />
+      )}
 
       <CommunityBeaconDrawer
         isOpen={isBeaconDrawerOpen}
