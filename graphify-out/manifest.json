@@ -285,8 +285,8 @@
     "semantic_hash": ""
   },
   "frontend/package.json": {
-    "mtime": 1787770454.2717237,
-    "ast_hash": "8b032060f1c8bcd2c9f99dccea4d7813",
+    "mtime": 1787802738.1179903,
+    "ast_hash": "bc41761c39bf6cbd14fb7919d0847e17",
     "semantic_hash": ""
   },
   "frontend/src/App.tsx": {
@@ -395,23 +395,28 @@
     "semantic_hash": ""
   },
   "spec/adversarial_audit_report.md": {
-    "mtime": 1787802359.0414264,
-    "ast_hash": "f5bd4afe201eed3c0bbbf273dad22375",
+    "mtime": 1787802425.9264083,
+    "ast_hash": "a18f8542377dba2649b6c150edcd265d",
     "semantic_hash": ""
   },
   "spec/product_prd_campus_circular.md": {
-    "mtime": 1787802279.342486,
-    "ast_hash": "ad68695fe5ecc0a3a0e43072ce932e8a",
+    "mtime": 1787802425.9264083,
+    "ast_hash": "c6598ee2f3ca213702f73e406365adfb",
     "semantic_hash": ""
   },
   "spec/security_and_state_reliability_audit.md": {
-    "mtime": 1787802374.2647924,
-    "ast_hash": "d78dfdfa546c0dffc42c710d659cfdac",
+    "mtime": 1787802425.927411,
+    "ast_hash": "c64a6de133fe1225c931d4a0a22c898e",
     "semantic_hash": ""
   },
   "spec/tech_stack_prd_campus_circular.md": {
-    "mtime": 1787802288.3550322,
-    "ast_hash": "6ddbb0e0d9c7c6585a7d42e48d22f32c",
+    "mtime": 1787802425.9279828,
+    "ast_hash": "f5cc76200f605c8a5a73d45cce2d82d7",
+    "semantic_hash": ""
+  },
+  "spec/tdd_implementation_plan.md": {
+    "mtime": 1787802754.8319583,
+    "ast_hash": "3a2d493ee2dee8c7f501743c7aa6e7c1",
     "semantic_hash": ""
   }
 }
