@@ -2192,6 +2192,16 @@
       "norm_label": "vite.config.ts"
     },
     {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "main",
+      "community": 82,
+      "norm_label": "main.js"
+    },
+    {
       "label": "AGENTS.md",
       "file_type": "document",
       "source_file": ".agents/AGENTS.md",
@@ -12157,9 +12167,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "components_agentreasoninghud_agentreasoninghud",
-      "confidence_score": 1.0
+      "target": "components_agentreasoninghud_agentreasoninghud"
     },
     {
       "relation": "contains",
@@ -12167,9 +12177,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "components_agentreasoninghud_agentreasoninghudprops",
-      "confidence_score": 1.0
+      "target": "components_agentreasoninghud_agentreasoninghudprops"
     },
     {
       "relation": "imports_from",
@@ -12178,9 +12188,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "context_cartcontext",
-      "confidence_score": 1.0
+      "target": "context_cartcontext"
     },
     {
       "relation": "imports",
@@ -12189,9 +12199,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "context_cartcontext_usecart",
-      "confidence_score": 1.0
+      "target": "context_cartcontext_usecart"
     },
     {
       "relation": "imports_from",
@@ -12200,9 +12210,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "lib_agentpipeline",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline"
     },
     {
       "relation": "imports",
@@ -12211,9 +12221,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "lib_agentpipeline_agentpipelineresult",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_agentpipelineresult"
     },
     {
       "relation": "imports",
@@ -12222,9 +12232,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "lib_agentpipeline_refineagentbundle",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_refineagentbundle"
     },
     {
       "relation": "imports_from",
@@ -12233,9 +12243,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "types_campus",
-      "confidence_score": 1.0
+      "target": "types_campus"
     },
     {
       "relation": "imports",
@@ -12244,9 +12254,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud",
-      "target": "types_campus_campusresource",
-      "confidence_score": 1.0
+      "target": "types_campus_campusresource"
     },
     {
       "relation": "imports_from",
@@ -12255,9 +12265,9 @@
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_heroaibundler",
-      "target": "components_agentreasoninghud",
-      "confidence_score": 1.0
+      "target": "components_agentreasoninghud"
     },
     {
       "relation": "references",
@@ -12266,9 +12276,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud_agentreasoninghudprops",
-      "target": "lib_agentpipeline_agentpipelineresult",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_agentpipelineresult"
     },
     {
       "relation": "references",
@@ -12277,9 +12287,9 @@
       "source_file": "frontend/src/components/AgentReasoningHUD.tsx",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_agentreasoninghud_agentreasoninghudprops",
-      "target": "types_campus_campusresource",
-      "confidence_score": 1.0
+      "target": "types_campus_campusresource"
     },
     {
       "relation": "calls",
@@ -12299,9 +12309,9 @@
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_heroaibundler",
-      "target": "components_agentreasoninghud_agentreasoninghud",
-      "confidence_score": 1.0
+      "target": "components_agentreasoninghud_agentreasoninghud"
     },
     {
       "relation": "contains",
@@ -12601,9 +12611,9 @@
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_heroaibundler",
-      "target": "lib_agentpipeline",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline"
     },
     {
       "relation": "imports",
@@ -12612,9 +12622,9 @@
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_heroaibundler",
-      "target": "lib_agentpipeline_agentpipelineresult",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_agentpipelineresult"
     },
     {
       "relation": "imports",
@@ -12623,9 +12633,9 @@
       "source_file": "frontend/src/components/HeroAIBundler.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_heroaibundler",
-      "target": "lib_agentpipeline_runagentpipeline",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_runagentpipeline"
     },
     {
       "relation": "imports_from",
@@ -14138,9 +14148,9 @@
       "source_file": "frontend/src/tests/agent_pipeline.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_agent_pipeline_test",
-      "target": "data_mockcampusdata",
-      "confidence_score": 1.0
+      "target": "data_mockcampusdata"
     },
     {
       "relation": "imports",
@@ -14149,9 +14159,9 @@
       "source_file": "frontend/src/tests/agent_pipeline.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_agent_pipeline_test",
-      "target": "data_mockcampusdata_mock_resources",
-      "confidence_score": 1.0
+      "target": "data_mockcampusdata_mock_resources"
     },
     {
       "relation": "contains",
@@ -14159,9 +14169,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_agentpipelineresult",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_agentpipelineresult"
     },
     {
       "relation": "contains",
@@ -14169,9 +14179,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_deconstructintent",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_deconstructintent"
     },
     {
       "relation": "contains",
@@ -14179,9 +14189,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_intentdomain",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_intentdomain"
     },
     {
       "relation": "contains",
@@ -14189,9 +14199,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_intenturgency",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_intenturgency"
     },
     {
       "relation": "contains",
@@ -14199,9 +14209,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_missinggap",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_missinggap"
     },
     {
       "relation": "contains",
@@ -14209,9 +14219,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_optimizedroute",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_optimizedroute"
     },
     {
       "relation": "contains",
@@ -14219,9 +14229,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_optimizeroute",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_optimizeroute"
     },
     {
       "relation": "contains",
@@ -14229,9 +14239,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_parsedintent",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_parsedintent"
     },
     {
       "relation": "contains",
@@ -14239,9 +14249,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_preflightcheck",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_preflightcheck"
     },
     {
       "relation": "contains",
@@ -14249,9 +14259,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_preflightcontract",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_preflightcontract"
     },
     {
       "relation": "contains",
@@ -14259,9 +14269,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_reasoningstep",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_reasoningstep"
     },
     {
       "relation": "contains",
@@ -14269,9 +14279,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L308",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_refineagentbundle",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_refineagentbundle"
     },
     {
       "relation": "contains",
@@ -14279,9 +14289,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_retrieveandanalyzegaps",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_retrieveandanalyzegaps"
     },
     {
       "relation": "contains",
@@ -14289,9 +14299,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_routestop",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_routestop"
     },
     {
       "relation": "contains",
@@ -14299,9 +14309,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L249",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_runagentpipeline",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_runagentpipeline"
     },
     {
       "relation": "contains",
@@ -14309,9 +14319,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_agentpipeline_verifypreflightcontract",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_verifypreflightcontract"
     },
     {
       "relation": "imports_from",
@@ -14320,9 +14330,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_finance",
-      "confidence_score": 1.0
+      "target": "lib_finance"
     },
     {
       "relation": "imports",
@@ -14331,9 +14341,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_finance_calculatetransactiontotal",
-      "confidence_score": 1.0
+      "target": "lib_finance_calculatetransactiontotal"
     },
     {
       "relation": "imports",
@@ -14342,9 +14352,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_finance_rupeestopaise",
-      "confidence_score": 1.0
+      "target": "lib_finance_rupeestopaise"
     },
     {
       "relation": "imports_from",
@@ -14353,9 +14363,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_security",
-      "confidence_score": 1.0
+      "target": "lib_security"
     },
     {
       "relation": "imports",
@@ -14364,9 +14374,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "lib_security_sanitizeinput",
-      "confidence_score": 1.0
+      "target": "lib_security_sanitizeinput"
     },
     {
       "relation": "imports_from",
@@ -14375,9 +14385,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "types_campus",
-      "confidence_score": 1.0
+      "target": "types_campus"
     },
     {
       "relation": "imports",
@@ -14386,9 +14396,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline",
-      "target": "types_campus_campusresource",
-      "confidence_score": 1.0
+      "target": "types_campus_campusresource"
     },
     {
       "relation": "imports_from",
@@ -14397,9 +14407,9 @@
       "source_file": "frontend/src/tests/agent_pipeline.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_agent_pipeline_test",
-      "target": "lib_agentpipeline",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline"
     },
     {
       "relation": "references",
@@ -14408,9 +14418,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_routestop",
-      "target": "types_campus_campusresource",
-      "confidence_score": 1.0
+      "target": "types_campus_campusresource"
     },
     {
       "relation": "references",
@@ -14419,9 +14429,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_agentpipelineresult",
-      "target": "types_campus_campusresource",
-      "confidence_score": 1.0
+      "target": "types_campus_campusresource"
     },
     {
       "relation": "calls",
@@ -14441,9 +14451,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_runagentpipeline",
-      "target": "lib_agentpipeline_deconstructintent",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_deconstructintent"
     },
     {
       "relation": "calls",
@@ -14452,9 +14462,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L267",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_runagentpipeline",
-      "target": "lib_agentpipeline_retrieveandanalyzegaps",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_retrieveandanalyzegaps"
     },
     {
       "relation": "calls",
@@ -14463,9 +14473,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L366",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_refineagentbundle",
-      "target": "lib_agentpipeline_optimizeroute",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_optimizeroute"
     },
     {
       "relation": "calls",
@@ -14474,9 +14484,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_runagentpipeline",
-      "target": "lib_agentpipeline_optimizeroute",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_optimizeroute"
     },
     {
       "relation": "calls",
@@ -14485,9 +14495,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L367",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_refineagentbundle",
-      "target": "lib_agentpipeline_verifypreflightcontract",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_verifypreflightcontract"
     },
     {
       "relation": "calls",
@@ -14496,9 +14506,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L287",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_runagentpipeline",
-      "target": "lib_agentpipeline_verifypreflightcontract",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_verifypreflightcontract"
     },
     {
       "relation": "calls",
@@ -14529,9 +14539,9 @@
       "source_file": "frontend/src/lib/agentPipeline.ts",
       "source_location": "L362",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_agentpipeline_refineagentbundle",
-      "target": "lib_agentpipeline_runagentpipeline",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_runagentpipeline"
     },
     {
       "relation": "imports",
@@ -14540,9 +14550,9 @@
       "source_file": "frontend/src/tests/agent_pipeline.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_agent_pipeline_test",
-      "target": "lib_agentpipeline_runagentpipeline",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_runagentpipeline"
     },
     {
       "relation": "calls",
@@ -14562,9 +14572,9 @@
       "source_file": "frontend/src/tests/agent_pipeline.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_agent_pipeline_test",
-      "target": "lib_agentpipeline_refineagentbundle",
-      "confidence_score": 1.0
+      "target": "lib_agentpipeline_refineagentbundle"
     },
     {
       "relation": "contains",
@@ -22244,9 +22254,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan",
-      "target": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan"
     },
     {
       "relation": "contains",
@@ -22254,9 +22264,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan",
-      "target": "spec_agentic_search_workflow_plan_1_executive_summary_architectural_heritage",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_1_executive_summary_architectural_heritage"
     },
     {
       "relation": "contains",
@@ -22264,9 +22274,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan",
-      "target": "spec_agentic_search_workflow_plan_2_graphify_knowledge_base_search_update_phases_rule_5",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_2_graphify_knowledge_base_search_update_phases_rule_5"
     },
     {
       "relation": "contains",
@@ -22274,9 +22284,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan",
-      "target": "spec_agentic_search_workflow_plan_3_structural_specification_yaml_format_rule_7",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_3_structural_specification_yaml_format_rule_7"
     },
     {
       "relation": "contains",
@@ -22284,9 +22294,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan",
-      "target": "spec_agentic_search_workflow_plan_4_guardrails_during_execution_rule_8",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_4_guardrails_during_execution_rule_8"
     },
     {
       "relation": "contains",
@@ -22294,9 +22304,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan",
-      "target": "spec_agentic_search_workflow_plan_5_test_driven_development_tdd_plan_stride_security_suite_rule_8",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_5_test_driven_development_tdd_plan_stride_security_suite_rule_8"
     },
     {
       "relation": "contains",
@@ -22304,9 +22314,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_campuscircular_agentic_search_discovery_workflow_plan",
-      "target": "spec_agentic_search_workflow_plan_6_verification_and_integration_workflow_rule_18",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_6_verification_and_integration_workflow_rule_18"
     },
     {
       "relation": "contains",
@@ -22314,9 +22324,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_2_graphify_knowledge_base_search_update_phases_rule_5",
-      "target": "spec_agentic_search_workflow_plan_concluding_update_phase_mandatory",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_concluding_update_phase_mandatory"
     },
     {
       "relation": "contains",
@@ -22324,9 +22334,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_2_graphify_knowledge_base_search_update_phases_rule_5",
-      "target": "spec_agentic_search_workflow_plan_initial_search_phase_completed",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_initial_search_phase_completed"
     },
     {
       "relation": "contains",
@@ -22334,9 +22344,9 @@
       "source_file": "spec/agentic_search_workflow_plan.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_agentic_search_workflow_plan_5_test_driven_development_tdd_plan_stride_security_suite_rule_8",
-      "target": "spec_agentic_search_workflow_plan_automated_test_suite_frontend_src_tests_agent_pipeline_test_ts",
-      "confidence_score": 1.0
+      "target": "spec_agentic_search_workflow_plan_automated_test_suite_frontend_src_tests_agent_pipeline_test_ts"
     },
     {
       "relation": "contains",
@@ -24100,5 +24110,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3257cd45fa08bd90cb2b991aef86611d312c1afb"
+  "built_at_commit": "b22232130899805cc6f45125a39e5cea61743267"
 }
