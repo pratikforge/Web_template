@@ -385,13 +385,33 @@
     "semantic_hash": ""
   },
   "spec/competitor_leverage_report.md": {
-    "mtime": 1787801848.7714787,
-    "ast_hash": "36871847b8313204f9a4db015054730a",
+    "mtime": 1787801904.34986,
+    "ast_hash": "f380fbaee2d8c770d4b68a54e73ea337",
     "semantic_hash": ""
   },
   "spec/mvp_execution_blueprint.md": {
-    "mtime": 1787801858.8443422,
-    "ast_hash": "6573d14ed5be56daeb9a83f5bf0c994e",
+    "mtime": 1787801904.3503902,
+    "ast_hash": "0c2a57121687ab423c1da4299c0ce3ad",
+    "semantic_hash": ""
+  },
+  "spec/adversarial_audit_report.md": {
+    "mtime": 1787802359.0414264,
+    "ast_hash": "f5bd4afe201eed3c0bbbf273dad22375",
+    "semantic_hash": ""
+  },
+  "spec/product_prd_campus_circular.md": {
+    "mtime": 1787802279.342486,
+    "ast_hash": "ad68695fe5ecc0a3a0e43072ce932e8a",
+    "semantic_hash": ""
+  },
+  "spec/security_and_state_reliability_audit.md": {
+    "mtime": 1787802374.2647924,
+    "ast_hash": "d78dfdfa546c0dffc42c710d659cfdac",
+    "semantic_hash": ""
+  },
+  "spec/tech_stack_prd_campus_circular.md": {
+    "mtime": 1787802288.3550322,
+    "ast_hash": "6ddbb0e0d9c7c6585a7d42e48d22f32c",
     "semantic_hash": ""
   }
 }
