@@ -435,8 +435,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/HeroAIBundler.tsx": {
-    "mtime": 1787803854.9498658,
-    "ast_hash": "9926611a1b2135a47f50d8871cd2406f",
+    "mtime": 1787803932.9732013,
+    "ast_hash": "0b732722f4dc50d68e2fa13a5c2a8df8",
     "semantic_hash": ""
   },
   "frontend/src/components/ImpactSection.tsx": {
@@ -555,23 +555,38 @@
     "semantic_hash": ""
   },
   "frontend/src/components/AgentReasoningHUD.tsx": {
-    "mtime": 1787803871.763761,
-    "ast_hash": "b3d092266afcb59ec7dc6430d62d0508",
+    "mtime": 1787803932.9721467,
+    "ast_hash": "cc998b61fd33325c8cfdd4ad8f9075d3",
     "semantic_hash": ""
   },
   "frontend/src/lib/agentPipeline.ts": {
-    "mtime": 1787803833.8219776,
-    "ast_hash": "d708f61ac78b1ae146bb3ed7a1b18ee7",
+    "mtime": 1787803932.973728,
+    "ast_hash": "5cac135e1b42641e22e5fe46c9d37d0f",
     "semantic_hash": ""
   },
   "frontend/src/tests/agent_pipeline.test.ts": {
-    "mtime": 1787803810.6283405,
-    "ast_hash": "e059f1c995b79ed8558ac436b383b244",
+    "mtime": 1787803932.9749625,
+    "ast_hash": "bab2f30366a4b2c06cfcc103fa5e4eee",
     "semantic_hash": ""
   },
   "spec/agentic_search_workflow_plan.md": {
-    "mtime": 1787803805.6377006,
-    "ast_hash": "ba213228543e0c8e571a71edb8f57df6",
+    "mtime": 1787803932.987162,
+    "ast_hash": "5f707cdb2e050ef837f420c88ac8db6b",
+    "semantic_hash": ""
+  },
+  "main.js": {
+    "mtime": 1787805027.925504,
+    "ast_hash": "eddda3129ce5062d86a5bc37932883cb",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1787805007.7091806,
+    "ast_hash": "1706ec1e29ce9187f2bdfbaeca6974c9",
+    "semantic_hash": ""
+  },
+  "assets/logo.webp": {
+    "mtime": 1787804961.872164,
+    "ast_hash": "241ecfef7e5cabf4cfe1824cf8c5e723",
     "semantic_hash": ""
   }
 }
