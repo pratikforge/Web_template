@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 112 files · ~115,054 words
+- 112 files · ~115,967 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1200 nodes · 1345 edges · 87 communities (74 shown, 13 thin omitted)
+- 1204 nodes · 1367 edges · 87 communities (74 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4bdc6178`
+- Built from commit: `a6edbf36`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -392,8 +392,8 @@ Cohesion: 0.18
 Nodes (10): 1. Executive Summary & Architectural Heritage, 2. Graphify Knowledge Base Search & Update Phases (Rule #5), 3. Structural Specification (YAML Format - Rule #7), 4. Guardrails During Execution (Rule #8), 5. Test-Driven Development (TDD) Plan & STRIDE Security Suite (Rule #8), 6. Verification and Integration Workflow (Rule #18), Automated Test Suite: `frontend/src/tests/agent_pipeline.test.ts`, CampusCircular Agentic Search & Discovery Workflow Plan (+2 more)
 
 ### Community 82 - "Community 82"
-Cohesion: 0.18
-Nodes (13): addItem(), clear(), closeModal(), getTotals(), handleNaturalLanguageSearch(), init(), login(), logout() (+5 more)
+Cohesion: 0.21
+Nodes (20): addItem(), clear(), closeCartDrawer(), closeModal(), getTotals(), handleNaturalLanguageSearch(), init(), login() (+12 more)
 
 ### Community 83 - "Community 83"
 Cohesion: 0.04

@@ -218,4 +218,39 @@ describe('CampusCircular Auth, AI Search, Cart Drawer & STRIDE Security Tests', 
       expect(cssContent).toContain('.hero-annotation');
     });
   });
+
+  /* ========================================================================
+     6. Full Lifecycle Demo Account & Condition Diff Guardrails
+     ======================================================================== */
+  describe('Full Lifecycle Demo Mode & Condition Diff Inspection', () => {
+    it('has quick demo trigger in header actions, mobile drawer, and auth modal', () => {
+      expect(htmlContent).toContain('id="quick-demo-btn"');
+      expect(htmlContent).toContain('id="mobile-demo-btn"');
+      expect(htmlContent).toContain('id="auth-load-demo-btn"');
+      expect(htmlContent).toContain('Alex Sharma');
+    });
+
+    it('contains the interactive 4-stage demo tour dock', () => {
+      expect(htmlContent).toContain('id="demo-tour-dock"');
+      expect(htmlContent).toContain('data-step="1"');
+      expect(htmlContent).toContain('data-step="2"');
+      expect(htmlContent).toContain('data-step="3"');
+      expect(htmlContent).toContain('data-step="4"');
+    });
+
+    it('includes AI Handover Condition Diff modal with pickup and return photos', () => {
+      expect(htmlContent).toContain('id="condition-diff-modal"');
+      expect(htmlContent).toContain('id="condition-diff-overlay"');
+      expect(htmlContent).toContain('PICKUP SCAN');
+      expect(htmlContent).toContain('RETURN SCAN');
+      expect(htmlContent).toContain('id="release-escrow-action-btn"');
+    });
+
+    it('implements DemoController logic with Alex Sharma verified student persona in main.js', () => {
+      expect(jsContent).toContain('DemoController');
+      expect(jsContent).toContain('user_demo_alex');
+      expect(jsContent).toContain('alex.sharma@campus.edu');
+      expect(jsContent).toContain('showDemoToast');
+    });
+  });
 });

@@ -766,7 +766,160 @@
       });
     }
 
-    // 7. Mobile Drawer Navigation Toggle
+    // 7. Interactive Demo Account Controller & Walkthrough
+    function showDemoToast(message) {
+      let toast = document.getElementById('demo-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'demo-toast';
+        toast.className = 'demo-toast-popup';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${message}</span>`;
+      toast.classList.add('visible');
+      setTimeout(() => {
+        toast.classList.remove('visible');
+      }, 4500);
+    }
+
+    const DemoController = {
+      activeStage: 1,
+
+      startDemo() {
+        // 1. Log in as Alex Sharma (Verified Demo Persona)
+        const demoUser = {
+          id: 'user_demo_alex',
+          name: 'Alex Sharma',
+          hostel: 'Hostel 3',
+          roll: '22B0891',
+          email: 'alex.sharma@campus.edu',
+          rating: 5.0,
+          avatar: 'AS',
+          isDemo: true
+        };
+        AuthManager.login(demoUser);
+
+        // 2. Pre-fill cart with Fest Reel Kit
+        CartManager.items = [
+          { id: 'gear_sony_a7iii', days: 2 },
+          { id: 'gear_dji_mic', days: 2 }
+        ];
+        CartManager.save();
+        CartManager.syncUI();
+        renderCatalog(INVENTORY);
+
+        // 3. Reveal Demo Walkthrough Dock
+        const dock = document.getElementById('demo-tour-dock');
+        if (dock) {
+          dock.hidden = false;
+          dock.classList.remove('minimized');
+        }
+
+        this.setStage(1);
+        showDemoToast('⚡ Demo Mode Active: Alex Sharma (Hostel 3) logged in with Fest Reel Kit!');
+      },
+
+      setStage(stageNum) {
+        this.activeStage = stageNum;
+        document.querySelectorAll('.demo-step-btn').forEach((btn) => {
+          const step = parseInt(btn.getAttribute('data-step') || '1', 10);
+          if (step === stageNum) {
+            btn.classList.add('active-step');
+          } else {
+            btn.classList.remove('active-step');
+          }
+        });
+
+        if (stageNum === 1) {
+          closeModal('checkout');
+          closeModal('condition-diff');
+          openCartDrawer();
+        } else if (stageNum === 2) {
+          closeCartDrawer();
+          closeModal('condition-diff');
+          const totals = CartManager.getTotals();
+          const modalTotal = document.getElementById('checkout-modal-total');
+          if (modalTotal) modalTotal.textContent = `₹${(totals.totalEscrow || 4600).toLocaleString('en-IN')}`;
+          const formStep = document.getElementById('checkout-form-step');
+          const voucherStep = document.getElementById('checkout-voucher-step');
+          if (formStep) formStep.hidden = false;
+          if (voucherStep) voucherStep.hidden = true;
+          openModal('checkout');
+        } else if (stageNum === 3) {
+          closeCartDrawer();
+          closeModal('checkout');
+          openModal('condition-diff');
+        } else if (stageNum === 4) {
+          closeCartDrawer();
+          closeModal('condition-diff');
+          closeModal('checkout');
+          showDemoToast('💸 Escrow Settled: ₹3,000 Refunded to alex.sharma@okhdfcbank instantly! Condition Diff: 99.8%');
+        }
+      },
+
+      reset() {
+        CartManager.clear();
+        AuthManager.logout();
+        closeCartDrawer();
+        closeModal('checkout');
+        closeModal('condition-diff');
+        closeModal('auth');
+        const dock = document.getElementById('demo-tour-dock');
+        if (dock) dock.hidden = true;
+        renderCatalog(INVENTORY);
+        showDemoToast('Demo state reset. Ready for new demonstration.');
+      }
+    };
+
+    // Attach Demo Event Handlers
+    const quickDemoBtn = document.getElementById('quick-demo-btn');
+    if (quickDemoBtn) quickDemoBtn.addEventListener('click', () => DemoController.startDemo());
+
+    const mobileDemoBtn = document.getElementById('mobile-demo-btn');
+    if (mobileDemoBtn) mobileDemoBtn.addEventListener('click', () => DemoController.startDemo());
+
+    const authLoadDemoBtn = document.getElementById('auth-load-demo-btn');
+    if (authLoadDemoBtn) authLoadDemoBtn.addEventListener('click', () => DemoController.startDemo());
+
+    const demoDockMinimizeBtn = document.getElementById('demo-dock-minimize-btn');
+    const demoTourDock = document.getElementById('demo-tour-dock');
+    if (demoDockMinimizeBtn && demoTourDock) {
+      demoDockMinimizeBtn.addEventListener('click', () => {
+        demoTourDock.classList.toggle('minimized');
+      });
+    }
+
+    const demoDockResetBtn = document.getElementById('demo-dock-reset-btn');
+    if (demoDockResetBtn) demoDockResetBtn.addEventListener('click', () => DemoController.reset());
+
+    document.querySelectorAll('.demo-step-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const step = parseInt(btn.getAttribute('data-step') || '1', 10);
+        DemoController.setStage(step);
+      });
+    });
+
+    const voucherOpenDiffBtn = document.getElementById('voucher-open-diff-btn');
+    if (voucherOpenDiffBtn) {
+      voucherOpenDiffBtn.addEventListener('click', () => {
+        closeModal('checkout');
+        DemoController.setStage(3);
+      });
+    }
+
+    const closeConditionDiffBtn = document.getElementById('close-condition-diff-modal');
+    const conditionDiffOverlay = document.getElementById('condition-diff-overlay');
+    if (closeConditionDiffBtn) closeConditionDiffBtn.addEventListener('click', () => closeModal('condition-diff'));
+    if (conditionDiffOverlay) conditionDiffOverlay.addEventListener('click', () => closeModal('condition-diff'));
+
+    const releaseEscrowBtn = document.getElementById('release-escrow-action-btn');
+    if (releaseEscrowBtn) {
+      releaseEscrowBtn.addEventListener('click', () => {
+        DemoController.setStage(4);
+      });
+    }
+
+    // 8. Mobile Drawer Navigation Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const mobileOverlay = document.querySelector('.mobile-overlay');
     const mobileDrawer = document.getElementById('mobile-drawer');
@@ -800,11 +953,12 @@
       });
     }
 
-    // 8. ESC Key Global Dismissal
+    // 9. ESC Key Global Dismissal
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeModal('auth');
         closeModal('checkout');
+        closeModal('condition-diff');
         closeCartDrawer();
       }
     });

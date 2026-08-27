@@ -575,13 +575,13 @@
     "semantic_hash": ""
   },
   "main.js": {
-    "mtime": 1787807888.7545898,
-    "ast_hash": "bf58a961e8afb2b99f1862e3e0082616",
+    "mtime": 1787811776.586989,
+    "ast_hash": "d2788c9975ca8bd53e6943685fb3b9ca",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1787810499.1705542,
-    "ast_hash": "69eafa0740dcfb081a58324253b79192",
+    "mtime": 1787811729.2821329,
+    "ast_hash": "8fe4d01da4c8b9d7b1df1df0d0b04b0d",
     "semantic_hash": ""
   },
   "assets/logo.webp": {
@@ -600,8 +600,8 @@
     "semantic_hash": ""
   },
   "frontend/src/tests/cart_auth_search.test.ts": {
-    "mtime": 1787810524.4565294,
-    "ast_hash": "871025387e171eedfeee9ef7307c2774",
+    "mtime": 1787811786.368292,
+    "ast_hash": "cea1662feaf7a492b44fc007c7385817",
     "semantic_hash": ""
   },
   "vercel.json": {
