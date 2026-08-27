@@ -326,6 +326,22 @@
       return Boolean(this.user);
     },
 
+    updateProfile(updatedFields) {
+      if (!this.user) return;
+      this.user = {
+        ...this.user,
+        ...updatedFields
+      };
+      try {
+        localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(this.user));
+      } catch (e) {
+        console.warn('Could not save updated profile', e);
+      }
+      this.syncUI();
+      closeModal('profile');
+      showDemoToast('✓ Profile parameters updated and saved!');
+    },
+
     syncUI() {
       const loginBtn = document.getElementById('auth-login-btn');
       const profileBadge = document.getElementById('user-profile-badge');
@@ -860,6 +876,127 @@
       });
     }
 
+    // 5.5 Edit Profile Modal Logic
+    const editProfileBtn = document.getElementById('edit-profile-btn');
+    const profileModal = document.getElementById('profile-modal');
+    const profileOverlay = document.getElementById('profile-overlay');
+    const closeProfileBtn = document.getElementById('close-profile-modal');
+    const cancelProfileBtn = document.getElementById('cancel-profile-btn');
+    const profileEditForm = document.getElementById('profile-edit-form');
+    const editAvatarPreview = document.getElementById('edit-avatar-preview');
+    const customAvatarInput = document.getElementById('profile-custom-avatar');
+    const avatarPresetsContainer = document.getElementById('avatar-presets-container');
+
+    function populateProfileForm() {
+      if (!AuthManager.user) return;
+      const u = AuthManager.user;
+
+      const nameInput = document.getElementById('edit-name-input');
+      const rollInput = document.getElementById('edit-roll-input');
+      const deptSelect = document.getElementById('edit-dept-select');
+      const yearSelect = document.getElementById('edit-year-select');
+      const hostelSelect = document.getElementById('edit-hostel-select');
+      const roomInput = document.getElementById('edit-room-input');
+      const emailInput = document.getElementById('edit-email-input');
+      const phoneInput = document.getElementById('edit-phone-input');
+      const upiInput = document.getElementById('edit-upi-input');
+
+      if (nameInput) nameInput.value = u.name || '';
+      if (rollInput) rollInput.value = u.roll || '';
+      if (deptSelect) deptSelect.value = u.department || 'Computer Science & Engineering';
+      if (yearSelect) yearSelect.value = u.year || '3rd Year';
+      if (hostelSelect) hostelSelect.value = u.hostel || 'Hostel 3 (Aryabhatta)';
+      if (roomInput) roomInput.value = u.room || 'Wing B-4';
+      if (emailInput) emailInput.value = u.email || '';
+      if (phoneInput) phoneInput.value = u.phone || '+91 98765 43210';
+      if (upiInput) upiInput.value = u.upiId || 'alex.sharma@okhdfcbank';
+
+      const currentAvatar = u.avatar || 'AS';
+      if (editAvatarPreview) editAvatarPreview.textContent = currentAvatar;
+      if (customAvatarInput) customAvatarInput.value = '';
+
+      if (avatarPresetsContainer) {
+        avatarPresetsContainer.querySelectorAll('.avatar-preset-chip').forEach((chip) => {
+          if (chip.getAttribute('data-preset') === currentAvatar) {
+            chip.classList.add('active');
+          } else {
+            chip.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    if (editProfileBtn) {
+      editProfileBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (profileDropdown) profileDropdown.hidden = true;
+        populateProfileForm();
+        openModal('profile');
+      });
+    }
+
+    if (closeProfileBtn) closeProfileBtn.addEventListener('click', () => closeModal('profile'));
+    if (cancelProfileBtn) cancelProfileBtn.addEventListener('click', () => closeModal('profile'));
+    if (profileOverlay) profileOverlay.addEventListener('click', () => closeModal('profile'));
+
+    // Avatar Presets Click Handler
+    if (avatarPresetsContainer) {
+      avatarPresetsContainer.addEventListener('click', (e) => {
+        const chip = e.target.closest('.avatar-preset-chip');
+        if (chip) {
+          avatarPresetsContainer.querySelectorAll('.avatar-preset-chip').forEach((c) => c.classList.remove('active'));
+          chip.classList.add('active');
+          const preset = chip.getAttribute('data-preset') || 'AS';
+          if (editAvatarPreview) editAvatarPreview.textContent = preset;
+          if (customAvatarInput) customAvatarInput.value = '';
+        }
+      });
+    }
+
+    // Custom Avatar Input Handler
+    if (customAvatarInput) {
+      customAvatarInput.addEventListener('input', () => {
+        const val = customAvatarInput.value.trim().toUpperCase();
+        if (val) {
+          if (editAvatarPreview) editAvatarPreview.textContent = val;
+          if (avatarPresetsContainer) {
+            avatarPresetsContainer.querySelectorAll('.avatar-preset-chip').forEach((c) => c.classList.remove('active'));
+          }
+        }
+      });
+    }
+
+    // Profile Edit Form Submit Handler
+    if (profileEditForm) {
+      profileEditForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nameInput = document.getElementById('edit-name-input');
+        const rollInput = document.getElementById('edit-roll-input');
+        const deptSelect = document.getElementById('edit-dept-select');
+        const yearSelect = document.getElementById('edit-year-select');
+        const hostelSelect = document.getElementById('edit-hostel-select');
+        const roomInput = document.getElementById('edit-room-input');
+        const emailInput = document.getElementById('edit-email-input');
+        const phoneInput = document.getElementById('edit-phone-input');
+        const upiInput = document.getElementById('edit-upi-input');
+
+        const updatedProfile = {
+          name: nameInput?.value.trim() || 'Alex Sharma',
+          roll: (rollInput?.value.trim() || '22B0891').toUpperCase(),
+          department: deptSelect?.value || 'Computer Science & Engineering',
+          year: yearSelect?.value || '3rd Year',
+          hostel: hostelSelect?.value || 'Hostel 3 (Aryabhatta)',
+          room: roomInput?.value.trim() || 'Wing B-4',
+          email: emailInput?.value.trim() || 'alex.sharma@campus.edu',
+          phone: phoneInput?.value.trim() || '+91 98765 43210',
+          upiId: upiInput?.value.trim() || 'alex.sharma@okhdfcbank',
+          avatar: editAvatarPreview?.textContent.trim() || 'AS'
+        };
+
+        AuthManager.updateProfile(updatedProfile);
+      });
+    }
+
     // 6. Checkout Flow
     const proceedCheckoutBtn = document.getElementById('proceed-checkout-btn');
     const closeCheckoutBtn = document.getElementById('close-checkout-modal');
@@ -950,8 +1087,13 @@
         const demoUser = {
           id: 'user_demo_alex',
           name: 'Alex Sharma',
-          hostel: 'Hostel 3',
+          hostel: 'Hostel 3 (Aryabhatta)',
           roll: '22B0891',
+          department: 'Computer Science & Engineering',
+          year: '3rd Year',
+          room: 'Wing B-4',
+          phone: '+91 98765 43210',
+          upiId: 'alex.sharma@okhdfcbank',
           email: 'alex.sharma@campus.edu',
           rating: 5.0,
           avatar: 'AS',
@@ -1117,6 +1259,7 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeModal('auth');
+        closeModal('profile');
         closeModal('checkout');
         closeModal('condition-diff');
         closeCartDrawer();

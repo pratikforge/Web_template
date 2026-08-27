@@ -87,6 +87,9 @@
                 <span id="dropdown-rating">⭐ 4.9 Verified Borrower</span>
               </div>
               <div class="profile-dropdown-divider"></div>
+              <button type="button" class="profile-dropdown-item" id="edit-profile-btn">
+                <i class="fa-solid fa-user-pen"></i> Edit Profile
+              </button>
               <button type="button" class="logout-btn" id="logout-btn">
                 <i class="fa-solid fa-right-from-bracket"></i> Log out
               </button>
@@ -919,6 +922,130 @@
           <i class="fa-solid fa-money-bill-transfer"></i> Trigger Instant UPI Refund
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- 4. EDIT PROFILE MODAL (Campus Identity & Parameter Management) -->
+  <div class="modal-overlay" id="profile-overlay" hidden></div>
+  <div class="app-modal profile-modal-card" id="profile-modal" hidden>
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <span class="announcement-badge" style="background:#f3e8ff;color:#7e22ce;">CAMPUS MESH IDENTITY</span>
+        <h3>Edit Student Profile</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" id="close-profile-modal" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body" style="padding-top:16px;">
+      <form id="profile-edit-form" class="profile-form-wrap">
+        <!-- Avatar & Initials Picker -->
+        <div class="profile-avatar-row">
+          <div class="avatar-preview-display">
+            <span class="large-user-avatar" id="edit-avatar-preview">AS</span>
+          </div>
+          <div class="avatar-pick-controls">
+            <label class="form-sublabel">Select Avatar Preset or Initials</label>
+            <div class="avatar-preset-chips" id="avatar-presets-container">
+              <button type="button" class="avatar-preset-chip active" data-preset="AS">AS</button>
+              <button type="button" class="avatar-preset-chip" data-preset="RS">RS</button>
+              <button type="button" class="avatar-preset-chip" data-preset="PP">PP</button>
+              <button type="button" class="avatar-preset-chip" data-preset="AM">AM</button>
+              <button type="button" class="avatar-preset-chip" data-preset="🎓">🎓</button>
+              <button type="button" class="avatar-preset-chip" data-preset="⚡">⚡</button>
+            </div>
+            <input type="text" id="profile-custom-avatar" class="form-subinput" placeholder="Or custom 2-letter initials" maxlength="3" />
+          </div>
+        </div>
+
+        <!-- Parameters Grid -->
+        <div class="form-grid-2col">
+          <div class="field-group">
+            <label for="edit-name-input">Full Name <span class="req">*</span></label>
+            <input type="text" id="edit-name-input" class="text-input" required placeholder="e.g. Alex Sharma" />
+          </div>
+          <div class="field-group">
+            <label for="edit-roll-input">Roll Number / Student ID <span class="req">*</span></label>
+            <input type="text" id="edit-roll-input" class="text-input" required placeholder="e.g. 22B0891" />
+          </div>
+        </div>
+
+        <div class="form-grid-2col">
+          <div class="field-group">
+            <label for="edit-dept-select">Department / Faculty <span class="req">*</span></label>
+            <select id="edit-dept-select" class="text-select">
+              <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+              <option value="Electronics & Communication">Electronics & Communication</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Design & Media Studies">Design & Media Studies</option>
+              <option value="Electrical & Electronics">Electrical & Electronics</option>
+              <option value="Biotechnology">Biotechnology</option>
+              <option value="Management Studies">Management Studies</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="edit-year-select">Academic Year <span class="req">*</span></label>
+            <select id="edit-year-select" class="text-select">
+              <option value="1st Year">1st Year (Freshman)</option>
+              <option value="2nd Year">2nd Year (Sophomore)</option>
+              <option value="3rd Year">3rd Year (Junior)</option>
+              <option value="4th Year">4th Year (Senior)</option>
+              <option value="Postgraduate / PhD">Postgraduate / PhD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid-2col">
+          <div class="field-group">
+            <label for="edit-hostel-select">Hostel / Hall of Residence <span class="req">*</span></label>
+            <select id="edit-hostel-select" class="text-select">
+              <option value="Hostel 1 (Ramanujan)">Hostel 1 (Ramanujan)</option>
+              <option value="Hostel 2 (Kalpana Chawla)">Hostel 2 (Kalpana Chawla)</option>
+              <option value="Hostel 3 (Aryabhatta)">Hostel 3 (Aryabhatta)</option>
+              <option value="Hostel 4 (Sarabhai)">Hostel 4 (Sarabhai)</option>
+              <option value="Hostel 7 (Robotics Cell)">Hostel 7 (Robotics Cell)</option>
+              <option value="Hostel 12 (Ananya Wing)">Hostel 12 (Ananya Wing)</option>
+              <option value="Day Scholar / Off-Campus">Day Scholar / Off-Campus</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="edit-room-input">Room / Wing Number</label>
+            <input type="text" id="edit-room-input" class="text-input" placeholder="e.g. Wing B-4" />
+          </div>
+        </div>
+
+        <div class="form-grid-2col">
+          <div class="field-group">
+            <label for="edit-email-input">Campus Email ID <span class="req">*</span></label>
+            <input type="email" id="edit-email-input" class="text-input" required placeholder="e.g. alex.sharma@campus.edu" />
+          </div>
+          <div class="field-group">
+            <label for="edit-phone-input">Phone / WhatsApp</label>
+            <input type="tel" id="edit-phone-input" class="text-input" placeholder="e.g. +91 98765 43210" />
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="edit-upi-input">UPI ID (For instant Escrow security deposit refunds)</label>
+          <input type="text" id="edit-upi-input" class="text-input" placeholder="e.g. alex.sharma@okhdfcbank" />
+        </div>
+
+        <div class="profile-system-meta-box">
+          <div class="meta-row">
+            <span><i class="fa-solid fa-shield-check text-green"></i> Verification:</span>
+            <strong class="text-green">Verified Student Identity (Roll Match)</strong>
+          </div>
+          <div class="meta-row">
+            <span><i class="fa-solid fa-star text-gold"></i> Escrow Trust Rating:</span>
+            <strong>5.0 / 5.0 (Zero dispute record)</strong>
+          </div>
+        </div>
+
+        <div class="form-button-row">
+          <button type="button" class="btn-secondary" id="cancel-profile-btn">Cancel</button>
+          <button type="submit" class="btn-primary" id="save-profile-btn">
+            <i class="fa-solid fa-floppy-disk"></i> Save Profile
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 

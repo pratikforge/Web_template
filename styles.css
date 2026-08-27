@@ -414,6 +414,29 @@ body {
   margin: 10px 0;
 }
 
+.profile-dropdown-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  background: #f8fafc;
+  border: 1px solid var(--color-plum-tinted);
+  border-radius: 6px;
+  color: var(--color-aubergine);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.profile-dropdown-item:hover {
+  background: #f1f5f9;
+  border-color: var(--color-aubergine);
+  color: var(--color-fuchsia-signal);
+}
+
 .logout-btn {
   width: 100%;
   display: flex;
@@ -3143,5 +3166,191 @@ body {
 .demo-toast-popup i {
   color: #4ade80;
   font-size: 16px;
+}
+
+/* ==========================================================================
+   Edit Profile Modal Styles
+   ========================================================================== */
+.profile-modal-card {
+  max-width: 580px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.profile-form-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px;
+  background: #fdfafc;
+  border: 1px solid var(--color-plum-tinted);
+  border-radius: var(--radius-cards);
+}
+
+.avatar-preview-display {
+  flex-shrink: 0;
+}
+
+.large-user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-aubergine);
+  color: #ffffff;
+  font-family: var(--font-kaio);
+  font-size: 20px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(36, 0, 41, 0.15);
+}
+
+.avatar-pick-controls {
+  flex: 1;
+}
+
+.form-sublabel {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--color-aubergine);
+  margin-bottom: 6px;
+}
+
+.avatar-preset-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.avatar-preset-chip {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid var(--color-plum-tinted);
+  color: var(--color-aubergine);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.15s ease;
+}
+
+.avatar-preset-chip:hover {
+  border-color: var(--color-fuchsia-signal);
+  transform: scale(1.08);
+}
+
+.avatar-preset-chip.active {
+  background: var(--color-fuchsia-signal);
+  border-color: var(--color-fuchsia-signal);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(223, 55, 167, 0.35);
+}
+
+.form-subinput {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid var(--color-plum-tinted);
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--color-aubergine);
+}
+
+.form-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 540px) {
+  .form-grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-aubergine);
+}
+
+.field-group label .req {
+  color: var(--color-fuchsia-signal);
+}
+
+.text-input,
+.text-select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-family: var(--font-inter-var);
+  border: 1px solid var(--color-plum-tinted);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--color-aubergine);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.text-input:focus,
+.text-select:focus {
+  border-color: var(--color-fuchsia-signal);
+  box-shadow: 0 0 0 3px rgba(223, 55, 167, 0.12);
+}
+
+.profile-system-meta-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-heather);
+}
+
+.meta-row strong {
+  color: var(--color-aubergine);
+}
+
+.meta-row strong.text-green {
+  color: #166534;
+}
+
+.form-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-plum-tinted);
 }
 
