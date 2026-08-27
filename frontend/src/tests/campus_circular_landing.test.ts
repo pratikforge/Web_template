@@ -22,7 +22,7 @@ describe('CampusCircular Landing Page Specifications & Security (STRIDE)', () =>
 
     it('contains the official hero headline and campus subhead', () => {
       expect(htmlContent).toContain("Borrow what you need. Lend what you don't.");
-      expect(htmlContent).toContain('From Sony Alpha camera kits for club fest reels to fx-991EX calculators');
+      expect(htmlContent).toContain('Rent cameras, calculators, and lab tools from hostel mates. Zero platform cut.');
     });
 
     it('contains all 3 required campus showcase cards', () => {
@@ -46,9 +46,9 @@ describe('CampusCircular Landing Page Specifications & Security (STRIDE)', () =>
     });
 
     it('contains the 3-step peer handover process', () => {
-      expect(htmlContent).toContain('Discover &amp; Request');
-      expect(htmlContent).toContain('Hostel Handover &amp; Photos');
-      expect(htmlContent).toContain('Return &amp; Instant Refund');
+      expect(htmlContent).toContain('Request &amp; Lock');
+      expect(htmlContent).toContain('Meet &amp; Snap');
+      expect(htmlContent).toContain('Return &amp; Refund');
     });
 
     it('has zero remaining Outseta marketing copy in headings or hero', () => {
