@@ -71,13 +71,6 @@
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <!-- 1-Click Interactive Demo Mode Button -->
-        <button type="button" class="demo-mode-badge" id="quick-demo-btn" title="Click to instantly launch Demo Account with pre-filled gear and walkthrough">
-          <span class="demo-pulse"></span>
-          <i class="fa-solid fa-wand-magic-sparkles"></i>
-          <span>⚡ Demo Mode</span>
-        </button>
-
         <!-- Dynamic Auth Element -->
         <div class="auth-action-wrap" id="auth-action-wrap">
           <button type="button" class="ghost-link auth-login-btn" id="auth-login-btn">
@@ -138,7 +131,6 @@
     <a href="#testimonials">Campus Stories</a>
     <a href="#borrow">List Idle Gear</a>
     <div class="drawer-divider"></div>
-    <button type="button" class="btn-primary w-full mb-2" id="mobile-demo-btn">⚡ Launch Demo Mode</button>
     <button type="button" class="ghost-link w-full text-left" id="mobile-login-btn">Student Login</button>
     <button type="button" class="btn-primary w-full" id="mobile-cart-btn">View Cart (<span class="mobile-cart-count">0</span>)</button>
   </div>
@@ -683,14 +675,6 @@
 
       <!-- Collapsible Email & Password Form (with Prefilled Demo Credentials) -->
       <form id="email-auth-form" class="replit-email-form" hidden>
-        <div class="replit-demo-hint">
-          <div class="demo-pill-badge"><i class="fa-solid fa-bolt"></i> DEMO CREDENTIALS PREFILLED</div>
-          <div class="demo-cred-row">
-            <span>Email: <code>alex.sharma@campus.edu</code></span>
-            <span>Pass: <code>••••••••••••</code></span>
-          </div>
-        </div>
-
         <div class="replit-input-wrap">
           <label for="auth-email-input" class="replit-input-label">Email</label>
           <input

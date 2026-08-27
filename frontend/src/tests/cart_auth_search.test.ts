@@ -223,14 +223,11 @@ describe('CampusCircular Auth, AI Search, Cart Drawer & STRIDE Security Tests', 
     });
   });
 
-  /* ========================================================================
-     6. Full Lifecycle Demo Account & Condition Diff Guardrails
-     ======================================================================== */
   describe('Full Lifecycle Demo Mode & Condition Diff Inspection', () => {
-    it('has quick demo trigger in header actions and mobile drawer', () => {
-      expect(htmlContent).toContain('id="quick-demo-btn"');
-      expect(htmlContent).toContain('id="mobile-demo-btn"');
-      expect(htmlContent).toContain('Alex Sharma');
+    it('maintains clean unbranded header without demo mode badges', () => {
+      expect(htmlContent).not.toContain('id="quick-demo-btn"');
+      expect(htmlContent).not.toContain('id="mobile-demo-btn"');
+      expect(htmlContent).toContain('Student Login');
     });
 
     it('provides email and password fields with prefilled demo credentials', () => {
