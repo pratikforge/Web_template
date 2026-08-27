@@ -519,6 +519,21 @@
     }
   }
 
+  function showDemoToast(message) {
+    let toast = document.getElementById('demo-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'demo-toast';
+      toast.className = 'demo-toast-popup';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${message}</span>`;
+    toast.classList.add('visible');
+    setTimeout(() => {
+      toast.classList.remove('visible');
+    }, 4500);
+  }
+
   /* ==========================================================================
      6. Event Bindings & Initialization
      ========================================================================== */
@@ -638,24 +653,105 @@
       });
     });
 
-    // Custom email form submit
-    const customAuthForm = document.getElementById('custom-auth-form');
-    if (customAuthForm) {
-      customAuthForm.addEventListener('submit', (e) => {
+    // Email & Password Form submit
+    const emailAuthForm = document.getElementById('email-auth-form');
+    if (emailAuthForm) {
+      emailAuthForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const input = document.getElementById('student-email-input');
-        const email = input?.value || 'student@iitb.ac.in';
-        const namePart = email.split('@')[0];
-        const formattedName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+        const emailInput = document.getElementById('auth-email-input');
+        const email = emailInput?.value.trim() || 'alex.sharma@campus.edu';
+
+        if (email.toLowerCase().includes('alex')) {
+          // Log in as Alex Sharma (Lead Demo Account)
+          AuthManager.login({
+            id: 'user_demo_alex',
+            name: 'Alex Sharma',
+            hostel: 'Hostel 3',
+            roll: '22B0891',
+            email: 'alex.sharma@campus.edu',
+            rating: 5.0,
+            avatar: 'AS',
+            isDemo: true
+          });
+          showDemoToast('Welcome back, Alex! Signed in successfully.');
+        } else {
+          const namePart = email.split('@')[0];
+          const formattedName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+          AuthManager.login({
+            id: `user_${Date.now()}`,
+            name: formattedName,
+            hostel: 'Hostel 4',
+            roll: '23B0912',
+            email,
+            rating: 5.0,
+            avatar: formattedName.slice(0, 2).toUpperCase()
+          });
+          showDemoToast(`Signed in as ${formattedName}`);
+        }
+      });
+    }
+
+    // Google Social Login
+    const googleLoginBtn = document.getElementById('google-login-btn');
+    if (googleLoginBtn) {
+      googleLoginBtn.addEventListener('click', () => {
         AuthManager.login({
-          id: `user_${Date.now()}`,
-          name: formattedName,
-          hostel: 'Hostel 5',
-          roll: '23B1002',
-          email,
+          id: 'user_google_alex',
+          name: 'Alex Sharma',
+          hostel: 'Hostel 3',
+          roll: '22B0891',
+          email: 'alex.sharma@campus.edu',
           rating: 5.0,
-          avatar: formattedName.slice(0, 2).toUpperCase()
+          avatar: 'AS',
+          provider: 'google'
         });
+        showDemoToast('✓ Authenticated via Google Student SSO (Alex Sharma)');
+      });
+    }
+
+    // Facebook Social Login
+    const facebookLoginBtn = document.getElementById('facebook-login-btn');
+    if (facebookLoginBtn) {
+      facebookLoginBtn.addEventListener('click', () => {
+        AuthManager.login({
+          id: 'user_facebook_alex',
+          name: 'Alex Sharma',
+          hostel: 'Hostel 3',
+          roll: '22B0891',
+          email: 'alex.sharma@fb.campus.edu',
+          rating: 5.0,
+          avatar: 'AS',
+          provider: 'facebook'
+        });
+        showDemoToast('✓ Authenticated via Facebook Campus SSO (Alex Sharma)');
+      });
+    }
+
+    // Refill Demo Credentials
+    const quickFillDemoBtn = document.getElementById('quick-fill-demo-btn');
+    if (quickFillDemoBtn) {
+      quickFillDemoBtn.addEventListener('click', () => {
+        const emailInput = document.getElementById('auth-email-input');
+        const passInput = document.getElementById('auth-password-input');
+        if (emailInput) emailInput.value = 'alex.sharma@campus.edu';
+        if (passInput) passInput.value = 'CampusPass@2026';
+        showDemoToast('Demo credentials refilled: alex.sharma@campus.edu');
+      });
+    }
+
+    // Toggle Password Visibility
+    const togglePasswordBtn = document.getElementById('toggle-password-btn');
+    if (togglePasswordBtn) {
+      togglePasswordBtn.addEventListener('click', () => {
+        const passInput = document.getElementById('auth-password-input');
+        if (!passInput) return;
+        if (passInput.type === 'password') {
+          passInput.type = 'text';
+          togglePasswordBtn.textContent = 'Hide';
+        } else {
+          passInput.type = 'password';
+          togglePasswordBtn.textContent = 'Show';
+        }
       });
     }
 
@@ -767,21 +863,6 @@
     }
 
     // 7. Interactive Demo Account Controller & Walkthrough
-    function showDemoToast(message) {
-      let toast = document.getElementById('demo-toast');
-      if (!toast) {
-        toast = document.createElement('div');
-        toast.id = 'demo-toast';
-        toast.className = 'demo-toast-popup';
-        document.body.appendChild(toast);
-      }
-      toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${message}</span>`;
-      toast.classList.add('visible');
-      setTimeout(() => {
-        toast.classList.remove('visible');
-      }, 4500);
-    }
-
     const DemoController = {
       activeStage: 1,
 

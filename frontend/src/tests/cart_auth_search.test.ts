@@ -223,11 +223,27 @@ describe('CampusCircular Auth, AI Search, Cart Drawer & STRIDE Security Tests', 
      6. Full Lifecycle Demo Account & Condition Diff Guardrails
      ======================================================================== */
   describe('Full Lifecycle Demo Mode & Condition Diff Inspection', () => {
-    it('has quick demo trigger in header actions, mobile drawer, and auth modal', () => {
+    it('has quick demo trigger in header actions and mobile drawer', () => {
       expect(htmlContent).toContain('id="quick-demo-btn"');
       expect(htmlContent).toContain('id="mobile-demo-btn"');
-      expect(htmlContent).toContain('id="auth-load-demo-btn"');
       expect(htmlContent).toContain('Alex Sharma');
+    });
+
+    it('provides email and password fields with prefilled demo credentials', () => {
+      expect(htmlContent).toContain('id="email-auth-form"');
+      expect(htmlContent).toContain('id="auth-email-input"');
+      expect(htmlContent).toContain('id="auth-password-input"');
+      expect(htmlContent).toContain('value="alex.sharma@campus.edu"');
+      expect(htmlContent).toContain('value="CampusPass@2026"');
+      expect(htmlContent).toContain('id="quick-fill-demo-btn"');
+      expect(htmlContent).toContain('id="toggle-password-btn"');
+    });
+
+    it('provides social login options for Google and Facebook', () => {
+      expect(htmlContent).toContain('id="google-login-btn"');
+      expect(htmlContent).toContain('id="facebook-login-btn"');
+      expect(jsContent).toContain('google-login-btn');
+      expect(jsContent).toContain('facebook-login-btn');
     });
 
     it('contains the interactive 4-stage demo tour dock', () => {

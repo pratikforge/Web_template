@@ -2425,7 +2425,7 @@
       "label": "showDemoToast()",
       "file_type": "code",
       "source_file": "main.js",
-      "source_location": "L770",
+      "source_location": "L522",
       "_origin": "ast",
       "id": "main_showdemotoast",
       "community": 82,
@@ -2435,7 +2435,7 @@
       "label": "startDemo()",
       "file_type": "code",
       "source_file": "main.js",
-      "source_location": "L788",
+      "source_location": "L869",
       "_origin": "ast",
       "id": "main_startdemo",
       "community": 82,
@@ -2445,7 +2445,7 @@
       "label": "setStage()",
       "file_type": "code",
       "source_file": "main.js",
-      "source_location": "L822",
+      "source_location": "L903",
       "_origin": "ast",
       "id": "main_setstage",
       "community": 82,
@@ -2455,7 +2455,7 @@
       "label": "reset()",
       "file_type": "code",
       "source_file": "main.js",
-      "source_location": "L860",
+      "source_location": "L941",
       "_origin": "ast",
       "id": "main_reset",
       "community": 82,
@@ -16684,9 +16684,9 @@
       "source_file": "main.js",
       "source_location": "L860",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_reset",
-      "confidence_score": 1.0
+      "target": "main_reset"
     },
     {
       "relation": "contains",
@@ -16714,9 +16714,9 @@
       "source_file": "main.js",
       "source_location": "L822",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_setstage",
-      "confidence_score": 1.0
+      "target": "main_setstage"
     },
     {
       "relation": "contains",
@@ -16724,9 +16724,9 @@
       "source_file": "main.js",
       "source_location": "L770",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_showdemotoast",
-      "confidence_score": 1.0
+      "target": "main_showdemotoast"
     },
     {
       "relation": "contains",
@@ -16734,9 +16734,9 @@
       "source_file": "main.js",
       "source_location": "L788",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_startdemo",
-      "confidence_score": 1.0
+      "target": "main_startdemo"
     },
     {
       "relation": "contains",
@@ -16821,9 +16821,9 @@
       "source_file": "main.js",
       "source_location": "L807",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_startdemo",
-      "target": "main_save",
-      "confidence_score": 1.0
+      "target": "main_save"
     },
     {
       "relation": "calls",
@@ -16843,9 +16843,9 @@
       "source_file": "main.js",
       "source_location": "L861",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_reset",
-      "target": "main_clear",
-      "confidence_score": 1.0
+      "target": "main_clear"
     },
     {
       "relation": "calls",
@@ -16854,9 +16854,9 @@
       "source_file": "main.js",
       "source_location": "L840",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_setstage",
-      "target": "main_gettotals",
-      "confidence_score": 1.0
+      "target": "main_gettotals"
     },
     {
       "relation": "calls",
@@ -16898,9 +16898,9 @@
       "source_file": "main.js",
       "source_location": "L808",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_startdemo",
-      "target": "main_syncui",
-      "confidence_score": 1.0
+      "target": "main_syncui"
     },
     {
       "relation": "calls",
@@ -16920,9 +16920,9 @@
       "source_file": "main.js",
       "source_location": "L800",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_startdemo",
-      "target": "main_login",
-      "confidence_score": 1.0
+      "target": "main_login"
     },
     {
       "relation": "calls",
@@ -16931,9 +16931,9 @@
       "source_file": "main.js",
       "source_location": "L862",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_reset",
-      "target": "main_logout",
-      "confidence_score": 1.0
+      "target": "main_logout"
     },
     {
       "relation": "calls",
@@ -16953,9 +16953,9 @@
       "source_file": "main.js",
       "source_location": "L869",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_reset",
-      "target": "main_rendercatalog",
-      "confidence_score": 1.0
+      "target": "main_rendercatalog"
     },
     {
       "relation": "calls",
@@ -16964,9 +16964,9 @@
       "source_file": "main.js",
       "source_location": "L809",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_startdemo",
-      "target": "main_rendercatalog",
-      "confidence_score": 1.0
+      "target": "main_rendercatalog"
     },
     {
       "relation": "calls",
@@ -16975,9 +16975,9 @@
       "source_file": "main.js",
       "source_location": "L847",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_setstage",
-      "target": "main_openmodal",
-      "confidence_score": 1.0
+      "target": "main_openmodal"
     },
     {
       "relation": "calls",
@@ -16986,9 +16986,9 @@
       "source_file": "main.js",
       "source_location": "L864",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_reset",
-      "target": "main_closemodal",
-      "confidence_score": 1.0
+      "target": "main_closemodal"
     },
     {
       "relation": "calls",
@@ -16997,9 +16997,9 @@
       "source_file": "main.js",
       "source_location": "L834",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_setstage",
-      "target": "main_closemodal",
-      "confidence_score": 1.0
+      "target": "main_closemodal"
     },
     {
       "relation": "calls",
@@ -17008,9 +17008,9 @@
       "source_file": "main.js",
       "source_location": "L836",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_setstage",
-      "target": "main_opencartdrawer",
-      "confidence_score": 1.0
+      "target": "main_opencartdrawer"
     },
     {
       "relation": "calls",
@@ -17019,9 +17019,9 @@
       "source_file": "main.js",
       "source_location": "L863",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_reset",
-      "target": "main_closecartdrawer",
-      "confidence_score": 1.0
+      "target": "main_closecartdrawer"
     },
     {
       "relation": "calls",
@@ -17030,9 +17030,9 @@
       "source_file": "main.js",
       "source_location": "L838",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_setstage",
-      "target": "main_closecartdrawer",
-      "confidence_score": 1.0
+      "target": "main_closecartdrawer"
     },
     {
       "relation": "calls",
@@ -17041,9 +17041,9 @@
       "source_file": "main.js",
       "source_location": "L870",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_reset",
-      "target": "main_showdemotoast",
-      "confidence_score": 1.0
+      "target": "main_showdemotoast"
     },
     {
       "relation": "calls",
@@ -17052,9 +17052,9 @@
       "source_file": "main.js",
       "source_location": "L856",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_setstage",
-      "target": "main_showdemotoast",
-      "confidence_score": 1.0
+      "target": "main_showdemotoast"
     },
     {
       "relation": "calls",
@@ -17063,9 +17063,9 @@
       "source_file": "main.js",
       "source_location": "L819",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_startdemo",
-      "target": "main_showdemotoast",
-      "confidence_score": 1.0
+      "target": "main_showdemotoast"
     },
     {
       "relation": "calls",
@@ -17074,9 +17074,9 @@
       "source_file": "main.js",
       "source_location": "L818",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_startdemo",
-      "target": "main_setstage",
-      "confidence_score": 1.0
+      "target": "main_setstage"
     },
     {
       "relation": "contains",
@@ -26000,5 +26000,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a6edbf364ad761c2a46b137e90a74b3d2245f608"
+  "built_at_commit": "6d432b5c87292bb78739614e129dfd83c453fd3f"
 }
