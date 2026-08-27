@@ -66,8 +66,13 @@
         <a href="#results-section" class="nav-link">Smart Bundles</a>
         <a href="#how-it-works" class="nav-link">How Escrow Works</a>
         <a href="#testimonials" class="nav-link">Campus Stories</a>
-        <a href="#borrow" class="nav-link">List Idle Gear</a>
+        <button type="button" class="nav-link nav-list-product-trigger" id="nav-list-gear-btn" style="background:none;border:none;cursor:pointer;font-family:inherit;font-size:inherit;display:inline-flex;align-items:center;gap:6px;">
+          <i class="fa-solid fa-camera text-fuchsia"></i> List New Product
+        </button>
       </nav>
+
+      <!-- Global Hidden Native File Input (Restricted strictly to PNG, JPG, JPEG) -->
+      <input type="file" id="global-gear-file-input" accept=".png,.jpg,.jpeg,image/png,image/jpeg" hidden data-testid="global-gear-file-input" />
 
       <!-- Header Actions -->
       <div class="header-actions">
@@ -104,7 +109,9 @@
           <span class="cart-count-badge" id="cart-count">0</span>
         </button>
 
-        <a href="#borrow" class="btn-primary">Borrow / Lend Gear</a>
+        <button type="button" class="btn-primary" id="header-list-gear-btn" title="List new equipment by choosing a picture (PNG, JPG, JPEG)">
+          <i class="fa-solid fa-plus"></i> List New Product
+        </button>
         <button class="mobile-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -1046,6 +1053,140 @@
           </button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- 5. LIST PRODUCT MODAL (Native Windows File Picker & Details Pipeline) -->
+  <div class="modal-overlay" id="list-gear-overlay" hidden></div>
+  <div class="app-modal list-gear-modal-card" id="list-gear-modal" hidden>
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <span class="announcement-badge" style="background:#e0e7ff;color:#4338ca;">PEER INVENTORY MESH</span>
+        <h3>Fill Product Details</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" id="close-list-gear-modal" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body" style="padding-top:16px;">
+      <form id="list-gear-form" class="list-gear-form-wrap">
+        <!-- Error Banner -->
+        <div class="list-error-banner" id="list-gear-error" hidden></div>
+
+        <!-- Selected Picture Preview Card -->
+        <div class="list-photo-preview-card" id="list-gear-photo-card">
+          <div class="preview-img-wrap">
+            <img id="list-gear-preview-img" src="" alt="Selected Product" />
+          </div>
+          <div class="preview-meta-wrap">
+            <strong id="list-gear-preview-name">selected_photo.jpg</strong>
+            <span class="preview-status-pill"><i class="fa-solid fa-circle-check"></i> Photo Selected • Ready to List</span>
+          </div>
+          <button type="button" class="btn-secondary btn-small" id="list-gear-change-photo-btn">
+            <i class="fa-solid fa-arrow-rotate-right"></i> Change Photo
+          </button>
+        </div>
+
+        <!-- Drop zone fallback if no image yet -->
+        <div class="list-drop-zone" id="list-gear-drop-zone" hidden>
+          <i class="fa-solid fa-cloud-arrow-up drop-icon"></i>
+          <strong>Select Product Picture</strong>
+          <span>PNG, JPG, or JPEG only (Max 5MB)</span>
+          <button type="button" class="btn-secondary btn-small mt-2" id="list-gear-browse-btn">Browse Computer</button>
+        </div>
+
+        <!-- Product Description (Primary Field) -->
+        <div class="field-group">
+          <div class="field-label-row">
+            <label for="list-gear-desc-input">Product Description <span class="req">*</span></label>
+            <span class="enter-submit-hint"><i class="fa-solid fa-arrow-turn-down-left"></i> Press Enter to list item</span>
+          </div>
+          <textarea
+            id="list-gear-desc-input"
+            class="text-input textarea-input"
+            rows="3"
+            required
+            placeholder="Enter product specifications, condition, and usage notes... (Press Enter to publish)"
+          ></textarea>
+        </div>
+
+        <!-- Item Title (Optional / Auto-derived) -->
+        <div class="field-group">
+          <label for="list-gear-title-input">Item Title / Name <span class="opt">(Optional - auto-derived from description)</span></label>
+          <input type="text" id="list-gear-title-input" class="text-input" placeholder="e.g. Sony Alpha A7 III Camera or Casio fx-991EX" />
+        </div>
+
+        <!-- Category & Condition -->
+        <div class="form-grid-2col">
+          <div class="field-group">
+            <label for="list-gear-category-select">Category <span class="req">*</span></label>
+            <select id="list-gear-category-select" class="text-select">
+              <option value="MEDIA">Media &amp; Reel Gear</option>
+              <option value="LAB">Lab &amp; Engineering</option>
+              <option value="TECH">Calculators &amp; Tech</option>
+              <option value="MOBILITY">Sports &amp; Mobility</option>
+              <option value="EVENT">Fest &amp; Event Lights</option>
+              <option value="DORM">Dorm &amp; Leisure</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="list-gear-condition-select">Condition <span class="req">*</span></label>
+            <select id="list-gear-condition-select" class="text-select">
+              <option value="Brand New">Brand New (Mint)</option>
+              <option value="Excellent" selected>Excellent</option>
+              <option value="Good">Good</option>
+              <option value="Fair">Fair</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Pricing: Daily Fee & Deposit -->
+        <div class="form-grid-2col" id="list-gear-pricing-row">
+          <div class="field-group">
+            <label for="list-gear-fee-input">Daily Borrow Fee (₹) <span class="req">*</span></label>
+            <input type="number" id="list-gear-fee-input" class="text-input" min="0" value="150" />
+          </div>
+          <div class="field-group">
+            <label for="list-gear-deposit-input">Refundable Security Deposit (₹) <span class="req">*</span></label>
+            <input type="number" id="list-gear-deposit-input" class="text-input" min="0" value="500" />
+          </div>
+        </div>
+
+        <!-- Quick 1-Click Templates -->
+        <div class="list-templates-row">
+          <span class="templates-label"><i class="fa-solid fa-sparkles"></i> 1-Click Templates:</span>
+          <div class="templates-chips">
+            <button type="button" class="template-chip" data-template="calculator">📐 Casio fx-991EX</button>
+            <button type="button" class="template-chip" data-template="camera">📷 DSLR Camera Kit</button>
+            <button type="button" class="template-chip" data-template="arduino">🤖 Arduino Robotics Kit</button>
+            <button type="button" class="template-chip" data-template="cycle">🚲 Campus Cycle</button>
+          </div>
+        </div>
+
+        <!-- Free Donation Toggle -->
+        <div class="donation-toggle-box">
+          <label class="donation-checkbox-label">
+            <input type="checkbox" id="list-gear-donation-toggle" />
+            <span>
+              <strong>Donate / Share for Free (₹0 Fee &amp; Deposit)</strong>
+              <small>Pass on old textbooks, lab coats, or equipment to juniors for free</small>
+            </span>
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-button-row">
+          <button type="button" class="btn-secondary" id="cancel-list-gear-btn">Cancel</button>
+          <button type="submit" class="btn-primary btn-large" id="submit-list-gear-btn" style="flex:1;">
+            <i class="fa-solid fa-plus"></i> List Product to Campus Catalog (Enter)
+          </button>
+        </div>
+      </form>
+
+      <!-- Success Celebration Banner -->
+      <div class="list-success-banner" id="list-gear-success" hidden>
+        <div class="success-icon-badge"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Item Listed Successfully!</h3>
+        <p>Your equipment is now live in the campus catalog for students to borrow.</p>
+      </div>
     </div>
   </div>
 

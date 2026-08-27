@@ -553,13 +553,309 @@
   }
 
   /* ==========================================================================
+     5.5. Product Listing Pipeline (Native File Picker & Enter Submit)
+     ========================================================================== */
+  const CUSTOM_LISTINGS_KEY = 'campuscircular_custom_listings';
+  let currentUploadedPhotoDataUrl = '';
+  let currentUploadedFileName = '';
+
+  function loadCustomListings() {
+    try {
+      const stored = localStorage.getItem(CUSTOM_LISTINGS_KEY);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (Array.isArray(parsed)) {
+          parsed.forEach((item) => {
+            if (!INVENTORY.some((g) => g.id === item.id)) {
+              INVENTORY.unshift(item);
+            }
+          });
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load custom listings', e);
+    }
+  }
+
+  function saveCustomListing(item) {
+    try {
+      const stored = localStorage.getItem(CUSTOM_LISTINGS_KEY);
+      const list = stored ? JSON.parse(stored) : [];
+      list.unshift(item);
+      localStorage.setItem(CUSTOM_LISTINGS_KEY, JSON.stringify(list));
+    } catch (e) {
+      console.warn('Could not save custom listing', e);
+    }
+  }
+
+  function escapeHTML(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function initProductListingPipeline() {
+    const globalFileInput = document.getElementById('global-gear-file-input');
+    const closeListModalBtn = document.getElementById('close-list-gear-modal');
+    const cancelListBtn = document.getElementById('cancel-list-gear-btn');
+    const listForm = document.getElementById('list-gear-form');
+    const listSuccessBanner = document.getElementById('list-gear-success');
+    const listErrorBanner = document.getElementById('list-gear-error');
+
+    const previewCard = document.getElementById('list-gear-photo-card');
+    const previewImg = document.getElementById('list-gear-preview-img');
+    const previewName = document.getElementById('list-gear-preview-name');
+    const dropZone = document.getElementById('list-gear-drop-zone');
+
+    const descInput = document.getElementById('list-gear-desc-input');
+    const titleInput = document.getElementById('list-gear-title-input');
+    const categorySelect = document.getElementById('list-gear-category-select');
+    const conditionSelect = document.getElementById('list-gear-condition-select');
+    const feeInput = document.getElementById('list-gear-fee-input');
+    const depositInput = document.getElementById('list-gear-deposit-input');
+    const pricingRow = document.getElementById('list-gear-pricing-row');
+    const donationToggle = document.getElementById('list-gear-donation-toggle');
+    const listOverlay = document.getElementById('list-gear-overlay');
+
+    function triggerNativeFilePicker() {
+      if (globalFileInput) {
+        globalFileInput.value = '';
+        globalFileInput.click();
+      } else {
+        openModal('list-gear');
+      }
+    }
+
+    const navListBtn = document.getElementById('nav-list-gear-btn');
+    const headerListBtn = document.getElementById('header-list-gear-btn');
+    const catalogListBtn = document.getElementById('catalog-list-gear-btn');
+    const mobileListBtn = document.getElementById('mobile-list-gear-btn');
+    const changePhotoBtn = document.getElementById('list-gear-change-photo-btn');
+    const browseBtn = document.getElementById('list-gear-browse-btn');
+
+    if (navListBtn) navListBtn.addEventListener('click', triggerNativeFilePicker);
+    if (headerListBtn) headerListBtn.addEventListener('click', triggerNativeFilePicker);
+    if (catalogListBtn) catalogListBtn.addEventListener('click', triggerNativeFilePicker);
+    if (mobileListBtn) mobileListBtn.addEventListener('click', triggerNativeFilePicker);
+    if (changePhotoBtn) changePhotoBtn.addEventListener('click', triggerNativeFilePicker);
+    if (browseBtn) browseBtn.addEventListener('click', triggerNativeFilePicker);
+
+    if (closeListModalBtn) closeListModalBtn.addEventListener('click', () => closeModal('list-gear'));
+    if (cancelListBtn) cancelListBtn.addEventListener('click', () => closeModal('list-gear'));
+    if (listOverlay) listOverlay.addEventListener('click', () => closeModal('list-gear'));
+
+    if (globalFileInput) {
+      globalFileInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+
+        const validExts = ['.png', '.jpg', '.jpeg'];
+        const fileName = (file.name || '').toLowerCase();
+        const isValidExt = validExts.some((ext) => fileName.endsWith(ext));
+
+        if (!isValidExt) {
+          alert('Invalid file format. Only PNG, JPG, or JPEG pictures are allowed.');
+          return;
+        }
+
+        if (file.size > 5 * 1024 * 1024) {
+          alert('File size exceeds the 5MB limit. Please choose a smaller picture.');
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (uploadEvent) => {
+          currentUploadedPhotoDataUrl = uploadEvent.target.result;
+          currentUploadedFileName = file.name;
+
+          if (previewImg) previewImg.src = currentUploadedPhotoDataUrl;
+          if (previewName) previewName.textContent = currentUploadedFileName;
+
+          if (previewCard) previewCard.hidden = false;
+          if (dropZone) dropZone.hidden = true;
+          if (listErrorBanner) listErrorBanner.hidden = true;
+          if (listSuccessBanner) listSuccessBanner.hidden = true;
+          if (listForm) listForm.hidden = false;
+
+          openModal('list-gear');
+
+          setTimeout(() => {
+            if (descInput) descInput.focus();
+          }, 150);
+        };
+        reader.onerror = () => {
+          alert('Error reading the image file. Please try again.');
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    document.querySelectorAll('.template-chip').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const t = chip.getAttribute('data-template');
+        if (t === 'calculator') {
+          if (titleInput) titleInput.value = 'Casio fx-991EX ClassWiz Calculator';
+          if (categorySelect) categorySelect.value = 'TECH';
+          if (descInput) descInput.value = 'Non-programmable 417-function calculator. Mandatory for university engineering exams.';
+          if (feeInput) feeInput.value = '80';
+          if (depositInput) depositInput.value = '300';
+          if (conditionSelect) conditionSelect.value = 'Brand New';
+        } else if (t === 'camera') {
+          if (titleInput) titleInput.value = 'Canon EOS 1500D DSLR Camera Kit';
+          if (categorySelect) categorySelect.value = 'MEDIA';
+          if (descInput) descInput.value = '24.1MP APS-C sensor with 18-55mm IS II lens, battery charger, and 64GB card.';
+          if (feeInput) feeInput.value = '650';
+          if (depositInput) depositInput.value = '1500';
+          if (conditionSelect) conditionSelect.value = 'Excellent';
+        } else if (t === 'arduino') {
+          if (titleInput) titleInput.value = 'Arduino Mega 2560 R3 + 45 Sensor Starter Pack';
+          if (categorySelect) categorySelect.value = 'LAB';
+          if (descInput) descInput.value = 'Microcontroller board with breadboard, ultrasonic sensors, jumper cables, and USB interface.';
+          if (feeInput) feeInput.value = '120';
+          if (depositInput) depositInput.value = '400';
+          if (conditionSelect) conditionSelect.value = 'Excellent';
+        } else if (t === 'cycle') {
+          if (titleInput) titleInput.value = 'Firefox Target 21-Speed Geared Bicycle';
+          if (categorySelect) categorySelect.value = 'MOBILITY';
+          if (descInput) descInput.value = 'Lightweight alloy hybrid cycle with front suspension, mudguards, and cable combination lock.';
+          if (feeInput) feeInput.value = '100';
+          if (depositInput) depositInput.value = '500';
+          if (conditionSelect) conditionSelect.value = 'Good';
+        }
+      });
+    });
+
+    if (donationToggle && pricingRow) {
+      donationToggle.addEventListener('change', () => {
+        if (donationToggle.checked) {
+          pricingRow.style.opacity = '0.5';
+          pricingRow.style.pointerEvents = 'none';
+          if (feeInput) feeInput.value = '0';
+          if (depositInput) depositInput.value = '0';
+        } else {
+          pricingRow.style.opacity = '1';
+          pricingRow.style.pointerEvents = 'auto';
+          if (feeInput) feeInput.value = '150';
+          if (depositInput) depositInput.value = '500';
+        }
+      });
+    }
+
+    if (descInput) {
+      descInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          submitListingForm();
+        }
+      });
+    }
+
+    if (listForm) {
+      listForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        submitListingForm();
+      });
+    }
+
+    function submitListingForm() {
+      const rawDesc = descInput ? descInput.value.trim() : '';
+      const rawTitle = titleInput ? titleInput.value.trim() : '';
+
+      if (!rawDesc && !rawTitle) {
+        if (listErrorBanner) {
+          listErrorBanner.textContent = 'Please enter a product description or title.';
+          listErrorBanner.hidden = false;
+        }
+        return;
+      }
+
+      let cleanTitle = rawTitle;
+      if (!cleanTitle) {
+        const firstLine = rawDesc.split(/[.\n]/)[0].trim();
+        cleanTitle = firstLine.length > 50 ? `${firstLine.slice(0, 47)}...` : (firstLine || 'Campus Equipment');
+      }
+
+      const isDonation = donationToggle ? donationToggle.checked : false;
+      const rawFee = feeInput ? parseInt(feeInput.value, 10) : 0;
+      const rawDeposit = depositInput ? parseInt(depositInput.value, 10) : 0;
+
+      const dailyFee = isDonation ? 0 : Math.max(0, isNaN(rawFee) ? 0 : rawFee);
+      const deposit = isDonation ? 0 : Math.max(0, isNaN(rawDeposit) ? 0 : rawDeposit);
+      const category = categorySelect ? categorySelect.value : 'TECH';
+
+      let imageUrl = currentUploadedPhotoDataUrl;
+      if (!imageUrl) {
+        if (category === 'MEDIA') imageUrl = 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80';
+        else if (category === 'LAB') imageUrl = 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80';
+        else if (category === 'MOBILITY') imageUrl = 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80';
+        else imageUrl = 'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=600&q=80';
+      }
+
+      const ownerName = AuthManager.user ? AuthManager.user.name : 'Alex Sharma';
+      const ownerHostel = AuthManager.user ? AuthManager.user.hostel : 'Hostel 3';
+
+      const newGear = {
+        id: `gear_user_${Date.now()}_${Math.floor(Math.random() * 1000)}`,
+        name: cleanTitle,
+        category: isDonation ? 'FREE' : category,
+        owner: `${ownerHostel} (${ownerName.split(' ')[0]} ${ownerName.split(' ')[1] ? ownerName.split(' ')[1][0] + '.' : ''})`,
+        distance: '1 min walk',
+        daily_fee: dailyFee,
+        deposit: deposit,
+        rating: 5.0,
+        borrows: 0,
+        badge: isDonation ? '🎁 Free Campus Share' : '✨ New Listing',
+        image: imageUrl,
+        keywords: [
+          cleanTitle.toLowerCase(),
+          category.toLowerCase(),
+          ...rawDesc.toLowerCase().split(/\s+/).slice(0, 10)
+        ],
+        description: rawDesc
+      };
+
+      INVENTORY.unshift(newGear);
+      saveCustomListing(newGear);
+
+      renderCatalog(INVENTORY);
+
+      if (listForm) listForm.hidden = true;
+      if (listSuccessBanner) listSuccessBanner.hidden = false;
+
+      showDemoToast(`✓ "${newGear.name}" listed in Campus Catalog!`);
+
+      setTimeout(() => {
+        closeModal('list-gear');
+        if (listForm) {
+          listForm.reset();
+          listForm.hidden = false;
+        }
+        if (listSuccessBanner) listSuccessBanner.hidden = true;
+        currentUploadedPhotoDataUrl = '';
+        currentUploadedFileName = '';
+
+        const catalogElem = document.getElementById('results-section');
+        if (catalogElem) {
+          catalogElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 1200);
+    }
+  }
+
+  /* ==========================================================================
      6. Event Bindings & Initialization
      ========================================================================== */
   document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize State
     CartManager.init();
     AuthManager.init();
+    loadCustomListings();
     renderCatalog(INVENTORY);
+    initProductListingPipeline();
 
     // 2. Hero Search Input & Chips
     const searchInput = document.getElementById('hero-ai-input');
@@ -1262,6 +1558,7 @@
         closeModal('profile');
         closeModal('checkout');
         closeModal('condition-diff');
+        closeModal('list-gear');
         closeCartDrawer();
       }
     });

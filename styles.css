@@ -3354,3 +3354,211 @@ body {
   border-top: 1px solid var(--color-plum-tinted);
 }
 
+/* ==========================================================================
+   List Product Modal & Native File Picker Styling
+   ========================================================================== */
+.list-gear-modal-card {
+  max-width: 540px;
+  width: 92%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.list-gear-form-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.list-photo-preview-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f8fafc;
+  border: 1.5px solid var(--color-plum-tinted);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+.preview-img-wrap {
+  width: 72px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--color-plum-tinted);
+  background: #e2e8f0;
+  flex-shrink: 0;
+}
+
+.preview-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-meta-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.preview-meta-wrap strong {
+  font-size: 13px;
+  color: var(--color-aubergine);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preview-status-pill {
+  font-size: 11px;
+  font-weight: 600;
+  color: #166534;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.list-drop-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  border: 2px dashed var(--color-plum-tinted);
+  border-radius: 12px;
+  background: #faf8fa;
+  text-align: center;
+  gap: 4px;
+}
+
+.list-drop-zone .drop-icon {
+  font-size: 28px;
+  color: var(--color-fuchsia-signal);
+  margin-bottom: 4px;
+}
+
+.list-drop-zone strong {
+  font-size: 14px;
+  color: var(--color-aubergine);
+}
+
+.list-drop-zone span {
+  font-size: 12px;
+  color: var(--color-heather);
+}
+
+.enter-submit-hint {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-fuchsia-signal);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.list-templates-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.templates-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--color-heather);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.templates-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.template-chip {
+  padding: 4px 10px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--color-aubergine);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.template-chip:hover {
+  background: #e2e8f0;
+  border-color: var(--color-heather);
+}
+
+.donation-toggle-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.donation-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.donation-checkbox-label input {
+  margin-top: 3px;
+  accent-color: #166534;
+  width: 16px;
+  height: 16px;
+}
+
+.donation-checkbox-label strong {
+  display: block;
+  font-size: 12.5px;
+  color: #166534;
+}
+
+.donation-checkbox-label small {
+  display: block;
+  font-size: 11px;
+  color: #4b5563;
+}
+
+.list-error-banner {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.list-success-banner {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.list-success-banner h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-aubergine);
+  margin: 0;
+}
+
+.list-success-banner p {
+  font-size: 13px;
+  color: var(--color-heather);
+  margin: 0;
+}
+
