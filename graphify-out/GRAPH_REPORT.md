@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 75 files · ~84,273 words
+- 76 files · ~86,321 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 967 nodes · 895 edges · 73 communities (61 shown, 12 thin omitted)
+- 983 nodes · 910 edges · 74 communities (62 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `40c8656c`
+- Built from commit: `d411c7ea`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -84,6 +84,7 @@
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
@@ -103,7 +104,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (73 total, 12 thin omitted)
+## Communities (74 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -279,7 +280,7 @@ Nodes (5): Connecting from Frontend (JavaScript / TypeScript), Directory Structu
 
 ### Community 54 - "Community 54"
 Cohesion: 0.07
-Nodes (26): dependencies, clsx, lucide-react, pocketbase, react, react-dom, tailwind-merge, tailwindcss (+18 more)
+Nodes (28): dependencies, clsx, lucide-react, pocketbase, react, react-dom, tailwind-merge, tailwindcss (+20 more)
 
 ### Community 55 - "Community 55"
 Cohesion: 0.10
@@ -333,8 +334,12 @@ Nodes (13): 10. Alternatives Rejected (Decision Log), 11. Open Questions / Risks
 Cohesion: 0.17
 Nodes (11): Adversarial Critique of Current Implementation:, Executive Audit Summary & Scorecard, Final Auditor Directive, Objective 1: Comprehensive 13-Functionality Cross-Examination, Objective 2: Scrutiny of AI Need-Based Discovery, Objective 3: Scrutiny of the Borrowing Lifecycle, Objective 4: Scrutiny of Financial & Settlement Flow, Objective 5: Top 5 Critical Gaps & Actionable Fixes (+3 more)
 
+### Community 73 - "Community 73"
+Cohesion: 0.14
+Nodes (13): 1. Graphify Search Phase (Rule #5 & #12), 2. Architecture & Feature Breakdown in YAML (Rule #7), 3. Strict Guardrails During Execution (Rule #8), 4. Test-Driven Development (TDD) Test Suites (Rule #8), 5. Cyber Attack Test Scripts (STRIDE & OWASP Top 10) (Rule #8), 6. Self-Critique of the Idea & Execution Plan (Adversarial Stress Test), 7. Pre-Commit Hooks & Automation (Rules #10, #11 & #13), 8. Graphify Update Phase (Rule #5) (+5 more)
+
 ## Knowledge Gaps
-- **743 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+738 more)
+- **755 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+750 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -342,7 +347,7 @@ Nodes (11): Adversarial Critique of Current Implementation:, Executive Audit Sum
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _743 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _755 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

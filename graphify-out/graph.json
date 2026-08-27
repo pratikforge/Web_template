@@ -182,10 +182,20 @@
       "norm_label": "lint"
     },
     {
-      "label": "preview",
+      "label": "test",
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L10",
+      "_origin": "ast",
+      "id": "frontend_package_scripts_test",
+      "community": 54,
+      "norm_label": "test"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "frontend_package_scripts_preview",
       "community": 54,
@@ -195,7 +205,7 @@
       "label": "dependencies",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L12",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "frontend_package_dependencies",
       "community": 54,
@@ -205,7 +215,7 @@
       "label": "@tailwindcss/vite",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "frontend_package_dependencies_tailwindcss_vite",
       "community": 54,
@@ -215,7 +225,7 @@
       "label": "clsx",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L14",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "frontend_package_dependencies_clsx",
       "community": 54,
@@ -225,7 +235,7 @@
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "frontend_package_dependencies_lucide_react",
       "community": 54,
@@ -235,7 +245,7 @@
       "label": "pocketbase",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "frontend_package_dependencies_pocketbase",
       "community": 54,
@@ -245,7 +255,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "frontend_package_dependencies_react",
       "community": 54,
@@ -255,7 +265,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "frontend_package_dependencies_react_dom",
       "community": 54,
@@ -265,7 +275,7 @@
       "label": "tailwind-merge",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "frontend_package_dependencies_tailwind_merge",
       "community": 54,
@@ -275,7 +285,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "frontend_package_dependencies_tailwindcss",
       "community": 54,
@@ -285,7 +295,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "frontend_package_devdependencies",
       "community": 54,
@@ -295,7 +305,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_types_node",
       "community": 54,
@@ -305,7 +315,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_types_react",
       "community": 54,
@@ -315,7 +325,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_types_react_dom",
       "community": 54,
@@ -325,7 +335,7 @@
       "label": "@vitejs/plugin-react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_vitejs_plugin_react",
       "community": 54,
@@ -335,7 +345,7 @@
       "label": "oxlint",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_oxlint",
       "community": 54,
@@ -345,7 +355,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_typescript",
       "community": 54,
@@ -355,11 +365,21 @@
       "label": "vite",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_vite",
       "community": 54,
       "norm_label": "vite"
+    },
+    {
+      "label": "vitest",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "frontend_package_devdependencies_vitest",
+      "community": 54,
+      "norm_label": "vitest"
     },
     {
       "label": "App.tsx",
@@ -9142,6 +9162,146 @@
       "norm_label": "8. verification & tdd test plan"
     },
     {
+      "label": "tdd_implementation_plan.md",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan",
+      "community": 73,
+      "norm_label": "tdd_implementation_plan.md"
+    },
+    {
+      "label": "Strict Test-Driven Development (TDD) & Security Implementation Plan",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "community": 73,
+      "norm_label": "strict test-driven development (tdd) & security implementation plan"
+    },
+    {
+      "label": "1. Graphify Search Phase (Rule #5 & #12)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_1_graphify_search_phase_rule_5_12",
+      "community": 73,
+      "norm_label": "1. graphify search phase (rule #5 & #12)"
+    },
+    {
+      "label": "2. Architecture & Feature Breakdown in YAML (Rule #7)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_2_architecture_feature_breakdown_in_yaml_rule_7",
+      "community": 73,
+      "norm_label": "2. architecture & feature breakdown in yaml (rule #7)"
+    },
+    {
+      "label": "3. Strict Guardrails During Execution (Rule #8)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_3_strict_guardrails_during_execution_rule_8",
+      "community": 73,
+      "norm_label": "3. strict guardrails during execution (rule #8)"
+    },
+    {
+      "label": "4. Test-Driven Development (TDD) Test Suites (Rule #8)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_4_test_driven_development_tdd_test_suites_rule_8",
+      "community": 73,
+      "norm_label": "4. test-driven development (tdd) test suites (rule #8)"
+    },
+    {
+      "label": "Test Suite 1: Financial Invariant & Safe Storage Tests (`src/tests/finance_and_storage.test.ts`)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_test_suite_1_financial_invariant_safe_storage_tests_src_tests_finance_and_storage_test_ts",
+      "community": 73,
+      "norm_label": "test suite 1: financial invariant & safe storage tests (`src/tests/finance_and_storage.test.ts`)"
+    },
+    {
+      "label": "Test Suite 2: State Machine & RBAC Tests (`src/tests/lifecycle_rbac.test.ts`)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_test_suite_2_state_machine_rbac_tests_src_tests_lifecycle_rbac_test_ts",
+      "community": 73,
+      "norm_label": "test suite 2: state machine & rbac tests (`src/tests/lifecycle_rbac.test.ts`)"
+    },
+    {
+      "label": "Test Suite 3: AI Need-Based Bundler Parser Tests (`src/tests/ai_bundler.test.ts`)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_test_suite_3_ai_need_based_bundler_parser_tests_src_tests_ai_bundler_test_ts",
+      "community": 73,
+      "norm_label": "test suite 3: ai need-based bundler parser tests (`src/tests/ai_bundler.test.ts`)"
+    },
+    {
+      "label": "5. Cyber Attack Test Scripts (STRIDE & OWASP Top 10) (Rule #8)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L291",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_5_cyber_attack_test_scripts_stride_owasp_top_10_rule_8",
+      "community": 73,
+      "norm_label": "5. cyber attack test scripts (stride & owasp top 10) (rule #8)"
+    },
+    {
+      "label": "Test Suite 4: Cyber Attack Vulnerability Tests (`src/tests/security_stride_attacks.test.ts`)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L293",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_test_suite_4_cyber_attack_vulnerability_tests_src_tests_security_stride_attacks_test_ts",
+      "community": 73,
+      "norm_label": "test suite 4: cyber attack vulnerability tests (`src/tests/security_stride_attacks.test.ts`)"
+    },
+    {
+      "label": "6. Self-Critique of the Idea & Execution Plan (Adversarial Stress Test)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L348",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_6_self_critique_of_the_idea_execution_plan_adversarial_stress_test",
+      "community": 73,
+      "norm_label": "6. self-critique of the idea & execution plan (adversarial stress test)"
+    },
+    {
+      "label": "7. Pre-Commit Hooks & Automation (Rules #10, #11 & #13)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L389",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_7_pre_commit_hooks_automation_rules_10_11_13",
+      "community": 73,
+      "norm_label": "7. pre-commit hooks & automation (rules #10, #11 & #13)"
+    },
+    {
+      "label": "8. Graphify Update Phase (Rule #5)",
+      "file_type": "document",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L408",
+      "_origin": "ast",
+      "id": "spec_tdd_implementation_plan_8_graphify_update_phase_rule_5",
+      "community": 73,
+      "norm_label": "8. graphify update phase (rule #5)"
+    },
+    {
       "label": "tech_stack_prd_campus_circular.md",
       "file_type": "document",
       "source_file": "spec/tech_stack_prd_campus_circular.md",
@@ -9857,6 +10017,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -10002,6 +10172,16 @@
       "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
       "target": "frontend_package_devdependencies_vitejs_plugin_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_vitest",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -16902,9 +17082,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report",
-      "target": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit"
     },
     {
       "relation": "contains",
@@ -16912,9 +17092,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_executive_audit_summary_scorecard",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_executive_audit_summary_scorecard"
     },
     {
       "relation": "contains",
@@ -16922,9 +17102,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L561",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_final_auditor_directive",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_final_auditor_directive"
     },
     {
       "relation": "contains",
@@ -16932,9 +17112,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_objective_1_comprehensive_13_functionality_cross_examination",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_objective_1_comprehensive_13_functionality_cross_examination"
     },
     {
       "relation": "contains",
@@ -16942,9 +17122,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L264",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_objective_2_scrutiny_of_ai_need_based_discovery",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_objective_2_scrutiny_of_ai_need_based_discovery"
     },
     {
       "relation": "contains",
@@ -16952,9 +17132,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L330",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_objective_3_scrutiny_of_the_borrowing_lifecycle",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_objective_3_scrutiny_of_the_borrowing_lifecycle"
     },
     {
       "relation": "contains",
@@ -16962,9 +17142,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L385",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_objective_4_scrutiny_of_financial_settlement_flow",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_objective_4_scrutiny_of_financial_settlement_flow"
     },
     {
       "relation": "contains",
@@ -16972,9 +17152,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L428",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_objective_5_top_5_critical_gaps_actionable_fixes",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_objective_5_top_5_critical_gaps_actionable_fixes"
     },
     {
       "relation": "contains",
@@ -16982,9 +17162,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_project_campus_circular_from_ownership_to_access",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_project_campus_circular_from_ownership_to_access"
     },
     {
       "relation": "contains",
@@ -16992,9 +17172,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L512",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_webfusion_2_0_lead_competition_judge_senior_product_audit",
-      "target": "spec_adversarial_audit_report_the_winning_3_minute_presentation_script_for_judges",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_the_winning_3_minute_presentation_script_for_judges"
     },
     {
       "relation": "contains",
@@ -17002,9 +17182,9 @@
       "source_file": "spec/adversarial_audit_report.md",
       "source_location": "L270",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_adversarial_audit_report_objective_2_scrutiny_of_ai_need_based_discovery",
-      "target": "spec_adversarial_audit_report_adversarial_critique_of_current_implementation",
-      "confidence_score": 1.0
+      "target": "spec_adversarial_audit_report_adversarial_critique_of_current_implementation"
     },
     {
       "relation": "contains",
@@ -17632,9 +17812,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular",
-      "target": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular"
     },
     {
       "relation": "contains",
@@ -17642,9 +17822,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_10_assumptions_constraints",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_10_assumptions_constraints"
     },
     {
       "relation": "contains",
@@ -17652,9 +17832,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_11_dependencies",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_11_dependencies"
     },
     {
       "relation": "contains",
@@ -17662,9 +17842,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_12_risks_open_questions",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_12_risks_open_questions"
     },
     {
       "relation": "contains",
@@ -17672,9 +17852,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_13_timeline_milestones",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_13_timeline_milestones"
     },
     {
       "relation": "contains",
@@ -17682,9 +17862,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_14_appendix",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_14_appendix"
     },
     {
       "relation": "contains",
@@ -17692,9 +17872,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_1_title_summary",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_1_title_summary"
     },
     {
       "relation": "contains",
@@ -17702,9 +17882,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_2_problem_statement",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_2_problem_statement"
     },
     {
       "relation": "contains",
@@ -17712,9 +17892,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_3_goals_success_metrics",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_3_goals_success_metrics"
     },
     {
       "relation": "contains",
@@ -17722,9 +17902,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_4_target_users",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_4_target_users"
     },
     {
       "relation": "contains",
@@ -17732,9 +17912,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_5_non_goals_out_of_scope",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_5_non_goals_out_of_scope"
     },
     {
       "relation": "contains",
@@ -17742,9 +17922,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_6_user_stories_use_cases",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_6_user_stories_use_cases"
     },
     {
       "relation": "contains",
@@ -17752,9 +17932,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_7_features_functional_requirements",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_7_features_functional_requirements"
     },
     {
       "relation": "contains",
@@ -17762,9 +17942,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_8_user_flow",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_8_user_flow"
     },
     {
       "relation": "contains",
@@ -17772,9 +17952,9 @@
       "source_file": "spec/product_prd_campus_circular.md",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_product_prd_campus_circular_product_requirements_document_prd_campuscircular",
-      "target": "spec_product_prd_campus_circular_9_edge_cases_error_states",
-      "confidence_score": 1.0
+      "target": "spec_product_prd_campus_circular_9_edge_cases_error_states"
     },
     {
       "relation": "contains",
@@ -17892,9 +18072,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit",
-      "target": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit"
     },
     {
       "relation": "contains",
@@ -17902,9 +18082,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_1_executive_summary_auditor_threat_model",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_1_executive_summary_auditor_threat_model"
     },
     {
       "relation": "contains",
@@ -17912,9 +18092,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1"
     },
     {
       "relation": "contains",
@@ -17922,9 +18102,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2"
     },
     {
       "relation": "contains",
@@ -17932,9 +18112,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L312",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3"
     },
     {
       "relation": "contains",
@@ -17942,9 +18122,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L415",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4"
     },
     {
       "relation": "contains",
@@ -17952,9 +18132,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L522",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_6_10_stage_lifecycle_state_machine_integrity",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_6_10_stage_lifecycle_state_machine_integrity"
     },
     {
       "relation": "contains",
@@ -17962,9 +18142,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L586",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations"
     },
     {
       "relation": "contains",
@@ -17972,9 +18152,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L610",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_campuscircular_adversarial_security_state_reliability_math_integrity_audit",
-      "target": "spec_security_and_state_reliability_audit_8_verification_tdd_test_plan",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_8_verification_tdd_test_plan"
     },
     {
       "relation": "contains",
@@ -17982,9 +18162,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
-      "target": "spec_security_and_state_reliability_audit_2_1_adversarial_failure_modes_analysis",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_2_1_adversarial_failure_modes_analysis"
     },
     {
       "relation": "contains",
@@ -17992,9 +18172,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
-      "target": "spec_security_and_state_reliability_audit_2_2_defensive_architecture_safe_storage_engine",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_2_2_defensive_architecture_safe_storage_engine"
     },
     {
       "relation": "contains",
@@ -18002,9 +18182,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_2_localstorage_state_safety_audit_objective_1",
-      "target": "spec_security_and_state_reliability_audit_2_3_bulletproof_reset_demo_state_mechanism",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_2_3_bulletproof_reset_demo_state_mechanism"
     },
     {
       "relation": "contains",
@@ -18012,9 +18192,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
-      "target": "spec_security_and_state_reliability_audit_3_1_problem_statement_section_12_specification",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_3_1_problem_statement_section_12_specification"
     },
     {
       "relation": "contains",
@@ -18022,9 +18202,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
-      "target": "spec_security_and_state_reliability_audit_3_2_vulnerability_vector_type_coercion_floating_point_drift",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_3_2_vulnerability_vector_type_coercion_floating_point_drift"
     },
     {
       "relation": "contains",
@@ -18032,9 +18212,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_3_financial_math_invariant_audit_objective_2",
-      "target": "spec_security_and_state_reliability_audit_3_3_guardrail_architecture_integer_based_paise_currency_engine",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_3_3_guardrail_architecture_integer_based_paise_currency_engine"
     },
     {
       "relation": "contains",
@@ -18042,9 +18222,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L314",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3",
-      "target": "spec_security_and_state_reliability_audit_4_1_threat_matrix_campuscircular_attack_surfaces",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_4_1_threat_matrix_campuscircular_attack_surfaces"
     },
     {
       "relation": "contains",
@@ -18052,9 +18232,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L351",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_4_input_sanitization_security_audit_stride_owasp_top_10_objective_3",
-      "target": "spec_security_and_state_reliability_audit_4_2_anti_pollution_anti_xss_sanitizer_implementation",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_4_2_anti_pollution_anti_xss_sanitizer_implementation"
     },
     {
       "relation": "contains",
@@ -18062,9 +18242,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L417",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
-      "target": "spec_security_and_state_reliability_audit_5_1_the_pitfalls_of_interval_based_timers",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_5_1_the_pitfalls_of_interval_based_timers"
     },
     {
       "relation": "contains",
@@ -18072,9 +18252,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L425",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
-      "target": "spec_security_and_state_reliability_audit_5_2_deterministic_epoch_anchored_architecture",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_5_2_deterministic_epoch_anchored_architecture"
     },
     {
       "relation": "contains",
@@ -18082,9 +18262,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L443",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_5_late_fee_timer_logic_audit_objective_4",
-      "target": "spec_security_and_state_reliability_audit_5_3_hackathon_demo_feature_judge_time_warp_controller",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_5_3_hackathon_demo_feature_judge_time_warp_controller"
     },
     {
       "relation": "contains",
@@ -18092,9 +18272,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L588",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
-      "target": "spec_security_and_state_reliability_audit_recommendation_1_strict_invariant_enforcement_with_runtime_validation",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_recommendation_1_strict_invariant_enforcement_with_runtime_validation"
     },
     {
       "relation": "contains",
@@ -18102,9 +18282,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L592",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
-      "target": "spec_security_and_state_reliability_audit_recommendation_2_zero_crash_resilient_localstorage_wrapper_with_schema_versioning",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_recommendation_2_zero_crash_resilient_localstorage_wrapper_with_schema_versioning"
     },
     {
       "relation": "contains",
@@ -18112,9 +18292,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L596",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
-      "target": "spec_security_and_state_reliability_audit_recommendation_3_defensive_input_sanitization_prototype_pollution_barrier",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_recommendation_3_defensive_input_sanitization_prototype_pollution_barrier"
     },
     {
       "relation": "contains",
@@ -18122,9 +18302,9 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L600",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
-      "target": "spec_security_and_state_reliability_audit_recommendation_4_deterministic_epoch_based_timers_with_judge_time_traveler",
-      "confidence_score": 1.0
+      "target": "spec_security_and_state_reliability_audit_recommendation_4_deterministic_epoch_based_timers_with_judge_time_traveler"
     },
     {
       "relation": "contains",
@@ -18132,8 +18312,138 @@
       "source_file": "spec/security_and_state_reliability_audit.md",
       "source_location": "L604",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_security_and_state_reliability_audit_7_5_critical_security_reliability_recommendations",
-      "target": "spec_security_and_state_reliability_audit_recommendation_5_finite_state_machine_guard_for_borrowing_lifecycle",
+      "target": "spec_security_and_state_reliability_audit_recommendation_5_finite_state_machine_guard_for_borrowing_lifecycle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan",
+      "target": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_1_graphify_search_phase_rule_5_12",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_2_architecture_feature_breakdown_in_yaml_rule_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_3_strict_guardrails_during_execution_rule_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_4_test_driven_development_tdd_test_suites_rule_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L291",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_5_cyber_attack_test_scripts_stride_owasp_top_10_rule_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L348",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_6_self_critique_of_the_idea_execution_plan_adversarial_stress_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L389",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_7_pre_commit_hooks_automation_rules_10_11_13",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L408",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_strict_test_driven_development_tdd_security_implementation_plan",
+      "target": "spec_tdd_implementation_plan_8_graphify_update_phase_rule_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_4_test_driven_development_tdd_test_suites_rule_8",
+      "target": "spec_tdd_implementation_plan_test_suite_1_financial_invariant_safe_storage_tests_src_tests_finance_and_storage_test_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_4_test_driven_development_tdd_test_suites_rule_8",
+      "target": "spec_tdd_implementation_plan_test_suite_2_state_machine_rbac_tests_src_tests_lifecycle_rbac_test_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_4_test_driven_development_tdd_test_suites_rule_8",
+      "target": "spec_tdd_implementation_plan_test_suite_3_ai_need_based_bundler_parser_tests_src_tests_ai_bundler_test_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/tdd_implementation_plan.md",
+      "source_location": "L293",
+      "weight": 1.0,
+      "source": "spec_tdd_implementation_plan_5_cyber_attack_test_scripts_stride_owasp_top_10_rule_8",
+      "target": "spec_tdd_implementation_plan_test_suite_4_cyber_attack_vulnerability_tests_src_tests_security_stride_attacks_test_ts",
       "confidence_score": 1.0
     },
     {
@@ -18142,9 +18452,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular",
-      "target": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular"
     },
     {
       "relation": "contains",
@@ -18152,9 +18462,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_10_alternatives_rejected_decision_log",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_10_alternatives_rejected_decision_log"
     },
     {
       "relation": "contains",
@@ -18162,9 +18472,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_11_open_questions_risks",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_11_open_questions_risks"
     },
     {
       "relation": "contains",
@@ -18172,9 +18482,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_12_research_log",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_12_research_log"
     },
     {
       "relation": "contains",
@@ -18182,9 +18492,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_1_overview",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_1_overview"
     },
     {
       "relation": "contains",
@@ -18192,9 +18502,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_2_selection_criteria",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_2_selection_criteria"
     },
     {
       "relation": "contains",
@@ -18202,9 +18512,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_3_research_checklist",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_3_research_checklist"
     },
     {
       "relation": "contains",
@@ -18212,9 +18522,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_4_language_runtime",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_4_language_runtime"
     },
     {
       "relation": "contains",
@@ -18222,9 +18532,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_5_package_dependency_manager",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_5_package_dependency_manager"
     },
     {
       "relation": "contains",
@@ -18232,9 +18542,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_6_core_dependencies_libraries",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_6_core_dependencies_libraries"
     },
     {
       "relation": "contains",
@@ -18242,9 +18552,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_7_dev_tooling",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_7_dev_tooling"
     },
     {
       "relation": "contains",
@@ -18252,9 +18562,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_8_infra_runtime_environment",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_8_infra_runtime_environment"
     },
     {
       "relation": "contains",
@@ -18262,9 +18572,9 @@
       "source_file": "spec/tech_stack_prd_campus_circular.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_tech_stack_prd_campus_circular_tech_stack_prd_campuscircular",
-      "target": "spec_tech_stack_prd_campus_circular_9_version_pinning_update_policy",
-      "confidence_score": 1.0
+      "target": "spec_tech_stack_prd_campus_circular_9_version_pinning_update_policy"
     },
     {
       "relation": "contains",
@@ -18638,5 +18948,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "40c8656ca6b5f0ceb12054dbce5ab73d0c4ffb5a"
+  "built_at_commit": "d411c7ea5c7fe25499a9440609a7b6de93e71cd3"
 }
