@@ -14,12 +14,13 @@
       name: 'Sony Alpha A7 III Full-Frame Camera',
       category: 'MEDIA',
       owner: 'Hostel 3 (Rahul S.)',
+      distance: '2 min walk',
       daily_fee: 1200,
       deposit: 2000,
       rating: 4.9,
       borrows: 34,
-      badge: 'Fest Top Pick',
-      icon: 'fa-solid fa-camera',
+      badge: '🔥 Fest Top Pick',
+      image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80',
       keywords: ['camera', 'reel', 'video', 'sony', 'shoot', 'film', 'media', 'fest']
     },
     {
@@ -27,12 +28,13 @@
       name: 'Manfrotto Professional Video Tripod',
       category: 'MEDIA',
       owner: 'Hostel 4 (Cine Club)',
+      distance: '3 min walk',
       daily_fee: 250,
       deposit: 500,
       rating: 4.8,
       borrows: 19,
-      badge: 'Hostel 4 Hub',
-      icon: 'fa-solid fa-video',
+      badge: '📹 Heavy Duty',
+      image: 'https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=600&q=80',
       keywords: ['tripod', 'reel', 'video', 'camera', 'stabilizer', 'stand']
     },
     {
@@ -40,12 +42,13 @@
       name: 'DJI Mic 2 Wireless Dual Lavalier Kit',
       category: 'MEDIA',
       owner: 'Hostel 3 (Rahul S.)',
+      distance: '2 min walk',
       daily_fee: 400,
       deposit: 1000,
       rating: 5.0,
       borrows: 27,
-      badge: 'Zero Latency',
-      icon: 'fa-solid fa-microphone-lines',
+      badge: '⚡ Zero Lag Audio',
+      image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80',
       keywords: ['mic', 'audio', 'sound', 'lavalier', 'reel', 'interview', 'wireless']
     },
     {
@@ -53,51 +56,55 @@
       name: 'Godox 18" Bi-Color LED Ring Light',
       category: 'EVENT',
       owner: 'Hostel 4 (SAC Room)',
+      distance: '3 min walk',
       daily_fee: 200,
       deposit: 400,
       rating: 4.7,
       borrows: 15,
-      badge: 'AC/DC Battery',
-      icon: 'fa-solid fa-lightbulb',
+      badge: '💡 AC/DC Battery',
+      image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80',
       keywords: ['light', 'ring light', 'led', 'stage', 'reel', 'lighting', 'fest']
     },
     {
       id: 'gear_casio_991ex',
-      name: 'Casio fx-991EX ClassWiz Scientific Calculator',
+      name: 'Casio fx-991EX ClassWiz Calculator',
       category: 'TECH',
       owner: 'Hostel 12 (Ananya S.)',
+      distance: '4 min walk',
       daily_fee: 80,
       deposit: 300,
       rating: 5.0,
       borrows: 42,
-      badge: 'Exam Approved',
-      icon: 'fa-solid fa-calculator',
+      badge: '🎯 Exam Approved',
+      image: 'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=600&q=80',
       keywords: ['calculator', 'casio', 'exam', 'classwiz', 'math', 'signals', 'endsem']
     },
     {
       id: 'gear_arduino_mega',
-      name: 'Arduino Mega 2560 R3 + 45-Sensor Starter Kit',
+      name: 'Arduino Mega 2560 R3 + 45 Sensors',
       category: 'LAB',
       owner: 'Hostel 7 (Robotics Cell)',
+      distance: '5 min walk',
       daily_fee: 250,
       deposit: 600,
       rating: 4.9,
       borrows: 22,
-      badge: 'Lab Tested',
-      icon: 'fa-solid fa-microchip',
+      badge: '🤖 Robotics Ready',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80',
       keywords: ['arduino', 'robotics', 'sensors', 'lab', 'oscilloscope', 'circuit', 'engineering']
     },
     {
       id: 'gear_marlin_cycle',
-      name: 'Trek Marlin 7 21-Speed Geared Mountain Bike',
+      name: 'Trek Marlin 7 21-Speed Mountain Bike',
       category: 'MOBILITY',
       owner: 'Hostel 2 (Arjun M.)',
+      distance: '1 min walk',
       daily_fee: 150,
       deposit: 500,
       rating: 4.8,
       borrows: 18,
-      badge: 'Dual Disc Brakes',
-      icon: 'fa-solid fa-bicycle',
+      badge: '🚲 Dual Disc Brakes',
+      image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80',
       keywords: ['cycle', 'bicycle', 'commute', 'mobility', 'trek', 'bike']
     }
   ];
@@ -219,9 +226,12 @@
               return `
                 <div class="cart-item-card" data-id="${gear.id}">
                   <div class="cart-item-top">
-                    <div class="cart-item-info">
-                      <strong>${gear.name}</strong>
-                      <span><i class="fa-solid fa-location-dot"></i> ${gear.owner}</span>
+                    <div class="cart-item-meta-wrap">
+                      <img class="cart-item-thumb" src="${gear.image}" alt="${gear.name}" />
+                      <div class="cart-item-info">
+                        <strong>${gear.name}</strong>
+                        <span><i class="fa-solid fa-location-dot"></i> ${gear.owner}</span>
+                      </div>
                     </div>
                     <button type="button" class="cart-item-remove-btn" data-remove="${gear.id}" aria-label="Remove item">
                       <i class="fa-solid fa-trash-can"></i>
@@ -372,15 +382,14 @@
         return `
           <article class="gear-card" data-id="${item.id}" data-category="${item.category}">
             <div>
-              <div class="gear-card-top">
-                <div class="gear-icon-box">
-                  <i class="${item.icon}"></i>
-                </div>
-                <span class="gear-badge">${item.badge}</span>
+              <div class="gear-card-image-wrap">
+                <span class="gear-category-tag">${item.category}</span>
+                <span class="gear-floating-badge">${item.badge}</span>
+                <img class="gear-card-img" src="${item.image}" alt="${item.name}" loading="lazy" />
               </div>
               <h3 class="gear-title">${item.name}</h3>
               <p class="gear-owner">
-                <i class="fa-solid fa-location-dot"></i> ${item.owner}
+                <i class="fa-solid fa-location-dot"></i> ${item.owner} • <span style="color:var(--color-forest);font-weight:600;">${item.distance}</span>
               </p>
             </div>
 

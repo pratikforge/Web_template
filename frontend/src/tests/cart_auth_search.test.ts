@@ -175,7 +175,36 @@ describe('CampusCircular Auth, AI Search, Cart Drawer & STRIDE Security Tests', 
   });
 
   /* ========================================================================
-     4. Responsive & CSS Guardrails
+     4. Product Imagery & Accessibility Guardrails
+     ======================================================================== */
+  describe('Product Imagery & Accessibility Guardrails', () => {
+    it('includes product image wrap, zoom transitions, and floating badges in CSS', () => {
+      expect(cssContent).toContain('.gear-card-image-wrap');
+      expect(cssContent).toContain('.gear-card-img');
+      expect(cssContent).toContain('.gear-floating-badge');
+      expect(cssContent).toContain('.gear-category-tag');
+      expect(cssContent).toContain('.cart-item-thumb');
+    });
+
+    it('renders image tags with alt text and lazy loading in main.js catalog', () => {
+      expect(jsContent).toContain('class="gear-card-img"');
+      expect(jsContent).toContain('loading="lazy"');
+      expect(jsContent).toContain('alt="${item.name}"');
+      expect(jsContent).toContain('class="cart-item-thumb"');
+    });
+
+    it('ensures all 7 inventory items have verified HTTPS image URLs', () => {
+      const imageUrls = jsContent.match(/image:\s*['"](https:\/\/[^'"]+)['"]/g);
+      expect(imageUrls).not.toBeNull();
+      expect(imageUrls!.length).toBeGreaterThanOrEqual(7);
+      imageUrls!.forEach((match) => {
+        expect(match).toContain('https://images.unsplash.com');
+      });
+    });
+  });
+
+  /* ========================================================================
+     5. Responsive & CSS Guardrails
      ======================================================================== */
   describe('CSS Modals & Slide-Over Drawer Guardrails', () => {
     it('includes cart drawer animation and high z-index', () => {
