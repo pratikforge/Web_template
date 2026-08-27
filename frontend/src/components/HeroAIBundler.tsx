@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Sparkles, ArrowRight, Video, Calculator, Film, Cpu, HelpCircle } from 'lucide-react';
-import { parseNeedPrompt } from '../lib/aiBundler';
+import { Sparkles, ArrowRight, Video, Calculator, Film, Cpu, HelpCircle, Bot } from 'lucide-react';
 import type { CampusResource } from '../types/campus';
-import { useCart } from '../context/CartContext';
 import { sanitizeInput } from '../lib/security';
+import { runAgentPipeline, type AgentPipelineResult } from '../lib/agentPipeline';
+import { AgentReasoningHUD } from './AgentReasoningHUD';
 
 interface HeroAIBundlerProps {
   resources: CampusResource[];
@@ -12,37 +12,18 @@ interface HeroAIBundlerProps {
 export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
   const [prompt, setPrompt] = useState<string>('');
   const [aiError, setAiError] = useState<string | null>(null);
-  const { loadBundleIntoCart } = useCart();
+  const [pipelineResult, setPipelineResult] = useState<AgentPipelineResult | null>(null);
 
   const handleBundleMatch = (rawInput: string) => {
     setAiError(null);
     const cleaned = sanitizeInput(rawInput);
     if (!cleaned) return;
 
-    const matchedBundle = parseNeedPrompt(cleaned);
-    if (!matchedBundle) {
-      setAiError("Couldn't match a specific kit. Try searching 'reel shoot', 'lab exam', or 'movie night'!");
-      return;
-    }
-
-    // Match required keywords to resources
-    const matchedResources: CampusResource[] = [];
-    matchedBundle.requiredKeywords.forEach(kw => {
-      const found = resources.find(
-        r =>
-          r.title.toLowerCase().includes(kw) ||
-          r.description.toLowerCase().includes(kw) ||
-          r.category.toLowerCase().includes(kw)
-      );
-      if (found && !matchedResources.some(m => m.id === found.id)) {
-        matchedResources.push(found);
-      }
-    });
-
-    if (matchedResources.length > 0) {
-      loadBundleIntoCart(matchedBundle.bundleName, matchedResources);
-    } else {
-      setAiError(`Found intent '${matchedBundle.bundleName}', but some items are currently checked out!`);
+    try {
+      const result = runAgentPipeline(cleaned, resources);
+      setPipelineResult(result);
+    } catch {
+      setAiError("Agent pipeline encountered an issue. Try searching 'reel shoot', 'lab exam', or 'movie night'!");
     }
   };
 
@@ -52,15 +33,15 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
   };
 
   return (
-    <section className="relative overflow-hidden border-b border-slate-800/80 bg-gradient-to-b from-slate-900/60 to-slate-950/80 py-12 px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden border-b border-slate-800/80 bg-gradient-to-b from-slate-900/60 to-slate-950/80 py-12 px-4 sm:px-6 lg:px-8 space-y-8">
       {/* Subtle Glow Backdrop */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-72 w-[600px] rounded-full bg-indigo-600/10 blur-3xl pointer-events-none" />
 
       <div className="relative mx-auto max-w-4xl text-center space-y-6">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-300">
-          <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
-          <span>PS Section 4 — Natural Language AI Need Discovery</span>
+          <Bot className="h-3.5 w-3.5 text-indigo-400" />
+          <span>PS Section 4 — Natural Language Multi-Agent Discovery</span>
         </div>
 
         {/* Hero Heading */}
@@ -68,7 +49,7 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
           Why buy what someone <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-300">nearby already has?</span>
         </h1>
         <p className="mx-auto max-w-2xl text-sm sm:text-base text-slate-300">
-          Describe your project or college requirement in plain words. CampusCircular uses AI to instantly discover and bundle all required gear from peers across nearby hostels.
+          Describe your project or college requirement in plain words. CampusCircular&apos;s autonomous agent pipeline deconstructs your intent, audits peer trust, and clusters gear into optimized walking pickup routes.
         </p>
 
         {/* Natural Language AI Prompt Box */}
@@ -88,7 +69,7 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
               type="submit"
               className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 px-5 py-2.5 text-xs font-bold text-white shadow-md shadow-indigo-600/30 transition-all cursor-pointer"
             >
-              <span>Bundle Kit</span>
+              <span>Run Agent Pipeline</span>
               <ArrowRight className="h-4 w-4" />
             </button>
           </div>
@@ -107,10 +88,11 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
           
           <button
             onClick={() => {
-              setPrompt('I need to make a reel for my club event tomorrow');
-              handleBundleMatch('I need to make a reel for my club event tomorrow');
+              const text = 'I need to make a reel for my club event tomorrow';
+              setPrompt(text);
+              handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all"
+            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
           >
             <Video className="h-3.5 w-3.5 text-indigo-400" />
             <span>Club Reel Shoot (4 Items)</span>
@@ -118,10 +100,11 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
 
           <button
             onClick={() => {
-              setPrompt('I have an electronics lab exam in 1 hour and need gear');
-              handleBundleMatch('I have an electronics lab exam in 1 hour and need gear');
+              const text = 'I have an electronics lab exam in 1 hour and need gear';
+              setPrompt(text);
+              handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all"
+            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
           >
             <Calculator className="h-3.5 w-3.5 text-amber-400" />
             <span>Lab Exam Kit</span>
@@ -129,10 +112,11 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
 
           <button
             onClick={() => {
-              setPrompt('Dorm movie night with projector and audio');
-              handleBundleMatch('Dorm movie night with projector and audio');
+              const text = 'Dorm movie night with projector and audio';
+              setPrompt(text);
+              handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all"
+            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
           >
             <Film className="h-3.5 w-3.5 text-violet-400" />
             <span>Movie Night Kit</span>
@@ -140,16 +124,27 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources }) => {
 
           <button
             onClick={() => {
-              setPrompt('Hardware circuit prototyping with Arduino');
-              handleBundleMatch('Hardware circuit prototyping with Arduino');
+              const text = 'Hardware circuit prototyping with Arduino';
+              setPrompt(text);
+              handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all"
+            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
           >
             <Cpu className="h-3.5 w-3.5 text-emerald-400" />
             <span>Robotics Maker Kit</span>
           </button>
         </div>
       </div>
+
+      {/* Live Multi-Agent Reasoning HUD */}
+      {pipelineResult && (
+        <AgentReasoningHUD
+          pipelineResult={pipelineResult}
+          resources={resources}
+          onUpdateResult={setPipelineResult}
+          onClose={() => setPipelineResult(null)}
+        />
+      )}
     </section>
   );
 };
