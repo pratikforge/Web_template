@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 110 files · ~111,245 words
+- 111 files · ~115,137 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1175 nodes · 1310 edges · 85 communities (72 shown, 13 thin omitted)
+- 1195 nodes · 1341 edges · 86 communities (73 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c984b545`
+- Built from commit: `86180fc6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -93,6 +93,7 @@
 - [[_COMMUNITY_Community 79|Community 79]]
 - [[_COMMUNITY_Community 80|Community 80]]
 - [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
 - [[_COMMUNITY_Community 83|Community 83]]
 - [[_COMMUNITY_Community 84|Community 84]]
 
@@ -123,7 +124,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (85 total, 13 thin omitted)
+## Communities (86 total, 13 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -388,6 +389,10 @@ Nodes (11): BundleCartDrawer(), BundleCartDrawerProps, SettlementModal(), Settle
 ### Community 81 - "Community 81"
 Cohesion: 0.18
 Nodes (10): 1. Executive Summary & Architectural Heritage, 2. Graphify Knowledge Base Search & Update Phases (Rule #5), 3. Structural Specification (YAML Format - Rule #7), 4. Guardrails During Execution (Rule #8), 5. Test-Driven Development (TDD) Plan & STRIDE Security Suite (Rule #8), 6. Verification and Integration Workflow (Rule #18), Automated Test Suite: `frontend/src/tests/agent_pipeline.test.ts`, CampusCircular Agentic Search & Discovery Workflow Plan (+2 more)
+
+### Community 82 - "Community 82"
+Cohesion: 0.18
+Nodes (13): addItem(), clear(), closeModal(), getTotals(), handleNaturalLanguageSearch(), init(), login(), logout() (+5 more)
 
 ### Community 83 - "Community 83"
 Cohesion: 0.04
