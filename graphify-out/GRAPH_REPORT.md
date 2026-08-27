@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 67 files · ~70,789 words
+- 69 files · ~73,301 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 849 nodes · 785 edges · 65 communities (53 shown, 12 thin omitted)
+- 886 nodes · 820 edges · 67 communities (55 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `562ea9ba`
+- Built from commit: `975051db`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -76,6 +76,8 @@
 - [[_COMMUNITY_Community 60|Community 60]]
 - [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
@@ -84,10 +86,10 @@
 4. `compilerOptions` - 15 edges
 5. `Git Workflow and Versioning` - 15 edges
 6. `Product Requirements Document (PRD)` - 15 edges
-7. `Test-Driven Development` - 14 edges
-8. `Browser Testing with DevTools` - 13 edges
-9. `CI/CD and Automation` - 13 edges
-10. `Frontend UI Engineering` - 13 edges
+7. `Key Functionalities` - 15 edges
+8. `Test-Driven Development` - 14 edges
+9. `Browser Testing with DevTools` - 13 edges
+10. `CI/CD and Automation` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -95,7 +97,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (65 total, 12 thin omitted)
+## Communities (67 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -293,8 +295,16 @@ Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScrip
 Cohesion: 0.17
 Nodes (11): 1. Guardrails, 2. TDD & Security Verification, Division of Responsibilities, Milestone 1 — Intake, Graphify Query & Color Hex Lock, Milestone 2 — Visual Generation & Prompt Pack Tailoring, Milestone 3 — Automated Frame Extraction & WebP Optimization, Milestone 4 — React ScrollCanvas Engine Implementation, Milestone 5 — Synchronized Narrative Text Overlays (+3 more)
 
+### Community 65 - "Community 65"
+Cohesion: 0.10
+Nodes (20): 10. Late Return, Damage & Settlement, 11. Admin Panel, 12. Platform Fee, 13. Campus Impact Dashboard, 1. User & Trust Profile, 2. Resource Listing & Item Preview, 3. Resource Discovery, 4. Need-Based / AI-Assisted Discovery (+12 more)
+
+### Community 66 - "Community 66"
+Cohesion: 0.12
+Nodes (15): Campus Circular — Top 10 Validated Ideas & Feature Blueprints, Detailed Breakdown of the Top 10 Candidates, Evaluation & Scoring Parameter Definitions (Scale 1–5), Rank 10: ClubVault — Inter-Society & Fest Asset Sharing Pool, Rank 1 (Top Recommendation): CampusCircular — AI Bundle Cart & Visual Proof Ledger, Rank 2: KitsFirst — Scenario-Driven Event & Project Packs, Rank 3: TrustMesh — College Verified Social Escrow Network, Rank 4: InspectAI — Automated Visual Damage Delta & Dispute Escrow (+7 more)
+
 ## Knowledge Gaps
-- **649 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+644 more)
+- **680 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+675 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -302,7 +312,7 @@ Nodes (11): 1. Guardrails, 2. TDD & Security Verification, Division of Responsib
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _649 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _680 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

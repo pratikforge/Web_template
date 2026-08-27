@@ -8142,6 +8142,216 @@
       "norm_label": "3. self-check checklist"
     },
     {
+      "label": "problem_statement.md",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_problem_statement",
+      "community": 65,
+      "norm_label": "problem_statement.md"
+    },
+    {
+      "label": "Extracted Text",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_problem_statement_extracted_text",
+      "community": 65,
+      "norm_label": "extracted text"
+    },
+    {
+      "label": "WEBFUSION 2.0 \u2014 5-HOURS INTER-COLLEGE FRONTEND WEB DEVELOPMENT COMPETITION",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "spec_problem_statement_webfusion_2_0_5_hours_inter_college_frontend_web_development_competition",
+      "community": 65,
+      "norm_label": "webfusion 2.0 \u2014 5-hours inter-college frontend web development competition"
+    },
+    {
+      "label": "CAMPUS CIRCULAR \u2014 From Ownership to Access",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "spec_problem_statement_campus_circular_from_ownership_to_access",
+      "community": 65,
+      "norm_label": "campus circular \u2014 from ownership to access"
+    },
+    {
+      "label": "Problem Statement",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "spec_problem_statement_problem_statement",
+      "community": 65,
+      "norm_label": "problem statement"
+    },
+    {
+      "label": "Technical Scope",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "spec_problem_statement_technical_scope",
+      "community": 65,
+      "norm_label": "technical scope"
+    },
+    {
+      "label": "Key Functionalities",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "spec_problem_statement_key_functionalities",
+      "community": 65,
+      "norm_label": "key functionalities"
+    },
+    {
+      "label": "1. User & Trust Profile",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "spec_problem_statement_1_user_trust_profile",
+      "community": 65,
+      "norm_label": "1. user & trust profile"
+    },
+    {
+      "label": "2. Resource Listing & Item Preview",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "spec_problem_statement_2_resource_listing_item_preview",
+      "community": 65,
+      "norm_label": "2. resource listing & item preview"
+    },
+    {
+      "label": "3. Resource Discovery",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "spec_problem_statement_3_resource_discovery",
+      "community": 65,
+      "norm_label": "3. resource discovery"
+    },
+    {
+      "label": "4. Need-Based / AI-Assisted Discovery",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "spec_problem_statement_4_need_based_ai_assisted_discovery",
+      "community": 65,
+      "norm_label": "4. need-based / ai-assisted discovery"
+    },
+    {
+      "label": "5. Smart Matching & Alternatives",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "spec_problem_statement_5_smart_matching_alternatives",
+      "community": 65,
+      "norm_label": "5. smart matching & alternatives"
+    },
+    {
+      "label": "6. Borrowing Charges & Security Deposit",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "spec_problem_statement_6_borrowing_charges_security_deposit",
+      "community": 65,
+      "norm_label": "6. borrowing charges & security deposit"
+    },
+    {
+      "label": "7. Borrowing Agreement",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "spec_problem_statement_7_borrowing_agreement",
+      "community": 65,
+      "norm_label": "7. borrowing agreement"
+    },
+    {
+      "label": "8. Before & After Condition Tracking",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "spec_problem_statement_8_before_after_condition_tracking",
+      "community": 65,
+      "norm_label": "8. before & after condition tracking"
+    },
+    {
+      "label": "9. Borrowing Lifecycle",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "spec_problem_statement_9_borrowing_lifecycle",
+      "community": 65,
+      "norm_label": "9. borrowing lifecycle"
+    },
+    {
+      "label": "10. Late Return, Damage & Settlement",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "spec_problem_statement_10_late_return_damage_settlement",
+      "community": 65,
+      "norm_label": "10. late return, damage & settlement"
+    },
+    {
+      "label": "11. Admin Panel",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "spec_problem_statement_11_admin_panel",
+      "community": 65,
+      "norm_label": "11. admin panel"
+    },
+    {
+      "label": "12. Platform Fee",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "spec_problem_statement_12_platform_fee",
+      "community": 65,
+      "norm_label": "12. platform fee"
+    },
+    {
+      "label": "13. Campus Impact Dashboard",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "spec_problem_statement_13_campus_impact_dashboard",
+      "community": 65,
+      "norm_label": "13. campus impact dashboard"
+    },
+    {
+      "label": "AI Usage",
+      "file_type": "document",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L172",
+      "_origin": "ast",
+      "id": "spec_problem_statement_ai_usage",
+      "community": 65,
+      "norm_label": "ai usage"
+    },
+    {
       "label": "scroll_trigger_3d_canvas_spec.md",
       "file_type": "document",
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
@@ -8470,6 +8680,166 @@
       "id": "spec_template_testing_checklist_verifying_completeness",
       "community": 17,
       "norm_label": "checklist: verifying completeness"
+    },
+    {
+      "label": "top_10_campus_circular_ideas.md",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas",
+      "community": 66,
+      "norm_label": "top_10_campus_circular_ideas.md"
+    },
+    {
+      "label": "Campus Circular \u2014 Top 10 Validated Ideas & Feature Blueprints",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
+      "community": 66,
+      "norm_label": "campus circular \u2014 top 10 validated ideas & feature blueprints"
+    },
+    {
+      "label": "Evaluation & Scoring Parameter Definitions (Scale 1\u20135)",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_evaluation_scoring_parameter_definitions_scale_1_5",
+      "community": 66,
+      "norm_label": "evaluation & scoring parameter definitions (scale 1\u20135)"
+    },
+    {
+      "label": "Scored Ranking Table",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_scored_ranking_table",
+      "community": 66,
+      "norm_label": "scored ranking table"
+    },
+    {
+      "label": "Detailed Breakdown of the Top 10 Candidates",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "community": 66,
+      "norm_label": "detailed breakdown of the top 10 candidates"
+    },
+    {
+      "label": "Rank 1 (Top Recommendation): CampusCircular \u2014 AI Bundle Cart & Visual Proof Ledger",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_1_top_recommendation_campuscircular_ai_bundle_cart_visual_proof_ledger",
+      "community": 66,
+      "norm_label": "rank 1 (top recommendation): campuscircular \u2014 ai bundle cart & visual proof ledger"
+    },
+    {
+      "label": "Rank 2: KitsFirst \u2014 Scenario-Driven Event & Project Packs",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_2_kitsfirst_scenario_driven_event_project_packs",
+      "community": 66,
+      "norm_label": "rank 2: kitsfirst \u2014 scenario-driven event & project packs"
+    },
+    {
+      "label": "Rank 3: TrustMesh \u2014 College Verified Social Escrow Network",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_3_trustmesh_college_verified_social_escrow_network",
+      "community": 66,
+      "norm_label": "rank 3: trustmesh \u2014 college verified social escrow network"
+    },
+    {
+      "label": "Rank 4: InspectAI \u2014 Automated Visual Damage Delta & Dispute Escrow",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_4_inspectai_automated_visual_damage_delta_dispute_escrow",
+      "community": 66,
+      "norm_label": "rank 4: inspectai \u2014 automated visual damage delta & dispute escrow"
+    },
+    {
+      "label": "Rank 5: HostelWing \u2014 Hyper-Local Floor & Block Peer Grid",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_5_hostelwing_hyper_local_floor_block_peer_grid",
+      "community": 66,
+      "norm_label": "rank 5: hostelwing \u2014 hyper-local floor & block peer grid"
+    },
+    {
+      "label": "Rank 6: SOS Beacon \u2014 Emergency Reverse-Need Community Matcher",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_6_sos_beacon_emergency_reverse_need_community_matcher",
+      "community": 66,
+      "norm_label": "rank 6: sos beacon \u2014 emergency reverse-need community matcher"
+    },
+    {
+      "label": "Rank 7: LifecyclePro \u2014 Interactive 10-Stage Exchange Stepper",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_7_lifecyclepro_interactive_10_stage_exchange_stepper",
+      "community": 66,
+      "norm_label": "rank 7: lifecyclepro \u2014 interactive 10-stage exchange stepper"
+    },
+    {
+      "label": "Rank 8: EcoLoop \u2014 Campus Sustainability & Rupee Saved Engine",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_8_ecoloop_campus_sustainability_rupee_saved_engine",
+      "community": 66,
+      "norm_label": "rank 8: ecoloop \u2014 campus sustainability & rupee saved engine"
+    },
+    {
+      "label": "Rank 9: AcademicSync \u2014 Lab Equipment & Course-Schedule Lending",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_9_academicsync_lab_equipment_course_schedule_lending",
+      "community": 66,
+      "norm_label": "rank 9: academicsync \u2014 lab equipment & course-schedule lending"
+    },
+    {
+      "label": "Rank 10: ClubVault \u2014 Inter-Society & Fest Asset Sharing Pool",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_rank_10_clubvault_inter_society_fest_asset_sharing_pool",
+      "community": 66,
+      "norm_label": "rank 10: clubvault \u2014 inter-society & fest asset sharing pool"
+    },
+    {
+      "label": "Recommendation & Next Step",
+      "file_type": "document",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "spec_top_10_campus_circular_ideas_recommendation_next_step",
+      "community": 66,
+      "norm_label": "recommendation & next step"
     },
     {
       "label": "error_log.md",
@@ -16029,12 +16399,212 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_problem_statement",
+      "target": "spec_problem_statement_extracted_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "spec_problem_statement",
+      "target": "spec_problem_statement_key_functionalities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "spec_problem_statement",
+      "target": "spec_problem_statement_technical_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "spec_problem_statement_extracted_text",
+      "target": "spec_problem_statement_campus_circular_from_ownership_to_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "spec_problem_statement_extracted_text",
+      "target": "spec_problem_statement_problem_statement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "spec_problem_statement_extracted_text",
+      "target": "spec_problem_statement_webfusion_2_0_5_hours_inter_college_frontend_web_development_competition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_10_late_return_damage_settlement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_11_admin_panel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_12_platform_fee",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_13_campus_impact_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_1_user_trust_profile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_2_resource_listing_item_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_3_resource_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_4_need_based_ai_assisted_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_5_smart_matching_alternatives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_6_borrowing_charges_security_deposit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_7_borrowing_agreement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_8_before_after_condition_tracking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_9_borrowing_lifecycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/problem_statement.md",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "spec_problem_statement_key_functionalities",
+      "target": "spec_problem_statement_ai_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec"
     },
     {
       "relation": "contains",
@@ -16042,9 +16612,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_division_of_responsibilities",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_division_of_responsibilities"
     },
     {
       "relation": "contains",
@@ -16052,9 +16622,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_1_intake_graphify_query_color_hex_lock",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_1_intake_graphify_query_color_hex_lock"
     },
     {
       "relation": "contains",
@@ -16062,9 +16632,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_2_visual_generation_prompt_pack_tailoring",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_2_visual_generation_prompt_pack_tailoring"
     },
     {
       "relation": "contains",
@@ -16072,9 +16642,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_3_automated_frame_extraction_webp_optimization",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_3_automated_frame_extraction_webp_optimization"
     },
     {
       "relation": "contains",
@@ -16082,9 +16652,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_4_react_scrollcanvas_engine_implementation",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_4_react_scrollcanvas_engine_implementation"
     },
     {
       "relation": "contains",
@@ -16092,9 +16662,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_5_synchronized_narrative_text_overlays",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_5_synchronized_narrative_text_overlays"
     },
     {
       "relation": "contains",
@@ -16102,9 +16672,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_6_graphify_update_performance_verification",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_milestone_6_graphify_update_performance_verification"
     },
     {
       "relation": "contains",
@@ -16112,9 +16682,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_scroll_triggered_3d_canvas_architecture_implementation_spec",
-      "target": "spec_scroll_trigger_3d_canvas_spec_security_guardrails_tdd_validation",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_security_guardrails_tdd_validation"
     },
     {
       "relation": "contains",
@@ -16122,9 +16692,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_security_guardrails_tdd_validation",
-      "target": "spec_scroll_trigger_3d_canvas_spec_1_guardrails",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_1_guardrails"
     },
     {
       "relation": "contains",
@@ -16132,9 +16702,9 @@
       "source_file": "spec/scroll_trigger_3d_canvas_spec.md",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_scroll_trigger_3d_canvas_spec_security_guardrails_tdd_validation",
-      "target": "spec_scroll_trigger_3d_canvas_spec_2_tdd_security_verification",
-      "confidence_score": 1.0
+      "target": "spec_scroll_trigger_3d_canvas_spec_2_tdd_security_verification"
     },
     {
       "relation": "contains",
@@ -16339,6 +16909,156 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas",
+      "target": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
+      "target": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
+      "target": "spec_top_10_campus_circular_ideas_evaluation_scoring_parameter_definitions_scale_1_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
+      "target": "spec_top_10_campus_circular_ideas_recommendation_next_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
+      "target": "spec_top_10_campus_circular_ideas_scored_ranking_table",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_10_clubvault_inter_society_fest_asset_sharing_pool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_1_top_recommendation_campuscircular_ai_bundle_cart_visual_proof_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_2_kitsfirst_scenario_driven_event_project_packs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_3_trustmesh_college_verified_social_escrow_network",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_4_inspectai_automated_visual_damage_delta_dispute_escrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_5_hostelwing_hyper_local_floor_block_peer_grid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_6_sos_beacon_emergency_reverse_need_community_matcher",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_7_lifecyclepro_interactive_10_stage_exchange_stepper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_8_ecoloop_campus_sustainability_rupee_saved_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/top_10_campus_circular_ideas.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
+      "target": "spec_top_10_campus_circular_ideas_rank_9_academicsync_lab_equipment_course_schedule_lending",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "telemetry/error_log.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -16358,5 +17078,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "562ea9bab6906783d417dcde455fdc840228b2c3"
+  "built_at_commit": "975051dbc80d0cc5f620e13b813265ad8d6c102f"
 }
