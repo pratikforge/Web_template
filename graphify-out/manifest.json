@@ -575,13 +575,13 @@
     "semantic_hash": ""
   },
   "main.js": {
-    "mtime": 1787805683.3905358,
-    "ast_hash": "79f0d53cbc51dbc4c95b3397f7e0cc22",
+    "mtime": 1787806129.2409487,
+    "ast_hash": "4fbae0faf1ce9297eb70bc08c879f0e2",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1787805655.246318,
-    "ast_hash": "0312abf23b6010b1158d0bca771ca63c",
+    "mtime": 1787806095.629994,
+    "ast_hash": "c5979133b6f503baacd7267ec13752d2",
     "semantic_hash": ""
   },
   "assets/logo.webp": {
@@ -590,8 +590,8 @@
     "semantic_hash": ""
   },
   "frontend/design/DESIGN.md": {
-    "mtime": 1787805504.9401271,
-    "ast_hash": "cafb99bafbc6d4de90351100a112cb77",
+    "mtime": 1787805774.5816631,
+    "ast_hash": "ec593d2a7f2bc009915ded04ad529365",
     "semantic_hash": ""
   }
 }

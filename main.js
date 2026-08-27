@@ -43,6 +43,11 @@
       setDrawer(!isOpen);
     });
 
+    const closeBtn = drawer.querySelector('.drawer-close-btn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => setDrawer(false));
+    }
+
     overlay.addEventListener('click', () => setDrawer(false));
 
     document.addEventListener('keydown', (e) => {
