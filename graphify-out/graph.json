@@ -1642,6 +1642,26 @@
       "norm_label": "ai_bundler.test.ts"
     },
     {
+      "label": "campus_circular_landing.test.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/tests/campus_circular_landing.test.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_campus_circular_landing_test",
+      "community": 84,
+      "norm_label": "campus_circular_landing.test.ts"
+    },
+    {
+      "label": "BorrowStatus",
+      "file_type": "code",
+      "source_file": "frontend/src/tests/campus_circular_landing.test.ts",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "tests_campus_circular_landing_test_borrowstatus",
+      "community": 84,
+      "norm_label": "borrowstatus"
+    },
+    {
       "label": "finance_and_storage.test.ts",
       "file_type": "code",
       "source_file": "frontend/src/tests/finance_and_storage.test.ts",
@@ -15741,6 +15761,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/campus_circular_landing.test.ts",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "tests_campus_circular_landing_test",
+      "target": "tests_campus_circular_landing_test_borrowstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/types/campus.ts",
       "source_location": "L101",
       "weight": 1.0,
@@ -22354,9 +22384,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design",
-      "target": "design_design_outseta_style_reference",
-      "confidence_score": 1.0
+      "target": "design_design_outseta_style_reference"
     },
     {
       "relation": "contains",
@@ -22364,9 +22394,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L313",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_agent_prompt_guide",
-      "confidence_score": 1.0
+      "target": "design_design_agent_prompt_guide"
     },
     {
       "relation": "contains",
@@ -22374,9 +22404,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_components",
-      "confidence_score": 1.0
+      "target": "design_design_components"
     },
     {
       "relation": "contains",
@@ -22384,9 +22414,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_do_s_and_don_ts",
-      "confidence_score": 1.0
+      "target": "design_design_do_s_and_don_ts"
     },
     {
       "relation": "contains",
@@ -22394,9 +22424,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L297",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_elevation",
-      "confidence_score": 1.0
+      "target": "design_design_elevation"
     },
     {
       "relation": "contains",
@@ -22404,9 +22434,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L305",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_imagery",
-      "confidence_score": 1.0
+      "target": "design_design_imagery"
     },
     {
       "relation": "contains",
@@ -22414,9 +22444,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L309",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_layout_309",
-      "confidence_score": 1.0
+      "target": "design_design_layout_309"
     },
     {
       "relation": "contains",
@@ -22424,9 +22454,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L341",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_quick_start",
-      "confidence_score": 1.0
+      "target": "design_design_quick_start"
     },
     {
       "relation": "contains",
@@ -22434,9 +22464,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L334",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_similar_brands",
-      "confidence_score": 1.0
+      "target": "design_design_similar_brands"
     },
     {
       "relation": "contains",
@@ -22444,9 +22474,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L288",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_surfaces",
-      "confidence_score": 1.0
+      "target": "design_design_surfaces"
     },
     {
       "relation": "contains",
@@ -22454,9 +22484,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_tokens_colors",
-      "confidence_score": 1.0
+      "target": "design_design_tokens_colors"
     },
     {
       "relation": "contains",
@@ -22464,9 +22494,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_tokens_spacing_shapes",
-      "confidence_score": 1.0
+      "target": "design_design_tokens_spacing_shapes"
     },
     {
       "relation": "contains",
@@ -22474,9 +22504,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_outseta_style_reference",
-      "target": "design_design_tokens_typography",
-      "confidence_score": 1.0
+      "target": "design_design_tokens_typography"
     },
     {
       "relation": "contains",
@@ -22484,9 +22514,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_apple_system_apple_system_detected_in_extracted_data_but_not_described_by_ai_font_apple_system",
-      "confidence_score": 1.0
+      "target": "design_design_apple_system_apple_system_detected_in_extracted_data_but_not_described_by_ai_font_apple_system"
     },
     {
       "relation": "contains",
@@ -22494,9 +22524,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_chakra_petch_chakra_petch_detected_in_extracted_data_but_not_described_by_ai_font_chakra_petch",
-      "confidence_score": 1.0
+      "target": "design_design_chakra_petch_chakra_petch_detected_in_extracted_data_but_not_described_by_ai_font_chakra_petch"
     },
     {
       "relation": "contains",
@@ -22504,9 +22534,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_family_family_detected_in_extracted_data_but_not_described_by_ai_font_family",
-      "confidence_score": 1.0
+      "target": "design_design_family_family_detected_in_extracted_data_but_not_described_by_ai_font_family"
     },
     {
       "relation": "contains",
@@ -22514,9 +22544,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_font_awesome_6_brands_third_party_brand_glyphs_integration_logos_social_icons_kept_distinct_from_phosphor_so_the_system_can_mix_its_own_line_icons_with_customer_brand_marks_without_visual_collision_font_font_awesome_6_brands",
-      "confidence_score": 1.0
+      "target": "design_design_font_awesome_6_brands_third_party_brand_glyphs_integration_logos_social_icons_kept_distinct_from_phosphor_so_the_system_can_mix_its_own_line_icons_with_customer_brand_marks_without_visual_collision_font_font_awesome_6_brands"
     },
     {
       "relation": "contains",
@@ -22524,9 +22554,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_fraunces_fraunces_detected_in_extracted_data_but_not_described_by_ai_font_fraunces",
-      "confidence_score": 1.0
+      "target": "design_design_fraunces_fraunces_detected_in_extracted_data_but_not_described_by_ai_font_fraunces"
     },
     {
       "relation": "contains",
@@ -22534,9 +22564,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_inter_var_workhorse_ui_and_body_font_the_single_axis_variable_cuts_tracking_at_every_size_0_02em_at_10px_through_0_004em_at_36px_so_body_text_and_headings_share_one_family_with_no_jarring_weight_jumps_font_inter_var",
-      "confidence_score": 1.0
+      "target": "design_design_inter_var_workhorse_ui_and_body_font_the_single_axis_variable_cuts_tracking_at_every_size_0_02em_at_10px_through_0_004em_at_36px_so_body_text_and_headings_share_one_family_with_no_jarring_weight_jumps_font_inter_var"
     },
     {
       "relation": "contains",
@@ -22544,9 +22574,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_jetbrains_mono_section_eyebrows_and_technical_labels_e_g_stripe_verified_partner_all_in_one_membership_stack_the_wide_tracking_0_04_0_10em_turns_mono_into_a_humanist_label_voice_not_code_font_jetbrains_mono",
-      "confidence_score": 1.0
+      "target": "design_design_jetbrains_mono_section_eyebrows_and_technical_labels_e_g_stripe_verified_partner_all_in_one_membership_stack_the_wide_tracking_0_04_0_10em_turns_mono_into_a_humanist_label_voice_not_code_font_jetbrains_mono"
     },
     {
       "relation": "contains",
@@ -22554,9 +22584,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_kaio_display_headlines_bold_ultra_condensed_sans_with_strong_character_used_at_56_80px_for_hero_statements_the_choice_of_a_single_bold_weight_with_tight_tracking_is_anti_convention_most_saas_sites_pair_weight_300_whispers_with_700_shouts_kaio_commits_fully_to_one_volume_font_kaio",
-      "confidence_score": 1.0
+      "target": "design_design_kaio_display_headlines_bold_ultra_condensed_sans_with_strong_character_used_at_56_80px_for_hero_statements_the_choice_of_a_single_bold_weight_with_tight_tracking_is_anti_convention_most_saas_sites_pair_weight_300_whispers_with_700_shouts_kaio_commits_fully_to_one_volume_font_kaio"
     },
     {
       "relation": "contains",
@@ -22564,9 +22594,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_permanent_marker_handwritten_annotations_layered_over_the_hero_gradient_see_what_our_customers_are_building_hook_in_the_first_90_minutes_these_are_not_body_text_they_are_a_personality_layer_use_sparingly_to_mark_sections_not_to_carry_meaning_font_permanent_marker",
-      "confidence_score": 1.0
+      "target": "design_design_permanent_marker_handwritten_annotations_layered_over_the_hero_gradient_see_what_our_customers_are_building_hook_in_the_first_90_minutes_these_are_not_body_text_they_are_a_personality_layer_use_sparingly_to_mark_sections_not_to_carry_meaning_font_permanent_marker"
     },
     {
       "relation": "contains",
@@ -22574,9 +22604,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_phosphor_bold_phosphor_bold_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_bold",
-      "confidence_score": 1.0
+      "target": "design_design_phosphor_bold_phosphor_bold_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_bold"
     },
     {
       "relation": "contains",
@@ -22584,9 +22614,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_phosphor_fill_phosphor_fill_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_fill",
-      "confidence_score": 1.0
+      "target": "design_design_phosphor_fill_phosphor_fill_detected_in_extracted_data_but_not_described_by_ai_font_phosphor_fill"
     },
     {
       "relation": "contains",
@@ -22594,9 +22624,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_phosphor_icon_system_single_weight_single_color_aubergine_240029_1px_equivalent_stroke_used_inline_with_body_copy_and_as_standalone_glyphs_font_phosphor",
-      "confidence_score": 1.0
+      "target": "design_design_phosphor_icon_system_single_weight_single_color_aubergine_240029_1px_equivalent_stroke_used_inline_with_body_copy_and_as_standalone_glyphs_font_phosphor"
     },
     {
       "relation": "contains",
@@ -22604,9 +22634,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_typography",
-      "target": "design_design_type_scale",
-      "confidence_score": 1.0
+      "target": "design_design_type_scale"
     },
     {
       "relation": "contains",
@@ -22614,9 +22644,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_spacing_shapes",
-      "target": "design_design_border_radius",
-      "confidence_score": 1.0
+      "target": "design_design_border_radius"
     },
     {
       "relation": "contains",
@@ -22624,9 +22654,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_spacing_shapes",
-      "target": "design_design_layout",
-      "confidence_score": 1.0
+      "target": "design_design_layout"
     },
     {
       "relation": "contains",
@@ -22634,9 +22664,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_spacing_shapes",
-      "target": "design_design_shadows",
-      "confidence_score": 1.0
+      "target": "design_design_shadows"
     },
     {
       "relation": "contains",
@@ -22644,9 +22674,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_tokens_spacing_shapes",
-      "target": "design_design_spacing_scale",
-      "confidence_score": 1.0
+      "target": "design_design_spacing_scale"
     },
     {
       "relation": "contains",
@@ -22654,9 +22684,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L238",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_dark_cta_section",
-      "confidence_score": 1.0
+      "target": "design_design_dark_cta_section"
     },
     {
       "relation": "contains",
@@ -22664,9 +22694,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L248",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_eyebrow_label",
-      "confidence_score": 1.0
+      "target": "design_design_eyebrow_label"
     },
     {
       "relation": "contains",
@@ -22674,9 +22704,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_ghost_outlined_button",
-      "confidence_score": 1.0
+      "target": "design_design_ghost_outlined_button"
     },
     {
       "relation": "contains",
@@ -22684,9 +22714,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_hand_drawn_annotation",
-      "confidence_score": 1.0
+      "target": "design_design_hand_drawn_annotation"
     },
     {
       "relation": "contains",
@@ -22694,9 +22724,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_hero_section",
-      "confidence_score": 1.0
+      "target": "design_design_hero_section"
     },
     {
       "relation": "contains",
@@ -22704,9 +22734,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L258",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_input_field",
-      "confidence_score": 1.0
+      "target": "design_design_input_field"
     },
     {
       "relation": "contains",
@@ -22714,9 +22744,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L263",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_integration_icon_tile",
-      "confidence_score": 1.0
+      "target": "design_design_integration_icon_tile"
     },
     {
       "relation": "contains",
@@ -22724,9 +22754,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_navigation_bar",
-      "confidence_score": 1.0
+      "target": "design_design_navigation_bar"
     },
     {
       "relation": "contains",
@@ -22734,9 +22764,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L228",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_numbered_step",
-      "confidence_score": 1.0
+      "target": "design_design_numbered_step"
     },
     {
       "relation": "contains",
@@ -22744,9 +22774,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L208",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_pill_tag_category",
-      "confidence_score": 1.0
+      "target": "design_design_pill_tag_category"
     },
     {
       "relation": "contains",
@@ -22754,9 +22784,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_primary_filled_button",
-      "confidence_score": 1.0
+      "target": "design_design_primary_filled_button"
     },
     {
       "relation": "contains",
@@ -22764,9 +22794,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L223",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_showcase_logo_card",
-      "confidence_score": 1.0
+      "target": "design_design_showcase_logo_card"
     },
     {
       "relation": "contains",
@@ -22774,9 +22804,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_success_badge",
-      "confidence_score": 1.0
+      "target": "design_design_success_badge"
     },
     {
       "relation": "contains",
@@ -22784,9 +22814,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L218",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_components",
-      "target": "design_design_testimonial_card",
-      "confidence_score": 1.0
+      "target": "design_design_testimonial_card"
     },
     {
       "relation": "contains",
@@ -22794,9 +22824,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L270",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_do_s_and_don_ts",
-      "target": "design_design_do",
-      "confidence_score": 1.0
+      "target": "design_design_do"
     },
     {
       "relation": "contains",
@@ -22804,9 +22834,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L279",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_do_s_and_don_ts",
-      "target": "design_design_don_t",
-      "confidence_score": 1.0
+      "target": "design_design_don_t"
     },
     {
       "relation": "contains",
@@ -22814,9 +22844,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L343",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_quick_start",
-      "target": "design_design_css_custom_properties",
-      "confidence_score": 1.0
+      "target": "design_design_css_custom_properties"
     },
     {
       "relation": "contains",
@@ -22824,9 +22854,9 @@
       "source_file": "frontend/design/DESIGN.md",
       "source_location": "L474",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_quick_start",
-      "target": "design_design_tailwind_v4",
-      "confidence_score": 1.0
+      "target": "design_design_tailwind_v4"
     },
     {
       "relation": "contains",
@@ -25080,5 +25110,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "548139ea5c7efa72bd567790b254a3a8f591e653"
+  "built_at_commit": "c984b5450df7c5b680845aa7ceedbc8ad7367b75"
 }

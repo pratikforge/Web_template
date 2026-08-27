@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Outseta — All-in-One Membership, Payments & CRM Engine</title>
+  <title>CampusCircular — Decentralized Peer-to-Peer Campus Gear &amp; Escrow Network</title>
 
-  <!-- Google Fonts: Inter, Inter Tight (Kaio substitute), JetBrains Mono, Permanent Marker -->
+  <!-- Google Fonts: Inter, Inter Tight (Kaio bold display substitute), JetBrains Mono, Permanent Marker -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -29,62 +29,62 @@
   <!-- Top Announcement Sub-bar -->
   <aside class="announcement-bar">
     <div class="announcement-inner">
-      <span class="announcement-badge">NEW</span>
-      <span>Migrating from MemberSpace, Teachable or MemberPress? Import in 1-click</span>
-      <a href="#migration" class="announcement-link">Explore migration guide &rarr;</a>
+      <span class="announcement-badge">CAMPUS LIVE</span>
+      <span>₹4.2 Lakhs saved by students across 8 Hostels this semester!</span>
+      <a href="#leaderboard" class="announcement-link">Explore Semester Impact Report &rarr;</a>
     </div>
   </aside>
 
   <!-- Sticky Navigation Bar -->
   <header class="site-header">
     <div class="header-inner">
-      <!-- Logo: Concentric Circle Mark + Wordmark -->
-      <a href="#" class="brand-logo" aria-label="Outseta Home">
+      <!-- Logo: Interlocking Campus Node Circle Mark + Wordmark -->
+      <a href="#" class="brand-logo" aria-label="CampusCircular Home">
         <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="16" cy="16" r="14" stroke="#240029" stroke-width="2.5" />
-          <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" />
+          <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" stroke-dasharray="4 2" />
           <circle cx="16" cy="16" r="4" fill="#240029" />
         </svg>
-        <span class="brand-name">Outseta</span>
+        <span class="brand-name">CampusCircular</span>
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="nav-menu" aria-label="Main Navigation">
         <div class="nav-item has-dropdown">
-          <button type="button" class="nav-link">Product <i class="fa-solid fa-chevron-down nav-arrow"></i></button>
+          <button type="button" class="nav-link">Gear Catalog <i class="fa-solid fa-chevron-down nav-arrow"></i></button>
           <div class="dropdown-menu">
-            <a href="#billing" class="dropdown-link">
-              <i class="fa-solid fa-credit-card dropdown-icon"></i>
-              <div><strong>Billing & Payments</strong><span>Stripe checkout, paywalls & subscriptions</span></div>
+            <a href="#catalog" class="dropdown-link">
+              <i class="fa-solid fa-camera dropdown-icon"></i>
+              <div><strong>Media &amp; Event Kit</strong><span>Sony mirrorless, wireless lav mics, gimbals &amp; lights</span></div>
             </a>
-            <a href="#auth" class="dropdown-link">
-              <i class="fa-solid fa-lock dropdown-icon"></i>
-              <div><strong>Authentication</strong><span>SSO, passwordless login & protected content</span></div>
+            <a href="#catalog" class="dropdown-link">
+              <i class="fa-solid fa-microchip dropdown-icon"></i>
+              <div><strong>Lab &amp; Engineering</strong><span>Oscilloscopes, Raspberry Pi 5s, solders &amp; Arduino toolkits</span></div>
             </a>
-            <a href="#crm" class="dropdown-link">
-              <i class="fa-solid fa-users dropdown-icon"></i>
-              <div><strong>Member CRM</strong><span>Unified customer database & activity tracking</span></div>
+            <a href="#catalog" class="dropdown-link">
+              <i class="fa-solid fa-calculator dropdown-icon"></i>
+              <div><strong>Calculators &amp; Tech</strong><span>Casio fx-991EX ClassWiz, drawing pads &amp; portable monitors</span></div>
             </a>
-            <a href="#email" class="dropdown-link">
-              <i class="fa-solid fa-envelope dropdown-icon"></i>
-              <div><strong>Email Marketing</strong><span>Automated sequences & member broadcasts</span></div>
+            <a href="#catalog" class="dropdown-link">
+              <i class="fa-solid fa-bicycle dropdown-icon"></i>
+              <div><strong>Sports &amp; Mobility</strong><span>Geared campus cycles, trekking tents &amp; badminton gear</span></div>
             </a>
           </div>
         </div>
-        <a href="#use-cases" class="nav-link">Use Cases</a>
-        <a href="#how-it-works" class="nav-link">How it Works</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#testimonials" class="nav-link">Customers</a>
+        <a href="#bundles" class="nav-link">Smart Bundles</a>
+        <a href="#how-it-works" class="nav-link">How Escrow Works</a>
+        <a href="#beacons" class="nav-link">Community Beacons</a>
+        <a href="#leaderboard" class="nav-link">Leaderboard</a>
       </nav>
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="github-badge" aria-label="GitHub Repository">
-          <i class="fa-brands fa-github"></i>
-          <span>★ 4.8k</span>
-        </a>
-        <a href="#login" class="ghost-link">Log in</a>
-        <a href="#signup" class="btn-primary">Sign up free</a>
+        <div class="campus-selector-badge" title="Verified Campus Domain">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>IIT Bombay ▾</span>
+        </div>
+        <a href="#login" class="ghost-link">Student Login</a>
+        <a href="#borrow" class="btn-primary">Borrow / Lend Gear</a>
         <button class="mobile-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -92,31 +92,30 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
+  <!-- Mobile Drawer Menu (Strictly hidden on desktop, prominent close button) -->
   <div class="mobile-overlay" hidden></div>
   <div class="mobile-drawer" id="mobile-drawer" hidden>
     <div class="drawer-header">
       <div class="drawer-brand">
         <svg class="brand-mark" width="24" height="24" viewBox="0 0 32 32" fill="none">
           <circle cx="16" cy="16" r="14" stroke="#240029" stroke-width="2.5" />
-          <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" />
+          <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" stroke-dasharray="4 2" />
           <circle cx="16" cy="16" r="4" fill="#240029" />
         </svg>
-        <span class="brand-name" style="font-size: 18px;">Navigation</span>
+        <span class="brand-name" style="font-size: 18px;">CampusCircular</span>
       </div>
       <button class="drawer-close-btn" type="button" aria-label="Close navigation menu">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-    <a href="#billing">Billing & Payments</a>
-    <a href="#auth">Authentication & SSO</a>
-    <a href="#crm">Member CRM</a>
-    <a href="#use-cases">Use Cases</a>
-    <a href="#how-it-works">How It Works</a>
-    <a href="#pricing">Pricing</a>
+    <a href="#catalog">Gear Catalog (Media, Lab, Tech)</a>
+    <a href="#bundles">Smart AI Bundles</a>
+    <a href="#how-it-works">How Escrow Works</a>
+    <a href="#beacons">Community Beacons</a>
+    <a href="#leaderboard">Campus Leaderboard</a>
     <div class="drawer-divider"></div>
-    <a href="#login" class="ghost-link">Log in</a>
-    <a href="#signup" class="btn-primary w-full">Start 7-day free trial</a>
+    <a href="#login" class="ghost-link">Student Login</a>
+    <a href="#borrow" class="btn-primary w-full">Borrow or Lend Gear</a>
   </div>
 
   <main>
@@ -124,27 +123,27 @@
     <section class="hero-section">
       <div class="hero-container">
         <!-- Section Eyebrow (JetBrains Mono, wide tracking) -->
-        <p class="section-eyebrow">ALL-IN-ONE MEMBERSHIP &amp; PRODUCT ENGINE</p>
+        <p class="section-eyebrow">// DECENTRALIZED CAMPUS SHARING &amp; PEER ESCROW</p>
 
         <!-- Giant Display Headline (Kaio 80px style) -->
         <h1 class="hero-headline">
-          Monetize and grow your product in one place.
+          Borrow what you need. Lend what you don't.
         </h1>
 
         <!-- Subhead (Inter Var 20px) -->
         <p class="hero-subhead">
-          Payments, authentication, CRM, and email marketing unified into one modular engine for modern founders, creators, and SaaS platforms.
+          From Sony Alpha camera kits for club fest reels to fx-991EX calculators and robotics toolkits. Borrow directly from hostel peers with zero platform cut and 100% escrow protection.
         </p>
 
         <!-- Dual CTA Row -->
         <div class="hero-cta-row">
-          <a href="#signup" class="btn-primary btn-large">Start 7-day free trial</a>
-          <a href="#demo" class="btn-ghost btn-large">Is Outseta for me? &rarr;</a>
+          <a href="#catalog" class="btn-primary btn-large">Explore Campus Gear</a>
+          <a href="#how-it-works" class="btn-ghost btn-large">How Escrow Works &rarr;</a>
         </div>
 
         <!-- Hand-Drawn Permanent Marker Annotations over Hero -->
         <div class="hero-annotation annotation-right" aria-hidden="true">
-          <span class="marker-text">HOOK IN THE FIRST 90 MINUTES</span>
+          <span class="marker-text">0% PLATFORM CUT ON STUDENT-TO-STUDENT GEAR</span>
           <svg class="hand-arrow arrow-down" width="48" height="38" viewBox="0 0 48 38" fill="none">
             <path d="M6 6C16 12 32 20 38 30M38 30L26 29M38 30L36 18" stroke="#df37a7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -154,322 +153,317 @@
           <svg class="hand-arrow arrow-up" width="44" height="34" viewBox="0 0 44 34" fill="none">
             <path d="M4 28C14 20 28 14 36 6M36 6L25 5M36 6L37 18" stroke="#240029" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span class="marker-text">SEE WHAT OUR CUSTOMERS ARE BUILDING</span>
+          <span class="marker-text">AI PHOTO DIFFS &amp; HOSTEL HANDOVER ESCROW</span>
         </div>
 
         <!-- 3-Column Showcase Card Row (Offset into Gradient) -->
         <div class="hero-showcase-grid">
-          <!-- Card 1: Billing & Revenue -->
+          <!-- Card 1: Student Economy & Cumulative Savings -->
           <article class="showcase-card">
             <div class="card-header-bar">
-              <span class="card-chip">SUBSCRIPTIONS</span>
+              <span class="card-chip">STUDENT ECONOMY</span>
               <span class="status-badge">
-                <i class="fa-solid fa-check"></i> Stripe Verified
+                <i class="fa-solid fa-shield-check"></i> Escrow Protected
               </span>
             </div>
             <div class="card-metric-block">
-              <span class="metric-label">Monthly Recurring Revenue</span>
+              <span class="metric-label">Cumulative Student Money Saved</span>
               <div class="metric-value-row">
-                <span class="metric-number">$42,850</span>
-                <span class="metric-growth">+18.4%</span>
+                <span class="metric-number">₹4,28,500</span>
+                <span class="metric-growth">+24.8% this sem</span>
               </div>
             </div>
             <div class="mini-chart">
-              <div class="chart-bar" style="height: 38%"></div>
-              <div class="chart-bar" style="height: 52%"></div>
-              <div class="chart-bar" style="height: 46%"></div>
-              <div class="chart-bar" style="height: 68%"></div>
-              <div class="chart-bar" style="height: 84%"></div>
-              <div class="chart-bar active" style="height: 100%"></div>
+              <div class="chart-bar" style="height: 42%" title="Week 1: ₹34,000"></div>
+              <div class="chart-bar" style="height: 56%" title="Week 2: ₹48,000"></div>
+              <div class="chart-bar" style="height: 64%" title="Week 3: ₹55,000"></div>
+              <div class="chart-bar" style="height: 78%" title="Week 4: ₹69,000"></div>
+              <div class="chart-bar" style="height: 88%" title="Week 5: ₹78,000"></div>
+              <div class="chart-bar active" style="height: 100%" title="This Week: ₹94,500"></div>
             </div>
             <div class="card-footer-info">
-              <span>Active Members: <strong>1,420</strong></span>
-              <span class="text-fuchsia">0% Platform Fee</span>
+              <span>Active Campus Borrowers: <strong>1,420</strong></span>
+              <span class="text-fuchsia">₹0 Lost Collateral</span>
             </div>
           </article>
 
-          <!-- Card 2: Member CRM Live Feed -->
+          <!-- Card 2: Live Campus Activity Stream -->
           <article class="showcase-card highlighted">
             <div class="card-header-bar">
-              <span class="card-chip">MEMBER CRM</span>
-              <span class="live-dot"><span class="dot-pulse"></span> Live SSE Sync</span>
+              <span class="card-chip">LIVE CAMPUS FEED</span>
+              <span class="live-dot"><span class="dot-pulse"></span> Live SSE Handover</span>
             </div>
             <div class="feed-list">
               <div class="feed-item">
-                <div class="member-avatar">SJ</div>
+                <div class="member-avatar">RJ</div>
                 <div class="feed-detail">
-                  <strong>Sarah Jenkins</strong>
-                  <span>Upgraded to Annual Pro ($290)</span>
+                  <strong>Rahul J. (Hostel 3)</strong>
+                  <span>Borrowed Sony Alpha A7 III Cinema Kit</span>
                 </div>
                 <span class="feed-time">2m ago</span>
               </div>
               <div class="feed-item">
-                <div class="member-avatar">AC</div>
+                <div class="member-avatar">AS</div>
                 <div class="feed-detail">
-                  <strong>Alex Chen</strong>
-                  <span>Completed onboarding module</span>
+                  <strong>Ananya S. (Hostel 12)</strong>
+                  <span>Returned Casio fx-991EX ClassWiz (Mint)</span>
                 </div>
                 <span class="feed-time">14m ago</span>
               </div>
               <div class="feed-item">
-                <div class="member-avatar">ML</div>
+                <div class="member-avatar">RC</div>
                 <div class="feed-detail">
-                  <strong>Maya Lin</strong>
-                  <span>Joined Private Founder Circle</span>
+                  <strong>Robotics Club (Hostel 7)</strong>
+                  <span>Listed Digital Storage Oscilloscope 100MHz</span>
                 </div>
-                <span class="feed-time">41m ago</span>
+                <span class="feed-time">38m ago</span>
               </div>
             </div>
             <div class="card-footer-info">
-              <span>Total Tracked Lifetime Value: <strong>$184,200</strong></span>
+              <span>Avg Hostel Handover Distance: <strong>250m</strong></span>
             </div>
           </article>
 
-          <!-- Card 3: Protected Content Gate -->
+          <!-- Card 3: Pre vs Post Handover Visual Diff Inspection -->
           <article class="showcase-card">
             <div class="card-header-bar">
-              <span class="card-chip">AUTH &amp; ACCESS</span>
+              <span class="card-chip">TRUST &amp; INSPECTION</span>
               <span class="status-badge">
-                <i class="fa-solid fa-lock"></i> Gate Active
+                <i class="fa-solid fa-camera"></i> Diff Verified
               </span>
             </div>
             <div class="gate-preview">
               <div class="gate-icon-wrap">
-                <i class="fa-solid fa-shield-halved gate-shield"></i>
+                <i class="fa-solid fa-camera-rotate gate-shield"></i>
               </div>
-              <h4>Members-Only Architecture Hub</h4>
-              <p class="gate-desc">Requires active Founder tier membership or above.</p>
-              <button class="btn-primary btn-small w-full">Unlock Instant Access</button>
+              <h4>Handover Condition Diff</h4>
+              <p class="gate-desc">Pre-borrow vs Post-return timestamped photos compared via AI. Zero scratches detected.</p>
+              <button class="btn-primary btn-small w-full">Inspect Handover Diff</button>
             </div>
             <div class="card-footer-info">
-              <span>Embed Mode: <strong>Zero-Code Widget</strong></span>
+              <span>Security Deposit: <strong>₹2,000</strong> (100% Refunded)</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- USE CASES PILL CATEGORY ROW -->
-    <section class="use-cases-section" id="use-cases">
+    <!-- USE CASES / CATEGORY PILL ROW -->
+    <section class="use-cases-section" id="catalog">
       <div class="section-container">
-        <p class="section-eyebrow text-center">TRUSTED BY 2,000+ MODERN HUBS &amp; COMMUNITIES</p>
+        <p class="section-eyebrow text-center">CIRCULATING ACROSS 8 HOSTELS &amp; 42 STUDENT CLUBS</p>
         <div class="category-pills">
-          <span class="pill-chip active">NETWORKS</span>
-          <span class="pill-chip">COMMUNITIES</span>
-          <span class="pill-chip">ASSOCIATIONS</span>
-          <span class="pill-chip">COURSES &amp; COHORTS</span>
-          <span class="pill-chip">CLUBS</span>
-          <span class="pill-chip">SAAS APPS</span>
-          <span class="pill-chip">NEWSLETTERS</span>
+          <span class="pill-chip active">MEDIA &amp; REELS</span>
+          <span class="pill-chip">EXAM TECH &amp; CALCULATORS</span>
+          <span class="pill-chip">LAB &amp; ROBOTICS GEAR</span>
+          <span class="pill-chip">CULTURAL FEST LIGHTS</span>
+          <span class="pill-chip">CAMPUS CYCLES</span>
+          <span class="pill-chip">SPORTS &amp; OUTDOORS</span>
+          <span class="pill-chip">PROJECT DRONES</span>
         </div>
       </div>
     </section>
 
     <!-- CORE CAPABILITIES GRID -->
-    <section class="features-section" id="billing">
+    <section class="features-section" id="how-it-works">
       <div class="section-container">
         <div class="section-header-block">
-          <p class="section-eyebrow">CORE CAPABILITIES</p>
-          <h2 class="section-headline">Everything you need. Zero Frankenstein plugins.</h2>
+          <p class="section-eyebrow">WHY CAMPUSCIRCULAR</p>
+          <h2 class="section-headline">Campus sharing with enterprise-grade safety and zero friction.</h2>
           <p class="section-subtext">
-            Stop stitching together 6 different plugins that break with every browser update. Outseta delivers the full stack in one cohesive architecture.
+            No awkward WhatsApp group begging, no untracked borrowings, and no disputes over scratches. CampusCircular guarantees automated escrow, multi-item AI bundling, and condition protection.
           </p>
         </div>
 
         <div class="features-grid">
-          <!-- Feature 1 -->
+          <!-- Feature 1: AI Need-Based Discovery & Smart Bundler -->
+          <div class="feature-card" id="bundles">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <span class="status-badge"><i class="fa-solid fa-check"></i> Natural Language RAG</span>
+            <h3 class="feature-title">Need-Based AI Discovery &amp; Bundler</h3>
+            <p class="feature-desc">
+              Type <em>&ldquo;I need to make a reel for my club event tomorrow&rdquo;</em> and our 4-stage agent pipeline deconstructs your need, retrieving the camera, tripod, mic, and light clustered by the nearest hostel room.
+            </p>
+            <ul class="feature-bullet-list">
+              <li><i class="fa-solid fa-circle-check"></i> Clusters multi-item pickup routes to minimize walking distance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Detects missing accessories (e.g. SD cards, extra batteries)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Live borrow vs. buy student savings breakdown</li>
+            </ul>
+          </div>
+
+          <!-- Feature 2: Pre & Post Handover Visual Diff -->
           <div class="feature-card">
             <div class="feature-icon-box">
-              <i class="fa-solid fa-money-bill-wave"></i>
+              <i class="fa-solid fa-camera-rotate"></i>
             </div>
-            <span class="status-badge"><i class="fa-solid fa-check"></i> Stripe Direct Sync</span>
-            <h3 class="feature-title">Subscription &amp; Paywall Engine</h3>
+            <span class="status-badge"><i class="fa-solid fa-check"></i> AI Visual Inspection</span>
+            <h3 class="feature-title">Pre &amp; Post Handover Visual Diff</h3>
             <p class="feature-desc">
-              Create recurring plans, one-time fees, setup costs, and free trials in seconds. Embed our sleek checkout modal directly on your site without redirecting users.
+              Both borrower and lender snap quick photos at handover. Timestamped before/after image diffs eliminate arguments over pre-existing scratches, lens dust, or missing cables.
             </p>
             <ul class="feature-bullet-list">
-              <li><i class="fa-solid fa-circle-check"></i> Prorated upgrades &amp; automated downgrade logic</li>
-              <li><i class="fa-solid fa-circle-check"></i> Multi-currency &amp; global tax calculation ready</li>
-              <li><i class="fa-solid fa-circle-check"></i> 0% platform fee beyond standard Stripe charges</li>
+              <li><i class="fa-solid fa-circle-check"></i> High-resolution side-by-side interactive diff slider</li>
+              <li><i class="fa-solid fa-circle-check"></i> Cryptographically timestamped hostel room handovers</li>
+              <li><i class="fa-solid fa-circle-check"></i> Zero room for false deposit forfeiture claims</li>
             </ul>
           </div>
 
-          <!-- Feature 2 -->
-          <div class="feature-card" id="auth">
+          <!-- Feature 3: Autonomous Escrow & Deposit Refunds -->
+          <div class="feature-card">
             <div class="feature-icon-box">
-              <i class="fa-solid fa-fingerprint"></i>
+              <i class="fa-solid fa-scale-balanced"></i>
             </div>
-            <span class="status-badge"><i class="fa-solid fa-check"></i> Passwordless Magic</span>
-            <h3 class="feature-title">Authentication &amp; Access Control</h3>
+            <span class="status-badge"><i class="fa-solid fa-check"></i> UPI Escrow Protected</span>
+            <h3 class="feature-title">Autonomous Escrow &amp; Deposit Refunds</h3>
             <p class="feature-desc">
-              Protect full web pages, specific DOM components, or digital downloads with one line of JavaScript. Delight members with passwordless magic links or standard email auth.
+              Borrowing charges and refundable security deposits are locked in automated escrow. As soon as both peers tap 'Confirmed Return', the deposit is released to UPI instantly.
             </p>
             <ul class="feature-bullet-list">
-              <li><i class="fa-solid fa-circle-check"></i> Single Sign-On across multiple subdomains &amp; apps</li>
-              <li><i class="fa-solid fa-circle-check"></i> Tier-based and member-status gating rules</li>
-              <li><i class="fa-solid fa-circle-check"></i> Works on Webflow, WordPress, Ghost, or custom HTML</li>
-            </ul>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="feature-card" id="crm">
-            <div class="feature-icon-box">
-              <i class="fa-solid fa-address-card"></i>
-            </div>
-            <span class="status-badge"><i class="fa-solid fa-check"></i> 360° Profile</span>
-            <h3 class="feature-title">Full-Stack Member CRM &amp; Email</h3>
-            <p class="feature-desc">
-              See the complete lifecycle of every member: when they signed up, what invoices they paid, what emails they opened, and which pages they visited.
-            </p>
-            <ul class="feature-bullet-list">
-              <li><i class="fa-solid fa-circle-check"></i> Automated onboarding drip sequences based on tier</li>
-              <li><i class="fa-solid fa-circle-check"></i> Segmentation filters for targeted marketing blasts</li>
-              <li><i class="fa-solid fa-circle-check"></i> Built-in support ticketing &amp; live chat widget</li>
+              <li><i class="fa-solid fa-circle-check"></i> Strict financial invariant: [Borrowing Fee] + [Deposit] = [Escrow]</li>
+              <li><i class="fa-solid fa-circle-check"></i> Transparent late-fee grace periods and damage deductions</li>
+              <li><i class="fa-solid fa-circle-check"></i> Peer reputation badges with on-time return scoring</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3-STEP PROCESS EXPLAINER -->
-    <section class="steps-section" id="how-it-works">
+    <!-- 3-STEP HOSTEL HANDOVER PROCESS -->
+    <section class="steps-section">
       <div class="section-container">
         <div class="section-header-block">
           <p class="section-eyebrow">HOW IT WORKS</p>
-          <h2 class="section-headline">Live in three simple steps.</h2>
-          <p class="section-subtext">No developer required. You can launch your entire monetization layer in under an hour.</p>
+          <h2 class="section-headline">Borrow in three simple steps.</h2>
+          <p class="section-subtext">Safe, swift, and verified between fellow students within walking distance.</p>
         </div>
 
         <div class="steps-row">
           <div class="step-card">
             <div class="step-badge">1</div>
-            <h4>Create your plan</h4>
-            <p>Define pricing tiers, trial durations, and protected content groups inside the Outseta dashboard.</p>
+            <h4>Discover &amp; Request</h4>
+            <p>Search in plain English or select a bundle. Lock your borrowing dates and refundable deposit via UPI escrow.</p>
           </div>
           <div class="step-connector"></div>
           <div class="step-card">
             <div class="step-badge">2</div>
-            <h4>Add embed script</h4>
-            <p>Paste a single lightweight JavaScript snippet into the header of your website or web application.</p>
+            <h4>Hostel Handover &amp; Photos</h4>
+            <p>Meet your peer at their hostel common room. Snap 2 quick condition photos on your phone to unlock handover.</p>
           </div>
           <div class="step-connector"></div>
           <div class="step-card">
             <div class="step-badge">3</div>
-            <h4>Copy links to buttons</h4>
-            <p>Link your CTA buttons to Outseta trigger links (e.g. <code>#o-login</code>, <code>#o-register</code>). Done!</p>
+            <h4>Return &amp; Instant Refund</h4>
+            <p>Hand the gear back, complete quick visual verification, and your security deposit is released to UPI instantly.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIALS QUOTE WALL (3-Up Grid) -->
+    <!-- COMMUNITY STORIES / TESTIMONIALS QUOTE WALL -->
     <section class="testimonials-section" id="testimonials">
       <div class="section-container">
         <div class="section-header-block">
-          <p class="section-eyebrow">CUSTOMER STORIES</p>
-          <h2 class="section-headline">Trusted by founders running $10M+ businesses.</h2>
-          <p class="section-subtext">See why operators and developers choose Outseta over brittle multi-tool stacks.</p>
+          <p class="section-eyebrow">CAMPUS STORIES</p>
+          <h2 class="section-headline">Saved ₹1,20,000+ for student clubs this semester.</h2>
+          <p class="section-subtext">Hear from students, club convenors, and hostel residents who use CampusCircular daily.</p>
         </div>
 
         <div class="testimonials-grid">
           <!-- Quote 1 -->
           <blockquote class="testimonial-card">
             <div class="testimonial-author-row">
-              <div class="author-avatar">JV</div>
+              <div class="author-avatar">AK</div>
               <div class="author-meta">
-                <cite class="author-name">Jessica Vance</cite>
-                <span class="author-role">Founder, CreatorStudio</span>
+                <cite class="author-name">Aman Kapoor</cite>
+                <span class="author-role">Convenor, CineWave Film Society</span>
               </div>
             </div>
             <p class="quote-body">
-              &ldquo;We replaced 5 separate subscriptions—MemberPress, ActiveCampaign, HubSpot, and Stripe billing—with Outseta in an afternoon. Our software bills were cut by 70% and member support tickets dropped by more than half.&rdquo;
+              &ldquo;We used to spend ₹25,000 renting camera rigs from city vendors for our annual fest. On CampusCircular, we bundled a Sony A7 III, wireless lavalier mics, and LED panels from Hostel 4 seniors for ₹2,400. Absolute game changer.&rdquo;
             </p>
           </blockquote>
 
           <!-- Quote 2 -->
           <blockquote class="testimonial-card">
             <div class="testimonial-author-row">
-              <div class="author-avatar">DK</div>
+              <div class="author-avatar">PV</div>
               <div class="author-meta">
-                <cite class="author-name">David K.</cite>
-                <span class="author-role">Head of Growth, DevCircle</span>
+                <cite class="author-name">Pooja Verma</cite>
+                <span class="author-role">3rd Year Electrical Eng, Hostel 11</span>
               </div>
             </div>
             <p class="quote-body">
-              &ldquo;The seamless authentication and instant webhook synchronization allowed us to scale from 200 to 18,000 members without hiring a single backend engineer. It feels like a platform built by engineers for operators.&rdquo;
+              &ldquo;I forgot my Casio fx-991EX ClassWiz on the morning of my Signals &amp; Systems end-sem exam! I posted a Community Beacon and borrowed one from the floor below me in 7 minutes. It saved my semester grade.&rdquo;
             </p>
           </blockquote>
 
           <!-- Quote 3 -->
           <blockquote class="testimonial-card">
             <div class="testimonial-author-row">
-              <div class="author-avatar">ML</div>
+              <div class="author-avatar">RK</div>
               <div class="author-meta">
-                <cite class="author-name">Maya Lin</cite>
-                <span class="author-role">Operator, DesignLeaders Guild</span>
+                <cite class="author-name">Rohan Kulkarni</cite>
+                <span class="author-role">Robotics Club Lead &amp; Hostel 8 Resident</span>
               </div>
             </div>
             <p class="quote-body">
-              &ldquo;The unified member CRM is pure gold. Being able to see payment history, forum engagement, and course completion in one profile without syncing CSVs is something no other tool on the market gives you.&rdquo;
+              &ldquo;My 3D printer and spare Raspberry Pis sat idle in my hostel room for months. By lending them to peers on CampusCircular, I earned ₹18,500 this semester while keeping my gear 100% protected by escrow.&rdquo;
             </p>
           </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- INTEGRATIONS ROW -->
+    <!-- CAMPUS ECOSYSTEM & PARTNERS ROW -->
     <section class="integrations-section">
       <div class="section-container">
-        <p class="section-eyebrow text-center">CONNECTIVITY &amp; EXTENSIBILITY</p>
-        <h3 class="integrations-title">Plays seamlessly with your existing tech stack</h3>
+        <p class="section-eyebrow text-center">CAMPUS ECOSYSTEM</p>
+        <h3 class="integrations-title">Integrated with student clubs, councils, and hostel networks</h3>
 
         <div class="integration-icons-row">
-          <div class="integration-tile" title="Stripe"><i class="fa-brands fa-stripe"></i></div>
-          <div class="integration-tile" title="WordPress"><i class="fa-brands fa-wordpress"></i></div>
-          <div class="integration-tile" title="Slack"><i class="fa-brands fa-slack"></i></div>
-          <div class="integration-tile" title="GitHub"><i class="fa-brands fa-github"></i></div>
-          <div class="integration-tile" title="Discord"><i class="fa-brands fa-discord"></i></div>
-          <div class="integration-tile" title="Google Workspace"><i class="fa-brands fa-google"></i></div>
-          <div class="integration-tile" title="Amazon Web Services"><i class="fa-brands fa-aws"></i></div>
-        </div>
-
-        <div class="text-center mt-6">
-          <a href="#integrations" class="integration-link">View all 50+ integrations &rarr;</a>
+          <div class="campus-partner-chip"><i class="fa-solid fa-users-gear"></i> Student Affairs Council</div>
+          <div class="campus-partner-chip"><i class="fa-solid fa-robot"></i> Robotics &amp; Innovation Cell</div>
+          <div class="campus-partner-chip"><i class="fa-solid fa-photo-film"></i> Film &amp; Media Society</div>
+          <div class="campus-partner-chip"><i class="fa-solid fa-hotel"></i> Campus Hostel Council</div>
+          <div class="campus-partner-chip"><i class="fa-solid fa-leaf"></i> Green Campus Drive</div>
+          <div class="campus-partner-chip"><i class="fa-solid fa-bolt"></i> IEEE Student Branch</div>
         </div>
       </div>
     </section>
 
     <!-- FULL-BLEED DARK CTA SECTION (Aubergine #240029) -->
-    <section class="dark-cta-section" id="signup">
+    <section class="dark-cta-section" id="borrow">
       <div class="dark-cta-container">
         <div class="dark-cta-content">
-          <p class="section-eyebrow text-plum">READY TO BUILD</p>
-          <h2 class="dark-cta-headline">Launch your entire membership &amp; revenue stack today.</h2>
+          <p class="section-eyebrow text-plum">HAVE IDLE GEAR IN YOUR HOSTEL ROOM?</p>
+          <h2 class="dark-cta-headline">Turn your unused electronics and tools into student income.</h2>
           <p class="dark-cta-subtext">
-            Get started with our 7-day free trial. No credit card required. Migrate your existing members with our dedicated white-glove migration team.
+            Lend safely with verified college ID checks, photo-condition proof, and automated UPI escrow deposits. Protect your equipment and help your campus peers.
           </p>
           <div class="dark-cta-actions">
-            <a href="#signup" class="btn-primary btn-large">Start free 7-day trial</a>
-            <a href="#demo" class="btn-ghost-light btn-large">Schedule 1-on-1 demo</a>
+            <a href="#list" class="btn-primary btn-large">List Your Gear in 60 Seconds</a>
+            <a href="#catalog" class="btn-ghost-light btn-large">Browse Campus Inventory</a>
           </div>
           <p class="dark-cta-guarantee">
-            <i class="fa-solid fa-shield-heart"></i> Cancel anytime with 1 click. Zero platform lock-in.
+            <i class="fa-solid fa-shield-heart"></i> 100% Security Deposit Guarantee. Zero Platform Take Rate on Peer Borrowing.
           </p>
         </div>
 
         <div class="dark-cta-preview-card">
           <div class="preview-card-inner">
             <div class="preview-header">
-              <span class="preview-title">Platform Quickstart</span>
-              <span class="status-badge"><i class="fa-solid fa-bolt"></i> Ready</span>
+              <span class="preview-title">Hostel Gear Quick-List</span>
+              <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Verified Student ✓</span>
             </div>
             <div class="preview-code-block">
-              <code>&lt;script src="https://cdn.outseta.com/i/outseta.min.js"&gt;&lt;/script&gt;</code>
+              <code>Hostel 5 Common Room • Handover Window: 6:00 PM - 10:00 PM</code>
             </div>
             <div class="preview-checklist">
-              <label><input type="checkbox" checked disabled /> Stripe connect established</label>
-              <label><input type="checkbox" checked disabled /> Single sign-on module configured</label>
-              <label><input type="checkbox" checked disabled /> Member welcome broadcast queued</label>
+              <label><input type="checkbox" checked disabled /> Student college email verified (@campus.edu)</label>
+              <label><input type="checkbox" checked disabled /> Handover condition photos timestamped</label>
+              <label><input type="checkbox" checked disabled /> UPI Escrow locked &amp; return deposit protected</label>
             </div>
           </div>
         </div>
@@ -484,66 +478,66 @@
         <a href="#" class="brand-logo mb-3">
           <svg class="brand-mark" width="28" height="28" viewBox="0 0 32 32" fill="none">
             <circle cx="16" cy="16" r="14" stroke="#240029" stroke-width="2.5" />
-            <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" />
+            <circle cx="16" cy="16" r="9" stroke="#df37a7" stroke-width="2.5" stroke-dasharray="4 2" />
             <circle cx="16" cy="16" r="4" fill="#240029" />
           </svg>
-          <span class="brand-name">Outseta</span>
+          <span class="brand-name">CampusCircular</span>
         </a>
         <p class="footer-tagline">
-          The all-in-one membership, payments, CRM, and email platform built for independent products and communities.
+          The decentralized circular economy engine for college campuses. Share more, spend less, and eliminate equipment redundancy.
         </p>
         <div class="footer-social-row">
-          <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Campus Community Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" aria-label="Student Council"><i class="fa-solid fa-graduation-cap"></i></a>
+          <a href="#" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Campus WhatsApp Community"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
       <div class="footer-col">
-        <h5>Product</h5>
+        <h5>Gear Categories</h5>
         <ul>
-          <li><a href="#billing">Billing &amp; Payments</a></li>
-          <li><a href="#auth">Authentication &amp; SSO</a></li>
-          <li><a href="#crm">Member CRM</a></li>
-          <li><a href="#email">Email Marketing</a></li>
-          <li><a href="#help-desk">Help Desk &amp; Chat</a></li>
-          <li><a href="#pricing">Pricing Plans</a></li>
+          <li><a href="#catalog">Media &amp; Cinema Cameras</a></li>
+          <li><a href="#catalog">Lab &amp; Engineering Kits</a></li>
+          <li><a href="#catalog">Scientific Calculators</a></li>
+          <li><a href="#catalog">Event Sound &amp; Stage Lights</a></li>
+          <li><a href="#catalog">Campus Cycles &amp; Mobility</a></li>
+          <li><a href="#catalog">Drones &amp; Robotics Tools</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h5>Use Cases</h5>
+        <h5>Campus Hubs</h5>
         <ul>
-          <li><a href="#use-cases">Founder Communities</a></li>
-          <li><a href="#use-cases">Online Courses &amp; Cohorts</a></li>
-          <li><a href="#use-cases">Associations &amp; Nonprofits</a></li>
-          <li><a href="#use-cases">B2B SaaS Applications</a></li>
-          <li><a href="#use-cases">Paid Newsletters</a></li>
-          <li><a href="#use-cases">Digital Product Stores</a></li>
+          <li><a href="#catalog">Hostels 1-4 Cluster</a></li>
+          <li><a href="#catalog">Hostels 5-8 Cluster</a></li>
+          <li><a href="#catalog">Hostels 9-12 Cluster</a></li>
+          <li><a href="#catalog">PG &amp; Research Towers</a></li>
+          <li><a href="#catalog">Student Activity Center (SAC)</a></li>
+          <li><a href="#catalog">Central Library Hub</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h5>Resources</h5>
+        <h5>Trust &amp; Safety</h5>
         <ul>
-          <li><a href="#docs">Developer Documentation</a></li>
-          <li><a href="#api">API Reference</a></li>
-          <li><a href="#migration">Member Migration Guide</a></li>
-          <li><a href="#blog">Founder Playbook Blog</a></li>
-          <li><a href="#status">System Status (99.99%)</a></li>
-          <li><a href="#support">Contact Support</a></li>
+          <li><a href="#how-it-works">Automated Escrow Rules</a></li>
+          <li><a href="#how-it-works">Photo Condition Diff AI</a></li>
+          <li><a href="#how-it-works">Peer Dispute Arbitration</a></li>
+          <li><a href="#how-it-works">Late Fee &amp; Damage Policy</a></li>
+          <li><a href="#how-it-works">Campus Safety Guidelines</a></li>
+          <li><a href="#how-it-works">Hostel Council Reps</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom-bar">
       <div class="footer-bottom-inner">
-        <span>&copy; 2026 Outseta, Inc. All rights reserved.</span>
+        <span>&copy; 2026 CampusCircular Network. Built by students, for students.</span>
         <div class="footer-legal-links">
-          <a href="#privacy">Privacy Policy</a>
-          <a href="#terms">Terms of Service</a>
-          <a href="#security">Security</a>
+          <a href="#privacy">Campus Privacy Policy</a>
+          <a href="#terms">Borrower Terms &amp; Escrow Agreement</a>
+          <a href="#security">Security &amp; Collateral Guarantee</a>
         </div>
       </div>
     </div>
