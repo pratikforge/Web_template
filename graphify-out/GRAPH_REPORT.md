@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 76 files · ~86,321 words
+- 103 files · ~99,837 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 983 nodes · 910 edges · 74 communities (62 shown, 12 thin omitted)
+- 1091 nodes · 1193 edges · 76 communities (64 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d411c7ea`
+- Built from commit: `c5979dc1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -85,26 +85,37 @@
 - [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
 - [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
 2. `compilerOptions` - 18 edges
-3. `Security and Hardening` - 16 edges
-4. `compilerOptions` - 15 edges
-5. `Git Workflow and Versioning` - 15 edges
-6. `Product Requirements Document (PRD)` - 15 edges
-7. `Key Functionalities` - 15 edges
-8. `Product Requirements Document (PRD) — CampusCircular` - 15 edges
-9. `Test-Driven Development` - 14 edges
-10. `Browser Testing with DevTools` - 13 edges
+3. `CampusResource` - 16 edges
+4. `Security and Hardening` - 16 edges
+5. `useSession()` - 15 edges
+6. `compilerOptions` - 15 edges
+7. `Git Workflow and Versioning` - 15 edges
+8. `Product Requirements Document (PRD)` - 15 edges
+9. `Key Functionalities` - 15 edges
+10. `Product Requirements Document (PRD) — CampusCircular` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- None detected - all connections are within the same source files.
+- `HeroAIBundlerProps` --references--> `CampusResource`  [EXTRACTED]
+  frontend/src/components/HeroAIBundler.tsx → frontend/src/types/campus.ts
+- `ListResourceModalProps` --references--> `CampusResource`  [EXTRACTED]
+  frontend/src/components/ListResourceModal.tsx → frontend/src/types/campus.ts
+- `ResourceCardProps` --references--> `CampusResource`  [EXTRACTED]
+  frontend/src/components/ResourceCard.tsx → frontend/src/types/campus.ts
+- `ResourceCatalogProps` --references--> `CampusResource`  [EXTRACTED]
+  frontend/src/components/ResourceCatalog.tsx → frontend/src/types/campus.ts
+- `ResourceModalProps` --references--> `CampusResource`  [EXTRACTED]
+  frontend/src/components/ResourceModal.tsx → frontend/src/types/campus.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (74 total, 12 thin omitted)
+## Communities (76 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -294,6 +305,10 @@ Nodes (16): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib
 Cohesion: 0.33
 Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $schema
 
+### Community 58 - "Community 58"
+Cohesion: 0.05
+Nodes (70): AdminDashboard(), AdminDashboardProps, BundleCartDrawer(), BundleCartDrawerProps, CommunityBeaconDrawer(), CommunityBeaconDrawerProps, HeroAIBundler(), HeroAIBundlerProps (+62 more)
+
 ### Community 59 - "Community 59"
 Cohesion: 0.50
 Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScript + Vite
@@ -338,16 +353,22 @@ Nodes (11): Adversarial Critique of Current Implementation:, Executive Audit Sum
 Cohesion: 0.14
 Nodes (13): 1. Graphify Search Phase (Rule #5 & #12), 2. Architecture & Feature Breakdown in YAML (Rule #7), 3. Strict Guardrails During Execution (Rule #8), 4. Test-Driven Development (TDD) Test Suites (Rule #8), 5. Cyber Attack Test Scripts (STRIDE & OWASP Top 10) (Rule #8), 6. Self-Critique of the Idea & Execution Plan (Adversarial Stress Test), 7. Pre-Commit Hooks & Automation (Rules #10, #11 & #13), 8. Graphify Update Phase (Rule #5) (+5 more)
 
+### Community 75 - "Community 75"
+Cohesion: 0.40
+Nodes (3): BundleSuggestion, parseNeedPrompt(), PRESET_BUNDLES
+
 ## Knowledge Gaps
-- **755 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+750 more)
+- **771 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+766 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `SafeStorageAdapter` connect `Community 74` to `Community 58`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _755 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _771 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -357,6 +378,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
-- **Should `Community 5` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
