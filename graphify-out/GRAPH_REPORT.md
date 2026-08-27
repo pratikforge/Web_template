@@ -1,16 +1,16 @@
 # Graph Report - Web_template  (2026-08-27)
 
 ## Corpus Check
-- 69 files · ~73,301 words
+- 71 files · ~74,971 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 886 nodes · 820 edges · 67 communities (55 shown, 12 thin omitted)
+- 899 nodes · 831 edges · 69 communities (57 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `975051db`
+- Built from commit: `aeca57b2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -78,6 +78,8 @@
 - [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
 - [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
@@ -97,7 +99,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (67 total, 12 thin omitted)
+## Communities (69 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -303,8 +305,16 @@ Nodes (20): 10. Late Return, Damage & Settlement, 11. Admin Panel, 12. Platform 
 Cohesion: 0.12
 Nodes (15): Campus Circular — Top 10 Validated Ideas & Feature Blueprints, Detailed Breakdown of the Top 10 Candidates, Evaluation & Scoring Parameter Definitions (Scale 1–5), Rank 10: ClubVault — Inter-Society & Fest Asset Sharing Pool, Rank 1 (Top Recommendation): CampusCircular — AI Bundle Cart & Visual Proof Ledger, Rank 2: KitsFirst — Scenario-Driven Event & Project Packs, Rank 3: TrustMesh — College Verified Social Escrow Network, Rank 4: InspectAI — Automated Visual Damage Delta & Dispute Escrow (+7 more)
 
+### Community 67 - "Community 67"
+Cohesion: 0.29
+Nodes (6): 1. The 2-Minute "Golden Demo Path" for Judges, 2. Feature Triaging Matrix (P0, P1, P2), 3. The 10-Stage Lifecycle State Machine, 4. Frontend Component Hierarchy (`frontend/src/`), 5. Security & TDD Guardrails, CampusCircular MVP — Execution Blueprint & Component Architecture
+
+### Community 68 - "Community 68"
+Cohesion: 0.33
+Nodes (5): 1. Incumbent Teardown (Fat Llama), 2. Mined Negatives & User Pain Points (G2, Trustpilot, Reddit), 3. Product Leverage Matrix (Inverting Flaws into Killer Features), 4. Total Scope Definition (Parity + Leverage), Competitor Teardown & Leverage Report: Fat Llama vs. CampusCircular
+
 ## Knowledge Gaps
-- **680 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+675 more)
+- **689 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+684 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -312,7 +322,7 @@ Nodes (15): Campus Circular — Top 10 Validated Ideas & Feature Blueprints, Det
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _680 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _689 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

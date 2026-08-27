@@ -375,13 +375,23 @@
     "semantic_hash": ""
   },
   "spec/problem_statement.md": {
-    "mtime": 1787801074.919924,
+    "mtime": 1787801277.8097064,
     "ast_hash": "baa1a757cb14be87bc71a8e9f4148ead",
     "semantic_hash": ""
   },
   "spec/top_10_campus_circular_ideas.md": {
-    "mtime": 1787801234.5955184,
-    "ast_hash": "aabdfd25f07ac086d6f4bda3a642b23b",
+    "mtime": 1787801277.8102522,
+    "ast_hash": "ae658201cb3a304159ed72a12d1e01d9",
+    "semantic_hash": ""
+  },
+  "spec/competitor_leverage_report.md": {
+    "mtime": 1787801848.7714787,
+    "ast_hash": "36871847b8313204f9a4db015054730a",
+    "semantic_hash": ""
+  },
+  "spec/mvp_execution_blueprint.md": {
+    "mtime": 1787801858.8443422,
+    "ast_hash": "6573d14ed5be56daeb9a83f5bf0c994e",
     "semantic_hash": ""
   }
 }

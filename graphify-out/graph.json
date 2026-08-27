@@ -7792,6 +7792,66 @@
       "norm_label": "12. research log"
     },
     {
+      "label": "competitor_leverage_report.md",
+      "file_type": "document",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_competitor_leverage_report",
+      "community": 68,
+      "norm_label": "competitor_leverage_report.md"
+    },
+    {
+      "label": "Competitor Teardown & Leverage Report: Fat Llama vs. CampusCircular",
+      "file_type": "document",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
+      "community": 68,
+      "norm_label": "competitor teardown & leverage report: fat llama vs. campuscircular"
+    },
+    {
+      "label": "1. Incumbent Teardown (Fat Llama)",
+      "file_type": "document",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "spec_competitor_leverage_report_1_incumbent_teardown_fat_llama",
+      "community": 68,
+      "norm_label": "1. incumbent teardown (fat llama)"
+    },
+    {
+      "label": "2. Mined Negatives & User Pain Points (G2, Trustpilot, Reddit)",
+      "file_type": "document",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "spec_competitor_leverage_report_2_mined_negatives_user_pain_points_g2_trustpilot_reddit",
+      "community": 68,
+      "norm_label": "2. mined negatives & user pain points (g2, trustpilot, reddit)"
+    },
+    {
+      "label": "3. Product Leverage Matrix (Inverting Flaws into Killer Features)",
+      "file_type": "document",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "spec_competitor_leverage_report_3_product_leverage_matrix_inverting_flaws_into_killer_features",
+      "community": 68,
+      "norm_label": "3. product leverage matrix (inverting flaws into killer features)"
+    },
+    {
+      "label": "4. Total Scope Definition (Parity + Leverage)",
+      "file_type": "document",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "spec_competitor_leverage_report_4_total_scope_definition_parity_leverage",
+      "community": 68,
+      "norm_label": "4. total scope definition (parity + leverage)"
+    },
+    {
       "label": "competitor_teardown_and_differentiation_spec.md",
       "file_type": "document",
       "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
@@ -8140,6 +8200,76 @@
       "id": "spec_hackathon_mvp_scoping_and_triaging_spec_3_self_check_checklist",
       "community": 50,
       "norm_label": "3. self-check checklist"
+    },
+    {
+      "label": "mvp_execution_blueprint.md",
+      "file_type": "document",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_mvp_execution_blueprint",
+      "community": 67,
+      "norm_label": "mvp_execution_blueprint.md"
+    },
+    {
+      "label": "CampusCircular MVP \u2014 Execution Blueprint & Component Architecture",
+      "file_type": "document",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
+      "community": 67,
+      "norm_label": "campuscircular mvp \u2014 execution blueprint & component architecture"
+    },
+    {
+      "label": "1. The 2-Minute \"Golden Demo Path\" for Judges",
+      "file_type": "document",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "spec_mvp_execution_blueprint_1_the_2_minute_golden_demo_path_for_judges",
+      "community": 67,
+      "norm_label": "1. the 2-minute \"golden demo path\" for judges"
+    },
+    {
+      "label": "2. Feature Triaging Matrix (P0, P1, P2)",
+      "file_type": "document",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "spec_mvp_execution_blueprint_2_feature_triaging_matrix_p0_p1_p2",
+      "community": 67,
+      "norm_label": "2. feature triaging matrix (p0, p1, p2)"
+    },
+    {
+      "label": "3. The 10-Stage Lifecycle State Machine",
+      "file_type": "document",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "spec_mvp_execution_blueprint_3_the_10_stage_lifecycle_state_machine",
+      "community": 67,
+      "norm_label": "3. the 10-stage lifecycle state machine"
+    },
+    {
+      "label": "4. Frontend Component Hierarchy (`frontend/src/`)",
+      "file_type": "document",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "spec_mvp_execution_blueprint_4_frontend_component_hierarchy_frontend_src",
+      "community": 67,
+      "norm_label": "4. frontend component hierarchy (`frontend/src/`)"
+    },
+    {
+      "label": "5. Security & TDD Guardrails",
+      "file_type": "document",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "spec_mvp_execution_blueprint_5_security_tdd_guardrails",
+      "community": 67,
+      "norm_label": "5. security & tdd guardrails"
     },
     {
       "label": "problem_statement.md",
@@ -16089,6 +16219,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_competitor_leverage_report",
+      "target": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
+      "target": "spec_competitor_leverage_report_1_incumbent_teardown_fat_llama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
+      "target": "spec_competitor_leverage_report_2_mined_negatives_user_pain_points_g2_trustpilot_reddit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
+      "target": "spec_competitor_leverage_report_3_product_leverage_matrix_inverting_flaws_into_killer_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/competitor_leverage_report.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "spec_competitor_leverage_report_competitor_teardown_leverage_report_fat_llama_vs_campuscircular",
+      "target": "spec_competitor_leverage_report_4_total_scope_definition_parity_leverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/competitor_teardown_and_differentiation_spec.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -16399,12 +16579,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "spec_mvp_execution_blueprint",
+      "target": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
+      "target": "spec_mvp_execution_blueprint_1_the_2_minute_golden_demo_path_for_judges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
+      "target": "spec_mvp_execution_blueprint_2_feature_triaging_matrix_p0_p1_p2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
+      "target": "spec_mvp_execution_blueprint_3_the_10_stage_lifecycle_state_machine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
+      "target": "spec_mvp_execution_blueprint_4_frontend_component_hierarchy_frontend_src",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "spec/mvp_execution_blueprint.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "spec_mvp_execution_blueprint_campuscircular_mvp_execution_blueprint_component_architecture",
+      "target": "spec_mvp_execution_blueprint_5_security_tdd_guardrails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "spec/problem_statement.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement",
-      "target": "spec_problem_statement_extracted_text",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_extracted_text"
     },
     {
       "relation": "contains",
@@ -16412,9 +16652,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement",
-      "target": "spec_problem_statement_key_functionalities",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_key_functionalities"
     },
     {
       "relation": "contains",
@@ -16422,9 +16662,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement",
-      "target": "spec_problem_statement_technical_scope",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_technical_scope"
     },
     {
       "relation": "contains",
@@ -16432,9 +16672,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_extracted_text",
-      "target": "spec_problem_statement_campus_circular_from_ownership_to_access",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_campus_circular_from_ownership_to_access"
     },
     {
       "relation": "contains",
@@ -16442,9 +16682,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_extracted_text",
-      "target": "spec_problem_statement_problem_statement",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_problem_statement"
     },
     {
       "relation": "contains",
@@ -16452,9 +16692,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_extracted_text",
-      "target": "spec_problem_statement_webfusion_2_0_5_hours_inter_college_frontend_web_development_competition",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_webfusion_2_0_5_hours_inter_college_frontend_web_development_competition"
     },
     {
       "relation": "contains",
@@ -16462,9 +16702,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_10_late_return_damage_settlement",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_10_late_return_damage_settlement"
     },
     {
       "relation": "contains",
@@ -16472,9 +16712,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_11_admin_panel",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_11_admin_panel"
     },
     {
       "relation": "contains",
@@ -16482,9 +16722,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_12_platform_fee",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_12_platform_fee"
     },
     {
       "relation": "contains",
@@ -16492,9 +16732,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_13_campus_impact_dashboard",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_13_campus_impact_dashboard"
     },
     {
       "relation": "contains",
@@ -16502,9 +16742,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_1_user_trust_profile",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_1_user_trust_profile"
     },
     {
       "relation": "contains",
@@ -16512,9 +16752,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_2_resource_listing_item_preview",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_2_resource_listing_item_preview"
     },
     {
       "relation": "contains",
@@ -16522,9 +16762,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_3_resource_discovery",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_3_resource_discovery"
     },
     {
       "relation": "contains",
@@ -16532,9 +16772,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_4_need_based_ai_assisted_discovery",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_4_need_based_ai_assisted_discovery"
     },
     {
       "relation": "contains",
@@ -16542,9 +16782,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_5_smart_matching_alternatives",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_5_smart_matching_alternatives"
     },
     {
       "relation": "contains",
@@ -16552,9 +16792,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_6_borrowing_charges_security_deposit",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_6_borrowing_charges_security_deposit"
     },
     {
       "relation": "contains",
@@ -16562,9 +16802,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_7_borrowing_agreement",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_7_borrowing_agreement"
     },
     {
       "relation": "contains",
@@ -16572,9 +16812,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_8_before_after_condition_tracking",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_8_before_after_condition_tracking"
     },
     {
       "relation": "contains",
@@ -16582,9 +16822,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_9_borrowing_lifecycle",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_9_borrowing_lifecycle"
     },
     {
       "relation": "contains",
@@ -16592,9 +16832,9 @@
       "source_file": "spec/problem_statement.md",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_problem_statement_key_functionalities",
-      "target": "spec_problem_statement_ai_usage",
-      "confidence_score": 1.0
+      "target": "spec_problem_statement_ai_usage"
     },
     {
       "relation": "contains",
@@ -16912,9 +17152,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas",
-      "target": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints"
     },
     {
       "relation": "contains",
@@ -16922,9 +17162,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
-      "target": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates"
     },
     {
       "relation": "contains",
@@ -16932,9 +17172,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
-      "target": "spec_top_10_campus_circular_ideas_evaluation_scoring_parameter_definitions_scale_1_5",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_evaluation_scoring_parameter_definitions_scale_1_5"
     },
     {
       "relation": "contains",
@@ -16942,9 +17182,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
-      "target": "spec_top_10_campus_circular_ideas_recommendation_next_step",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_recommendation_next_step"
     },
     {
       "relation": "contains",
@@ -16952,9 +17192,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_campus_circular_top_10_validated_ideas_feature_blueprints",
-      "target": "spec_top_10_campus_circular_ideas_scored_ranking_table",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_scored_ranking_table"
     },
     {
       "relation": "contains",
@@ -16962,9 +17202,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_10_clubvault_inter_society_fest_asset_sharing_pool",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_10_clubvault_inter_society_fest_asset_sharing_pool"
     },
     {
       "relation": "contains",
@@ -16972,9 +17212,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_1_top_recommendation_campuscircular_ai_bundle_cart_visual_proof_ledger",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_1_top_recommendation_campuscircular_ai_bundle_cart_visual_proof_ledger"
     },
     {
       "relation": "contains",
@@ -16982,9 +17222,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_2_kitsfirst_scenario_driven_event_project_packs",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_2_kitsfirst_scenario_driven_event_project_packs"
     },
     {
       "relation": "contains",
@@ -16992,9 +17232,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_3_trustmesh_college_verified_social_escrow_network",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_3_trustmesh_college_verified_social_escrow_network"
     },
     {
       "relation": "contains",
@@ -17002,9 +17242,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_4_inspectai_automated_visual_damage_delta_dispute_escrow",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_4_inspectai_automated_visual_damage_delta_dispute_escrow"
     },
     {
       "relation": "contains",
@@ -17012,9 +17252,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_5_hostelwing_hyper_local_floor_block_peer_grid",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_5_hostelwing_hyper_local_floor_block_peer_grid"
     },
     {
       "relation": "contains",
@@ -17022,9 +17262,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_6_sos_beacon_emergency_reverse_need_community_matcher",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_6_sos_beacon_emergency_reverse_need_community_matcher"
     },
     {
       "relation": "contains",
@@ -17032,9 +17272,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_7_lifecyclepro_interactive_10_stage_exchange_stepper",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_7_lifecyclepro_interactive_10_stage_exchange_stepper"
     },
     {
       "relation": "contains",
@@ -17042,9 +17282,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_8_ecoloop_campus_sustainability_rupee_saved_engine",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_8_ecoloop_campus_sustainability_rupee_saved_engine"
     },
     {
       "relation": "contains",
@@ -17052,9 +17292,9 @@
       "source_file": "spec/top_10_campus_circular_ideas.md",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spec_top_10_campus_circular_ideas_detailed_breakdown_of_the_top_10_candidates",
-      "target": "spec_top_10_campus_circular_ideas_rank_9_academicsync_lab_equipment_course_schedule_lending",
-      "confidence_score": 1.0
+      "target": "spec_top_10_campus_circular_ideas_rank_9_academicsync_lab_equipment_course_schedule_lending"
     },
     {
       "relation": "contains",
@@ -17078,5 +17318,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "975051dbc80d0cc5f620e13b813265ad8d6c102f"
+  "built_at_commit": "aeca57b2f1c8f99143bedb482c4fa5af6cf14396"
 }
