@@ -12,9 +12,9 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, onSelectRe
   const { addToCart } = useCart();
 
   return (
-    <div className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition-all hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-950/30 backdrop-blur-sm">
+    <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-[#090d16] p-4 transition-all hover:border-[#8b5cf6]/50 hover:shadow-[0_16px_36px_-10px_rgba(0,0,0,0.8),0_0_20px_-5px_rgba(139,92,246,0.2)]">
       {/* Image Container with Fallback */}
-      <div className="relative mb-3 aspect-video w-full overflow-hidden rounded-xl bg-slate-800">
+      <div className="relative mb-3 aspect-video w-full overflow-hidden rounded-xl bg-[#030712]">
         <img
           src={resource.imageUrl}
           alt={resource.title}
@@ -27,7 +27,7 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, onSelectRe
         />
 
         {/* Condition Tag */}
-        <span className="absolute top-2.5 left-2.5 rounded-md bg-slate-950/80 px-2 py-0.5 text-[11px] font-semibold text-slate-200 backdrop-blur border border-slate-800">
+        <span className="absolute top-2.5 left-2.5 rounded-md bg-[#090d16]/90 px-2 py-0.5 text-[11px] font-semibold text-slate-200 border border-white/10">
           {resource.condition}
         </span>
 
@@ -44,14 +44,14 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, onSelectRe
       <div className="space-y-2 flex-1 flex flex-col justify-between">
         <div>
           <div className="flex items-center justify-between text-xs text-slate-400 mb-1">
-            <span className="font-semibold text-indigo-400">{resource.category}</span>
+            <span className="font-semibold text-[#a78bfa]">{resource.category}</span>
             <span className="flex items-center gap-1">
               <MapPin className="h-3 w-3 text-amber-400" />
               {resource.ownerHostel} (~{resource.distanceMinutes}m walk)
             </span>
           </div>
 
-          <h3 className="font-bold text-sm text-white line-clamp-1 group-hover:text-indigo-300 transition-colors">
+          <h3 className="font-bold text-sm text-slate-100 line-clamp-1 group-hover:text-[#df37a7] transition-colors">
             {resource.title}
           </h3>
 
@@ -61,7 +61,7 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, onSelectRe
         </div>
 
         {/* Owner Trust Badge & Pricing */}
-        <div className="pt-3 border-t border-slate-800/80 space-y-2.5">
+        <div className="pt-3 border-t border-white/10 space-y-2.5">
           <div className="flex items-center justify-between text-xs">
             <div className="flex items-center gap-1.5 text-slate-300">
               <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" />
@@ -94,14 +94,14 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, onSelectRe
           <div className="grid grid-cols-2 gap-2 pt-1">
             <button
               onClick={() => onSelectResource(resource)}
-              className="flex items-center justify-center gap-1.5 rounded-lg border border-slate-800 bg-slate-800/60 hover:bg-slate-800 hover:text-white px-2.5 py-1.5 text-xs font-semibold text-slate-300 transition-colors"
+              className="flex items-center justify-center gap-1.5 rounded-xl border border-white/10 bg-[#0f172a] hover:bg-[#1e293b] hover:text-white px-2.5 py-1.5 text-xs font-semibold text-slate-300 transition-colors"
             >
               <Eye className="h-3.5 w-3.5" />
               <span>Specs</span>
             </button>
             <button
               onClick={() => addToCart(resource)}
-              className="flex items-center justify-center gap-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 px-2.5 py-1.5 text-xs font-bold text-white shadow-sm shadow-indigo-600/20 transition-all cursor-pointer"
+              className="flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-[#df37a7] to-[#8b5cf6] hover:brightness-110 px-2.5 py-1.5 text-xs font-bold text-white shadow-sm shadow-[#df37a7]/20 transition-all cursor-pointer"
             >
               <Plus className="h-3.5 w-3.5" />
               <span>Add to Kit</span>

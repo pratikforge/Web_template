@@ -478,7 +478,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_bundlecartdrawer",
-      "community": 80,
+      "community": 78,
       "norm_label": "bundlecartdrawer.tsx"
     },
     {
@@ -488,7 +488,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "components_bundlecartdrawer_bundlecartdrawerprops",
-      "community": 80,
+      "community": 78,
       "norm_label": "bundlecartdrawerprops"
     },
     {
@@ -498,7 +498,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "components_bundlecartdrawer_bundlecartdrawer",
-      "community": 80,
+      "community": 78,
       "norm_label": "bundlecartdrawer()"
     },
     {
@@ -628,7 +628,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_listresourcemodal_listresourcemodalprops",
-      "community": 75,
+      "community": 58,
       "norm_label": "listresourcemodalprops"
     },
     {
@@ -648,7 +648,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_navbar",
-      "community": 75,
+      "community": 78,
       "norm_label": "navbar.tsx"
     },
     {
@@ -658,7 +658,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_navbar_navbarprops",
-      "community": 75,
+      "community": 78,
       "norm_label": "navbarprops"
     },
     {
@@ -708,7 +708,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_resourcecatalog",
-      "community": 58,
+      "community": 75,
       "norm_label": "resourcecatalog.tsx"
     },
     {
@@ -728,7 +728,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "components_resourcecatalog_categories",
-      "community": 58,
+      "community": 75,
       "norm_label": "categories"
     },
     {
@@ -738,7 +738,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "components_resourcecatalog_resourcecatalog",
-      "community": 58,
+      "community": 75,
       "norm_label": "resourcecatalog()"
     },
     {
@@ -778,7 +778,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_settlementmodal",
-      "community": 80,
+      "community": 77,
       "norm_label": "settlementmodal.tsx"
     },
     {
@@ -798,7 +798,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_settlementmodal_settlementmodal",
-      "community": 80,
+      "community": 77,
       "norm_label": "settlementmodal()"
     },
     {
@@ -1048,7 +1048,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_mockcampusdata_mock_users",
-      "community": 87,
+      "community": 79,
       "norm_label": "mock_users"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "lib_finance_paisetorupees",
-      "community": 80,
+      "community": 78,
       "norm_label": "paisetorupees()"
     },
     {
@@ -1712,10 +1712,20 @@
       "norm_label": "safestorage.ts"
     },
     {
-      "label": "SafeStorageAdapter",
+      "label": "cleanJsonReviver()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
       "source_location": "L9",
+      "_origin": "ast",
+      "id": "lib_safestorage_cleanjsonreviver",
+      "community": 79,
+      "norm_label": "cleanjsonreviver()"
+    },
+    {
+      "label": "SafeStorageAdapter",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/safeStorage.ts",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter",
       "community": 74,
@@ -1725,7 +1735,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L13",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_constructor",
       "community": 74,
@@ -1735,7 +1745,7 @@
       "label": ".checkAvailability()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L17",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_checkavailability",
       "community": 74,
@@ -1745,7 +1755,7 @@
       "label": ".getFullKey()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L29",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_getfullkey",
       "community": 74,
@@ -1755,7 +1765,7 @@
       "label": ".setItem()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L33",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_setitem",
       "community": 74,
@@ -1765,7 +1775,7 @@
       "label": ".getItem()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L55",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_getitem",
       "community": 74,
@@ -1775,7 +1785,7 @@
       "label": ".removeItem()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L81",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_removeitem",
       "community": 74,
@@ -1785,7 +1795,7 @@
       "label": ".clearAll()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L91",
+      "source_location": "L98",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_clearall",
       "community": 74,
@@ -1795,7 +1805,7 @@
       "label": ".resetDemoState()",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L107",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "lib_safestorage_safestorageadapter_resetdemostate",
       "community": 74,
@@ -1805,7 +1815,7 @@
       "label": "safeStorage",
       "file_type": "code",
       "source_file": "frontend/src/lib/safeStorage.ts",
-      "source_location": "L115",
+      "source_location": "L122",
       "_origin": "ast",
       "id": "lib_safestorage_safestorage",
       "community": 79,
@@ -1818,7 +1828,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_security",
-      "community": 75,
+      "community": 80,
       "norm_label": "security.ts"
     },
     {
@@ -1838,7 +1848,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "lib_security_safepatch",
-      "community": 75,
+      "community": 80,
       "norm_label": "safepatch()"
     },
     {
@@ -1848,8 +1858,28 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "lib_security_isvalidimageurl",
-      "community": 75,
+      "community": 80,
       "norm_label": "isvalidimageurl()"
+    },
+    {
+      "label": "isCampusInstitutionalEmail()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/security.ts",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "lib_security_iscampusinstitutionalemail",
+      "community": 80,
+      "norm_label": "iscampusinstitutionalemail()"
+    },
+    {
+      "label": "generateHandoverAuditId()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/security.ts",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "lib_security_generatehandoverauditid",
+      "community": 80,
+      "norm_label": "generatehandoverauditid()"
     },
     {
       "label": "utils.ts",
@@ -1972,6 +2002,36 @@
       "norm_label": "lifecycle_rbac.test.ts"
     },
     {
+      "label": "performance_and_a11y.test.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_performance_and_a11y_test",
+      "community": 80,
+      "norm_label": "performance_and_a11y.test.ts"
+    },
+    {
+      "label": "getLuminance()",
+      "file_type": "code",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tests_performance_and_a11y_test_getluminance",
+      "community": 80,
+      "norm_label": "getluminance()"
+    },
+    {
+      "label": "getContrastRatio()",
+      "file_type": "code",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "tests_performance_and_a11y_test_getcontrastratio",
+      "community": 80,
+      "norm_label": "getcontrastratio()"
+    },
+    {
       "label": "product_listing_pipeline.test.ts",
       "file_type": "code",
       "source_file": "frontend/src/tests/product_listing_pipeline.test.ts",
@@ -1988,8 +2048,28 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_security_stride_attacks_test",
-      "community": 75,
+      "community": 80,
       "norm_label": "security_stride_attacks.test.ts"
+    },
+    {
+      "label": "stride_escrow_security.test.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_stride_escrow_security_test",
+      "community": 80,
+      "norm_label": "stride_escrow_security.test.ts"
+    },
+    {
+      "label": "EscrowState",
+      "file_type": "code",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "tests_stride_escrow_security_test_escrowstate",
+      "community": 80,
+      "norm_label": "escrowstate"
     },
     {
       "label": "user_profile_management.test.ts",
@@ -2008,7 +2088,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_campus",
-      "community": 58,
+      "community": 87,
       "norm_label": "campus.ts"
     },
     {
@@ -16553,12 +16633,34 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tests_performance_and_a11y_test",
+      "target": "lib_finance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/tests/security_stride_attacks.test.ts",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "tests_security_stride_attacks_test",
       "target": "lib_finance"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_finance",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -16575,12 +16677,34 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tests_performance_and_a11y_test",
+      "target": "lib_finance_rupeestopaise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/tests/security_stride_attacks.test.ts",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "tests_security_stride_attacks_test",
       "target": "lib_finance_rupeestopaise"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_finance_rupeestopaise",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -16608,6 +16732,28 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tests_performance_and_a11y_test",
+      "target": "lib_finance_calculatetransactiontotal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_finance_calculatetransactiontotal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/tests/finance_and_storage.test.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -16625,6 +16771,17 @@
       "confidence_score": 1.0,
       "source": "tests_security_stride_attacks_test",
       "target": "lib_finance_calculatesettlement"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_finance_calculatesettlement",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -17042,6 +17199,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/lib/safeStorage.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "lib_safestorage",
+      "target": "lib_safestorage_cleanjsonreviver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/safeStorage.ts",
       "source_location": "L115",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17263,6 +17430,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/lib/security.ts",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "lib_security",
+      "target": "lib_security_generatehandoverauditid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/security.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "lib_security",
+      "target": "lib_security_iscampusinstitutionalemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/security.ts",
       "source_location": "L54",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17301,6 +17488,17 @@
       "target": "lib_security"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_security",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -17310,6 +17508,17 @@
       "confidence_score": 1.0,
       "source": "tests_security_stride_attacks_test",
       "target": "lib_security_sanitizeinput"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_security_sanitizeinput",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -17326,12 +17535,56 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_security_safepatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/tests/security_stride_attacks.test.ts",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "tests_security_stride_attacks_test",
       "target": "lib_security_isvalidimageurl"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_security_isvalidimageurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_security_iscampusinstitutionalemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "lib_security_generatehandoverauditid",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -17364,6 +17617,37 @@
       "target": "tests_cart_auth_search_test_additem"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tests_performance_and_a11y_test",
+      "target": "tests_performance_and_a11y_test_getcontrastratio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_performance_and_a11y_test",
+      "target": "tests_performance_and_a11y_test_getluminance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/performance_and_a11y.test.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_performance_and_a11y_test_getcontrastratio",
+      "target": "tests_performance_and_a11y_test_getluminance",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -17384,6 +17668,16 @@
       "confidence_score": 1.0,
       "source": "tests_product_listing_pipeline_test",
       "target": "types_campus_campususer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/tests/stride_escrow_security.test.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "tests_stride_escrow_security_test",
+      "target": "tests_stride_escrow_security_test_escrowstate",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -17913,9 +18207,9 @@
       "source_file": "main.js",
       "source_location": "L591",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_escapehtml",
-      "confidence_score": 1.0
+      "target": "main_escapehtml"
     },
     {
       "relation": "contains",
@@ -17963,9 +18257,9 @@
       "source_file": "main.js",
       "source_location": "L601",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_initproductlistingpipeline",
-      "confidence_score": 1.0
+      "target": "main_initproductlistingpipeline"
     },
     {
       "relation": "contains",
@@ -17983,9 +18277,9 @@
       "source_file": "main.js",
       "source_location": "L562",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_loadcustomlistings",
-      "confidence_score": 1.0
+      "target": "main_loadcustomlistings"
     },
     {
       "relation": "contains",
@@ -18083,9 +18377,9 @@
       "source_file": "main.js",
       "source_location": "L580",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_savecustomlisting",
-      "confidence_score": 1.0
+      "target": "main_savecustomlisting"
     },
     {
       "relation": "contains",
@@ -27432,5 +27726,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e6575b27de603c66643902e966da8295110404e2"
+  "built_at_commit": "70c14f50370758de5f55d8380339527a49c6341b"
 }

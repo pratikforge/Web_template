@@ -6,6 +6,13 @@
 const STORAGE_PREFIX = 'CAMPUS_CIRCULAR_V1_';
 const MAX_PAYLOAD_BYTES = 500 * 1024; // 500KB guardrail against quota blowouts
 
+export const cleanJsonReviver = (key: string, value: unknown): unknown => {
+  if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+    return undefined;
+  }
+  return value;
+};
+
 class SafeStorageAdapter {
   private memoryFallback = new Map<string, string>();
   private isStorageAvailable: boolean;
@@ -71,7 +78,7 @@ class SafeStorageAdapter {
     if (!raw) return fallback;
 
     try {
-      return JSON.parse(raw) as T;
+      return JSON.parse(raw, cleanJsonReviver) as T;
     } catch (err) {
       console.error(`[SafeStorage] Corrupt JSON for key ${key}, using fallback:`, err);
       return fallback;

@@ -27,9 +27,9 @@ export const calculateTransactionTotal = (
   feePercentage: number = 5,
   depositPaise: number = 0
 ): TransactionCalculation => {
-  const bPaise = Number(borrowPaise) || 0;
-  const dPaise = Number(depositPaise) || 0;
-  const fPct = Number(feePercentage) || 0;
+  const bPaise = Math.max(0, Number(borrowPaise) || 0);
+  const dPaise = Math.max(0, Number(depositPaise) || 0);
+  const fPct = Math.max(0, Math.min(15, Number(feePercentage) || 0));
 
   // Round fee paise to nearest integer paise
   const feePaise = Math.round(bPaise * (fPct / 100));

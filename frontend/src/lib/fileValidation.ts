@@ -140,7 +140,7 @@ export const createProductListing = (
     .filter(Boolean);
 
   let imageUrl = (input.imageUrl || '').trim();
-  if (!imageUrl) {
+  if (!imageUrl || /^(javascript|vbscript):/i.test(imageUrl)) {
     if (input.category === 'Lab & Academic') {
       imageUrl = 'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=800&q=80';
     } else if (input.category === 'Media & Events') {
