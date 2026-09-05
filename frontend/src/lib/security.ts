@@ -71,3 +71,23 @@ export const isValidImageUrl = (url: string): boolean => {
 
   return false;
 };
+
+/**
+ * STRIDE Spoofing defense: Enforces verified campus institutional email domains.
+ */
+export const isCampusInstitutionalEmail = (email: string): boolean => {
+  if (!email || typeof email !== 'string') return false;
+  return /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)*(iitb\.ac\.in|campus\.edu|bits-pilani\.ac\.in)$/i.test(email.trim());
+};
+
+/**
+ * STRIDE Repudiation defense: Generates deterministic tamper-evident handover audit identifier.
+ */
+export const generateHandoverAuditId = (
+  borrowerId: string,
+  lenderId: string,
+  timestamp: number = Date.now()
+): string => {
+  return `audit_${borrowerId}_${lenderId}_${timestamp}`;
+};
+

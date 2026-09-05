@@ -115,3 +115,49 @@ These guidelines are working if: fewer unnecessary changes in diffs, fewer rewri
 
 20. `write_to_file` ArtifactMetadata Target Scope
     When creating or writing files in the workspace using `write_to_file`, NEVER include the `ArtifactMetadata` parameter. `ArtifactMetadata` is strictly reserved for artifact markdown files located inside the agent's brain directory (`<appDataDir>\brain\<conversation-id>`). Supplying it for normal project files causes an immediate `invalid_args` permission/path error.
+
+23. Unused Default React Imports under Strict JSX Runtime
+    When writing or refactoring React components in projects configured with modern JSX transform (`"jsx": "react-jsx"`) and strict TypeScript (`noUnusedLocals: true`), NEVER add default `import React from "react"` unless explicitly referencing `React.*` properties. Unused default imports trigger compiler error TS6133 and fail pre-commit hooks.
+
+24. Mandatory Cybersecurity, Performance, Structural Integrity & Efficiency Standards
+    Whenever any code is written, modified, or refactored, the following four pillars MUST be strictly preserved and accompanied by dedicated automated verification scripts:
+    - **Cybersecurity & Threat Hardening**: All inputs, memory accesses, parser outputs, and state transformations must be hardened against adversarial exploits (e.g., prototype pollution, XSS/injection, ReDoS, memory sandbox breakout, and STRIDE/OWASP vulnerabilities). Dedicated security test scripts (e.g., `tests/security/*.security.test.*` or `*.stride.test.*`) MUST be written to actively attempt adversarial attacks against the code.
+    - **Performance & Computational Efficiency**: Code must be architected for minimal execution time and optimal space complexity (e.g., avoiding unnecessary re-renders, redundant allocations, unindexed lookups, or unmemoized computations). Performance test scripts (e.g., `tests/performance/*.perf.test.*`) with strict execution time upper-bounds (`performance.now()`) and memory stability checks MUST be written to verify efficiency.
+    - **Structural Integrity & Clean Architecture**: Follow strict separation of concerns, modular contracts, consistent typing, and predictable data flow. Integration and contract tests MUST enforce that component boundaries, state immutability, and module interfaces remain intact.
+    - **Zero Speculative Bloat / Lean Code**: Keep code concise, readable, and focused strictly on the user's requirements without over-abstraction or dead code.
+
+25. Multi-Subagent Adversarial Plan Review & Trajectory-Wide Hardening
+    For all major, architectural, or lengthy implementation tasks, the initial draft of the implementation plan MUST undergo rigorous adversarial self-criticism before presenting it for approval or writing any code:
+    - **Multi-Perspective Scrutiny via Subagents**: Spawn dedicated subagents (e.g., Security & Vulnerability Auditor, Architectural & Logic Critic, Performance Bounds Reviewer) to independently stress-test the draft plan, uncover loopholes, find unhandled edge cases, and challenge assumptions.
+    - **Trajectory-Wide Remediation**: Any discovered flaws, vulnerabilities, or weak points MUST NOT be deferred as "fixes at the end" or post-implementation patches. They MUST be directly resolved and integrated throughout the entire milestone-by-milestone trajectory of the implementation plan itself.
+    - **Fortified Final Submission**: Only after the plan has been adversarially critiqued, fortified, and all discovered loopholes systematically patched across every milestone should the finalized implementation plan be presented for user review.
+
+26. Automated PR Lifecycle via GitHub CLI (`gh`)
+    Whenever creating, managing, or merging Pull Requests, ALWAYS use the GitHub CLI (`gh pr create`, `gh pr merge`, etc.) directly from the terminal rather than requesting manual web UI steps from the user. Ensure the PR title, body summary, base branch (`main`), and head branch are clearly specified, and proceed with automated PR creation and merging where structurally appropriate.
+
+27. System Design Specification Routing & Anti-Context Bloat
+    When designing architectures or writing implementation plans, NEVER dump, view, or inject all 7 system design specification files into context simultaneously. Doing so triggers severe context bloat and degrades reasoning.
+    Instead, ALWAYS consult [`spec/system_design/00_system_design_routing_and_navigation_guide.md`](spec/system_design/00_system_design_routing_and_navigation_guide.md) to route precisely to the relevant layer and section based on the current planning phase or requirement:
+    - **Phase 1: Requirements & Capacity Estimation** $\to$ Refer to `01_non_negotiable_rules_and_principles.md` (Section 8: QPS, ELU, Storage Multiplier, DAWS Cache RAM; Section 9: SPOF; Section 10: SRE SLI/SLO/SLA & Latency Budgeting).
+    - **Phase 2: Macro Architecture & Archetype Selection** $\to$ Refer to `04_system_archetypes_and_decision_matrices.md` (Section 1: Monolith vs Microservices vs Serverless; Section 2: The 7 System Archetypes; Section 3.1 & 3.5: Database & Storage Selection Matrix; Section 3.2: Communication Protocols).
+    - **Phase 3: High-Level Ingress, Networking & Data Tier** $\to$ Refer to `02_high_level_design_and_distributed_systems.md` (Section 2: Sharding & Hotspot Salting; Section 4: Caching Hierarchies & XFetch; Section 8: Outbox, CDC & Sagas; Section 9: Keyset Pagination with DNF & Deprecation; Section 10: Proxies, DNS, CDN; Section 11: Stateless Autoscaling).
+    - **Phase 4: Low-Level Domain Modeling, Indexing & Concurrency** $\to$ Refer to `03_low_level_design_and_object_oriented_architecture.md` (Section 1: Tactical DDD & Aggregate Root Laws; Section 3.3: HikariCP DB Pool Physics; Section 4: Scoped Context Lifecycle; Section 6: Secondary Indexing Write Amplification & Covering Indexes).
+    - **Phase 5: Observability, Telemetry & SRE Alerting** $\to$ Refer to `06_observability_telemetry_and_reliability_engineering.md` (Section 2: Multi-Burn-Rate Alerting with Low-QPS PromQL Guards; Section 3: RED/USE Methods; Section 4: Distributed Tracing & Kafka SpanLinks; Section 7: 3-Tier Health Probes).
+    - **Phase 6: Deployment Topology, Disaster Recovery, Governance & FinOps** $\to$ Refer to `07_deployment_operations_governance_and_finops.md` (Section 1: Blue/Green DDL Lock Defense, Canary ACA, Rolling preStop 15s, Shadow Sandboxing, Feature Flags; Section 2: 4 DR Tiers & 3rd-Region Witness Quorum; Section 3: cgroups CFS Math & S3 Break-Even; Section 4: Merkle Audit Logs & GDPR Crypto-Shredding).
+    - **Phase 7: Verification & TDD Test Harness Formulation** $\to$ Refer to `05_system_design_verification_and_testing_playbook.md` (All 4 Categories: Type 1 Complexity, Type 2 Logic, Type 3 Chaos, Type 4 STRIDE/OWASP).
+    For specific technical requirements, use the Quick-Lookup Table in `00_system_design_routing_and_navigation_guide.md` and view only the targeted line slices needed for the task.
+
+28. Frontend Design & UI/UX Tool Orchestration (External MCP Tools vs Local Skills)
+    Whenever designing or implementing frontend UI/UX, follow a strict division of responsibility based on whether external tool calling (MCP) or local skills are engaged:
+    - **When External Tool Calling (MCP) Is Required / Available:**
+      - **MotionSites (`motionsites`)**: Use exclusively for **Art Direction, Mood, Layout Blueprints & Motion Concepts**. Call `search_prompts`, `list_prompts`, `get_prompt`, or `get_related_prompts` to extract the aesthetic style, color palette harmony, layout rhythm, animation pacing, kinetic typography, and motion design prompt specifications.
+      - **21st.dev (`21st`)**: Use exclusively for **Production Component Code Supply, Themes & Structural Implementation**. Call `search`, `get_component`, `get_theme`, `generate`, or `iterate_generation` to pull actual production-ready React, Tailwind, and shadcn components, tokenized CSS themes, and executable code snippets matching the MotionSites art direction.
+      - **Sequential Synthesis**: Always chain MotionSites first (for visual concept, aesthetic mood, and motion choreography) and 21st.dev second (for sourcing the exact executable component code and token definitions).
+    - **When No External Tool Calling Is Required (Offline, Self-Contained, or Agent Skills):**
+      - Use the dedicated **21st.dev skills** (`21st-ui-build`, `21st-ui-explore`, `21st-ui-review`, `21st-cli-use`, `21st-design-sync`, `21st-registry`) and core frontend skills:
+        - `21st-ui-build`: Implement production-grade screens, sections, and components strictly adhering to the project's design system tokens and Tailwind variables.
+        - `21st-ui-explore`: Generate and compare distinct UI directions when the design direction is intentionally open or exploratory.
+        - `21st-ui-review`: Audit and enforce accessibility (WCAG/ARIA), responsive breakpoints, touch targets, and visual polish before finalizing changes.
+        - `21st-cli-use`: Search, install, or pull shadcn/React components and CSS themes via the local CLI workflow.
+        - `frontend-ui-engineering`: Structure component hierarchies, manage reactive state, ensure layout resilience, and enforce UI performance standards.
+        - `browser-testing-with-devtools` / `chrome-devtools`: Verify DOM rendering, inspect responsive layouts, profile interactions, and eliminate console errors in a real browser runtime.

@@ -1,16 +1,16 @@
-# Graph Report - Web_template  (2026-08-27)
+# Graph Report - Web_template  (2026-09-05)
 
 ## Corpus Check
-- 118 files · ~126,425 words
+- 120 files · ~128,619 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1239 nodes · 1468 edges · 88 communities (75 shown, 13 thin omitted)
+- 1247 nodes · 1488 edges · 88 communities (75 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e6575b27`
+- Built from commit: `70c14f50`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -112,16 +112,16 @@
 10. `Key Functionalities` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `ListResourceModalProps` --references--> `CampusResource`  [EXTRACTED]
-  frontend/src/components/ListResourceModal.tsx → frontend/src/types/campus.ts
 - `RouteStop` --references--> `CampusResource`  [EXTRACTED]
   frontend/src/lib/agentPipeline.ts → frontend/src/types/campus.ts
-- `AdminDashboard()` --calls--> `paiseToRupees()`  [EXTRACTED]
-  frontend/src/components/AdminDashboard.tsx → frontend/src/lib/finance.ts
 - `BundleCartDrawer()` --calls--> `useCart()`  [EXTRACTED]
   frontend/src/components/BundleCartDrawer.tsx → frontend/src/context/CartContext.tsx
-- `BundleCartDrawer()` --calls--> `useSession()`  [EXTRACTED]
-  frontend/src/components/BundleCartDrawer.tsx → frontend/src/context/SessionContext.tsx
+- `BundleCartDrawer()` --calls--> `calculateTransactionTotal()`  [EXTRACTED]
+  frontend/src/components/BundleCartDrawer.tsx → frontend/src/lib/finance.ts
+- `BundleCartDrawer()` --calls--> `rupeesToPaise()`  [EXTRACTED]
+  frontend/src/components/BundleCartDrawer.tsx → frontend/src/lib/finance.ts
+- `HeroAIBundlerProps` --references--> `CampusResource`  [EXTRACTED]
+  frontend/src/components/HeroAIBundler.tsx → frontend/src/types/campus.ts
 
 ## Import Cycles
 - None detected.
@@ -318,7 +318,7 @@ Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $
 
 ### Community 58 - "Community 58"
 Cohesion: 0.20
-Nodes (17): AgentReasoningHUD(), AgentReasoningHUDProps, HeroAIBundler(), HeroAIBundlerProps, ResourceCard(), ResourceCardProps, CATEGORIES, ResourceCatalog() (+9 more)
+Nodes (16): AgentReasoningHUD(), AgentReasoningHUDProps, HeroAIBundler(), HeroAIBundlerProps, ListResourceModalProps, ResourceCard(), ResourceCardProps, ResourceCatalogProps (+8 more)
 
 ### Community 59 - "Community 59"
 Cohesion: 0.50
@@ -365,8 +365,8 @@ Cohesion: 0.14
 Nodes (13): 1. Graphify Search Phase (Rule #5 & #12), 2. Architecture & Feature Breakdown in YAML (Rule #7), 3. Strict Guardrails During Execution (Rule #8), 4. Test-Driven Development (TDD) Test Suites (Rule #8), 5. Cyber Attack Test Scripts (STRIDE & OWASP Top 10) (Rule #8), 6. Self-Critique of the Idea & Execution Plan (Adversarial Stress Test), 7. Pre-Commit Hooks & Automation (Rules #10, #11 & #13), 8. Graphify Update Phase (Rule #5) (+5 more)
 
 ### Community 75 - "Community 75"
-Cohesion: 0.19
-Nodes (14): ListResourceModalProps, NavbarProps, ALLOWED_EXTENSIONS, ALLOWED_MIME_TYPES, createProductListing(), fileToDataUrl(), ImageFileMeta, ProductListingInput (+6 more)
+Cohesion: 0.23
+Nodes (12): CATEGORIES, ResourceCatalog(), ALLOWED_EXTENSIONS, ALLOWED_MIME_TYPES, createProductListing(), fileToDataUrl(), ImageFileMeta, ProductListingInput (+4 more)
 
 ### Community 76 - "Community 76"
 Cohesion: 0.11
@@ -374,19 +374,19 @@ Nodes (23): MOCK_RESOURCES, CAMPUS_KEYWORD_TAXONOMY, deconstructIntent(), Intent
 
 ### Community 77 - "Community 77"
 Cohesion: 0.16
-Nodes (14): STAGES_ORDER, SettlementModalProps, VisualDiffSlider(), VisualDiffSliderProps, DEFAULT_SEED_ORDER, LoanEngineContext, LoanEngineContextType, canTransition() (+6 more)
+Nodes (15): STAGES_ORDER, SettlementModal(), SettlementModalProps, VisualDiffSlider(), VisualDiffSliderProps, DEFAULT_SEED_ORDER, LoanEngineContext, LoanEngineContextType (+7 more)
 
 ### Community 78 - "Community 78"
-Cohesion: 0.21
-Nodes (13): AdminDashboard(), AdminDashboardProps, LifecycleTracker(), ListResourceModal(), Navbar(), UserProfileModal(), CartProvider(), LoanEngineProvider() (+5 more)
+Cohesion: 0.18
+Nodes (17): AdminDashboard(), AdminDashboardProps, BundleCartDrawer(), BundleCartDrawerProps, LifecycleTracker(), ListResourceModal(), Navbar(), NavbarProps (+9 more)
 
 ### Community 79 - "Community 79"
-Cohesion: 0.21
-Nodes (16): UserProfileModalProps, SessionContext, SessionContextType, SessionProvider(), UserRole, ALLOWED_DEPARTMENTS, ALLOWED_HOSTELS, ALLOWED_YEARS (+8 more)
+Cohesion: 0.19
+Nodes (17): UserProfileModalProps, SessionContext, SessionContextType, SessionProvider(), MOCK_USERS, UserRole, ALLOWED_DEPARTMENTS, ALLOWED_HOSTELS (+9 more)
 
 ### Community 80 - "Community 80"
-Cohesion: 0.33
-Nodes (9): BundleCartDrawer(), BundleCartDrawerProps, SettlementModal(), calculateSettlement(), calculateTransactionTotal(), paiseToRupees(), rupeesToPaise(), SettlementResult (+1 more)
+Cohesion: 0.23
+Nodes (12): calculateSettlement(), calculateTransactionTotal(), rupeesToPaise(), SettlementResult, TransactionCalculation, generateHandoverAuditId(), isCampusInstitutionalEmail(), isValidImageUrl() (+4 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.18
@@ -405,11 +405,11 @@ Cohesion: 0.40
 Nodes (4): buildCommand, cleanUrls, outputDirectory, $schema
 
 ### Community 87 - "Community 87"
-Cohesion: 0.24
-Nodes (8): CommunityBeaconDrawer(), CommunityBeaconDrawerProps, ImpactSection(), MOCK_BEACON_REQUESTS, MOCK_IMPACT_STATS, MOCK_USERS, CampusImpactStats, CommunityBeaconRequest
+Cohesion: 0.29
+Nodes (7): CommunityBeaconDrawer(), CommunityBeaconDrawerProps, ImpactSection(), MOCK_BEACON_REQUESTS, MOCK_IMPACT_STATS, CampusImpactStats, CommunityBeaconRequest
 
 ## Knowledge Gaps
-- **843 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+838 more)
+- **844 isolated node(s):** `idea-refine.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+839 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -421,7 +421,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `CampusResource` connect `Community 58` to `Community 75`, `Community 76`, `Community 78`, `Community 87`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `idea-refine.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _843 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _844 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

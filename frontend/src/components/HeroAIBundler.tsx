@@ -69,7 +69,7 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
   };
 
   return (
-    <section className="relative overflow-hidden border-b border-slate-800/80 bg-gradient-to-b from-slate-900/60 to-slate-950/80 py-12 px-4 sm:px-6 lg:px-8 space-y-8">
+    <section className="relative overflow-hidden border-b border-white/10 bg-[#030712] py-12 px-4 sm:px-6 lg:px-8 space-y-8">
       {/* Hidden File Picker for Hero Quick List */}
       <input
         type="file"
@@ -81,18 +81,18 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
       />
 
       {/* Subtle Glow Backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-72 w-[600px] rounded-full bg-indigo-600/10 blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-72 w-[600px] rounded-full bg-[#8b5cf6]/10 blur-3xl pointer-events-none" />
 
       <div className="relative mx-auto max-w-4xl text-center space-y-6">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-300">
-          <Bot className="h-3.5 w-3.5 text-indigo-400" />
+        <div className="inline-flex items-center gap-2 rounded-full border border-[#8b5cf6]/30 bg-[#8b5cf6]/10 px-3 py-1 text-xs font-semibold text-[#a78bfa]">
+          <Bot className="h-3.5 w-3.5 text-[#df37a7]" />
           <span>PS Section 4 — Natural Language Multi-Agent Discovery</span>
         </div>
 
         {/* Hero Heading */}
         <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-          Why buy what someone <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-300">nearby already has?</span>
+          Why buy what someone <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df37a7] via-[#8b5cf6] to-[#38bdf8]">nearby already has?</span>
         </h1>
         <p className="mx-auto max-w-2xl text-sm sm:text-base text-slate-300">
           Describe your project or college requirement in plain words. CampusCircular&apos;s autonomous agent pipeline deconstructs your intent, audits peer trust, and clusters gear into optimized walking pickup routes.
@@ -100,9 +100,9 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
 
         {/* Natural Language AI Prompt Box */}
         <form onSubmit={handleFormSubmit} className="relative mx-auto max-w-2xl">
-          <div className="flex flex-col sm:flex-row items-center gap-2 rounded-2xl border border-slate-700 bg-slate-900/90 p-2 shadow-2xl shadow-indigo-950/50 backdrop-blur-md focus-within:border-indigo-500 transition-all">
+          <div className="flex flex-col sm:flex-row items-center gap-2 rounded-2xl border border-white/10 bg-[#090d16] p-2 shadow-2xl shadow-black/80 backdrop-blur-md focus-within:border-[#8b5cf6] transition-all">
             <div className="flex items-center gap-2 pl-3 flex-1 w-full">
-              <Sparkles className="h-5 w-5 text-indigo-400 shrink-0" />
+              <Sparkles className="h-5 w-5 text-[#df37a7] shrink-0" />
               <input
                 type="text"
                 value={prompt}
@@ -113,7 +113,7 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
             </div>
             <button
               type="submit"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 px-5 py-2.5 text-xs font-bold text-white shadow-md shadow-indigo-600/30 transition-all cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#df37a7] to-[#8b5cf6] hover:brightness-110 px-5 py-2.5 text-xs font-bold text-white shadow-md shadow-[#df37a7]/30 transition-all cursor-pointer"
             >
               <span>Run Agent Pipeline</span>
               <ArrowRight className="h-4 w-4" />
@@ -138,9 +138,9 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
               setPrompt(text);
               handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
+            className="flex items-center gap-1.5 rounded-xl border border-white/10 bg-[#0f172a] px-3 py-1.5 text-slate-300 hover:border-[#8b5cf6]/50 hover:bg-[#1e293b] hover:text-white transition-all cursor-pointer"
           >
-            <Video className="h-3.5 w-3.5 text-indigo-400" />
+            <Video className="h-3.5 w-3.5 text-[#a78bfa]" />
             <span>Club Reel Shoot (4 Items)</span>
           </button>
 
@@ -150,7 +150,7 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
               setPrompt(text);
               handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
+            className="flex items-center gap-1.5 rounded-xl border border-white/10 bg-[#0f172a] px-3 py-1.5 text-slate-300 hover:border-[#8b5cf6]/50 hover:bg-[#1e293b] hover:text-white transition-all cursor-pointer"
           >
             <Calculator className="h-3.5 w-3.5 text-amber-400" />
             <span>Lab Exam Kit</span>
@@ -162,9 +162,9 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
               setPrompt(text);
               handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
+            className="flex items-center gap-1.5 rounded-xl border border-white/10 bg-[#0f172a] px-3 py-1.5 text-slate-300 hover:border-[#8b5cf6]/50 hover:bg-[#1e293b] hover:text-white transition-all cursor-pointer"
           >
-            <Film className="h-3.5 w-3.5 text-rose-400" />
+            <Film className="h-3.5 w-3.5 text-[#df37a7]" />
             <span>Dorm Movie Night</span>
           </button>
 
@@ -174,7 +174,7 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
               setPrompt(text);
               handleBundleMatch(text);
             }}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-1.5 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-950/30 hover:text-indigo-200 transition-all cursor-pointer"
+            className="flex items-center gap-1.5 rounded-xl border border-white/10 bg-[#0f172a] px-3 py-1.5 text-slate-300 hover:border-[#8b5cf6]/50 hover:bg-[#1e293b] hover:text-white transition-all cursor-pointer"
           >
             <Cpu className="h-3.5 w-3.5 text-emerald-400" />
             <span>Robotics & IoT Kit</span>
@@ -187,10 +187,10 @@ export const HeroAIBundler: React.FC<HeroAIBundlerProps> = ({ resources, onOpenL
             <button
               onClick={handleHeroListClick}
               data-testid="hero-list-product-btn"
-              className="inline-flex items-center gap-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-indigo-500/50 px-4 py-2 text-xs font-semibold text-slate-200 hover:text-white transition-all cursor-pointer shadow-sm group"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#0f172a] hover:bg-[#1e293b] border border-white/10 hover:border-[#8b5cf6]/50 px-4 py-2 text-xs font-semibold text-slate-200 hover:text-white transition-all cursor-pointer shadow-sm group"
             >
-              <PlusCircle className="h-4 w-4 text-indigo-400 group-hover:text-indigo-300" />
-              <span>Have idle gear in your hostel? <strong className="text-indigo-400 underline underline-offset-2">List New Product with a Photo</strong></span>
+              <PlusCircle className="h-4 w-4 text-[#a78bfa] group-hover:text-[#df37a7]" />
+              <span>Have idle gear in your hostel? <strong className="text-[#a78bfa] underline underline-offset-2">List New Product with a Photo</strong></span>
             </button>
           </div>
         )}
